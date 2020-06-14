@@ -1,7 +1,4 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-/src/static/content.js
-src/static/content.js
-content.js
 
 # dependencies
 /node_modules
