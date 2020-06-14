@@ -46,6 +46,8 @@ html {
     -webkit-tap-highlight-color: transparent;
 
     background-color: var(--dark-color1);
+
+    color: var(--yellow-color2);
 }
 
 h1,

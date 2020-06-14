@@ -51,7 +51,7 @@ const content = {
 		{
 			'isInput': false,
 			'form__lbl': 'Contacts',
-			'placeholder': 'Email: example@gmal.com or LinkedIn...',
+			'placeholder': 'Contact me back via email: example@gmal.com or LinkedIn...',
 		},
 	],
 	'form__mess': ' - Field is almost empty',
@@ -59,8 +59,8 @@ const content = {
 		'Where': ['belarus', 'russia', 'ukraine', 'бела', 'россия', 'укра', 'minsk', 'минск'],
 		'Position': ['back', 'бэк'],
 		'Salary': ['1000', '2000', '1500', '2500'],
-	}
+	},
+	'formAction': 'https://formspree.io/xdowzzgv',
 }
 
 export default content
-
