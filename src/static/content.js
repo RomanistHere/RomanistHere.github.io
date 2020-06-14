@@ -59,7 +59,8 @@ const content = {
 		'Where': ['belarus', 'russia', 'ukraine', 'бела', 'россия', 'укра', 'minsk', 'минск'],
 		'Position': ['back', 'бэк'],
 		'Salary': ['1000', '2000', '1500', '2500'],
-	}
+	},
+	'formAction': 'https://formspree.io/xdowzzgv',
 }
 
 export default content
