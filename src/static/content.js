@@ -61,6 +61,32 @@ const content = {
 		'Salary': ['1000', '2000', '1500', '2500'],
 	},
 	'formAction': 'https://formspree.io/xdowzzgv',
+	'offer__title': 'Summary',
+	'offer__list': [
+		{
+			'offer__low_title': 'Who am I',
+			'offer__text': `I'm a front-end developer with over 4.5 years of experience. In case this text is not up-to-date there is <a href="#" rel="noreferrer" target="_blank" class="link">a link</a> for my CV.`
+		},
+		{
+			'offer__low_title': 'What am I good at',
+			'offer__text': `I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts. 
+				<br>
+				</br>
+				From technical side, I do really like JavaScript. There are a lot of good frameworks I good with, like Angular or React, but I like most plain JS. I still care about semantics - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about Web Components and functional programming - I learn it in my spare time. Most complete stack of technologies I know ho to use is in <a href="#" rel="noreferrer" target="_blank" class="link">the CV</a>.`
+		},
+		{
+			'offer__low_title': 'What do I do now',
+			'offer__text': `I learn functional programming using JS and Elm, design, develop and promote my products and contribute to some other projects.`
+		},
+		{
+			'offer__low_title': 'What am I seeking for',
+			'offer__text': `I would like to apply and increase my knowledges in functional programming, so I'd join the place where it matters. I also plan to relocate to an English speaking country in near future. So I am considering onsite or remote positions with opportunity to relocate.`
+		},
+		{
+			'offer__low_title': 'How to reach me',
+			'offer__text': `If you want to show me some good-looking position, the best way would be to fill special form just below. Otherwise try this: <a href="https://www.linkedin.com/in/romanist/"  rel="noreferrer" target="_blank" class="link">LinkedIn</a>, <a href="mailto:smilemoon@yandex.ru"  rel="noreferrer" target="_blank" class="link">Email</a>, <a href="https://join.skype.com/invite/o2l5a5Qb2YWn"  rel="noreferrer" target="_blank" class="link">Skype</a>.`
+		}
+	]
 }
 
 export default content
