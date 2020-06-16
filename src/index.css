@@ -405,3 +405,71 @@ ul {
 .offer__text {
     margin: 0;
 }
+
+.offer__nav {
+    position: absolute;
+    display: flex;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70px;
+
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+
+    background-color: var(--jerry-color);
+
+    -webkit-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.offer__nav:hover {
+    background-color: var(--dark-color4);
+}
+
+.offer__nav_list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.offer__link {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.offer__nav_item:hover {
+    background-color: var(--blue-color1)
+}
+
+.offer__nav_item,
+.offer__icon,
+.offer__icon path,
+.offer__icon rect {
+    transition: all ease .5s 0s;
+}
+
+.offer__nav:hover .offer__icon path,
+.offer__nav:hover .offer__icon g,
+.offer__nav:hover .offer__icon rect {
+    fill: red
+}
+
+.offer__nav_item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
