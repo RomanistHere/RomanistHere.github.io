@@ -1,27 +1,3 @@
-:root {
-    --dark-color1: #3e596c;
-    --dark-color2: #000926;
-    --dark-color3: #1b283b;
-    --dark-color4: #0e1f37;
-    /*blue*/
-    --blue-color1: #124e8a;
-    --blue-color2: #2c6f86;
-    --blue-color3: #154454;
-    /*yellow*/
-    --yellow-color1: #cbcc7f;
-    --yellow-color2: #c6b763;
-    /*gray*/
-    --gray-color: #b9b9c2;
-    /*white*/
-    --white-color: #d7e3ff;
-    /*violet*/
-    --violet-color: #846b80;
-    --pink-color: #99677b;
-    /*tom&jerry*/
-    --tom-color: #61718e;
-    --jerry-color: #6e4532;
-}
-
 #root,
 html, 
 body,
@@ -389,11 +365,17 @@ ul {
 /*//offer*/
 
 .offer {
-    padding: 20px;
+    height: auto;
+    padding: 0 0 70px;
 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    --hover-color1: #d8dee2;
+    /*--hover-color1: #fff;*/
+    --hover-color2: var(--dark-color4);
+    --offer-transition: all ease .7s 0s;
 }
 
 .offer__low_title {
@@ -407,7 +389,7 @@ ul {
 }
 
 .offer__nav {
-    position: absolute;
+    position: fixed;
     display: flex;
 
     left: 0;
@@ -421,13 +403,11 @@ ul {
 
     background-color: var(--jerry-color);
 
-    -webkit-transition: all ease .5s;
-    -o-transition: all ease .5s;
-    transition: all ease .5s;
+    transition: var(--offer-transition);
 }
 
 .offer__nav:hover {
-    background-color: var(--dark-color4);
+    background-color: var(--hover-color2);
 }
 
 .offer__nav_list {
@@ -439,31 +419,17 @@ ul {
     justify-content: center;
     -ms-align-items: center;
     align-items: center;
+
+    height: 100%;
+}
+
+.offer__link_text {
+    margin-left: 10px;
+
+    transition: var(--offer-transition);
 }
 
 .offer__link {
-    margin-right: 20px;
-    margin-left: 10px;
-}
-
-.offer__nav_item:hover {
-    background-color: var(--blue-color1)
-}
-
-.offer__nav_item,
-.offer__icon,
-.offer__icon path,
-.offer__icon rect {
-    transition: all ease .5s 0s;
-}
-
-.offer__nav:hover .offer__icon path,
-.offer__nav:hover .offer__icon g,
-.offer__nav:hover .offer__icon rect {
-    fill: red
-}
-
-.offer__nav_item {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -472,4 +438,70 @@ ul {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
+
+    height: 100%;
+}
+
+.offer__nav_item,
+.offer__icon,
+.offer__icon path,
+.offer__icon rect {
+    transition: var(--offer-transition);
+}
+
+.offer__nav:hover .offer__icon path,
+.offer__nav:hover .offer__icon g,
+.offer__nav:hover .offer__icon rect {
+    fill: var(--hover-color1)
+}
+
+.offer__nav_item:hover .offer__icon path,
+.offer__nav_item:hover .offer__icon g,
+.offer__nav_item:hover .offer__icon rect {
+    fill: var(--hover-color2)
+}
+
+.offer__nav:hover .offer__link_text {
+    color: var(--hover-color1);
+}
+
+.offer__nav_item:hover .offer__link_text{
+    color: var(--hover-color2);
+}
+
+.offer__nav_item {
+    cursor: pointer;
+
+    padding: 0 20px;
+    height: 100%;
+}
+
+.offer__nav_item:hover {
+    background-color: var(--hover-color1);
+
+    padding: 0 50px;
+}
+
+.offer__title {
+    width: 646px;
+    margin: 0 auto;
+
+    font-size: 52px;
+    text-decoration: underline;
+}
+
+.offer__wrap {
+    padding-bottom: 20px;
+
+    transition: var(--offer-transition);
+}
+
+.offer__list {
+    width: 646px;
+    margin: 0 auto;
+}
+
+.offer__nav:hover + .offer__wrap {
+    background-color: var(--hover-color1);
+    color: var(--hover-color2);
 }

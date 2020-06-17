@@ -34,27 +34,34 @@ const navItems = content.offer__nav.map(({
 }, index) => {
 	const DynamicComp = navCopm[comp]
 	const NewLink = () => link
-		? <Link className="link offer__link" to={link}>{text}</Link>
-		: <a href={CV} target="_blank" rel="noopener noreferrer" className="link offer__link">{text}</a>
+		? 	<Link className="offer__link" to={link}>
+				<DynamicComp className="offer__icon icon" />
+				<span className="offer__link_text">{text}</span>
+			</Link>
+		: 	<a href={CV} target="_blank" rel="noopener noreferrer" className="offer__link">
+				<DynamicComp className="offer__icon icon" />
+				<span className="offer__link_text">{text}</span>
+			</a>
 
     return  <li key={index} className="offer__nav_item">
-    			<DynamicComp className="offer__icon icon" />
   				<NewLink />
     		</li>
 })
 
 const Offer = () => {
   	return 	<section className="offer">
-  				<h1 className="offer__title">{content.offer__title}</h1>
-				<ul className="offer__list">
-					{items}					
-				</ul>
-
-	  			<nav className="offer__nav">
+  				<nav className="offer__nav">
 					<ul className="offer__nav_list">
 						{navItems}
 					</ul>
 	  			</nav>
+
+	  			<div className="offer__wrap">
+	  				<h1 className="offer__title">{content.offer__title}</h1>
+					<ul className="offer__list">
+						{items}					
+					</ul>
+	  			</div>
   			</section>
 }
 
