@@ -1,8 +1,10 @@
 import React from "react"
 
-import Input from '../components/Input'
+import './Form.css'
 
-import content from '../static/content'
+import Input from '../../components/Input/Input'
+
+import content from '../../static/content'
 
 const formInputs = content.form__info.map(({
 	form__lbl,

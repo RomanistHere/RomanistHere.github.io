@@ -1,10 +1,12 @@
 import React from 'react'
 
-import Face from './Face'
-import Card__wr1 from './Card__wr1'
-import Card__wr2 from './Card__wr2'
+import './Card.css'
 
-import content from '../static/content'
+import Face from '../Face/Face'
+import Card__wr1 from '../Card__wr1/Card__wr1'
+import Card__wr2 from '../Card__wr2/Card__wr2'
+
+import content from '../../static/content'
 
 const Card = () => {
     return  <section className="main">

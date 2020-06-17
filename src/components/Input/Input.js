@@ -1,12 +1,12 @@
 import React from "react"
 
-import content from '../static/content'
+import content from '../../static/content'
 import {
 	querySelector,
 	addClass,
 	removeClass,
 	ifStringContArr
-} from '../static/functions'
+} from '../../static/functions'
 
 const Input = ({
 	isInput,

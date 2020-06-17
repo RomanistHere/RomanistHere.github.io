@@ -1,5 +1,7 @@
 import React from "react"
 
+import './Face.css'
+
 const Face = () => {
   	return 	<div className="face">
 	            <span className="hair"></span>

@@ -7,11 +7,11 @@ import {
 
 import './App.css'
 
-import Card from '../components/Card'
+import Card from '../components/Card/Card'
 
-import Offer from '../pages/Offer'
-import Apps from '../pages/Apps'
-import Form from '../pages/Form'
+import Offer from '../pages/Offer/Offer'
+import Apps from '../pages/Apps/Apps'
+import Form from '../pages/Form/Form'
 
 const App = () => {
   return (

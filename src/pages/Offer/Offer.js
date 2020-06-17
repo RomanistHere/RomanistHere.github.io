@@ -2,13 +2,15 @@ import React from "react"
 import { Link } from "react-router-dom"
 import ReactHtmlParser from 'react-html-parser'
 
-import content from '../static/content'
-import CV from '../images/Roman Smunyov CV.pdf'
+import './Offer.css'
 
-import FormIcon from '../images/FormIcon'
-import CVIcon from '../images/CVIcon'
-import ProjectsIcon from '../images/ProjectsIcon'
-import BackIcon from '../images/BackIcon'
+import content from '../../static/content'
+import CV from '../../images/Roman Smunyov CV.pdf'
+
+import FormIcon from '../../images/FormIcon'
+import CVIcon from '../../images/CVIcon'
+import ProjectsIcon from '../../images/ProjectsIcon'
+import BackIcon from '../../images/BackIcon'
 
 const items = content.offer__list.map(({
 	offer__low_title,

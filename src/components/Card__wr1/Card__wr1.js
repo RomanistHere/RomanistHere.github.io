@@ -1,6 +1,6 @@
 import React from "react"
 
-import content from '../static/content'
+import content from '../../static/content'
 
 const list = content.card__info.map((value, index) => {
     return  <li key={index} className="card__string">
