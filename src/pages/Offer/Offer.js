@@ -12,6 +12,8 @@ import CVIcon from '../../images/CVIcon'
 import ProjectsIcon from '../../images/ProjectsIcon'
 import BackIcon from '../../images/BackIcon'
 
+import Typing from '../../components/Typing/Typing'
+
 const items = content.offer__list.map(({
 	offer__low_title,
 	offer__text
@@ -63,6 +65,11 @@ const Offer = () => {
 					<ul className="offer__list">
 						{items}					
 					</ul>
+
+					<Typing 
+		  				text={content.offer__typing}
+		  				className='typing-active offer__typing'
+		  			/>
 	  			</div>
   			</section>
 }

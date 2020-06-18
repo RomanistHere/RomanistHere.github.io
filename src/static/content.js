@@ -36,7 +36,7 @@ const content = {
 		{
 			'isInput': false,
 			'form__lbl': 'Project',
-			'placeholder': 'Web app in sphere of healthcare. Team is 30 person big...',
+			'placeholder': 'Web app in the sphere of healthcare. Team is 30 person big...',
 		},
 		{
 			'isInput': false,
@@ -65,26 +65,26 @@ const content = {
 	'offer__list': [
 		{
 			'offer__low_title': 'Who am I',
-			'offer__text': `I'm a front-end developer with over 4.5 years of experience. In case this text is not up-to-date there is <a href="#" rel="noreferrer" target="_blank" class="link">a link</a> for my CV.`
+			'offer__text': `I'm <span class="offer__word">a front-end developer</span> with over <span class="offer__word">4.5 years of experience</span>. In case this text is not up-to-date there is <a href="#" rel="noreferrer" target="_blank" class="link">a link</a> for my CV.`
 		},
 		{
 			'offer__low_title': 'What am I good at',
 			'offer__text': `I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts. 
 				<br>
 				</br>
-				From technical side, I do really like JavaScript. There are a lot of good frameworks I am good with, like Angular or React, but I like plain JS most. I still care about semantics - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about Web Components and functional programming - I learn it in my spare time. Most complete stack of technologies I know how to use is in <a href="#" rel="noreferrer" target="_blank" class="link">the CV</a>.`
+				From the technical side, I do really like <span class="offer__word">JavaScript</span>. There are a lot of good frameworks I am good with, like <span class="offer__word">Angular or React</span>, but I like plain JS most. I had a lot of projects with <span class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</span>. My <span class="offer__word">CSS3 and HTML5</span> are strong. I still care about <span class="offer__word">semantics</span> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <span class="offer__word">Web Components and functional programming</span> - I learn it in my spare time. Most complete stack of technologies I know how to use is in <a href="#" rel="noreferrer" target="_blank" class="link">the CV</a>.`
 		},
 		{
 			'offer__low_title': 'What do I do now',
-			'offer__text': `I learn functional programming using JS and Elm, design, develop and promote my products and contribute to some other projects.`
+			'offer__text': `I learn functional programming using <span class="offer__word">JS and Elm</span>, design, develop and promote <span class="offer__word">my products and contribute</span> to some other projects.`
 		},
 		{
 			'offer__low_title': 'What am I seeking for',
-			'offer__text': `I would like to apply and improve my knowledges in functional programming, so I'd join the place where it matters. I also plan to relocate to an English speaking country in near future. So I am considering onsite or remote positions with opportunity to relocate.`
+			'offer__text': `I would like to apply and improve my knowledge in <span class="offer__word">functional programming</span>, so I'd join the place where it matters. I also <span class="offer__word">plan to relocate</span> to an English speaking country in near future. So I am considering <span class="offer__word">onsite or remote positions</span> with the opportunity to relocate.`
 		},
 		{
 			'offer__low_title': 'How to reach me',
-			'offer__text': `If you want to show me some good-looking position, the best way is to fill special form just below. Otherwise try this: <a href="https://www.linkedin.com/in/romanist/"  rel="noreferrer" target="_blank" class="link">LinkedIn</a>, <a href="mailto:smilemoon@yandex.ru"  rel="noreferrer" target="_blank" class="link">Email</a>, <a href="https://join.skype.com/invite/o2l5a5Qb2YWn"  rel="noreferrer" target="_blank" class="link">Skype</a>.`
+			'offer__text': `If you want to show me some good-looking positions, the best way would be to fill <span class="offer__word">the special form</span> just below. Otherwise try this: <a href="https://www.linkedin.com/in/romanist/"  rel="noreferrer" target="_blank" class="link">LinkedIn</a>, <a href="mailto:smilemoon@yandex.ru"  rel="noreferrer" target="_blank" class="link">Email</a>, <a href="https://join.skype.com/invite/o2l5a5Qb2YWn"  rel="noreferrer" target="_blank" class="link">Skype</a>.`
 		}
 	],
 	'offer__nav': [
@@ -108,7 +108,8 @@ const content = {
 			'link': '/',
 			'comp': 'Back'
 		},
-	]
+	],
+	'offer__typing': 'You can disable highlighting of key words here',
 }
 
 export default content

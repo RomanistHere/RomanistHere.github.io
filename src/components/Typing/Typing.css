@@ -1,0 +1,61 @@
+@keyframes typing {
+	from { width: 100% }
+	to { width: 0 }
+}
+
+.typing {
+	background-color: inherit;
+	position: absolute;
+	left: 20px;
+	width: 300px;
+	top: 200px;
+	font-family: Consolas, monospace;  
+}
+
+.typing__text {
+	position: absolute;
+	top: 0;
+	margin: 0;
+}
+
+.typing__wrap {
+	margin: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background-color: inherit;
+}
+
+.typing__hide {
+	position: relative; 
+	clear: both; 
+	margin: 0;
+	float: right;
+	width: 0;
+	background-color: inherit;
+	animation: typing 2s steps(30, end);
+	animation-fill-mode: both;
+}
+
+.typing__wrap .typing__hide:nth-child(2) {
+	animation-delay: 2s;
+}
+.typing__wrap .typing__hide:nth-child(3) {
+	animation-delay: 4s;
+}
+.typing__wrap .typing__hide:nth-child(4) {
+	animation-delay: 6s;
+}
+.typing__wrap .typing__hide:nth-child(5) {
+	animation-delay: 8s;
+}
+.typing__wrap .typing__hide:nth-child(6) {
+	animation-delay: 10s;
+}
+.typing__wrap .typing__hide:nth-child(7) {
+	animation-delay: 12s;
+}
+.typing__wrap .typing__hide:nth-child(8) {
+	animation-delay: 14s;
+}
