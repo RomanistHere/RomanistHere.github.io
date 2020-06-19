@@ -9,7 +9,9 @@
 	left: 20px;
 	width: 300px;
 	top: 200px;
-	font-family: Consolas, monospace;  
+	/*font-family: Consolas, monospace;*/
+	font-family: var(--hand-font);
+	line-height: 2;
 }
 
 .typing__text {

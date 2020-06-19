@@ -7,14 +7,14 @@ const Card__wr2 = ({ onMouseOver, onMouseLeave }) => {
                     <Link 
                     	onMouseOver={onMouseOver}
                     	onMouseLeave={onMouseLeave}
-                    	className="card__link" 
+                    	className="card__link link" 
                     	to="/offer">Offer me</Link> a job or mentoring 
                 </li>
                 <li className="card__item">
                     Learn about <Link 
                     	onMouseOver={onMouseOver}
                     	onMouseLeave={onMouseLeave}
-                    	className="card__link" 
+                    	className="card__link link" 
                     	to="/apps">my apps</Link>
                 </li>
             </ul>

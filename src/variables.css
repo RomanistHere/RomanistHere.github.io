@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'handFont';
+    src: local('handFont'), url(./fonts/handFont.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'handFont2';
+    src: local('handFont2'), url(./fonts/handFont2.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'handFont3';
+    src: local('handFont3'), url(./fonts/handFont3.otf) format('truetype');
+}
+
 :root {
     --dark-color1: #3e596c;
     --dark-color2: #000926;
@@ -20,4 +35,10 @@
     /*tom&jerry*/
     --tom-color: #61718e;
     --jerry-color: #6e4532;
+    /*transition*/
+    --def-trs: all ease .3s;
+    /*fonts*/
+    --hand-font: 'handFont';
+    --hand-font2: 'handFont2';
+    --hand-font3: 'handFont3';
 }

@@ -20,23 +20,20 @@ html {
     line-height: 1.59;
     font-weight: 300;
     font-size: 18px;
+    color: var(--yellow-color2);
 
     -webkit-tap-highlight-color: transparent;
-
     background-color: var(--dark-color1);
-
-    color: var(--yellow-color2);
 }
 
 h1,
+h2,
+h3,
+h4,
 h5 {
     margin: 0;
 
     font-weight: normal;
-}
-
-a {
-    color: var(--yellow-color2)
 }
 
 li,
@@ -44,6 +41,11 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none
+}
+
+*::selection {
+    background-color: var(--yellow-color1);
+    color: var(--dark-color2);
 }
 
 .main {
@@ -58,4 +60,14 @@ ul {
     align-items: center;
 
     color: var(--yellow-color2);
+}
+
+.link {
+    color: var(--yellow-color2);
+
+    transition: var(--def-trs);
+}
+
+.link:hover {
+    color: var(--yellow-color1);
 }

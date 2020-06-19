@@ -1,11 +1,15 @@
 .face {
     position: relative;
 
+    --pad-val: 20px;
+
     height: 200px;
     width: 100px;
-    padding: 20px;
+    padding: var(--pad-val);
 
-    margin: -20px 0 0 -5px;
+    margin: -10px 0 0;
+
+    width: calc(100% - var(--pad-val)*2);
 
     --face-transition: all ease .4s;
     --face-color: #ffcd94;

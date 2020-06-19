@@ -38,11 +38,11 @@ const navItems = content.offer__nav.map(({
 }, index) => {
 	const DynamicComp = navCopm[comp]
 	const NewLink = () => link
-		? 	<Link className="offer__link" to={link}>
+		? 	<Link className="offer__link link" to={link}>
 				<DynamicComp className="offer__icon icon" />
 				<span className="offer__link_text">{text}</span>
 			</Link>
-		: 	<a href={CV} target="_blank" rel="noopener noreferrer" className="offer__link">
+		: 	<a href={CV} target="_blank" rel="noopener noreferrer" className="offer__link link">
 				<DynamicComp className="offer__icon icon" />
 				<span className="offer__link_text">{text}</span>
 			</a>

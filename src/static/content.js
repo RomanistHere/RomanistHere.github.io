@@ -6,11 +6,15 @@ const content = {
 			'card__content': 'Roman Smunyov'
 		},
 		{
+			'card__label': 'pseudonym: ',
+			'card__content': 'RomanistHere'
+		},
+		{
 			'card__label': 'location: ',
 			'card__content': 'Minsk, Belarus'
 		},
 		{
-			'card__label': 'position: ',
+			'card__label': 'profession: ',
 			'card__content': 'JavaScript developer'
 		}
 	],
