@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './Card.css'
 
@@ -9,6 +9,8 @@ import Card__wr2 from '../Card__wr2/Card__wr2'
 import content from '../../static/content'
 
 const Card = () => {
+    const [shouldSmile, setSmile] = useState(false);
+
     return  <section className="main">
                 <div className="card">
                     <div className="card__cap">
@@ -18,11 +20,16 @@ const Card = () => {
                     </div>
                     <div className="card__body">
                         <div className="card__photo">
-                            <Face />
+                            <Face 
+                                shouldSmile={shouldSmile}
+                            />
                         </div>
                         <div className="card__info">
                             <Card__wr1 />
-                            <Card__wr2 />
+                            <Card__wr2 
+                                onMouseOver={() => setSmile(true)}
+                                onMouseLeave={() => setSmile(false)}
+                            />
                         </div>
                     </div>
                 </div>

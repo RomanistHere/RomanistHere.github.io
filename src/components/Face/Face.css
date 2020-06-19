@@ -1,23 +1,27 @@
 .face {
     position: relative;
-    border-radius: 10px;
+
     height: 200px;
     width: 100px;
     padding: 20px;
-    float: left;
 
     margin: -20px 0 0 -5px;
+
+    --face-transition: all ease .4s;
+    --face-color: #ffcd94;
 }
 
 .face__front {
     position: absolute;
+
     top: 45%;
     left: 50%;
     width: 84px;
     height: 110px;
     margin-top: calc(-110px / 2);
     margin-left: calc(-84px / 2);
-    background: #ffcd94;
+
+    background: var(--face-color);
     overflow: hidden;
 
     border-radius: 40px 40px 50px 50px;
@@ -25,6 +29,7 @@
 
 .eyes {
     position: absolute;
+
     top: 37%;
     left: 50%;
 }
@@ -33,11 +38,20 @@
 .eyes:after {
     content: "";
     position: absolute;
+
     top: 0;
     width: 0;
     height: 0;
+
     border: 6px solid var(--dark-color3);
     border-radius: 10px;
+
+    transition: var(--face-transition);
+}
+
+.eyes-smiling:before,
+.eyes-smiling:after {
+    transform: translateY(-1px);
 }
 
 .eyes:before {
@@ -50,35 +64,46 @@
 
 .nose {
     position: absolute;
+
     top: 53%;
     left: 50%;
     height: 10px;
     width: 5px;
     margin-left: calc(-5px / 2);
+    transform: rotate(9deg);
+
     border: 2px solid var(--dark-color3);
     border-color: transparent transparent var(--dark-color3) var(--dark-color3);
     border-radius: 0 10px 10px;
-    -webkit-transform: rotate(9deg);
-    -moz-transform: rotate(9deg);
-    -o-transform: rotate(9deg);
-    -ms-transform: rotate(9deg);
-    transform: rotate(9deg);
 }
 
 .mouth {
     position: absolute;
+
     top: 42%;
     left: 50%;
-    width: 45px;
+    width: 30px;
     height: 40px;
-    margin-left: calc((-45px + -2px) / 2);
+    margin-left: calc((-30px + -2px) / 2);
+
     border: 2px solid var(--dark-color3);
-    border-radius: 20px;
+    border-radius: 10px;
+
     border-color: transparent transparent var(--dark-color3) transparent;
+
+    transition: var(--face-transition);
+}
+
+.mouth-smiling {
+    width: 45px;
+    margin-left: calc((-45px + -2px) / 2);
+
+    border-radius: 20px;
 }
 
 .blush {
     position: absolute;
+
     top: 55%;
     left: 50%;
     height: 50px;
@@ -88,14 +113,19 @@
 
 .blush:before,
 .blush:after {
-    -moz-box-shadow: 0 0 15px 8px rgba(230, 158, 132, 0.6);
-    -webkit-box-shadow: 0 0 15px 8px rgba(230, 158, 132, 0.6);
-    box-shadow: 0 0 15px 8px rgba(230, 158, 132, 0.6);
     content: "";
     position: absolute;
     top: 0;
     width: 0;
     height: 0;
+
+    box-shadow: 0 0 15px 8px rgba(230, 158, 132, 0.6);
+    transition: var(--face-transition);
+}
+
+.blush-smiling:before,
+.blush-smiling:after {
+    box-shadow: 0 0 15px 8px rgba(230, 158, 132, 1);
 }
 
 .blush:before {
@@ -108,6 +138,7 @@
 
 .ears {
     position: absolute;
+
     top: 45%;
     left: 50%;
     width: 84px;
@@ -120,30 +151,43 @@
 .ears:after {
     content: "";
     position: absolute;
+    z-index: 10;
+
     top: 44%;
-    background: #ffcd94;
     height: 22px;
     width: 11px;
-    z-index: 10;
+
+    background: var(--face-color);
+    transition: var(--face-transition);
+}
+
+.ears-smiling:before,
+.ears-smiling:after {
+    transform: translateY(-3px);
 }
 
 .ears:before {
     left: -11px;
+
     border-radius: 22px 11px 11px 22px;
 }
 
 .ears:after {
     right: -11px;
+
     border-radius: 11px 22px 22px 11px;
 }
 
 .hair {
     position: absolute;
-    background: var(--jerry-color);
+
     left: 50%;
     top: 33px;
     height: 93px;
     width: calc(84px + 10px);
     margin-left: calc((-84px + -10px) / 2);
+
     border-radius: 48px 48px 40px 40px;
+
+    background: var(--jerry-color);
 }

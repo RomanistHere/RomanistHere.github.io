@@ -59,3 +59,10 @@
 .typing__wrap .typing__hide:nth-child(8) {
 	animation-delay: 14s;
 }
+
+
+
+
+.offer__typing {
+    width: 170px;
+}

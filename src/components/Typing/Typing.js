@@ -3,10 +3,6 @@ import React from "react"
 import './Typing.css'
 
 const Typing = ({text, className}) => {
-  	// return 	<div className=>
-  	// 			<p className="typing__text"></p>
-  	// 			<div className="typing__wrap"></div>
-  	// 		</div>
   	return <div className={`typing ${className}`}>
 				<p className="typing__text">
 					{text}
