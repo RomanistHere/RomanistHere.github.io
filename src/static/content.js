@@ -69,7 +69,7 @@ const content = {
 	'offer__list': [
 		{
 			'offer__low_title': 'Who am I',
-			'offer__text': `I'm <span class="offer__word">a front-end developer</span> with over <span class="offer__word">4.5 years of experience</span>. In case this text is not up-to-date there is <a href="#" rel="noreferrer" target="_blank" class="link">a link</a> for my CV.`
+			'offer__text': `I'm <span class="offer__word">a front-end developer</span> with over <span class="offer__word">4.5 years of experience and bachelor's in math</span>. In case this text is not up-to-date there is <a href="#" rel="noreferrer" target="_blank" class="link">a link</a> for my CV.`
 		},
 		{
 			'offer__low_title': 'What am I good at',
@@ -93,6 +93,11 @@ const content = {
 	],
 	'offer__nav': [
 		{
+			'text': 'Back',
+			'link': '/',
+			'comp': 'Back'
+		},
+		{
 			'text': 'Open CV',
 			'link': '',
 			'comp': 'CV'
@@ -107,13 +112,8 @@ const content = {
 			'link': '/apps',
 			'comp': 'Projects'
 		},
-		{
-			'text': 'Back',
-			'link': '/',
-			'comp': 'Back'
-		},
 	],
-	'offer__typing': 'You can disable highlighting of key words here',
+	'offer__typing': 'You can disable highlighting of key words here ↓',
 }
 
 export default content

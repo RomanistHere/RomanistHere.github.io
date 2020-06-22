@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import ReactHtmlParser from 'react-html-parser'
 
@@ -6,6 +6,10 @@ import './Offer.css'
 
 import content from '../../static/content'
 import CV from '../../images/Roman Smunyov CV.pdf'
+import {
+	querySelectorAll,
+	toggleClass
+} from '../../static/functions'
 
 import FormIcon from '../../images/FormIcon'
 import CVIcon from '../../images/CVIcon'
@@ -13,6 +17,7 @@ import ProjectsIcon from '../../images/ProjectsIcon'
 import BackIcon from '../../images/BackIcon'
 
 import Typing from '../../components/Typing/Typing'
+import Switcher from '../../components/Switcher/Switcher'
 
 const items = content.offer__list.map(({
 	offer__low_title,
@@ -53,11 +58,32 @@ const navItems = content.offer__nav.map(({
 })
 
 const Offer = () => {
+	const [keyWords, setKeyWords] = useState(null)
+	const [shouldShow, setShowTyping] = useState(true)
+
+	const toggleClassAll = items =>
+		items.map(item => toggleClass(item, 'offer__word'))
+
+	const toggleHighlighting = () => {
+		if (!keyWords) {
+			const links = [...querySelectorAll('offer__word')]
+			toggleClassAll(links)
+			setKeyWords(links)
+		} else 
+			toggleClassAll(keyWords)
+	}
+
+	setTimeout(() => setShowTyping(false), 15000);
+
   	return 	<section className="offer">
   				<nav className="offer__nav">
 					<ul className="offer__nav_list">
 						{navItems}
 					</ul>
+
+		  			<Switcher
+		  				toggleHighlighting={toggleHighlighting}
+		  			/>
 	  			</nav>
 
 	  			<div className="offer__wrap">
@@ -68,7 +94,9 @@ const Offer = () => {
 
 					<Typing 
 		  				text={content.offer__typing}
-		  				className='typing-active offer__typing'
+		  				className='offer__typing'
+		  				startDelay='2'
+		  				shouldShow={shouldShow}
 		  			/>
 	  			</div>
   			</section>

@@ -1,9 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 
 import './Typing.css'
 
-const Typing = ({text, className}) => {
-  	return <div className={`typing ${className}`}>
+const Typing = ({ text, className, startDelay, shouldShow }) => {
+	const [isShow, setShow] = useState(false);
+
+	setTimeout(() => setShow(true), startDelay * 1000)
+
+  	return <div className={`typing ${className} ${(isShow && shouldShow) ? 'typing-active' : ''}`}>
 				<p className="typing__text">
 					{text}
 				</p>

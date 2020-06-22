@@ -117,7 +117,7 @@
 }
 
 .offer__title {
-    width: 646px;
+    width: 658px;
     margin: 0 auto;
 
     font-size: 52px;
@@ -132,7 +132,7 @@
 }
 
 .offer__list {
-    width: 646px;
+    width: 658px;
     margin: 0 auto;
 }
 
@@ -141,6 +141,27 @@
     color: var(--hover-color2);
 }
 
+.offer__typing {
+    position: fixed;
+
+    right: 20px;
+    bottom: 100px;
+    width: 160px;
+    height: 110px;
+
+    overflow: hidden;
+
+    font-family: var(--hand-font);
+    line-height: 2;
+}
+
 .offer__word {
     background-color: rgba(110, 69, 50, .3);
+}
+
+.offer__checkbox {
+    position: absolute;
+
+    top: 100px;
+    left: 100px;
 }

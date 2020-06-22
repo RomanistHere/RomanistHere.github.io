@@ -1,0 +1,172 @@
+.rocker {
+  display: inline-block;
+  position: relative;
+
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #888;
+
+  width: 7em;
+  height: 4em;
+
+  overflow: hidden;
+  border-bottom: 0.5em solid var(--hover-color1);
+
+  opacity: .2;
+  transition: var(--offer-transition);
+}
+
+.rocker:hover {
+  opacity: 1;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.rocker-small {
+  font-size: 0.75em;
+
+  margin: 1em;
+}
+
+.rocker::before {
+  content: "";
+  position: absolute;
+
+  top: 0.5em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #999;
+
+  border: 0.5em solid var(--hover-color1);
+  border-bottom: 0;
+}
+
+.rocker input {
+  width: 0;
+  height: 0;
+
+  opacity: 0;
+}
+
+.switch-left,
+.switch-right {
+  cursor: pointer;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 2.5em;
+  width: 3em;
+
+  transition: 0.2s;
+}
+
+.switch-left {
+  height: 2.4em;
+  width: 2.75em;
+  left: 0.85em;
+  bottom: 0.4em;
+  transform: rotate(15deg) skewX(15deg);
+
+  background-color: #ddd;
+}
+
+.switch-right {
+  right: 0.5em;
+  bottom: 0;
+
+  background-color: var(--jerry-color);
+
+  color: #fff;
+}
+
+.switch-left::before,
+.switch-right::before {
+  content: "";
+  position: absolute;
+
+  width: 0.4em;
+  height: 2.45em;
+  bottom: -0.45em;
+
+  background-color: #ccc;
+  transform: skewY(-65deg);
+
+  box-sizing: inherit;
+}
+
+.switch-left::before {
+  left: -0.4em;
+}
+
+.switch-right::before {
+  right: -0.375em;
+  transform: skewY(65deg);
+
+  background-color: transparent;
+}
+
+input:checked + .switch-left {
+  bottom: 0px;
+  left: 0.5em;
+  height: 2.5em;
+  width: 3em;
+  transform: rotate(0deg) skewX(0deg);
+
+  background-color: var(--yellow-color2);
+
+  color: #fff;
+}
+
+input:checked + .switch-left::before {
+  width: 3.0833em;
+
+  background-color: transparent;
+}
+
+input:checked + .switch-left + .switch-right {
+  bottom: 0.4em;
+  right: 0.8em;
+  height: 2.4em;
+  width: 2.75em;
+  transform: rotate(-15deg) skewX(-15deg);
+
+  background-color: #ddd;
+
+  color: #888;
+}
+
+input:checked + .switch-left + .switch-right::before {
+  background-color: #ccc;
+}
+
+input:focus + .switch-left {
+  color: #333;
+}
+
+input:checked:focus + .switch-left {
+  color: #fff;
+}
+
+input:focus + .switch-left + .switch-right {
+  color: #fff;
+}
+
+input:checked:focus + .switch-left + .switch-right {
+  color: #333;
+}
+
+.switcher {
+  position: fixed;
+
+  bottom: 0;
+  right: 20px;
+}
