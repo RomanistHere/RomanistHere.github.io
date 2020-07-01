@@ -2,23 +2,24 @@ import React from "react"
 
 const BackIcon = ({className}) => {
    return <svg 
-		version="1.1" 
-		xmlns="http://www.w3.org/2000/svg" 
-		x="0px" y="0px" 
-		viewBox="0 0 1000 1000" 
-		enableBackground="new 0 0 1000 1000" 
-		height="62"
-		width="46"
-		className={className}
-		>
-		<g>
-			<g>
-				<path 
-                    fill="#1b283b" 
-					d="M889.5,10h-779C55.1,10,10,55.1,10,110.5v779C10,944.9,55.1,990,110.5,990h779c55.4,0,100.5-45.1,100.5-100.5v-779C990,55.1,944.9,10,889.5,10z M939.7,889.5c0,27.7-22.5,50.3-50.3,50.3H110.5c-27.7,0-50.3-22.6-50.3-50.3v-779c0-27.7,22.5-50.3,50.3-50.3h779c27.7,0,50.3,22.6,50.3,50.3L939.7,889.5L939.7,889.5z M574,367.2L441.2,500L574,632.8l-53.3,53.3L387.9,553.3l-0.3,0.4l-53.3-53.3l0.3-0.4l-0.4-0.4l53.3-53.3l0.4,0.4l132.8-132.8L574,367.2z"/>
-			</g>
-		</g>
-	</svg>
+			version="1.2" 
+			baseProfile="tiny" 
+			x="0px" y="0px" 
+			viewBox="0 0 70 80" 
+			overflow="visible" 
+			width="40"
+			className={className}>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="1" y1="2.5" x2="21" y2="2.5"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="69" y1="2.5" x2="49" y2="2.5"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="2.5" y1="2" x2="2.5" y2="77"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="1" y1="77.5" x2="21" y2="77.5"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="49" y1="77.5" x2="69" y2="77.5"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="67.5" y1="2" x2="67.5" y2="77"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="34.5" y1="20.5" x2="14.5" y2="40.5"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="35.5" y1="59.5" x2="15" y2="39"/>
+			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="25.5" y1="39.5" x2="53.5" y2="39.5"/>
+		</svg>
+
 }
 
 export default BackIcon

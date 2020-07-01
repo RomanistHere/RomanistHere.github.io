@@ -5,6 +5,7 @@ import ReactHtmlParser from 'react-html-parser'
 import './Offer.css'
 
 import content from '../../static/content'
+import manage from '../../static/manage'
 import CV from '../../images/Roman Smunyov CV.pdf'
 import {
 	querySelectorAll,
@@ -62,18 +63,21 @@ const Offer = () => {
 	const [shouldShow, setShowTyping] = useState(true)
 
 	const toggleClassAll = items =>
-		items.map(item => toggleClass(item, 'offer__word'))
+		items.map(item => toggleClass(item, 'offer__word-hide'))
 
 	const toggleHighlighting = () => {
 		if (!keyWords) {
 			const links = [...querySelectorAll('offer__word')]
 			toggleClassAll(links)
 			setKeyWords(links)
+			setShowTyping(false)
 		} else 
 			toggleClassAll(keyWords)
 	}
 
-	setTimeout(() => setShowTyping(false), 15000);
+	const { offer_switcher__hide_time } = manage
+
+	setTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time);
 
   	return 	<section className="offer">
   				<nav className="offer__nav">

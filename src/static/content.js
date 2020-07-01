@@ -1,5 +1,5 @@
 const content = {
-	'card__title': 'Contact ID',
+	'card__title': 'Contact Me',
 	'card__info': [
 		{
 			'card__label': 'name: ',

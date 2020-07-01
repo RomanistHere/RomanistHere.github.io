@@ -157,6 +157,12 @@
 
 .offer__word {
     background-color: rgba(110, 69, 50, .3);
+
+    transition: background-color ease .7s 0s;
+}
+
+.offer__word-hide {
+    background-color: transparent;
 }
 
 .offer__checkbox {

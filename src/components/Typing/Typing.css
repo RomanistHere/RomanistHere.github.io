@@ -8,10 +8,14 @@
 	opacity: 0;
 
 	background-color: inherit;
+	
+	transition: all ease 1s;
 }
 
 .typing-active {
 	opacity: 1;
+
+	transition: unset;
 }
 
 .typing__text {
