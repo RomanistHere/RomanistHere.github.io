@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import ReactHtmlParser from 'react-html-parser'
 
@@ -75,9 +75,22 @@ const Offer = () => {
 			toggleClassAll(keyWords)
 	}
 
-	const { offer_switcher__hide_time } = manage
+	const { 
+		offer_switcher__hide_time,
+		offer_switcher__show_time,
+	} = manage
+	
 
-	setTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time);
+	useEffect(() => {
+		const typingTimeID = setTimeout(
+			() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
+		
+		return () => {
+			setShowTyping(false)
+			clearTimeout(typingTimeID)
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [])
 
   	return 	<section className="offer">
   				<nav className="offer__nav">
@@ -99,7 +112,7 @@ const Offer = () => {
 					<Typing 
 		  				text={content.offer__typing}
 		  				className='offer__typing'
-		  				startDelay='2'
+		  				startDelay={offer_switcher__show_time}
 		  				shouldShow={shouldShow}
 		  			/>
 	  			</div>
