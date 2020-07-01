@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import ReactHtmlParser from 'react-html-parser'
 
@@ -9,7 +9,8 @@ import manage from '../../static/manage'
 import CV from '../../images/Roman Smunyov CV.pdf'
 import {
 	querySelectorAll,
-	toggleClass
+	toggleClass,
+	useTimeout
 } from '../../static/functions'
 
 import FormIcon from '../../images/FormIcon'
@@ -80,17 +81,7 @@ const Offer = () => {
 		offer_switcher__show_time,
 	} = manage
 	
-
-	useEffect(() => {
-		const typingTimeID = setTimeout(
-			() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
-		
-		return () => {
-			setShowTyping(false)
-			clearTimeout(typingTimeID)
-		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [])
+	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
 
   	return 	<section className="offer">
   				<nav className="offer__nav">
