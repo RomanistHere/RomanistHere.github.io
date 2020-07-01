@@ -26,11 +26,11 @@ const CVIcon = ({className}) => {
                c0.79-1.62,1.99-2.1,5.04-2.02C26.04,9.84,26.31,9.89,27.19,10.32z M21.45,24.91c1.85,0.77,3.49,0.72,5.5-0.16l0.94-0.43l3.95,2.28
                l3.95,2.26v1.43c0,1.56-0.31,2.64-0.84,2.92c-0.39,0.21-21.56,0.21-21.96,0c-0.52-0.28-0.84-1.36-0.84-2.92v-1.43l3.91-2.25
                c2.13-1.25,4-2.22,4.14-2.18S20.89,24.68,21.45,24.91z"/>
-               <line fill="#1B283B" stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="45.5" y1="22.5" x2="61.5" y2="22.5"/>
-               <line fill="#1B283B" stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="45.5" y1="33.5" x2="61.5" y2="33.5"/>
-               <line fill="#1B283B" stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="9.5" y1="45.5" x2="61.5" y2="45.5"/>
-               <line fill="#1B283B" stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="9.5" y1="56.5" x2="61.5" y2="56.5"/>
-               <line fill="#1B283B" stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="9.5" y1="67.5" x2="61.5" y2="67.5"/>
+               <line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="45.5" y1="22.5" x2="61.5" y2="22.5"/>
+               <line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="45.5" y1="33.5" x2="61.5" y2="33.5"/>
+               <line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="9.5" y1="45.5" x2="61.5" y2="45.5"/>
+               <line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="9.5" y1="56.5" x2="61.5" y2="56.5"/>
+               <line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="9.5" y1="67.5" x2="61.5" y2="67.5"/>
             </svg>
 
 }

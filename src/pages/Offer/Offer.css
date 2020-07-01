@@ -79,21 +79,36 @@
 .offer__nav_item,
 .offer__icon,
 .offer__icon path,
+.offer__icon line,
+.offer__icon circle,
 .offer__icon rect {
     transition: var(--offer-transition);
 }
 
 .offer__nav:hover .offer__icon path,
 .offer__nav:hover .offer__icon g,
+.offer__nav:hover .offer__icon line {
+    fill: var(--hover-color1);
+    stroke: var(--hover-color1);
+}
+
+.offer__nav:hover .offer__icon circle,
 .offer__nav:hover .offer__icon rect {
-    fill: var(--hover-color1)
+    stroke: var(--hover-color1);
 }
 
 .offer__nav_item:hover .offer__icon path,
 .offer__nav_item:hover .offer__icon g,
-.offer__nav_item:hover .offer__icon rect {
-    fill: var(--hover-color2)
+.offer__nav_item:hover .offer__icon line {
+    fill: var(--hover-color2);
+    stroke: var(--hover-color2);
 }
+
+.offer__nav_item:hover .offer__icon circle,
+.offer__nav_item:hover .offer__icon rect {
+    stroke: var(--hover-color2);
+}
+
 
 .offer__nav:hover .offer__link_text {
     color: var(--hover-color1);
@@ -106,7 +121,7 @@
 .offer__nav_item {
     cursor: pointer;
 
-    padding: 0 20px;
+    padding: 0 24px;
     height: 100%;
 }
 
