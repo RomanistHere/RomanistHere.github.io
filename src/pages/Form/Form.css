@@ -9,6 +9,12 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
+    background-color: inherit;
+}
+
+.form_section {
+    background-color: inherit;
 }
 
 .form__lbl {
@@ -96,4 +102,39 @@
 
 .form__mess-show {
     opacity: 1;
+}
+
+.form__typing {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+    width: 140px;
+    height: 110px;
+
+    overflow: hidden;
+
+    font-family: var(--hand-font);
+    line-height: 2;
+}
+
+.form__typing_1 {
+    right: -180px;
+
+    transform: rotate(10deg);
+}
+
+.form__typing_2 {
+    left: -200px;
+    top: 60px;
+    right: auto;
+    width: 150px;
+
+    transform: rotate(-10deg);
+}
+
+.form__typing_3 {
+    left: -180px;
+    right: auto;
+    top: 200px;
 }

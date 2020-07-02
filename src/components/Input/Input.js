@@ -58,7 +58,16 @@ const Input = ({
 	const onFocus = (e) => {
 		const inpName = e.target.name
 		focusInput(inpName)
-	}	
+	}
+
+	const onKeyDown = (e) => {
+		if (e.key === "Tab") {
+			// tabPressed
+			if (e.shiftKey) {
+				// shift plus tab pressed
+			}
+		}
+	}
 
     return isInput 
     		? <input 
@@ -69,6 +78,7 @@ const Input = ({
     			onFocus={onFocus}
     			onBlur={onBlur}
     			onKeyUp={onKeyUp}
+    			onKeyDown={onKeyDown}
 			/>
     		: <textarea 
     			className="form__txtarea form__data" 
@@ -76,6 +86,7 @@ const Input = ({
     			name={name}
     			onFocus={onFocus}
     			onBlur={onBlur}
+    			onKeyDown={onKeyDown}
 			></textarea>
 }
 

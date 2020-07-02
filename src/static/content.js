@@ -65,6 +65,11 @@ const content = {
 		'Salary': ['1000', '2000', '1500', '2500'],
 	},
 	'formAction': 'https://formspree.io/xdowzzgv',
+	'form__typing_1': 'Best way to fill would be like in example',
+	'form__typing_2': 'You can jump to the next field by pressing tab',
+	'form__typing_3': 'And return by pressing shift + tab',
+	'form__typing_4': 'It works for every website',
+	'form__typing_5': 'You can pull and stretch it here to expand :)',
 	'offer__title': 'Summary',
 	'offer__list': [
 		{
