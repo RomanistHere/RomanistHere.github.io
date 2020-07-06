@@ -8,10 +8,7 @@ import Typing from '../../components/Typing/Typing'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import { 
-	useTimeout,
-	removeElem
-} from '../../static/functions'
+import { removeElem } from '../../static/functions'
 
 const formInputs = ({ inpFocused, nextLvl }) => content.form__info.map(({
 	form__lbl,
@@ -62,6 +59,7 @@ const Form = () => {
 	      }
 	    }
 	    console.log(data)
+	    nextLvl(7)
 	    // xhr.send(data)
 	}
 
@@ -69,15 +67,23 @@ const Form = () => {
 	// 3 user uses tab => hide second mess and show third
 	// 4 user use shift+tab => hide third and show 4th
 	// 5 user focus first textarea => show 5th mess and hide 4th
+	// 6 user focus last textarea => show 6th message
 	// 6 user submits => show last mess
 
 	const {
 		form__typing_5__hide_time,
+		forbidShow_time,
 	} = manage
 	
 	const [shouldShow, setShowTyping] = useState(1)
 	const [inpFocusedTimes, changeFocusedTimes] = useState(1)
-	const [shownLvl, show] = useState([1, 3, 6])
+	const [shownLvl, show] = useState([1, 3])
+	const [showNext, setShowNext] = useState(true)
+
+	const forbidShow = () => {
+		setShowNext(false)
+		setTimeout(() => (showNext && setShowNext(true)), forbidShow_time)
+	}
 
 	const inpFocused = inpName => {
 		changeFocusedTimes(inpFocusedTimes => inpFocusedTimes + 1)
@@ -87,6 +93,9 @@ const Form = () => {
 
 		if (inpName === content.form__info[3].form__lbl)
 			nextLvl(5)
+
+		if (inpName === content.form__info[6].form__lbl)
+			nextLvl(6)
 	}
 
 	const changeShow = arr => {
@@ -94,7 +103,22 @@ const Form = () => {
 	}
 
 	const nextLvl = newLvlNumb => {
+		if (!showNext) 
+			return
+
 		const shownLevels = shownLvl
+
+		if ((newLvlNumb === 4) && !shownLvl.includes(3)) {
+			changeShow([...shownLevels, 3, 4])
+			return
+		}
+		console.log(newLvlNumb)
+
+		if ((newLvlNumb === 2) ||
+			// (newLvlNumb === 3) ||
+			// (newLvlNumb === 4) ||
+			(newLvlNumb === 5))
+			forbidShow()
 
 		if (!shownLvl.includes(newLvlNumb)) {
 			changeShow([...shownLevels, newLvlNumb])
@@ -107,7 +131,7 @@ const Form = () => {
 		if ((newLvlNumb === 3) && shownLvl.includes(newLvlNumb))
 			changeShow([...shownLevels, 2, 4])
 
-		if (newLvlNumb === 5)
+		if ((newLvlNumb === 5) && !shownLvl.includes(newLvlNumb))
 			setTimeout(() => setShowTyping(0), form__typing_5__hide_time)
 	}
 

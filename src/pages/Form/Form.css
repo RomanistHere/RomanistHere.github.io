@@ -14,6 +14,11 @@
 }
 
 .form_section {
+    position: relative;
+
+    min-height: 750px;
+    height: 100%;
+
     background-color: inherit;
 }
 
@@ -104,8 +109,9 @@
     transition: all ease .5s .3s;
 
     opacity: 0;
-    /*color: var(--gray-color);*/
+
     font-style: italic;
+    font-size: 90%;
 }
 
 .form__mess-show {
@@ -128,7 +134,6 @@
 
 .form__typing_1 {
     right: -180px;
-
     transform: rotate(10deg);
 }
 
@@ -137,7 +142,6 @@
     top: 60px;
     right: auto;
     width: 150px;
-
     transform: rotate(-10deg);
 }
 
@@ -150,7 +154,10 @@
 .form__typing_4 {
     left: -200px;
     right: auto;
-    top: 50px;
+    top: 0;
+    width: 175px;
+    height: 140px;
+    transform: rotate(-10deg);
 }
 
 .form__typing_5 {
@@ -189,4 +196,21 @@
     50% { 
         transform: translateX(10px);
     }
+}
+
+.form__typing_6 {
+    right: -280px;
+    top: auto;
+    bottom: 20px;
+    width: 200px;
+    height: 150px;
+    transform: rotate(10deg);
+}
+
+.form__typing_7 {
+    right: 0;
+    top: auto;
+    bottom: -90px;
+    width: 300px;
+    height: 80px;
 }
