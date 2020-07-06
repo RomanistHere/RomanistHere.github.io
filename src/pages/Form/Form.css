@@ -60,6 +60,8 @@
 .form__txtarea {
     height: 48px;
     margin-bottom: -4px;
+
+    z-index: 1;
 }
 
 .form__focus {
@@ -90,14 +92,20 @@
 .form__mess {
     position: absolute;
 
-    left: 100%;
+    /*left: 100%;
     width: 100%;
-    bottom: 0;
+    bottom: 0;*/
+    right: 0;
+    width: auto;
+    top: 0;
+
     padding: 1px 2px 1px 7px;
 
     transition: all ease .5s .3s;
 
     opacity: 0;
+    /*color: var(--gray-color);*/
+    font-style: italic;
 }
 
 .form__mess-show {
@@ -136,5 +144,49 @@
 .form__typing_3 {
     left: -180px;
     right: auto;
-    top: 200px;
+    top: 160px;
+}
+
+.form__typing_4 {
+    left: -200px;
+    right: auto;
+    top: 50px;
+}
+
+.form__typing_5 {
+    right: -180px;
+    top: 194px;
+
+    padding-left: 35px;
+}
+
+.form__typing_5::before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+
+    width: 0; 
+    height: 0; 
+    left: 0;
+    top: calc(50% - 10px);
+    
+    border-style: solid;
+    border-width: 10px 16px 10px 0;
+    border-color: transparent var(--yellow-color2) transparent transparent; 
+
+    animation: bounce 2s ease-out infinite;
+    transition: 1s linear 3s;
+}
+
+.typing-active.form__typing_5::before {
+    opacity: 1;
+}
+
+@keyframes bounce {
+    0%, 10%, 90%, 100% { 
+        transform: translateX(0);
+    }
+    50% { 
+        transform: translateX(10px);
+    }
 }

@@ -23,19 +23,19 @@ const content = {
 			'isInput': true,
 			'form__lbl': 'Position',
 			'placeholder': 'Front-end developer',
-			'form__mess': ' - unlikely:('
+			'form__mess': ' unlikely:('
 		},
 		{
 			'isInput': true,
 			'form__lbl': 'Where',
 			'placeholder': 'Norway, Oslo. Onsite',
-			'form__mess': ' - маловероятно)'
+			'form__mess': ' маловероятно)'
 		},
 		{
 			'isInput': true,
 			'form__lbl': 'Salary',
-			'placeholder': '5 000 - 7 000 USD',
-			'form__mess': ' - meh, too low:('
+			'placeholder': '5 000 - 7 000 USD Gross monthly',
+			'form__mess': `that's too low:(`
 		},
 		{
 			'isInput': false,
@@ -58,18 +58,20 @@ const content = {
 			'placeholder': 'Contact me back via email: example@gmal.com or LinkedIn...',
 		},
 	],
-	'form__mess': ' - Field is almost empty',
+	'form__mess': ' This field is almost empty',
 	'mehWords': {
 		'Where': ['belarus', 'russia', 'ukraine', 'бела', 'россия', 'укра', 'minsk', 'минск'],
-		'Position': ['back', 'бэк', 'full'],
+		'Position': ['back', 'бэк', 'full', 'фул'],
 		'Salary': ['1000', '2000', '1500', '2500'],
 	},
 	'formAction': 'https://formspree.io/xdowzzgv',
-	'form__typing_1': 'Best way to fill would be like in example',
-	'form__typing_2': 'You can jump to the next field by pressing tab',
-	'form__typing_3': 'And return by pressing shift + tab',
-	'form__typing_4': 'It works for every website',
-	'form__typing_5': 'You can pull and stretch it here to expand :)',
+	'form__typings': [
+		'Best way to fill would be like in example',
+		'You can jump to the next field by pressing tab',
+		'And return by pressing shift + tab',
+		'It works for every website',
+		'You can pull and stretch it here to expand :)',
+	],
 	'offer__title': 'Summary',
 	'offer__list': [
 		{

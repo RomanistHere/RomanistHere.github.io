@@ -18,6 +18,9 @@ const toggleClass = (selector, className) =>
 const ifStringContArr = (string, arr) => 
 	arr.some(item => string.toLowerCase().includes(item))
 
+const removeElem = (arr, elem) =>
+  arr = arr.filter(item => item !== elem)
+
 const useInterval = (callback, delay) => {
   const savedCallback = useRef()
 
@@ -63,6 +66,7 @@ export {
 	ifStringContArr,
 	querySelectorAll,
 	toggleClass,
+  removeElem,
 	useInterval,
 	useTimeout
 }

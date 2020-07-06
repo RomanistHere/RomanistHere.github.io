@@ -11,6 +11,8 @@ import {
 const Input = ({
 	isInput,
 	placeholder,
+	inpFocused,
+	nextLvl,
 	name
 }) => {
 	const showMess = (bool, inpName) => {
@@ -41,6 +43,7 @@ const Input = ({
 		const mess = querySelector(inpName)
 		removeClass(mess, 'form__mess-show')
 		removeClass(warning, 'form__mess-show')
+		inpFocused(inpName)
 	}
 
 	const onKeyUp = (e) => {
@@ -62,10 +65,10 @@ const Input = ({
 
 	const onKeyDown = (e) => {
 		if (e.key === "Tab") {
-			// tabPressed
-			if (e.shiftKey) {
-				// shift plus tab pressed
-			}
+			if (e.shiftKey)
+				nextLvl(4)
+			else
+				nextLvl(3)
 		}
 	}
 

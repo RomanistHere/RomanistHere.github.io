@@ -4,7 +4,7 @@ import { useTimeout } from '../../static/functions'
 
 import './Typing.css'
 
-const Typing = ({ text, className, startDelay, shouldShow }) => {
+const Typing = ({ text, className, startDelay = 0, shouldShow }) => {
 	const [isShow, setShow] = useState(false);
 
 	useTimeout(() => setShow(true), startDelay)

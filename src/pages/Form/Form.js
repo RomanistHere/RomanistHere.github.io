@@ -8,9 +8,12 @@ import Typing from '../../components/Typing/Typing'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import { useTimeout } from '../../static/functions'
+import { 
+	useTimeout,
+	removeElem
+} from '../../static/functions'
 
-const formInputs = content.form__info.map(({
+const formInputs = ({ inpFocused, nextLvl }) => content.form__info.map(({
 	form__lbl,
 	isInput,
 	placeholder,
@@ -21,11 +24,23 @@ const formInputs = content.form__info.map(({
 				<Input 
 					isInput={isInput} 
 					placeholder={placeholder} 
+					inpFocused={inpFocused}
+					nextLvl={nextLvl}
 					name={form__lbl} />
 				<span className="form__focus"></span>
 				<span className={`form__mess ${form__lbl.toLowerCase()}`}>{form__mess}</span>
 				<span className={`form__mess ${form__lbl.toLowerCase()}_warn`}>{content.form__mess}</span>
 			</div>
+})
+
+const formTypings = (shouldShow) => content.form__typings.map((item, index) => {
+	return  <Typing
+				key={index}
+				text={content.form__typings[index]}
+				className={`form__typing form__typing_${index + 1}`}
+				startDelay={manage[`form__typing_${index + 1}__show_time`]}
+				shouldShow={shouldShow === (index + 1) ? true : false}
+			/>
 })
 
 const Form = () => {
@@ -50,21 +65,51 @@ const Form = () => {
 	    // xhr.send(data)
 	}
 
-	const [shouldShow, setShowTyping] = useState(true)
+	// 2 user focus second input => display second message and hide first one
+	// 3 user uses tab => hide second mess and show third
+	// 4 user use shift+tab => hide third and show 4th
+	// 5 user focus first textarea => show 5th mess and hide 4th
+	// 6 user submits => show last mess
 
 	const {
-		form__typing_1__show_time,
-		form__typing_2__show_time,
-		form__typing_3__show_time,
+		form__typing_5__hide_time,
 	} = manage
-
-	// user focus second input => display second message and hide first one
-	// user uses tab => hide second mess and show third
-	// user use shift+tab => hide third
-	// user focus first textarea => show 4th mess
-	// user submits => show last mess
 	
-	// useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
+	const [shouldShow, setShowTyping] = useState(1)
+	const [inpFocusedTimes, changeFocusedTimes] = useState(1)
+	const [shownLvl, show] = useState([1, 3, 6])
+
+	const inpFocused = inpName => {
+		changeFocusedTimes(inpFocusedTimes => inpFocusedTimes + 1)
+
+		if (inpFocusedTimes === 2)
+			nextLvl(2)
+
+		if (inpName === content.form__info[3].form__lbl)
+			nextLvl(5)
+	}
+
+	const changeShow = arr => {
+		show([...new Set(arr)])
+	}
+
+	const nextLvl = newLvlNumb => {
+		const shownLevels = shownLvl
+
+		if (!shownLvl.includes(newLvlNumb)) {
+			changeShow([...shownLevels, newLvlNumb])
+			setShowTyping(newLvlNumb)
+		}
+
+		if ((newLvlNumb === 2) && !shownLvl.includes(4))
+			changeShow(removeElem(shownLevels, 3))
+
+		if ((newLvlNumb === 3) && shownLvl.includes(newLvlNumb))
+			changeShow([...shownLevels, 2, 4])
+
+		if (newLvlNumb === 5)
+			setTimeout(() => setShowTyping(0), form__typing_5__hide_time)
+	}
 
   	return 	<section className="form_section">
 				<form 
@@ -74,31 +119,16 @@ const Form = () => {
 				  	autoComplete="off"
 				  	onSubmit={onSubmit}
 				>
-					{formInputs}
+					{formInputs({
+						inpFocused,
+						nextLvl
+					})}
+
 					<button 
 						className="form__button"
 					>Submit</button>
 
-					<Typing 
-		  				text={content.form__typing_1}
-		  				className='form__typing form__typing_1'
-		  				startDelay={form__typing_1__show_time}
-		  				shouldShow={shouldShow}
-		  			/>
-
-		  			<Typing 
-		  				text={content.form__typing_2}
-		  				className='form__typing form__typing_2'
-		  				startDelay={form__typing_2__show_time}
-		  				shouldShow={shouldShow}
-		  			/>
-
-		  			<Typing 
-		  				text={content.form__typing_3}
-		  				className='form__typing form__typing_3'
-		  				startDelay={form__typing_3__show_time}
-		  				shouldShow={shouldShow}
-		  			/>
+					{formTypings(shouldShow)}
 				</form>
 
 				
