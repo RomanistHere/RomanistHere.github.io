@@ -71,7 +71,7 @@ const content = {
 		'And return by pressing shift + tab',
 		`It works for every website, just don't forget to fill in all the fields!`,
 		'You can pull and stretch it here to expand :)',
-		'Usually I reply within a day, so write to me again if there is silence for a week:)',
+		'Usually I reply within a day, so write to me again if there is no answer for a week:)',
 		`Thank you, I'm going to contact you soon. Have a great day!`,
 	],
 	'offer__title': 'Summary',

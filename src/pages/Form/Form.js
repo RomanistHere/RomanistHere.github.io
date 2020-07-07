@@ -68,7 +68,7 @@ const Form = () => {
 	// 4 user use shift+tab => hide third and show 4th
 	// 5 user focus first textarea => show 5th mess and hide 4th
 	// 6 user focus last textarea => show 6th message
-	// 6 user submits => show last mess
+	// 7 user submits => show last mess
 
 	const {
 		form__typing_5__hide_time,
@@ -112,15 +112,15 @@ const Form = () => {
 			changeShow([...shownLevels, 3, 4])
 			return
 		}
-		console.log(newLvlNumb)
-
-		if ((newLvlNumb === 2) ||
-			// (newLvlNumb === 3) ||
-			// (newLvlNumb === 4) ||
-			(newLvlNumb === 5))
-			forbidShow()
 
 		if (!shownLvl.includes(newLvlNumb)) {
+			if ((newLvlNumb === 2) ||
+				(newLvlNumb === 3) ||
+				(newLvlNumb === 4) ||
+				(newLvlNumb === 5) ||
+				(newLvlNumb === 6))
+				forbidShow()
+
 			changeShow([...shownLevels, newLvlNumb])
 			setShowTyping(newLvlNumb)
 		}
@@ -132,7 +132,7 @@ const Form = () => {
 			changeShow([...shownLevels, 2, 4])
 
 		if ((newLvlNumb === 5) && !shownLvl.includes(newLvlNumb))
-			setTimeout(() => setShowTyping(0), form__typing_5__hide_time)
+			setTimeout(() => nextLvl(0), form__typing_5__hide_time)
 	}
 
   	return 	<section className="form_section">
