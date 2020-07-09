@@ -35,6 +35,8 @@
     /*tom&jerry*/
     --tom-color: #61718e;
     --jerry-color: #6e4532;
+    /*pink*/
+    --pink: #ffc0cb;
     /*transition*/
     --def-trs: all ease .3s;
     /*fonts*/

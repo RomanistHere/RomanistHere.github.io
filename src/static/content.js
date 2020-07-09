@@ -123,6 +123,45 @@ const content = {
 		},
 	],
 	'offer__typing': 'You can disable highlighting of key words here ↓',
+	'apps_page': {
+		1: {
+			name: 'PopUpOFF',
+			apps__desc: {
+				Description: `Browser extension that eliminates all sort of popups, layouts, overlays and notifications from your screen.`,
+				Status: `- Comfortable and ready for everyday use; <br/>
+		  					- Some of features still is in development;`,
+		  		Details: `- Open source; <br/>
+		  					- Free(no pay content); <br/>
+		  					- MutationObserver API;`,
+		  		Platforms: `Chrome, Firefox, Edge`,
+		  		'My thanks to': `Igor Denisevich, Polina Kasterava`
+			}
+		},
+		2: {
+			name: 'Stylify',
+			apps__desc: {
+				Description: `Browser extension that fixes how "bad" websites look. Makes content readable.`,
+				Status: `- Works fine but not comfortable for everyday use; <br/>
+							- Needs redesign; <br/>
+		  					- In development;`,
+		  		Details: `- Open source; <br/>
+		  					- Free(no pay content);`,
+		  		Platforms: `Chrome. Soon Firefox and Edge`
+			}
+		},
+		3: {
+			name: 'PLAS',
+			apps__desc: {
+				Description: `Browser extension that adds search field to YouTube. Search within playlist.`,
+				Status: `- Works fine but not comfortable for everyday use; <br/>
+							- Needs redesign; <br/>
+		  					- In development;`,
+		  		Details: `- Open source; <br/>
+		  					- Free(no pay content);`,
+		  		Platforms: `Chrome. Soon Firefox and Edge`
+			}
+		},
+	}
 }
 
 export default content
