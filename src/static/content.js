@@ -135,7 +135,7 @@ const content = {
 		  					- Non-commercial. No pay content; <br/>
 		  					- MutationObserver API;`,
 		  		Platforms: `Chrome, Firefox, Edge`,
-		  		'My thanks to': `Igor Denisevich, Polina Kasterava`
+		  		'My thanks to': `Igor Denisevich, Polina Kasterava, Whatatay T, Elizabeth Portman, Poco Diablo`
 			}
 		},
 		2: {
@@ -167,15 +167,18 @@ const content = {
 	}, 
 	apps_page__links: {
 		1: {
-			0: 'https://chrome.google.com/webstore/detail/popupoff-popup-blocker/ifnkdbpmgkdbfklnbfidaackdenlmhgh',
-			1: 'https://addons.mozilla.org/en-US/firefox/addon/popupoff/',
-			2: 'https://microsoftedge.microsoft.com/addons/detail/elacdkdmimelpnkbccdanmnabhajdccm',
+			0: 'https://github.com/RomanistHere/PopUpOFF',
+			1: 'https://chrome.google.com/webstore/detail/popupoff-popup-blocker/ifnkdbpmgkdbfklnbfidaackdenlmhgh',
+			2: 'https://addons.mozilla.org/en-US/firefox/addon/popupoff/',
+			3: 'https://microsoftedge.microsoft.com/addons/detail/elacdkdmimelpnkbccdanmnabhajdccm',
 		},
 		2: {
-			0: 'https://chrome.google.com/webstore/detail/stylify-unuglify/knnnacgjjmlljheglipemamhdlckpfjc',
+			0: 'https://github.com/RomanistHere/StyLIFy',
+			1: 'https://chrome.google.com/webstore/detail/stylify-unuglify/knnnacgjjmlljheglipemamhdlckpfjc',
 		},
 		3: {
-			0: 'https://chrome.google.com/webstore/detail/plas-playlist-search/khnbkjjlffefikjilbngeoffaiojpboc',
+			0: 'https://github.com/RomanistHere/YouTube-PLAS-Website',
+			1: 'https://chrome.google.com/webstore/detail/plas-playlist-search/khnbkjjlffefikjilbngeoffaiojpboc',
 		}
 	}
 }

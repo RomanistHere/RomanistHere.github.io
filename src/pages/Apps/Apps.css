@@ -115,7 +115,7 @@
 .apps__desc {
   width: calc(100% - var(--slider-width));
   height: calc(100% - var(--header-height));
-  padding: 0 50px;
+  padding: 0 150px 0 50px;
 
   box-sizing: border-box;
 }
@@ -275,7 +275,7 @@
   position: fixed;
   display: flex;
   flex-direction: column-reverse;
-  
+
   bottom: 60px;
   right: 20px;
 }

@@ -7,16 +7,19 @@ import Typing from '../../components/Typing/Typing'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
+
 import chromeLogo from '../../images/chromeLogo.svg'
 import firefoxLogo from '../../images/firefoxLogo.svg'
 import edgeLogo from '../../images/edgeLogo.svg'
+import gitLogo from '../../images/gitLogo.svg'
 
 import './Apps.css'
 
 const logos = {
-	0: chromeLogo,
-	1: firefoxLogo,
-	2: edgeLogo,
+	0: gitLogo,
+	1: chromeLogo,
+	2: firefoxLogo,
+	3: edgeLogo,
 }
 
 const browsers = manage.browsers
