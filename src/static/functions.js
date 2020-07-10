@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const querySelector = name => 
 	document.querySelector(`.${name?.toLowerCase()}`)
@@ -59,6 +59,26 @@ const useTimeout = (callback, delay) => {
   return timeoutRef
 }
 
+const useViewport = () => {
+  const [width, setWidth] = useState(window.innerWidth)
+  // Add a second state variable "height" and default it to the current window height
+  const [height, setHeight] = useState(window.innerHeight)
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWidth(window.innerWidth)
+      // Set the height in state as well as the width
+      setHeight(window.innerHeight)
+    }
+
+    window.addEventListener("resize", handleWindowResize)
+    return () => window.removeEventListener("resize", handleWindowResize)
+  }, [])
+
+  // Return both the height and width
+  return { width, height }
+}
+
 export {
 	querySelector,
 	addClass,
@@ -68,5 +88,6 @@ export {
 	toggleClass,
   removeElem,
 	useInterval,
-	useTimeout
+	useTimeout,
+  useViewport,
 }

@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Tilty from "react-tilty"
 
 import content from '../../static/content'
+import { useViewport } from '../../static/functions'
 import logo1 from '../../images/logo-1.png'
 import logo2 from '../../images/logo-2.png'
 import logo3 from '../../images/logo-3.png'
@@ -17,27 +18,34 @@ import 'swiper/components/effect-coverflow/effect-coverflow.scss'
 
 SwiperCore.use([Navigation, Pagination, A11y, EffectCoverflow])
 
-const covSettings = {
-	rotate: 30,
-	stretch: 10,
-	depth: 50,
-	modifier: 1,
-	slideShadows: false,
+const breakPoint = 1359
+
+const covSettings = (width) => {
+	const stretch = width < breakPoint ? 10 : 0
+
+	return {
+		rotate: 30,
+		stretch: stretch,
+		depth: 50,
+		modifier: 1,
+		slideShadows: false,
+	}
 }
 
-// const covSettings = {
-// 	rotate: 50,
-// 	stretch: 0,
-// 	depth: 100,
-// 	modifier: 1,
-// 	slideShadows: false,
-// }
+const getLogo = (index)  => {
+	const logos = {
+		0: logo1,
+		1: logo2,
+		2: logo3
+	}
+	return logos[index]
+}
 
 const tiltSettings = {
 	glare: true,
 	"max-glare": 0.7,
 	gyroscope: false,
-	scale: 1.1
+	scale: 1
 }
 
 const Slider = ({
@@ -45,14 +53,9 @@ const Slider = ({
 	classNameItem,
 	onSlideChange
 }) => {
-	const getLogo = (index)  => {
-		const logos = {
-			0: logo1,
-			1: logo2,
-			2: logo3
-		}
-		return logos[index]
-	}
+	const { width, height } = useViewport()
+	console.log(width, height)
+
 	return  <Swiper
 				spaceBetween={30}
 				slidesPerView={3}
@@ -63,23 +66,28 @@ const Slider = ({
 				onSlideChange={onSlideChange}
 				effect={'coverflow'}
 				centeredSlides={true}
-				coverflowEffect={covSettings}
+				coverflowEffect={covSettings(width)}
 				className={classNameSlider} >
 			{
-				Object.values(content.apps_page).map(({name, card_desc}, index) =>
+				Object.values(content.apps_page).map(({name, tilt_desc}, index) =>
 					<SwiperSlide 
 						className={`${classNameSlider}_slide`}
 						key={index}>
 						<Tilty 
 							settings={tiltSettings}
 							className={`${classNameItem} ${name}_item tilt`} >
-							<img 
-								src={getLogo(index)} 
-								alt={`${name} logo`} 
-								className={`${classNameItem}_img tilt_item`} />
-					        <h2 className={`${classNameItem}_img tilt_item`}>
+							<div className="tilt__circle tilt__item">
+								<img 
+									src={getLogo(index)} 
+									alt={`${name} logo`} 
+									className={`${classNameItem}_img tilt__item`} />
+							</div>
+					        <h2 className={`${classNameItem}_title tilt__item`}>
 					        	{name}
 					        </h2>
+					        {width > breakPoint ? <div className="tilt__desc">
+					        	{ tilt_desc }
+					        </div> : null}
 					    </Tilty>
 					</SwiperSlide>)
 			}

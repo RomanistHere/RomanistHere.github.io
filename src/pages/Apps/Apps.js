@@ -1,11 +1,33 @@
 import React, { Fragment, useState, useEffect } from "react"
 import ReactHtmlParser from 'react-html-parser'
+import { Link } from "react-router-dom"
 
 import Slider from '../../components/Slider/Slider'
+import Typing from '../../components/Typing/Typing'
 
 import content from '../../static/content'
+import manage from '../../static/manage'
+import chromeLogo from '../../images/chromeLogo.svg'
+import firefoxLogo from '../../images/firefoxLogo.svg'
+import edgeLogo from '../../images/edgeLogo.svg'
 
 import './Apps.css'
+
+const logos = {
+	0: chromeLogo,
+	1: firefoxLogo,
+	2: edgeLogo,
+}
+
+const browsers = manage.browsers
+const links = content.apps_page__links
+
+const getLogos = (projNumb) => {
+	const lgNumb = browsers[projNumb]
+	const linksObj = links[projNumb]
+	const logoLinks = lgNumb.map(item => logos[item])
+	return { logoLinks, linksObj }
+}
 
 const { apps_page } = content
 
@@ -29,6 +51,8 @@ const Apps = () => {
 		changeProjNumb(newProjNumb)
 	}
 
+	const { logoLinks, linksObj } = getLogos(projNumb)
+
 	// useEffect(() => {
 	// 	setInterval(function() {changeProjNumb(projNumb === 1 ? 2 : 1)}, 2000)
 	// }, [])
@@ -39,16 +63,41 @@ const Apps = () => {
 		  				{apps_page[projNumb].name}
 		  			</h1>
 	  			</header>
+
 	  			<Slider 
 	  				onSlideChange={changeProj}
 	  				classNameItem='apps__item'
 	  				classNameSlider='apps__slider'/>
+
 	  			<article className="apps__desc">
 	  				{appsDesc(projNumb)}
 	  			</article>
-	  			<footer className="apps__footer">
 
+	  			<Typing
+					text={`Let's make it all platinum!`}
+					className={`apps__typing`}
+					startDelay={2000}
+					shouldShow={true}
+				/>
+
+	  			<footer className="apps__footer">
+	  				{
+	  					logoLinks.map((item, index) => 
+							<a 
+								key={index}
+								aria-label={linksObj[index]}
+								rel="noreferrer" 
+								target="_blank"
+								href={linksObj[index]} 
+								className="apps__logo_link">
+								<img 
+									src={item} 
+									alt={`${item} link`} 
+									className={`apps__logo`} />
+							</a>)
+	  				}
 	  			</footer>
+	  			<Link className="apps__back" to='/'>To main page</Link>
 			</section>
 }
 

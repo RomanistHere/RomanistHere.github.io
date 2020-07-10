@@ -6,7 +6,12 @@ const manage = {
 	'form__typing_2__show_time': 0,
 	'form__typing_3__show_time': 0,
 	'form__typing_5__hide_time': 10000,
-	'forbidShow_time': 5000
+	'forbidShow_time': 5000,
+	browsers: {
+		1: [0, 1, 2],
+		2: [0],
+		3: [0],
+	}
 }
 
 export default manage

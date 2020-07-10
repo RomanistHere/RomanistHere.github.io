@@ -126,12 +126,13 @@ const content = {
 	'apps_page': {
 		1: {
 			name: 'PopUpOFF',
+			tilt_desc: `Unique browser extension`,
 			apps__desc: {
 				Description: `Browser extension that eliminates all sort of popups, layouts, overlays and notifications from your screen.`,
 				Status: `- Comfortable and ready for everyday use; <br/>
 		  					- Some of features still is in development;`,
 		  		Details: `- Open source; <br/>
-		  					- Free(no pay content); <br/>
+		  					- Non-commercial. No pay content; <br/>
 		  					- MutationObserver API;`,
 		  		Platforms: `Chrome, Firefox, Edge`,
 		  		'My thanks to': `Igor Denisevich, Polina Kasterava`
@@ -139,28 +140,43 @@ const content = {
 		},
 		2: {
 			name: 'Stylify',
+			tilt_desc: `Unique browser extension`,
 			apps__desc: {
 				Description: `Browser extension that fixes how "bad" websites look. Makes content readable.`,
 				Status: `- Works fine but not comfortable for everyday use; <br/>
 							- Needs redesign; <br/>
 		  					- In development;`,
 		  		Details: `- Open source; <br/>
-		  					- Free(no pay content);`,
+		  					- Non-commercial. No pay content;`,
 		  		Platforms: `Chrome. Soon Firefox and Edge`
 			}
 		},
 		3: {
 			name: 'PLAS',
+			tilt_desc: `Unique browser extension`,
 			apps__desc: {
 				Description: `Browser extension that adds search field to YouTube. Search within playlist.`,
 				Status: `- Works fine but not comfortable for everyday use; <br/>
 							- Needs redesign; <br/>
 		  					- In development;`,
 		  		Details: `- Open source; <br/>
-		  					- Free(no pay content);`,
+		  					- Non-commercial. No pay content;`,
 		  		Platforms: `Chrome. Soon Firefox and Edge`
 			}
 		},
+	}, 
+	apps_page__links: {
+		1: {
+			0: 'https://chrome.google.com/webstore/detail/popupoff-popup-blocker/ifnkdbpmgkdbfklnbfidaackdenlmhgh',
+			1: 'https://addons.mozilla.org/en-US/firefox/addon/popupoff/',
+			2: 'https://microsoftedge.microsoft.com/addons/detail/elacdkdmimelpnkbccdanmnabhajdccm',
+		},
+		2: {
+			0: 'https://chrome.google.com/webstore/detail/stylify-unuglify/knnnacgjjmlljheglipemamhdlckpfjc',
+		},
+		3: {
+			0: 'https://chrome.google.com/webstore/detail/plas-playlist-search/khnbkjjlffefikjilbngeoffaiojpboc',
+		}
 	}
 }
 
