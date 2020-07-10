@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.33afc920.chunk.css",
-    "main.js": "/static/js/main.18de09cc.chunk.js",
-    "main.js.map": "/static/js/main.18de09cc.chunk.js.map",
+    "main.js": "/static/js/main.5915114f.chunk.js",
+    "main.js.map": "/static/js/main.5915114f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.67cc62a5.js",
     "runtime-main.js.map": "/static/js/runtime-main.67cc62a5.js.map",
     "static/css/2.b6a24a83.chunk.css": "/static/css/2.b6a24a83.chunk.css",
-    "static/js/2.91831221.chunk.js": "/static/js/2.91831221.chunk.js",
-    "static/js/2.91831221.chunk.js.map": "/static/js/2.91831221.chunk.js.map",
+    "static/js/2.aa24066d.chunk.js": "/static/js/2.aa24066d.chunk.js",
+    "static/js/2.aa24066d.chunk.js.map": "/static/js/2.aa24066d.chunk.js.map",
     "static/js/3.30e906e4.chunk.js": "/static/js/3.30e906e4.chunk.js",
     "static/js/3.30e906e4.chunk.js.map": "/static/js/3.30e906e4.chunk.js.map",
     "static/js/4.bf653227.chunk.js": "/static/js/4.bf653227.chunk.js",
@@ -15,11 +15,11 @@
     "static/js/5.a8bb5569.chunk.js": "/static/js/5.a8bb5569.chunk.js",
     "static/js/5.a8bb5569.chunk.js.map": "/static/js/5.a8bb5569.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.7e04b84d995b9b9f05dd2f73355946cc.js": "/precache-manifest.7e04b84d995b9b9f05dd2f73355946cc.js",
+    "precache-manifest.cd8e5586bba7c003a0c110989e302483.js": "/precache-manifest.cd8e5586bba7c003a0c110989e302483.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b6a24a83.chunk.css.map": "/static/css/2.b6a24a83.chunk.css.map",
     "static/css/main.33afc920.chunk.css.map": "/static/css/main.33afc920.chunk.css.map",
-    "static/js/2.91831221.chunk.js.LICENSE.txt": "/static/js/2.91831221.chunk.js.LICENSE.txt",
+    "static/js/2.aa24066d.chunk.js.LICENSE.txt": "/static/js/2.aa24066d.chunk.js.LICENSE.txt",
     "static/media/Roman Smunyov CV.pdf": "/static/media/Roman Smunyov CV.af59d224.pdf",
     "static/media/chromeLogo.svg": "/static/media/chromeLogo.e5d32d00.svg",
     "static/media/edgeLogo.svg": "/static/media/edgeLogo.03ba6c3f.svg",
@@ -34,8 +34,8 @@
   "entrypoints": [
     "static/js/runtime-main.67cc62a5.js",
     "static/css/2.b6a24a83.chunk.css",
-    "static/js/2.91831221.chunk.js",
+    "static/js/2.aa24066d.chunk.js",
     "static/css/main.33afc920.chunk.css",
-    "static/js/main.18de09cc.chunk.js"
+    "static/js/main.5915114f.chunk.js"
   ]
 }
