@@ -56,9 +56,9 @@ const Apps = () => {
 
 	const { logoLinks, linksObj } = getLogos(projNumb)
 
-	// useEffect(() => {
-	// 	setInterval(function() {changeProjNumb(projNumb === 1 ? 2 : 1)}, 2000)
-	// }, [])
+	useEffect(() => {
+		document.title = content.titles.apps
+	}, [])
 
   	return  <section className={`${apps_page[projNumb].name} apps`}>
 	  			<header className="apps__head">

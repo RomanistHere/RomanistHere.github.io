@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import ReactHtmlParser from 'react-html-parser'
 
@@ -62,6 +62,10 @@ const navItems = content.offer__nav.map(({
 const Offer = () => {
 	const [keyWords, setKeyWords] = useState(null)
 	const [shouldShow, setShowTyping] = useState(true)
+
+	useEffect(() => {
+        document.title = content.titles.offer
+    }, [])
 
 	const toggleClassAll = items =>
 		items.map(item => toggleClass(item, 'offer__word-hide'))

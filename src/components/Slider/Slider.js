@@ -54,7 +54,7 @@ const Slider = ({
 	onSlideChange
 }) => {
 	const { width, height } = useViewport()
-	console.log(width, height)
+	// console.log(width, height)
 
 	return  <Swiper
 				spaceBetween={30}

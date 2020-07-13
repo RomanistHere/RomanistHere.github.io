@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import './Card.css'
 
@@ -9,7 +9,11 @@ import Card__wr2 from '../Card__wr2/Card__wr2'
 import content from '../../static/content'
 
 const Card = () => {
-    const [shouldSmile, setSmile] = useState(false);
+    const [shouldSmile, setSmile] = useState(false)
+
+    useEffect(() => {
+        document.title = content.titles.card
+    }, [])
 
     return  <section className="main">
                 <div className="card">

@@ -135,7 +135,7 @@ const content = {
 		  					- Non-commercial. No pay content; <br/>
 		  					- MutationObserver API;`,
 		  		Platforms: `Chrome, Firefox, Edge`,
-		  		'My thanks to': `Igor Denisevich, Polina Kasterava, Whatatay T, Elizabeth Portman, Poco Diablo`
+		  		'My thanks to': `Igor Denisevich, Polina Kasterava, Whatatay T, Matveenko Oleg, Elizabeth Portman`
 			}
 		},
 		2: {
@@ -180,6 +180,12 @@ const content = {
 			0: 'https://github.com/RomanistHere/YouTube-PLAS-Website',
 			1: 'https://chrome.google.com/webstore/detail/plas-playlist-search/khnbkjjlffefikjilbngeoffaiojpboc',
 		}
+	},
+	titles: {
+		apps: `Products I've developed`,
+		card: `RomanistHere. Welcome`,
+		offer: `Let's see who I am`,
+		form: `Make me an offer`
 	}
 }
 

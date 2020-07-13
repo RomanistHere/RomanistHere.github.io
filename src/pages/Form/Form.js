@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 import './Form.css'
@@ -41,6 +41,10 @@ const formTypings = (shouldShow) => content.form__typings.map((item, index) => {
 })
 
 const Form = () => {
+	useEffect(() => {
+        document.title = content.titles.form
+    }, [])
+
 	const onSubmit = (e) => {
 		e.preventDefault()
 
@@ -60,7 +64,7 @@ const Form = () => {
 	    }
 	    console.log(data)
 	    nextLvl(7)
-	    // xhr.send(data)
+	    xhr.send(data)
 	}
 
 	// 2 user focus second input => display second message and hide first one
