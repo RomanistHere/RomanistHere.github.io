@@ -183,7 +183,7 @@ const content = {
 	},
 	titles: {
 		apps: `Products I've developed`,
-		card: `RomanistHere. Welcome`,
+		card: `You are welcome here`,
 		offer: `Let's see who I am`,
 		form: `Make me an offer`
 	}

@@ -95,6 +95,7 @@ const Offer = () => {
 
 		  			<Switcher
 		  				toggleHighlighting={toggleHighlighting}
+		  				className='offer__switcher'
 		  			/>
 	  			</nav>
 

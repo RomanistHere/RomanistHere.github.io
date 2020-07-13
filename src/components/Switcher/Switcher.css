@@ -1,13 +1,11 @@
-.rocker {
-  display: inline-block;
-  position: relative;
-
-  font-size: 2em;
+.switcher {
+  font-size: 0.75em;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
   color: #888;
 
+  margin: 1em;
   width: 7em;
   height: 4em;
 
@@ -16,23 +14,14 @@
 
   opacity: .2;
   transition: var(--offer-transition);
-}
-
-.rocker:hover {
-  opacity: 1;
-}
-
-* {
   box-sizing: inherit;
 }
 
-.rocker-small {
-  font-size: 0.75em;
-
-  margin: 1em;
+.switcher:hover {
+  opacity: 1;
 }
 
-.rocker::before {
+.switcher::before {
   content: "";
   position: absolute;
 
@@ -45,13 +34,15 @@
 
   border: 0.5em solid var(--hover-color1);
   border-bottom: 0;
+  box-sizing: inherit;
 }
 
-.rocker input {
+.switcher input {
   width: 0;
   height: 0;
 
   opacity: 0;
+  box-sizing: inherit;
 }
 
 .switch-left,
@@ -67,6 +58,7 @@
   width: 3em;
 
   transition: 0.2s;
+  box-sizing: inherit;
 }
 
 .switch-left {
@@ -162,11 +154,4 @@ input:focus + .switch-left + .switch-right {
 
 input:checked:focus + .switch-left + .switch-right {
   color: #333;
-}
-
-.switcher {
-  position: fixed;
-
-  bottom: 0;
-  right: 20px;
 }

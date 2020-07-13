@@ -43,6 +43,7 @@ const formTypings = (shouldShow) => content.form__typings.map((item, index) => {
 const Form = () => {
 	useEffect(() => {
         document.title = content.titles.form
+        window.scrollTo(0, 0)
     }, [])
 
 	const onSubmit = (e) => {
@@ -62,7 +63,6 @@ const Form = () => {
 
 	      }
 	    }
-	    console.log(data)
 	    nextLvl(7)
 	    xhr.send(data)
 	}
@@ -158,7 +158,7 @@ const Form = () => {
 
 					{formTypings(shouldShow)}
 				</form>
-
+				<Link className="link_back" to='/'>To main page</Link>
 				
 		    </section>
 }

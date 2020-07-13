@@ -71,3 +71,26 @@ ul {
 .link:hover {
     color: var(--yellow-color1);
 }
+
+.link_back {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    color: var(--txt-color2);
+    font-family: var(--hand-font2);
+}
+
+@media screen and (max-width: 1024px) {
+    .root,
+    html, 
+    body,
+    .main,
+    .offer,
+    .apps {
+        width: auto;
+        height: auto;
+        min-height: 100vh;
+    }
+}

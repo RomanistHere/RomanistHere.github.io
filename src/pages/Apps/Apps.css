@@ -261,16 +261,6 @@
   line-height: 2;
 }
 
-.apps__back {
-  position: fixed;
-
-  bottom: 20px;
-  right: 20px;
-
-  color: var(--txt-color2);
-  font-family: var(--hand-font2);
-}
-
 .apps__footer {
   position: fixed;
   display: flex;

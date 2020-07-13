@@ -100,7 +100,7 @@ const Apps = () => {
 							</a>)
 	  				}
 	  			</footer>
-	  			<Link className="apps__back" to='/'>To main page</Link>
+	  			<Link className="apps__back link_back" to='/'>To main page</Link>
 			</section>
 }
 

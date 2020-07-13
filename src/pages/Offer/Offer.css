@@ -7,7 +7,6 @@
     box-sizing: border-box;
 
     --hover-color1: #d8dee2;
-    /*--hover-color1: #fff;*/
     --hover-color2: var(--dark-color4);
     --offer-transition: all ease .7s 0s;
 }
@@ -38,10 +37,8 @@
     background-color: var(--jerry-color);
 
     transition: var(--offer-transition);
-}
 
-.offer__nav:hover {
-    background-color: var(--hover-color2);
+    box-sizing: border-box;
 }
 
 .offer__nav_list {
@@ -76,59 +73,11 @@
     height: 100%;
 }
 
-.offer__nav_item,
-.offer__icon,
-.offer__icon path,
-.offer__icon line,
-.offer__icon circle,
-.offer__icon rect {
-    transition: var(--offer-transition);
-}
-
-.offer__nav:hover .offer__icon path,
-.offer__nav:hover .offer__icon g,
-.offer__nav:hover .offer__icon line {
-    fill: var(--hover-color1);
-    stroke: var(--hover-color1);
-}
-
-.offer__nav:hover .offer__icon circle,
-.offer__nav:hover .offer__icon rect {
-    stroke: var(--hover-color1);
-}
-
-.offer__nav_item:hover .offer__icon path,
-.offer__nav_item:hover .offer__icon g,
-.offer__nav_item:hover .offer__icon line {
-    fill: var(--hover-color2);
-    stroke: var(--hover-color2);
-}
-
-.offer__nav_item:hover .offer__icon circle,
-.offer__nav_item:hover .offer__icon rect {
-    stroke: var(--hover-color2);
-}
-
-
-.offer__nav:hover .offer__link_text {
-    color: var(--hover-color1);
-}
-
-.offer__nav_item:hover .offer__link_text{
-    color: var(--hover-color2);
-}
-
 .offer__nav_item {
     cursor: pointer;
 
     padding: 0 24px;
     height: 100%;
-}
-
-.offer__nav_item:hover {
-    background-color: var(--hover-color1);
-
-    padding: 0 50px;
 }
 
 .offer__title {
@@ -149,11 +98,6 @@
 .offer__list {
     width: 658px;
     margin: 0 auto;
-}
-
-.offer__nav:hover + .offer__wrap {
-    background-color: var(--hover-color1);
-    color: var(--hover-color2);
 }
 
 .offer__typing {
@@ -185,4 +129,114 @@
 
     top: 100px;
     left: 100px;
+}
+
+.offer__switcher {
+    display: inline-block;
+    position: fixed;
+
+    bottom: 0;
+    right: 20px;
+}
+
+@media (hover: hover) {
+    .offer__nav:hover {
+        background-color: var(--hover-color2);
+    }
+
+    .offer__nav_item:hover {
+        background-color: var(--hover-color1);
+
+        padding: 0 50px;
+    }
+
+    .offer__nav_item,
+    .offer__icon,
+    .offer__icon path,
+    .offer__icon line,
+    .offer__icon circle,
+    .offer__icon rect {
+        transition: var(--offer-transition);
+    }
+
+    .offer__nav:hover .offer__icon path,
+    .offer__nav:hover .offer__icon g,
+    .offer__nav:hover .offer__icon line {
+        fill: var(--hover-color1);
+        stroke: var(--hover-color1);
+    }
+
+    .offer__nav:hover .offer__icon circle,
+    .offer__nav:hover .offer__icon rect {
+        stroke: var(--hover-color1);
+    }
+
+    .offer__nav_item:hover .offer__icon path,
+    .offer__nav_item:hover .offer__icon g,
+    .offer__nav_item:hover .offer__icon line {
+        fill: var(--hover-color2);
+        stroke: var(--hover-color2);
+    }
+
+    .offer__nav_item:hover .offer__icon circle,
+    .offer__nav_item:hover .offer__icon rect {
+        stroke: var(--hover-color2);
+    }
+
+
+    .offer__nav:hover .offer__link_text {
+        color: var(--hover-color1);
+    }
+
+    .offer__nav_item:hover .offer__link_text{
+        color: var(--hover-color2);
+    }
+        
+
+    .offer__nav:hover + .offer__wrap {
+        background-color: var(--hover-color1);
+        color: var(--hover-color2);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .offer__wrap {
+        padding: 30px 0 60px;
+
+        font-size: 20px;
+    }
+
+    .offer__switcher,
+    .offer__typing {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .offer__link {
+        justify-content: left;
+    }
+
+    .offer__nav_list {
+        flex-wrap: wrap;
+    }
+
+    .offer__nav_item {
+        height: auto;
+        width: 50%;
+        padding: 5px 10px;
+
+        box-sizing: border-box;
+    }
+
+    .offer__nav {
+        height: auto;
+    }
+
+    .offer__list,
+    .offer__title {
+        padding: 0 40px;
+
+        box-sizing: border-box;
+    }
 }
