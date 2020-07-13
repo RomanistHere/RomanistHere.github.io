@@ -78,14 +78,14 @@ const content = {
 	'offer__list': [
 		{
 			'offer__low_title': 'Who am I',
-			'offer__text': `I'm <span class="offer__word">a front-end developer</span> with over <span class="offer__word">4.5 years of experience and bachelor's in math</span>. In case this text is not up-to-date there is <a href="#" rel="noreferrer" target="_blank" class="link">a link</a> for my CV.`
+			'offer__text': `I'm <span class="offer__word">a front-end developer</span> with over <span class="offer__word">4.5 years of experience and bachelor's in math</span>. In case this text is not up-to-date there is a link for my CV below.`
 		},
 		{
 			'offer__low_title': 'What am I good at',
 			'offer__text': `I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts. 
 				<br>
 				</br>
-				From the technical side, I do really like <span class="offer__word">JavaScript</span>. There are a lot of good frameworks I am good with, like <span class="offer__word">Angular or React</span>, but I like plain JS most. I had a lot of projects with <span class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</span>. My <span class="offer__word">CSS3 and HTML5</span> are strong. I still care about <span class="offer__word">semantics</span> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <span class="offer__word">Web Components and functional programming</span> - I learn it in my spare time. Most complete stack of technologies I know how to use is in <a href="#" rel="noreferrer" target="_blank" class="link">the CV</a>.`
+				From the technical side, I do really like <span class="offer__word">JavaScript</span>. There are a lot of good frameworks I am good with, like <span class="offer__word">Angular or React</span>, but I like plain JS most. I had a lot of projects with <span class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</span>. My <span class="offer__word">CSS3 and HTML5</span> are strong. I still care about <span class="offer__word">semantics</span> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <span class="offer__word">Web Components and functional programming</span> - I learn it in my spare time. Most complete stack of technologies I know how to use is in the CV.`
 		},
 		{
 			'offer__low_title': 'What do I do now',
