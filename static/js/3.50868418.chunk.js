@@ -1,2 +1,0 @@
-(this["webpackJsonpexploring-hooks"]=this["webpackJsonpexploring-hooks"]||[]).push([[3],{144:function(o,p,s){o.exports=s.p+"static/media/handFont.25d5fb55.ttf"}}]);
-//# sourceMappingURL=3.50868418.chunk.js.map
