@@ -1,1 +1,0 @@
-{"version":3,"sources":["fonts/handFont3.otf"],"names":["module","exports"],"mappings":"6GAAAA,EAAOC,QAAU,IAA0B","file":"static/js/5.a8bb5569.chunk.js","sourcesContent":["module.exports = __webpack_public_path__ + \"static/media/handFont3.8f3d822a.otf\";"],"sourceRoot":""}
