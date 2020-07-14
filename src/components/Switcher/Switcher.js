@@ -10,7 +10,7 @@ const Switcher = ({ text, className, toggleHighlighting }) => {
 		toggleHighlighting()
 	}
 
-  	return  <label className={`${className} switcher rocker rocker-small`}>
+  	return  <label className={`${className} switcher`}>
 			    <input
 			     	checked={checked} 
 			     	onChange={onChange}

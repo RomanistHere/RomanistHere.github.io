@@ -281,13 +281,15 @@
   transition: all ease .3s .1s;
 }
 
-.apps__footer:hover .apps__logo{
-  filter: blur(1px);
-}
+@media (hover: hover) {
+  .apps__footer:hover .apps__logo{
+    filter: blur(1px);
+  }
 
-.apps__footer:hover .apps__logo:hover{
-  /*filter: drop-shadow( 0px 0px 5px rgba(239, 187, 53, 1)) blur(0);*/
-  filter: drop-shadow( 0px 0px 8px rgba(0, 0, 0, 1)) blur(0);
+  .apps__footer:hover .apps__logo:hover{
+    /*filter: drop-shadow( 0px 0px 5px rgba(239, 187, 53, 1)) blur(0);*/
+    filter: drop-shadow( 0px 0px 8px rgba(0, 0, 0, 1)) blur(0);
+  }
 }
 
 @media screen and (max-width: 1601px) {
@@ -343,6 +345,27 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .apps__slider {
+    width: 100%;
+  }
+
+  .apps__typing {
+    left: auto;
+    right: 10%;
+  }
+
+  .apps__desc {
+    width: 100%;
+  }
+
+  .apps {
+    display: block;
+
+    padding-bottom: 40px;
+  }
+}
+
 @media screen and (max-height: 650px) {
   .apps {
     --header-height: 80px;
@@ -351,5 +374,93 @@
   .apps__head_title {
     font-size: 80px;
     line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .apps__head_title {
+    font-size: 50px;
+    line-height: 40px;
+  }
+
+  .apps__head {
+    padding: var(--pad-txt);
+    height: auto;
+  }
+
+  .apps__typing {
+    right: 8px;
+    width: 100px;
+
+    font-size: 14px;
+  }
+
+  .apps__item_title {
+    font-size: 20px;
+  }
+
+  .apps__slider_slide {
+    height: 200px;
+  }
+
+  .tilt__circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .apps__desc {
+    padding: 0 var(--pad-txt);
+  }
+
+  .apps__back {
+    position: static;
+    display: block;
+
+    padding: 10px var(--pad-txt) 0;
+
+    font-size: 14px;
+  }
+
+  .apps__footer {
+    position: static;
+
+    padding: 20px var(--pad-txt) 0;
+
+    flex-direction: unset;
+  }
+
+  .apps__slider {
+    padding: 20px 0 40px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .apps__head_title {
+    font-size: 40px;
+  }
+
+  .apps__typing {
+    top: 35px;
+  }
+
+  .apps__item_title {
+    font-size: 14px;
+  }
+
+  .apps__slider_slide {
+    height: 160px;
+  }
+
+  .tilt__circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .tilt__item {
+    transform: none;
+  }
+
+  .apps__back {
+    position: static;
   }
 }

@@ -158,7 +158,7 @@ const Form = () => {
 
 					{formTypings(shouldShow)}
 				</form>
-				<Link className="link_back" to='/'>To main page</Link>
+				<Link className="link_back form__back" to='/'>To main page</Link>
 				
 		    </section>
 }

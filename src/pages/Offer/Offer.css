@@ -210,6 +210,11 @@
     .offer__typing {
         display: none;
     }
+
+    .offer__wrap,
+    .offer__link_text {
+        transition: none;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -220,7 +225,9 @@
     .offer__nav_list {
         flex-wrap: wrap;
 
-        padding: 0 30px;
+        padding: 0 var(--pad-txt);
+
+        font-size: 14px;
     }
 
     .offer__nav_item {
@@ -237,9 +244,27 @@
 
     .offer__list,
     .offer__title {
-        padding: 0 30px;
+        padding: 0 var(--pad-txt);
         width: 100%;
 
         box-sizing: border-box;
+    }
+
+    .offer__wrap {
+        padding: 0 0 50px;
+
+        font-size: 16px;
+    }
+
+    .offer__title {
+        font-size: 40px;
+    }
+
+    .offer__low_title {
+        margin: 15px 0 5px;
+    }
+
+    .offer__icon {
+        width: 30px;
     }
 }

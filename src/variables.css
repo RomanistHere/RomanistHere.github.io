@@ -43,4 +43,12 @@
     --hand-font: 'handFont';
     --hand-font2: 'handFont2';
     --hand-font3: 'handFont3';
+    /*paddings for text*/
+    --pad-txt: 30px;
+}
+
+@media screen and (max-width: 340px) {
+    :root {
+        --pad-txt: 20px;
+    }
 }
