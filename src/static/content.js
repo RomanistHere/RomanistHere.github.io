@@ -18,6 +18,7 @@ const content = {
 			'card__content': 'JavaScript developer'
 		}
 	],
+	'card__typing': 'There is not a single tracker here. Enjoy yourself :)',
 	'form__info': [
 		{
 			'isInput': true,
