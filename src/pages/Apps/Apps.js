@@ -9,10 +9,10 @@ import Typing from '../../components/Typing/Typing'
 import content from '../../static/content'
 import manage from '../../static/manage'
 
-import chromeLogo from '../../images/chromeLogo.svg'
-import firefoxLogo from '../../images/firefoxLogo.svg'
-import edgeLogo from '../../images/edgeLogo.svg'
-import gitLogo from '../../images/gitLogo.svg'
+import chromeLogo from '../../media/images/chromeLogo.svg'
+import firefoxLogo from '../../media/images/firefoxLogo.svg'
+import edgeLogo from '../../media/images/edgeLogo.svg'
+import gitLogo from '../../media/images/gitLogo.svg'
 
 import './Apps.css'
 
@@ -109,7 +109,7 @@ const Apps = () => {
 							</a>)
 	  				}
 	  			</footer>
-	  			<Link className="apps__back link_back" to='/'>To main page</Link>
+	  			<Link className="apps__back link_back" to='/'>{content.link_back}</Link>
 			</section>
 }
 

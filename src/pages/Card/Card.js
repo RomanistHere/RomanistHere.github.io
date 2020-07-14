@@ -2,29 +2,33 @@ import React, { useState, useEffect } from 'react'
 
 import './Card.css'
 
-import Face from '../Face/Face'
-// import Preloader from '../Preloader/Preloader'
-import Card__wr1 from '../Card__wr1/Card__wr1'
-import Card__wr2 from '../Card__wr2/Card__wr2'
+import Face from '../../components/Face/Face'
+import Preloader from '../../components/Preloader/Preloader'
+import Card__wr1 from '../../components/Card__wr1/Card__wr1'
+import Card__wr2 from '../../components/Card__wr2/Card__wr2'
 
 import content from '../../static/content'
 
 const Card = () => {
     const [shouldSmile, setSmile] = useState(false)
-    // const [showLoader, setLoader] = useState(true)
+    const [showLoader, setLoader] = useState(
+        JSON.parse(sessionStorage.getItem('showPreloader')) === false ? false : true)
 
     useEffect(() => {
         document.title = content.titles.card
-        // setLoader(false)
+        if (showLoader) {
+            setTimeout(() => setLoader(false), 2500)
+            sessionStorage.setItem('showPreloader', JSON.stringify(false))
+        }
     }, [])
 
-    // return  showLoader ? 
+    return  showLoader ? 
     
-    //         <section className="main">
-    //             <Preloader />
-    //         </section> :
+            <section className="main">
+                <Preloader />
+            </section> :
 
-    return  <section className="main">
+            <section className="main">
                 <div className="card">
                     <div className="card__cap">
                         <h1 className="card__title">

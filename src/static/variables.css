@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'handFont';
-    src: local('handFont'), url(./fonts/handFont.ttf) format('truetype');
+    src: local('handFont'), url(../media/fonts/handFont.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'handFont2';
-    src: local('handFont2'), url(./fonts/handFont2.ttf) format('truetype');
+    src: local('handFont2'), url(../media/fonts/handFont2.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'handFont3';
-    src: local('handFont3'), url(./fonts/handFont3.otf) format('truetype');
+    src: local('handFont3'), url(../media/fonts/handFont3.otf) format('truetype');
 }
 
 :root {

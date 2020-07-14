@@ -65,7 +65,7 @@
   background-size: 50% 60%;
   background-position: 0 100%, 100% 100%, 0 48.5%, 100% 48.5%, 50% 60%;
 
-  animation: cube-drop 6000ms infinite alternate linear;
+  animation: cubing 3s infinite alternate linear;
 
   z-index: -1;
 }
@@ -76,12 +76,12 @@
   left: 92px;
   top: 164px;
 
-  animation: cube-shadow 6000ms infinite alternate linear;
+  animation: shadowing 3s infinite alternate linear;
 
   z-index: 0;
 }
 
-@keyframes cube-drop {
+@keyframes cubing {
   20% {
     transform: translateY(0) translateZ(-1px);
   }
@@ -90,7 +90,7 @@
   }
 }
 
-@keyframes cube-shadow {
+@keyframes shadowing {
   0%, 20% {
     transform: translateY(0) rotate(-30deg) skew(30deg);
     box-shadow: -50px 45px 10px -10px rgba(0,0,0,0.3);
@@ -118,10 +118,10 @@
 
   transform: translateY(0) rotate(30deg) skew(-30deg);
 
-  animation: surface 6000ms infinite alternate linear;
+  animation: surfacing 3s infinite alternate linear;
 }
 
-@keyframes surface {
+@keyframes surfacing {
   0%, 20% { 
     transform: translateY(0) rotate(30deg) skew(-30deg)
   }

@@ -6,9 +6,9 @@ import Tilty from "react-tilty"
 
 import content from '../../static/content'
 import { useViewport } from '../../static/functions'
-import logo1 from '../../images/logo-1.png'
-import logo2 from '../../images/logo-2.png'
-import logo3 from '../../images/logo-3.png'
+import logo1 from '../../media/images/logo-1.png'
+import logo2 from '../../media/images/logo-2.png'
+import logo3 from '../../media/images/logo-3.png'
 
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'

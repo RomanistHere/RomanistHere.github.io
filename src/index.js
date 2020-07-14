@@ -5,15 +5,15 @@ import ReactDOM from 'react-dom'
 // import './fonts/handFont2.ttf'
 // import './fonts/handFont3.otf'
 
-import './variables.css'
+import './static/variables.css'
 import './index.css'
 
-import App from './containers/App'
+import App from './pages/App'
 // import * as serviceWorker from './serviceWorker'
 
-React.lazy(() => import('./fonts/handFont.ttf'))
-React.lazy(() => import('./fonts/handFont2.ttf'))
-React.lazy(() => import('./fonts/handFont3.otf'))
+React.lazy(() => import('./media/fonts/handFont.ttf'))
+React.lazy(() => import('./media/fonts/handFont2.ttf'))
+React.lazy(() => import('./media/fonts/handFont3.otf'))
 
 
 ReactDOM.render(

@@ -152,13 +152,11 @@ const Form = () => {
 						nextLvl
 					})}
 
-					<button 
-						className="form__button"
-					>Submit</button>
+					<button className="form__button">Submit</button>
 
 					{formTypings(shouldShow)}
 				</form>
-				<Link className="link_back form__back" to='/'>To main page</Link>
+				<Link className="link_back form__back" to='/'>{content.link_back}</Link>
 				
 		    </section>
 }

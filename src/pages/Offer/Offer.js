@@ -6,17 +6,17 @@ import './Offer.css'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import CV from '../../images/Roman Smunyov CV.pdf'
+import CV from '../../media/images/Roman Smunyov CV.pdf'
 import {
 	querySelectorAll,
 	toggleClass,
 	useTimeout
 } from '../../static/functions'
 
-import FormIcon from '../../images/FormIcon'
-import CVIcon from '../../images/CVIcon'
-import ProjectsIcon from '../../images/ProjectsIcon'
-import BackIcon from '../../images/BackIcon'
+import FormIcon from '../../media/images/FormIcon'
+import CVIcon from '../../media/images/CVIcon'
+import ProjectsIcon from '../../media/images/ProjectsIcon'
+import BackIcon from '../../media/images/BackIcon'
 
 import Typing from '../../components/Typing/Typing'
 import Switcher from '../../components/Switcher/Switcher'
@@ -61,9 +61,10 @@ const navItems = content.offer__nav.map(({
 })
 
 const Offer = () => {
-	const [keyWords, setKeyWords] = useState(null)
-	const [shouldShow, setShowTyping] = useState(true)
 	// const [showLoader, setLoader] = useState(true)
+	const [keyWords, setKeyWords] = useState(null)
+	const [shouldShow, setShowTyping] = useState(
+		JSON.parse(localStorage.getItem('showOfferTyping')) === false ? false : true)
 
 	useEffect(() => {
         document.title = content.titles.offer
@@ -79,6 +80,7 @@ const Offer = () => {
 			toggleClassAll(links)
 			setKeyWords(links)
 			setShowTyping(false)
+			localStorage.setItem('showOfferTyping', JSON.stringify(false))
 		} else 
 			toggleClassAll(keyWords)
 	}

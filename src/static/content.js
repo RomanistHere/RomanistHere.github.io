@@ -135,7 +135,7 @@ const content = {
 		  					- Non-commercial. No pay content; <br/>
 		  					- MutationObserver API;`,
 		  		Platforms: `Chrome, Firefox, Edge`,
-		  		'My thanks to': `Igor Denisevich, Polina Kasterava, Whatatay T, Matveenko Oleg, Elizabeth Portman`
+		  		'My thanks to': `Igor Denisevich, Polina Kasterava, Whatatay T, Oleg Matveenko, Elizabeth Portman`
 			}
 		},
 		2: {
@@ -186,7 +186,8 @@ const content = {
 		card: `You are welcome here`,
 		offer: `Let's see who I am`,
 		form: `Make me an offer`
-	}
+	},
+	link_back: 'To main page'
 }
 
 export default content
