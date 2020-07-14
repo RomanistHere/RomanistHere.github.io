@@ -89,7 +89,7 @@ const Apps = () => {
 							<a 
 								key={index}
 								aria-label={linksObj[index]}
-								rel="noreferrer" 
+								rel="noopener noreferrer" 
 								target="_blank"
 								href={linksObj[index]} 
 								className="apps__logo_link">

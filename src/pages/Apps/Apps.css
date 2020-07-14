@@ -323,7 +323,7 @@
   }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 900px) {
   .apps {
     --header-height: 130px;
   }
@@ -336,7 +336,6 @@
   }
 
   .apps__slider_slide {
-    /*height: 300px;*/
     height: calc(100vh - var(--header-height) - 150px);
   }
 

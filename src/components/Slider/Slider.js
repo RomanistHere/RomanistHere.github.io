@@ -19,6 +19,7 @@ import 'swiper/components/effect-coverflow/effect-coverflow.scss'
 SwiperCore.use([Navigation, Pagination, A11y, EffectCoverflow])
 
 const breakPoint = 1359
+const touchBreakPoint = 1024
 
 const covSettings = (width) => {
 	const stretch = width < breakPoint ? 10 : 0
@@ -41,11 +42,16 @@ const getLogo = (index)  => {
 	return logos[index]
 }
 
-const tiltSettings = {
-	glare: true,
-	"max-glare": 0.7,
-	gyroscope: false,
-	scale: 1
+const tiltSettings = (width) => {
+	const max = width <= touchBreakPoint ? 0 : 35
+
+	return {
+		glare: true,
+		"max-glare": 0.7,
+		gyroscope: false,
+		scale: 1,
+		max: max
+	}
 }
 
 const Slider = ({
@@ -53,8 +59,7 @@ const Slider = ({
 	classNameItem,
 	onSlideChange
 }) => {
-	const { width, height } = useViewport()
-	// console.log(width, height)
+	const { width } = useViewport()
 
 	return  <Swiper
 				spaceBetween={30}
@@ -62,9 +67,8 @@ const Slider = ({
 				navigation
 				loop={true}
 				pagination={{ clickable: true }}
-				onSwiper={(swiper) => console.log(swiper)}
 				onSlideChange={onSlideChange}
-				effect={'coverflow'}
+				effect='coverflow'
 				centeredSlides={true}
 				coverflowEffect={covSettings(width)}
 				className={classNameSlider} >
@@ -74,7 +78,7 @@ const Slider = ({
 						className={`${classNameSlider}_slide`}
 						key={index}>
 						<Tilty 
-							settings={tiltSettings}
+							settings={tiltSettings(width)}
 							className={`${classNameItem} ${name}_item tilt`} >
 							<div className="tilt__circle tilt__item">
 								<img 
