@@ -13,8 +13,12 @@ import manage from '../../static/manage'
 import { useTimeout } from '../../static/functions'
 
 const Card = () => {
+    const getRandom = (numb) => 
+        Math.floor(Math.random() * numb) + 1 
+
     const [shouldSmile, setSmile] = useState(false)
     const [shouldShowTyping, setShowTyping] = useState(false)
+    const [random, setRandom] = useState(getRandom(4))
     const [showLoader, setLoader] = useState(
         JSON.parse(sessionStorage.getItem('showPreloader')) === false ? false : true)
 
@@ -26,10 +30,7 @@ const Card = () => {
         }
 
         setShowTyping(true)
-    }, [])
-
-    const getRandom = (numb) => 
-        Math.floor(Math.random() * numb) + 1  
+    }, []) 
 
     return  showLoader ? 
     
@@ -62,7 +63,7 @@ const Card = () => {
 
                 <Typing 
                     text={content.card__typing}
-                    className={`card__typing card__out_typing card__out_typing-${getRandom(4)}`}
+                    className={`card__typing card__out_typing card__out_typing-${random}`}
                     startDelay={manage.card__typing__show_time}
                     shouldShow={shouldShowTyping}
                 />
