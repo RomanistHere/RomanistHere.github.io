@@ -239,7 +239,7 @@
     }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
     .form__mess {
         font-size: 70%;
 

@@ -20,6 +20,7 @@ import BackIcon from '../../images/BackIcon'
 
 import Typing from '../../components/Typing/Typing'
 import Switcher from '../../components/Switcher/Switcher'
+// import Preloader from '../../components/Preloader/Preloader'
 
 const items = content.offer__list.map(({
 	offer__low_title,
@@ -62,9 +63,11 @@ const navItems = content.offer__nav.map(({
 const Offer = () => {
 	const [keyWords, setKeyWords] = useState(null)
 	const [shouldShow, setShowTyping] = useState(true)
+	// const [showLoader, setLoader] = useState(true)
 
 	useEffect(() => {
         document.title = content.titles.offer
+        // setLoader(false)
     }, [])
 
 	const toggleClassAll = items =>
@@ -87,7 +90,13 @@ const Offer = () => {
 	
 	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
 
-  	return 	<section className="offer">
+  	// return  showLoader ? 
+
+  	// 		<section className="main">
+   //              <Preloader />
+   //          </section> :
+
+    return  <section className="offer">
   				<nav className="offer__nav">
 					<ul className="offer__nav_list">
 						{navItems}

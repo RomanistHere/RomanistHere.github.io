@@ -15,6 +15,7 @@
 
 :root {
     --dark-color1: #3e596c;
+    --dark-color1: #324758;
     --dark-color2: #000926;
     --dark-color3: #1b283b;
     --dark-color4: #0e1f37;
@@ -47,7 +48,7 @@
     --pad-txt: 30px;
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
     :root {
         --pad-txt: 20px;
     }

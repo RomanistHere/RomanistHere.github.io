@@ -395,7 +395,7 @@
   }
 
   .apps__item_title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .apps__slider_slide {
@@ -431,9 +431,13 @@
   .apps__slider {
     padding: 20px 0 40px;
   }
+
+  .tilt__item {
+    transform: none;
+  }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 360px) {
   .apps__head_title {
     font-size: 40px;
   }
@@ -453,10 +457,6 @@
   .tilt__circle {
     width: 70px;
     height: 70px;
-  }
-
-  .tilt__item {
-    transform: none;
   }
 
   .apps__back {
