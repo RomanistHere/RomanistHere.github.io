@@ -10,17 +10,20 @@ import Typing from '../../components/Typing/Typing'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import { useTimeout } from '../../static/functions'
+import { getRandom, useTimeout } from '../../static/functions'
 
 const Card = () => {
-    const getRandom = (numb) => 
-        Math.floor(Math.random() * numb) + 1 
-
     const [shouldSmile, setSmile] = useState(false)
     const [shouldShowTyping, setShowTyping] = useState(false)
-    const [random, setRandom] = useState(getRandom(4))
+    const [random] = useState(getRandom(9))
     const [showLoader, setLoader] = useState(
         JSON.parse(sessionStorage.getItem('showPreloader')) === false ? false : true)
+
+    const [typings, setTypings] = useState({
+        show: false,
+        text: content.card__typings[0],
+        pos: getRandom(9)
+    })
 
     useEffect(() => {
         document.title = content.titles.card
@@ -30,10 +33,36 @@ const Card = () => {
         }
 
         setShowTyping(true)
-    }, []) 
+    }, [])
 
-    return  showLoader ? 
-    
+    const goNextTyping = (counter) => {
+      const newTyping = {
+        text: content.card__typings[counter],
+        pos: getRandom(9),
+        show: true
+      }
+      setTypings(newTyping)
+      const newCounter = counter + 1
+
+      if (!content.card__typings[counter])
+        return
+
+      setTimeout(() => {
+          setTypings({...newTyping,  show: false })
+      }, manage.card__typings__hide_time)
+
+      setTimeout(() => {
+          goNextTyping(newCounter)
+      }, manage.card__typings__show_time)
+    }
+
+    useTimeout(() => {
+        setShowTyping(false)
+        goNextTyping(0)
+    }, manage.card__typing__hide_time)
+
+    return  showLoader ?
+
             <section className="main">
                 <Preloader />
             </section> :
@@ -47,13 +76,13 @@ const Card = () => {
                     </div>
                     <div className="card__body">
                         <div className="card__photo">
-                            <Face 
+                            <Face
                                 shouldSmile={shouldSmile}
                             />
                         </div>
                         <div className="card__info">
                             <Card__wr1 />
-                            <Card__wr2 
+                            <Card__wr2
                                 onMouseOver={() => setSmile(true)}
                                 onMouseLeave={() => setSmile(false)}
                             />
@@ -61,11 +90,17 @@ const Card = () => {
                     </div>
                 </div>
 
-                <Typing 
+                <Typing
                     text={content.card__typing}
                     className={`card__typing card__out_typing card__out_typing-${random}`}
                     startDelay={manage.card__typing__show_time}
                     shouldShow={shouldShowTyping}
+                />
+
+                <Typing
+                    text={typings.text}
+                    className={`card__typing card__out_typing card__out_typing-${typings.pos}`}
+                    shouldShow={typings.show}
                 />
             </section>
 }

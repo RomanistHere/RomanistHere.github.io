@@ -18,7 +18,48 @@ const content = {
 			'card__content': 'JavaScript developer'
 		}
 	],
-	'card__typing': 'There is not a single tracker here. Enjoy yourself :)',
+	'card__typing': `There is not a single tracker here. Enjoy yourself :)`,
+	'card__typings': [
+		`Aren't you going to press some links on card and go?`,
+		`You do really like it here, don't you?`,
+		`I am pleased :)`,
+		`There are probably few more pages on this site`,
+		`Some of them could be even prettier than this one`,
+		`Okay, all right, let's just watch this page`,
+		`Original colors on here were from Tom & Jerry`,
+		`I have built it in react to sharpen my skills`,
+		`Oh, boy, you don't really have much to do, don't you?`,
+		`Have you ever seen a website singing? Would you like to?`,
+		`I'm a little bit shy, you don't often sing here`,
+		`Okay, all right, Let's sing!`,
+		`Nah, I'm joking`,
+		`I just can't *pronounces with british accent*`,
+		`Are you even there? I don't think I can see you`,
+		`Fine!`,
+		`There is a house in New Orleans`,
+		`They call the Rising Sun`,
+		`And it's been the ruin of many a poor boy`,
+		`And God, I know I'm one`,
+		`My mother was a tailor`,
+		`She sewed my new blue jeans`,
+		`The end.`,
+		`It really is.`,
+		`Bye-bye then`,
+		``,
+		``,
+		`My father was a gamblin' man`,
+		`Down in New Orleans`,
+		`Now the only thing a gambler needs`,
+		`Is a suitcase and trunk`,
+		`And the only time he's satisfied`,
+		`Is when he's all drunk`,
+		``,
+		`Oh mother tell your children`,
+		`Not to do what I have done`,
+		`Spend your lives in sin and misery`,
+		`In the House of the Rising Sun`,
+		`Thank you. Write hello to me and have a nice day!`,
+	],
 	'form__info': [
 		{
 			'isInput': true,
@@ -83,7 +124,7 @@ const content = {
 		},
 		{
 			'offer__low_title': 'What am I good at',
-			'offer__text': `I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts. 
+			'offer__text': `I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts.
 				<br>
 				</br>
 				From the technical side, I do really like <span class="offer__word">JavaScript</span>. There are a lot of good frameworks I am good with, like <span class="offer__word">Angular or React</span>, but I like plain JS most. I had a lot of projects with <span class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</span>. My <span class="offer__word">CSS3 and HTML5</span> are strong. I still care about <span class="offer__word">semantics</span> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <span class="offer__word">Web Components and functional programming</span> - I learn it in my spare time. Most complete stack of technologies I know how to use is in the CV.`
@@ -123,7 +164,7 @@ const content = {
 			'comp': 'Projects'
 		},
 	],
-	'offer__typing': 'You can disable highlighting of key words here ↓',
+	'offer__typing': 'You can disable highlighting of keywords here ↓',
 	'apps_page': {
 		1: {
 			name: 'PopUpOFF',
@@ -165,7 +206,7 @@ const content = {
 		  		Platforms: `Chrome. Soon Firefox and Edge`
 			}
 		},
-	}, 
+	},
 	apps_page__links: {
 		1: {
 			0: 'https://github.com/RomanistHere/PopUpOFF',

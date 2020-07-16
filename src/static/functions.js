@@ -79,6 +79,9 @@ const useViewport = () => {
   return { width, height }
 }
 
+const getRandom = (numb) => 
+  Math.floor(Math.random() * numb) + 1
+
 export {
 	querySelector,
 	addClass,
@@ -90,4 +93,5 @@ export {
 	useInterval,
 	useTimeout,
   useViewport,
+  getRandom,
 }
