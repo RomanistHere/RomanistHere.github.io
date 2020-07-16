@@ -20,7 +20,6 @@ import BackIcon from '../../media/images/BackIcon'
 
 import Typing from '../../components/Typing/Typing'
 import Switcher from '../../components/Switcher/Switcher'
-// import Preloader from '../../components/Preloader/Preloader'
 
 const items = content.offer__list.map(({
 	offer__low_title,
@@ -61,14 +60,12 @@ const navItems = content.offer__nav.map(({
 })
 
 const Offer = () => {
-	// const [showLoader, setLoader] = useState(true)
 	const [keyWords, setKeyWords] = useState(null)
 	const [shouldShow, setShowTyping] = useState(
 		JSON.parse(localStorage.getItem('showOfferTyping')) === false ? false : true)
 
 	useEffect(() => {
         document.title = content.titles.offer
-        // setLoader(false)
     }, [])
 
 	const toggleClassAll = items =>
@@ -81,22 +78,16 @@ const Offer = () => {
 			setKeyWords(links)
 			setShowTyping(false)
 			localStorage.setItem('showOfferTyping', JSON.stringify(false))
-		} else 
+		} else
 			toggleClassAll(keyWords)
 	}
 
-	const { 
+	const {
 		offer_switcher__hide_time,
 		offer_switcher__show_time,
 	} = manage
-	
+
 	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
-
-  	// return  showLoader ? 
-
-  	// 		<section className="main">
-   //              <Preloader />
-   //          </section> :
 
     return  <section className="offer">
   				<nav className="offer__nav">
@@ -113,10 +104,10 @@ const Offer = () => {
 	  			<div className="offer__wrap">
 	  				<h1 className="offer__title">{content.offer__title}</h1>
 					<ul className="offer__list">
-						{items}					
+						{items}
 					</ul>
 
-					<Typing 
+					<Typing
 		  				text={content.offer__typing}
 		  				className='offer__typing'
 		  				startDelay={offer_switcher__show_time}

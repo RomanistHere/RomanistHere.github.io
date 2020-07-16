@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import {
   HashRouter as Router,
   Switch,
@@ -7,28 +7,33 @@ import {
 
 import './App.css'
 
-import Card from './Card/Card'
-import Offer from './Offer/Offer'
-import Apps from './Apps/Apps'
-import Form from './Form/Form'
+import Preloader from '../components/Preloader/Preloader'
+
+const Offer = lazy(() => import('./Offer/Offer'))
+const Card = lazy(() => import('./Card/Card'))
+const Apps = lazy(() => import('./Apps/Apps'))
+const Form = lazy(() => import('./Form/Form'))
+const Post = lazy(() => import('./Post/Post'))
 
 const App = () => {
   return (
     <Router>
-        <Switch>
-            <Route exact path="/">
-                <Card />
-            </Route>
-            <Route path="/offer">
-                <Offer />
-            </Route>
-            <Route path="/apps">
-                <Apps />
-            </Route>
-            <Route path="/form">
-                <Form />
-            </Route>
-        </Switch>
+        <Suspense fallback={<section className="main"><Preloader /></section>}>
+            <Switch>
+                <Route exact path="/">
+                    <Card />
+                </Route>
+                <Route path="/offer">
+                    <Offer />
+                </Route>
+                <Route path="/apps">
+                    <Apps />
+                </Route>
+                <Route path="/form">
+                    <Form />
+                </Route>
+            </Switch>
+        </Suspense>
     </Router>
   )
 }

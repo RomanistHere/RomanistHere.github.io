@@ -63,7 +63,7 @@ const Apps = () => {
 		// setLoader(false)
 	}, [])
 
-  	// return  showLoader ? 
+  	// return  showLoader ?
 
   	// 		<section className="main">
    //              <Preloader />
@@ -76,7 +76,7 @@ const Apps = () => {
 		  			</h1>
 	  			</header>
 
-	  			<Slider 
+	  			<Slider
 	  				onSlideChange={changeProj}
 	  				classNameItem='apps__item'
 	  				classNameSlider='apps__slider'/>
@@ -94,17 +94,17 @@ const Apps = () => {
 
 	  			<footer className="apps__footer">
 	  				{
-	  					logoLinks.map((item, index) => 
-							<a 
+	  					logoLinks.map((item, index) =>
+							<a
 								key={index}
 								aria-label={linksObj[index]}
-								rel="noopener noreferrer" 
+								rel="noopener noreferrer"
 								target="_blank"
-								href={linksObj[index]} 
+								href={linksObj[index]}
 								className="apps__logo_link">
-								<img 
-									src={item} 
-									alt={`${item} link`} 
+								<img
+									src={item}
+									alt={`${item} link`}
 									className={`apps__logo`} />
 							</a>)
 	  				}

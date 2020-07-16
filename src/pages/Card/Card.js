@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import './Card.css'
 
 import Face from '../../components/Face/Face'
-import Preloader from '../../components/Preloader/Preloader'
 import Card__wr1 from '../../components/Card__wr1/Card__wr1'
 import Card__wr2 from '../../components/Card__wr2/Card__wr2'
 import Typing from '../../components/Typing/Typing'
@@ -16,8 +15,6 @@ const Card = () => {
     const [shouldSmile, setSmile] = useState(false)
     const [shouldShowTyping, setShowTyping] = useState(false)
     const [random] = useState(getRandom(9))
-    const [showLoader, setLoader] = useState(
-        JSON.parse(sessionStorage.getItem('showPreloader')) === false ? false : true)
 
     const [typings, setTypings] = useState({
         show: false,
@@ -27,33 +24,28 @@ const Card = () => {
 
     useEffect(() => {
         document.title = content.titles.card
-        if (showLoader) {
-            setTimeout(() => setLoader(false), 2500)
-            sessionStorage.setItem('showPreloader', JSON.stringify(false))
-        }
-
         setShowTyping(true)
     }, [])
 
     const goNextTyping = (counter) => {
-      const newTyping = {
-        text: content.card__typings[counter],
-        pos: getRandom(9),
-        show: true
-      }
-      setTypings(newTyping)
-      const newCounter = counter + 1
+        const newTyping = {
+            text: content.card__typings[counter],
+            pos: getRandom(9),
+            show: true
+        }
+        setTypings(newTyping)
+        const newCounter = counter + 1
 
-      if (!content.card__typings[counter])
+        if (!content.card__typings[counter])
         return
 
-      setTimeout(() => {
-          setTypings({...newTyping,  show: false })
-      }, manage.card__typings__hide_time)
+        setTimeout(() => {
+            setTypings({...newTyping,  show: false })
+        }, manage.card__typings__hide_time)
 
-      setTimeout(() => {
-          goNextTyping(newCounter)
-      }, manage.card__typings__show_time)
+        setTimeout(() => {
+            goNextTyping(newCounter)
+        }, manage.card__typings__show_time)
     }
 
     useTimeout(() => {
@@ -61,13 +53,7 @@ const Card = () => {
         goNextTyping(0)
     }, manage.card__typing__hide_time)
 
-    return  showLoader ?
-
-            <section className="main">
-                <Preloader />
-            </section> :
-
-            <section className="main">
+    return  <section className="main">
                 <div className="card">
                     <div className="card__cap">
                         <h1 className="card__title">
