@@ -1,0 +1,34 @@
+.post__article {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--pad-txt);
+
+    box-sizing: border-box;
+
+    /* background-color: #3c6478;
+    background-color: #0d3d56;*/
+    color: white;
+    /* color: #ededed; */
+}
+
+.post__title {
+    padding: 20px 0 30px;
+
+    font-size: 170%;
+    color: var(--yellow-color2);
+}
+
+.post__subtitle {
+    margin: 0;
+    padding: 0 0 10px;
+
+    /* font-size: 120%; */
+    font-weight: bold;
+    color: var(--yellow-color2);
+}
+
+.post__text {
+    margin: 0;
+    padding: 0 0 20px;
+}

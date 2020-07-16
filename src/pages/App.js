@@ -18,7 +18,7 @@ const Post = lazy(() => import('./Post/Post'))
 const App = () => {
   return (
     <Router>
-        <Suspense fallback={<section className="main"><Preloader /></section>}>
+        <Suspense fallback={<Preloader />}>
             <Switch>
                 <Route exact path="/">
                     <Card />
@@ -32,6 +32,15 @@ const App = () => {
                 <Route path="/form">
                     <Form />
                 </Route>
+                {/* <Route path="/posts/:slug">
+                    <Post />
+                </Route> */}
+                {/* <Route path="/posts">
+                    <Posts />
+                </Route> */}
+                {/* <Route>
+                    <NoPage />
+                </Route> */}
             </Switch>
         </Suspense>
     </Router>

@@ -33,11 +33,12 @@ const Card = () => {
             pos: getRandom(9),
             show: true
         }
-        setTypings(newTyping)
         const newCounter = counter + 1
+        
+        setTypings(newTyping)
 
         if (!content.card__typings[counter])
-        return
+            return
 
         setTimeout(() => {
             setTypings({...newTyping,  show: false })

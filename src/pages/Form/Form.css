@@ -172,14 +172,14 @@
     position: absolute;
     opacity: 0;
 
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     left: 0;
     top: calc(50% - 10px);
-    
+
     border-style: solid;
     border-width: 10px 16px 10px 0;
-    border-color: transparent var(--yellow-color2) transparent transparent; 
+    border-color: transparent var(--yellow-color2) transparent transparent;
 
     animation: bounce 2s ease-out infinite;
     transition: 1s linear 3s;
@@ -190,10 +190,10 @@
 }
 
 @keyframes bounce {
-    0%, 10%, 90%, 100% { 
+    0%, 10%, 90%, 100% {
         transform: translateX(0);
     }
-    50% { 
+    50% {
         transform: translateX(10px);
     }
 }
@@ -239,7 +239,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
     .form__mess {
         font-size: 70%;
 
