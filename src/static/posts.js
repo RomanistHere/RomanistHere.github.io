@@ -2,6 +2,7 @@ const posts = [
 	{
 		title: `My mission as an independent developer`,
 		slug: `my-mission`,
+		image: ``,
 		content: `
 			<p class="post__subtitle">Part I</p>
 
@@ -54,6 +55,7 @@ const posts = [
 	{
 		title: ``,
 		slug: ``,
+		image: ``,
 		content: ``
 	}
 ]

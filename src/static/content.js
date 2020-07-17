@@ -31,7 +31,7 @@ const content = {
 		`Try to point your cursor to a link in the card...`,
 		`Go press it!`,
 		`Oh, boy, you don't really have much to do, don't you?`,
-		`Have you ever seen a website singing? Would you like to?`,
+		`Have you ever seen a website sing? Would you like to?`,
 		`I'm a little bit shy, you don't often sing here`,
 		`Okay, all right, Let's sing!`,
 		`Nah, I'm joking`,

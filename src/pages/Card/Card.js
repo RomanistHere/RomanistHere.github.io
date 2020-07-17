@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 import './Card.css'
 
@@ -15,16 +15,24 @@ const Card = () => {
     const [shouldSmile, setSmile] = useState(false)
     const [shouldShowTyping, setShowTyping] = useState(false)
     const [random] = useState(getRandom(9))
-
     const [typings, setTypings] = useState({
         show: false,
         text: content.card__typings[0],
         pos: getRandom(9)
     })
+    const timeouts = useRef({
+        hide: null,
+        show: null
+    })
 
     useEffect(() => {
         document.title = content.titles.card
         setShowTyping(true)
+
+        return () => {
+            clearTimeout(timeouts.current.show)
+            clearTimeout(timeouts.current.hide)
+        }
     }, [])
 
     const goNextTyping = (counter) => {
@@ -34,17 +42,17 @@ const Card = () => {
             show: true
         }
         const newCounter = counter + 1
-        
+
         setTypings(newTyping)
 
         if (!content.card__typings[counter])
             return
 
-        setTimeout(() => {
+        timeouts.current.hide = setTimeout(() => {
             setTypings({...newTyping,  show: false })
         }, manage.card__typings__hide_time)
 
-        setTimeout(() => {
+        timeouts.current.show = setTimeout(() => {
             goNextTyping(newCounter)
         }, manage.card__typings__show_time)
     }
@@ -52,7 +60,7 @@ const Card = () => {
     useTimeout(() => {
         setShowTyping(false)
         goNextTyping(0)
-    }, manage.card__typing__hide_time)
+    }, 1000)
 
     return  <section className="main">
                 <div className="card">
