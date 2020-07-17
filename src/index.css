@@ -1,5 +1,5 @@
 .root,
-html, 
+html,
 body,
 .main,
 .offer,
@@ -80,17 +80,4 @@ ul {
 
     color: var(--txt-color2);
     font-family: var(--hand-font2);
-}
-
-@media screen and (max-width: 1024px) {
-    .root,
-    html, 
-    body,
-    .main,
-    .offer,
-    .apps {
-        width: auto;
-        height: auto;
-        min-height: 100vh;
-    }
 }

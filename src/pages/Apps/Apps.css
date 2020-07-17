@@ -183,16 +183,16 @@
 
   background-color: transparent;
 
-  background: radial-gradient(circle at center, 
-    var(--plat-color) 25%, 
-    var(--plat-color) 29.9%, 
-    rgba(229, 228, 226, 0.20) 30%, rgba(229, 228, 226, 0.20) 39%, 
-    var(--plat-color) 39.1%, var(--plat-color) 39.6%, 
-    rgba(229, 228, 226, 0.20) 39.8%, rgba(229, 228, 226, 0.20) 45%, 
-    var(--plat-color) 45.1%, var(--plat-color) 45.6%, 
-    rgba(229, 228, 226, 0.20) 45.3%, rgba(229, 228, 226, 0.20) 53%, 
-    var(--plat-color) 53.1%, var(--plat-color) 53.2%, 
-    rgba(229, 228, 226, 0.20) 53.3%, rgba(229, 228, 226, 0.20) 69%, 
+  background: radial-gradient(circle at center,
+    var(--plat-color) 25%,
+    var(--plat-color) 29.9%,
+    rgba(229, 228, 226, 0.20) 30%, rgba(229, 228, 226, 0.20) 39%,
+    var(--plat-color) 39.1%, var(--plat-color) 39.6%,
+    rgba(229, 228, 226, 0.20) 39.8%, rgba(229, 228, 226, 0.20) 45%,
+    var(--plat-color) 45.1%, var(--plat-color) 45.6%,
+    rgba(229, 228, 226, 0.20) 45.3%, rgba(229, 228, 226, 0.20) 53%,
+    var(--plat-color) 53.1%, var(--plat-color) 53.2%,
+    rgba(229, 228, 226, 0.20) 53.3%, rgba(229, 228, 226, 0.20) 69%,
     var(--plat-color) 69.1%, var(--plat-color) 100%)
 }
 
@@ -360,6 +360,7 @@
 
   .apps {
     display: block;
+    height: auto;
 
     padding-bottom: 40px;
   }

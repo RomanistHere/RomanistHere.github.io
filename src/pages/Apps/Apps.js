@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 
 import Slider from '../../components/Slider/Slider'
 import Typing from '../../components/Typing/Typing'
-// import Preloader from '../../components/Preloader/Preloader'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
@@ -49,7 +48,6 @@ const appsDesc = (projNumb) => Object.keys(apps_page[projNumb].apps__desc).map((
 
 const Apps = () => {
 	const [projNumb, changeProjNumb] = useState(1)
-	// const [showLoader, setLoader] = useState(true)
 
 	const changeProj = (e) => {
 		const newProjNumb = e.realIndex + 1
@@ -60,14 +58,8 @@ const Apps = () => {
 
 	useEffect(() => {
 		document.title = content.titles.apps
-		// setLoader(false)
+		window.scrollTo(0, 0)
 	}, [])
-
-  	// return  showLoader ?
-
-  	// 		<section className="main">
-   //              <Preloader />
-   //          </section> :
 
   	return	<section className={`${apps_page[projNumb].name} apps`}>
 	  			<header className="apps__head">

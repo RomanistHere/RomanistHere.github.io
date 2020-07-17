@@ -60,7 +60,7 @@ const Card = () => {
     useTimeout(() => {
         setShowTyping(false)
         goNextTyping(0)
-    }, 1000)
+    }, manage.card__typing__hide_time)
 
     return  <section className="main">
                 <div className="card">
