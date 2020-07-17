@@ -1,3 +1,32 @@
+.post {
+    /* dark */
+    /* --post-bg-color1: #0b0c10;
+    --post-color1: #c5c6c7;
+    --post-color2: #66fcf1; */
+
+    /* nice brigth */
+    /* --post-bg-color1: #eee2dc;
+    --post-color1: #123c69;
+    --post-color2: #ac3b61; */
+
+    /* fb colors */
+    /* --post-bg-color1: #edf0f5;
+    --post-color1: #333;
+    --post-color2: #29487d; */
+
+    --post-color1: #000000cc;
+    --post-color2: #000000cc;
+    --post-bg-color1: #fff;
+    --post-bg-color2: #dbdbdb;
+
+    background-color: var(--post-bg-color1);
+
+    color: var(--post-color1);
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
 .post__article {
     max-width: 700px;
     width: 100%;
@@ -5,30 +34,42 @@
     padding: 0 var(--pad-txt);
 
     box-sizing: border-box;
-
-    /* background-color: #3c6478;
-    background-color: #0d3d56;*/
-    color: white;
-    /* color: #ededed; */
 }
 
 .post__title {
-    padding: 20px 0 30px;
+    padding: 20px 0;
 
     font-size: 170%;
-    color: var(--yellow-color2);
+    font-weight: bold;
+    color: var(--post-color2);
 }
 
 .post__subtitle {
     margin: 0;
-    padding: 0 0 10px;
+    padding: 10px 0;
 
-    /* font-size: 120%; */
+    font-size: 130%;
     font-weight: bold;
-    color: var(--yellow-color2);
+    color: var(--post-color2);
 }
 
 .post__text {
     margin: 0;
-    padding: 0 0 20px;
+    padding: 0 0 12px;
+}
+
+.post__link {
+    text-decoration: none;
+    border-bottom: .1em solid #000000b3;
+}
+
+.post__strong {
+    text-decoration: underline;
+}
+
+.post::selection,
+.post__title::selection,
+.post__subtitle::selection,
+.post__text::selection {
+    background-color: var(--post-bg-color2);
 }

@@ -75,7 +75,7 @@
   right: 0.5em;
   bottom: 0;
 
-  background-color: var(--jerry-color);
+  background-color: var(--third-bg-color);
 
   color: #fff;
 }
@@ -113,7 +113,7 @@ input:checked + .switch-left {
   width: 3em;
   transform: rotate(0deg) skewX(0deg);
 
-  background-color: var(--yellow-color2);
+  background-color: var(--bg-color2);
 
   color: #fff;
 }

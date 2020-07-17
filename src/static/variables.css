@@ -46,6 +46,16 @@
     --hand-font3: 'handFont3';
     /*paddings for text*/
     --pad-txt: 30px;
+    /* main colors */
+    --bg-color2: #6ea1be;
+    --bg-color1: #dadee0;
+    --text-color1: #24305e;
+    --text-color1: var(--third-bg-color);
+
+    --main-bg-color: var(--dark-color1);
+    --second-bg-color: var(--jerry-color);
+    --third-bg-color: var(--dark-color3);
+    --main-text-color: var(--yellow-color2);
 }
 
 @media screen and (max-width: 360px) {

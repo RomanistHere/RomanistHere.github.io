@@ -13,7 +13,7 @@ const Offer = lazy(() => import('./Offer/Offer'))
 const Card = lazy(() => import('./Card/Card'))
 const Apps = lazy(() => import('./Apps/Apps'))
 const Form = lazy(() => import('./Form/Form'))
-const Post = lazy(() => import('./Post/Post'))
+// const Post = lazy(() => import('./Post/Post'))
 
 const App = () => {
   return (

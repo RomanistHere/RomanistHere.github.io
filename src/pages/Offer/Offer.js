@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import ReactHtmlParser from 'react-html-parser'
 
-import './Offer.css'
-
 import content from '../../static/content'
 import manage from '../../static/manage'
 import CV from '../../media/images/Roman Smunyov CV.pdf'
@@ -20,6 +18,8 @@ import BackIcon from '../../media/images/BackIcon'
 
 import Typing from '../../components/Typing/Typing'
 import Switcher from '../../components/Switcher/Switcher'
+
+import './Offer.css'
 
 const items = content.offer__list.map(({
 	offer__low_title,
@@ -101,19 +101,18 @@ const Offer = () => {
 		  			/>
 	  			</nav>
 
-	  			<div className="offer__wrap">
+	  			<main className="offer__wrap">
 	  				<h1 className="offer__title">{content.offer__title}</h1>
 					<ul className="offer__list">
 						{items}
 					</ul>
-
-					<Typing
-		  				text={content.offer__typing}
-		  				className='offer__typing'
-		  				startDelay={offer_switcher__show_time}
-		  				shouldShow={shouldShow}
-		  			/>
-	  			</div>
+	  			</main>
+				<Typing
+					text={content.offer__typing}
+					className='offer__typing'
+					startDelay={offer_switcher__show_time}
+					shouldShow={shouldShow}
+				/>
   			</section>
 }
 

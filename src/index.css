@@ -20,10 +20,10 @@ html {
     line-height: 1.59;
     font-weight: 300;
     font-size: 18px;
-    color: var(--yellow-color2);
+    color: var(--main-text-color);
 
     -webkit-tap-highlight-color: transparent;
-    background-color: var(--dark-color1);
+    background-color: var(--main-bg-color);
 }
 
 h1,
@@ -59,17 +59,21 @@ ul {
     -ms-align-items: center;
     align-items: center;
 
-    color: var(--yellow-color2);
+    color: var(--main-text-color);
 }
 
 .link {
-    color: var(--yellow-color2);
+    color: var(--text-color1);
+
+    text-decoration: none;
+    border-bottom: .1em solid #000000b3;
 
     transition: var(--def-trs);
 }
 
 .link:hover {
-    color: var(--yellow-color1);
+    color: var(--bg-color2);
+    border-color: var(--bg-color2);
 }
 
 .link_back {

@@ -43,7 +43,7 @@
   width: 300px;
   height: 400px;
 
-  background-image: linear-gradient(30deg, var(--dark-color1) 30%, rgba(170,170,170,0) 30.1%), linear-gradient(-30deg, var(--dark-color1) 30%, rgba(170,170,170,0) 30.1%);
+  background-image: linear-gradient(30deg, var(--main-bg-color) 30%, rgba(170,170,170,0) 30.1%), linear-gradient(-30deg, var(--main-bg-color) 30%, rgba(170,170,170,0) 30.1%);
   transform-style: preserve-3d;
 }
 

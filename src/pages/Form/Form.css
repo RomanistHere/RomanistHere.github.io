@@ -25,7 +25,7 @@
 .form__lbl {
     display: block;
 
-    border-bottom: solid 4px var(--dark-color3);
+    border-bottom: solid 4px var(--third-bg-color);
 }
 
 .form__button {
@@ -33,7 +33,7 @@
 
     cursor: pointer;
 
-    /*border-bottom: solid 2px var(--dark-color3);*/
+    /*border-bottom: solid 2px var(--third-bg-color);*/
 
     font-size: 18px;
     /*font-weight: bold;*/
@@ -43,8 +43,8 @@
     width: 100%;
     height: 34px;
 
-    color: var(--yellow-color2);
-    background-color: var(--dark-color3)
+    color: var(--main-text-color);
+    background-color: var(--third-bg-color)
 }
 
 .form__inp {
@@ -87,7 +87,7 @@
 
 .form__data:active + .form__focus,
 .form__data:focus + .form__focus {
-    background-color: var(--dark-color3);
+    background-color: var(--third-bg-color);
 }
 
 .form__grp {
@@ -179,7 +179,7 @@
 
     border-style: solid;
     border-width: 10px 16px 10px 0;
-    border-color: transparent var(--yellow-color2) transparent transparent;
+    border-color: transparent var(--main-text-color) transparent transparent;
 
     animation: bounce 2s ease-out infinite;
     transition: 1s linear 3s;

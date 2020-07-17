@@ -47,7 +47,7 @@
     width: 0;
     height: 0;
 
-    border: 6px solid var(--dark-color3);
+    border: 6px solid var(--third-bg-color);
     border-radius: 10px;
 
     transition: var(--face-transition);
@@ -76,8 +76,8 @@
     margin-left: calc(-5px / 2);
     transform: rotate(9deg);
 
-    border: 2px solid var(--dark-color3);
-    border-color: transparent transparent var(--dark-color3) var(--dark-color3);
+    border: 2px solid var(--third-bg-color);
+    border-color: transparent transparent var(--third-bg-color) var(--third-bg-color);
     border-radius: 0 10px 10px;
 }
 
@@ -90,10 +90,10 @@
     height: 40px;
     margin-left: calc((-30px + -2px) / 2);
 
-    border: 2px solid var(--dark-color3);
+    border: 2px solid var(--third-bg-color);
     border-radius: 10px;
 
-    border-color: transparent transparent var(--dark-color3) transparent;
+    border-color: transparent transparent var(--third-bg-color) transparent;
 
     transition: var(--face-transition);
 }
@@ -193,5 +193,5 @@
 
     border-radius: 48px 48px 40px 40px;
 
-    background: var(--jerry-color);
+    background: var(--second-bg-color);
 }

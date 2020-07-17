@@ -14,13 +14,13 @@ const findPostBySlug = slug =>
 const Post = () => {
     const { slug } = useParams()
     const post = findPostBySlug(slug)
-  	return 	<section className="post">
+  	return 	<main className="post">
                 <article className="post__article">
                     <h1 className="post__title">{post.title}</h1>
                     <div className="post__text">{ReactHtmlParser(post.content)}</div>
                 </article>
                 <Link className="post__back link_back" to='/'>{content.link_back}</Link>
-		    </section>
+		    </main>
 }
 
 export default Post

@@ -6,15 +6,38 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
+    font-weight: normal;
+    /* ! */
+
     --hover-color1: #d8dee2;
     --hover-color2: var(--dark-color4);
     --offer-transition: all ease .7s 0s;
 }
 
+.offer__wrap {
+    padding-bottom: 20px;
+
+    transition: var(--offer-transition);
+    background-color: inherit;
+}
+
+.offer__wrap {
+    width: 676px;
+    margin: 50px auto;
+    padding: 60px;
+
+    border: solid 20px var(--third-bg-color);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+
+    background-color: var(--bg-color1);
+    color: var(--text-color1);
+}
+
 .offer__low_title {
     margin: 30px 0 10px;
 
-    font-weight: normal;
+    font-weight: bold;
+    /* ! */
 }
 
 .offer__text {
@@ -34,7 +57,7 @@
     -ms-align-items: center;
     align-items: center;
 
-    background-color: var(--jerry-color);
+    background-color: var(--bg-color2);
 
     transition: var(--offer-transition);
 
@@ -42,13 +65,8 @@
 }
 
 .offer__nav_list {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: center;
-    -ms-align-items: center;
     align-items: center;
 
     height: 100%;
@@ -61,12 +79,7 @@
 }
 
 .offer__link {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -ms-align-items: center;
     align-items: center;
     justify-content: center;
 
@@ -81,23 +94,8 @@
 }
 
 .offer__title {
-    width: 658px;
-    margin: 0 auto;
-
     font-size: 52px;
     text-decoration: underline;
-}
-
-.offer__wrap {
-    padding-bottom: 20px;
-
-    transition: var(--offer-transition);
-    background-color: inherit;
-}
-
-.offer__list {
-    width: 658px;
-    margin: 0 auto;
 }
 
 .offer__typing {
@@ -191,7 +189,7 @@
     .offer__nav_item:hover .offer__link_text{
         color: var(--hover-color2);
     }
-        
+
 
     .offer__nav:hover + .offer__wrap {
         background-color: var(--hover-color1);
@@ -201,9 +199,14 @@
 
 @media screen and (max-width: 1024px) {
     .offer__wrap {
-        padding: 30px 0 60px;
+        padding: 30px;
+        border-width: 15px;
+        width: 90%;
+        max-width: 676px;
 
         font-size: 20px;
+
+        box-sizing: border-box;
     }
 
     .offer__switcher,
@@ -220,6 +223,8 @@
 @media screen and (max-width: 735px) {
     .offer__link {
         justify-content: left;
+
+        border: none;
     }
 
     .offer__nav_list {
@@ -242,16 +247,12 @@
         height: auto;
     }
 
-    .offer__list,
-    .offer__title {
-        padding: 0 var(--pad-txt);
-        width: 100%;
-
-        box-sizing: border-box;
-    }
-
     .offer__wrap {
-        padding: 0 0 50px;
+        margin: 0;
+        width: 100%;
+        padding: var(--pad-txt);
+        border: none;
+        margin-bottom: 15px;
 
         font-size: 16px;
     }
