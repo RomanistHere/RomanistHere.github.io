@@ -1,39 +1,19 @@
 .post {
-    /* dark */
-    /* --post-bg-color1: #0b0c10;
-    --post-color1: #c5c6c7;
-    --post-color2: #66fcf1; */
+    position: relative;
 
-    /* nice brigth */
-    /* --post-bg-color1: #eee2dc;
-    --post-color1: #123c69;
-    --post-color2: #ac3b61; */
-
-    /* fb colors */
-    /* --post-bg-color1: #edf0f5;
-    --post-color1: #333;
-    --post-color2: #29487d; */
-
-    --post-color1: #000000cc;
-    --post-color2: #000000cc;
-    --post-bg-color1: #fff;
-    --post-bg-color2: #dbdbdb;
-
-    background-color: var(--post-bg-color1);
-
-    color: var(--post-color1);
-    font-size: 18px;
-    line-height: 1.6;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .post__article {
-    max-width: 700px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 var(--pad-txt);
+    width: 676px;
+    margin: 50px auto;
+    padding: 60px;
 
-    box-sizing: border-box;
+    border: solid 20px var(--third-bg-color);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+
+    background-color: var(--bg-color1);
+    color: var(--text-color1);
 }
 
 .post__title {
@@ -45,12 +25,15 @@
 }
 
 .post__subtitle {
+    display: inline-block;
+
     margin: 0;
     padding: 10px 0;
 
-    font-size: 130%;
     font-weight: bold;
     color: var(--post-color2);
+
+    transition: var(--def-trs);
 }
 
 .post__text {
@@ -58,18 +41,57 @@
     padding: 0 0 12px;
 }
 
-.post__link {
-    text-decoration: none;
-    border-bottom: .1em solid #000000b3;
-}
-
 .post__strong {
     text-decoration: underline;
 }
 
-.post::selection,
-.post__title::selection,
-.post__subtitle::selection,
-.post__text::selection {
-    background-color: var(--post-bg-color2);
+.post__col-1 {
+    background-color: #00800033;
+}
+
+.post__col-2 {
+    background-color: #ff000033;
+}
+
+.post__text-active {
+    position: relative;
+}
+
+.post__text-active::after {
+    content: ' !!!';
+}
+
+.post__list {
+    padding-left: 22px;
+}
+
+.post__list_item {
+    list-style: circle;
+}
+
+@media screen and (max-width: 1024px) {
+    .post {
+        padding-bottom: 10px;
+    }
+
+    .post__article {
+        padding: 30px;
+        border-width: 15px;
+        width: 90%;
+        max-width: 676px;
+
+        font-size: 20px;
+
+        box-sizing: border-box;
+    }
+
+    .post__title {
+        padding: 0 0 20px;
+
+        font-size: 150%;
+    }
+
+    .post__back {
+        position: absolute;
+    }
 }

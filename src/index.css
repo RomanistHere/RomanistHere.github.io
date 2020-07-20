@@ -44,8 +44,8 @@ ul {
 }
 
 *::selection {
-    background-color: var(--yellow-color1);
-    color: var(--dark-color2);
+    background-color: var(--bg-color2);
+    /* color: var(--dark-color2); */
 }
 
 .main {

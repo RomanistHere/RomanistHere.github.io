@@ -13,7 +13,8 @@ const Offer = lazy(() => import('./Offer/Offer'))
 const Card = lazy(() => import('./Card/Card'))
 const Apps = lazy(() => import('./Apps/Apps'))
 const Form = lazy(() => import('./Form/Form'))
-// const Post = lazy(() => import('./Post/Post'))
+const NoPage = lazy(() => import('./NoPage/NoPage'))
+const Post = lazy(() => import('./Post/Post'))
 
 const App = () => {
   return (
@@ -32,15 +33,15 @@ const App = () => {
                 <Route path="/form">
                     <Form />
                 </Route>
-                {/* <Route path="/posts/:slug">
+                <Route path="/posts/:slug">
                     <Post />
-                </Route> */}
+                </Route>
                 {/* <Route path="/posts">
                     <Posts />
                 </Route> */}
-                {/* <Route>
+                <Route>
                     <NoPage />
-                </Route> */}
+                </Route>
             </Switch>
         </Suspense>
     </Router>

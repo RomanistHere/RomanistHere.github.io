@@ -230,7 +230,8 @@ const content = {
 		offer: `Let's see who I am`,
 		form: `Make me an offer`
 	},
-	link_back: 'To main page'
+	link_back: 'To main page',
+	no_page__text: '404',
 }
 
 export default content
