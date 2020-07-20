@@ -95,3 +95,22 @@
         position: absolute;
     }
 }
+
+@media screen and (max-width: 735px) {
+    .post {
+        padding-bottom: 0;
+    }
+
+    .post__article {
+        margin: 0;
+        width: 100%;
+        padding: var(--pad-txt) var(--pad-txt) 40px;
+        border: none;
+
+        font-size: 16px;
+    }
+
+    .post__title {
+        font-size: 30px;
+    }
+}
