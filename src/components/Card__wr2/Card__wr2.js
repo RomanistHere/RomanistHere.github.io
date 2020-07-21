@@ -17,13 +17,13 @@ const Card__wr2 = ({ onMouseOver, onMouseLeave }) => {
                     	className="card__link link"
                     	to="/apps">my apps</Link>
                 </li>
-                {/* <li className="card__item">
+                <li className="card__item">
                     Or read <Link
                     	onMouseOver={onMouseOver}
                     	onMouseLeave={onMouseLeave}
                     	className="card__link link"
-                    	to="/posts">stuff</Link> I write
-                </li> */}
+                    	to="/posts">articles</Link> I write
+                </li>
             </ul>
 }
 

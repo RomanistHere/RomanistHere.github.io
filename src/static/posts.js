@@ -2,6 +2,8 @@ const posts = [
 	{
 		title: `My mission as an independent developer`,
 		slug: `my-mission`,
+		posted: `Jul 21, 2020`,
+		desc: `My thoughts on how to choose software, make impact on the world and what am I doing here.`,
 		image: ``,
 		content: `
 			<p class="post__subtitle part1">Part I</p>
@@ -165,11 +167,109 @@ const posts = [
 			<p class="post__text">As an independent developer, I promise to deliver best-I-can-do experience to you and never give up on this idea. Thank you for your time. Have a better life now, see ya:)</p>`
 	},
 	{
-		title: ``,
-		slug: ``,
+		title: `How I tested popular popup blockers`,
+		slug: `test-blockers`,
+		posted: `Jun 3, 2019`,
+		desc: `This is the story about how I tested all popular Chrome popup blockers during recording a video showcase for the extension I created myself. And what are the results.`,
 		image: ``,
-		content: ``
+		content: `
+			<p class="post__text">Hello. This is the story about how I tested all popular Chrome popup blockers during recording a video showcase for the extension I created myself. And what are the results.</p>
+
+			<p class="post__text">For people, who want them fast. Results are sane enough. It is okay to use it.</p>
+
+			<p class="post__text">And… you did not leave, fine. Conclusion is not the only matter. Let’s read, then.</p>
+
+			<p class="post__subtitle part1">Prehistory</p>
+
+			<p class="post__text">So I am a developer. I created an extension, ironically, inspired by medium.com. Part of developers articles public here or at very similar platforms. You probably faced(or facing right now if you did not pay) a lot of bars at top/bottom or even popups interrupting you while reading.</p>
+
+			<p class="post__text">I tried to remove them using the ad blocker feature — it can remove any element from the web page. But it would appear after reloading anyway. So I wrote a script that removes stuck to screen elements(like bars or popups with omnipresent cookies) permanently. And then I realized that someone, probably you, my dear reader, could find this kind of tool useful.</p>
+
+			<p class="post__subtitle part2">History</p>
+
+			<p class="post__text">As you could know, to make the thing noticeable, it should be advertised. At least a little. So my plan was to expose “big” popular blockers in not doing their jobs properly. I was satisfied. But my expectations about the usefulness of these modern blockers was quite lower. The conclusion will be in the end.</p>
+
+			<p class="post__text">I collected about 20–30 websites with annoying popups, half-screen bars with cookies or different ads. Installed about ten most popular popup blockers plus few ad ones. And started to test, recording my screen, so I can montage showcase.</p>
+
+			<p class="post__text">Firstly, things went swimmingly. Popups kept appearing. Cookie notifications were still annoying. I had no hope panels and “buy smth” ads at top/bottom will disappear. But after a dozen of websites, I started to not see expected popups. “So it works” — thought I. And it worked. But all my extensions covered only about 30–40% of websites, other ones were still polluted.</p>
+
+			<p class="post__text">I recorded enough to make the video I wanted. I started to montage, blah-blah. Then, based on first feedback from users, I removed part of possibilities. The less the user can, the more he is satisfied. I plan to return these opportunities, actually. But after that, I had to re record all data. I added one or two new extensions. Even paid one. And was about to repeat it the old way…</p>
+
+			<p class="post__text">From the start I understood that something went wrong. Or, I can say, went right. First 4–5 websites from the previous road map were cleared by my pack of extensions. Not needed video content, huh? For some unknown reason blockers decided to block this time. About 70% of websites were free from popups. Not from cookie notifications and other layout, though.</p>
+
+			<p class="post__text">I spent a few hours trying to get websites from different areas of life, where extensions were not working. Another problem I faced is that sometimes popups did appear but not for record. And when my “camera” was ready, they did not. So I can not characterize these blockers as stable.</p>
+
+			<p class="post__text">Few more things, I had noticed, during mine little investigation:</p>
+
+			<p class="post__subtitle part3">1. Performance and user experience.</p>
+
+			<p class="post__text">I can not call any of my computers powerful. After I enabled all extensions(average difference in weight x100 with extension of mine, in number of scripts to execute about 100 as well), every Chrome launch took much more time, then a clean version. Part of websites loads became torture. I understand tha it is not how it is supposed to work. I mean installing all the extensions at once, but I will make my message clean. These blockers apart miss a lot. Having it all together greatly increases percent of blocked popups, but noticeably reduces the performance.</p>
+
+			<p class="post__subtitle part4">2. Wrong triggering.</p>
+
+			<p class="post__text">If you don't use Google for your searches, most popup blockers trigger when you just enter a different search engine. And they will not allow you to open any result. And if you force them to, they will not allow you to open the result at the new tab by clicking ctrl + mouse click, or right click and choosing “open link in new tab”. I understand how these scripts work and why. But as a user, I actually do not want them to. It is not setting up from any settings anywhere. So far, I used my “extensions starter pack” for a couple of hours, and this “feature” annoyed me much more than any popup in this life. To remove all kinds of pollution, you have to sacrifice something clean. But if it is not removing ALL problems, and still cuts your possibilities — screw it!</p>
+
+			<p class="post__subtitle part5">Conclusion</p>
+
+			<p class="post__text">So far, it is almost all I wanted to share with you about. If you stop from reading now and think about what I want to say, you, probably, would be wrong. If you are not a fastidious guy, few or probably even one popup blocker extension in pair with any fine ad blocker would be enough, to make yourself comfortable. I believe developers updating their databases and scripts full time to make you even more comfortable.</p>
+
+			<p class="post__text">You, probably, are not even annoyed by closing infinite popups and cookie notifications at almost every(cookie at every, it is the law), so there is nothing useful in using nor mine, nor any other tool for that. It is totally okay. I guess.</p>
+
+			<p class="post__text">But if you are getting annoyed by closing omnipresent notifications or do not like, when something interrupts from reading, and you do like stability, you should definitely take a look at the product, I developed. This article is not about it, so I will not say anything more. You will hear about it someday anyway.</p>
+
+			<p class="post__text">Not saying goodbye. Have a good time!</p>
+		`
+	},
+	{
+		title: `Letter from developer to interviewer.`,
+		slug: `letter`,
+		posted: `Jul 18, 2019`,
+		desc: `If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.`,
+		image: ``,
+		content: `
+			<p class="post__text">If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.</p>
+
+			<p class="post__text">I’ve got a conversation with “Head of integrations” at a few-year “startup X”. Below I will show and comment full content(without regarding part) of the letter, he sent me after.</p>
+
+			<p class="post__subtitle part1">This is how to not write your feedback letter.</p>
+
+			<p class="post__text">Even if it is what you really think. Keep things professional.</p>
+
+			<p class="post__text">“We-are-not-moving-forward-stuff and here is why:</p>
+
+			<p class="post__text">- Im expecting candidate to know what “startup X” does as a company and what is our product, meaning did a research and have a concise choice to join that company. Otherwise I have to question your motivation.” — I could say, that is totally wrong, I won’t, but it is. The company is going to get more profit from the developer, than the developer gets from the company. But he won’t decline an offer, because he is expecting to know who he is, or where he lives, etc before the interview. There are tons of jobs nowadays that developers can apply for. It’s the interviewer’s job to interest and make them motivated. It’s not working like this now, because of supply still above demand. With opposite conditions the developer would not change his line of conduct. But the interviewer would. That’s why this is wrong(okay, I said it). Let’s continue.</p>
+
+			<p class="post__text">“- Also I consider as a good quality of a person if he knows his weak and strong sides, which means that person has reflected on that and knows where he can improve. You mentioned that you get lazy and it turns out that you actually overwork yourself. Which is fine and you will figure it out, just that we want people who have figured out life/work balance” — this is about what the truth is and what a developer has to say to get hired. Every person in this world sometimes gets lazy. You can’t beat it. It’s from evolution. But an interviewer doesn’t expect to hear the truth. He expects a “right” template-based answer. There are discussions, like “can computers replace engineers?”. I don’t know, but a script with 50 strings can replace some interviewers.</p>
+
+			<p class="post__text">“- I absolutely believe that everyone in our industry, has things that they hate about the industry, coding etc. If a candidate tells that everything is lovely, then in get impression, that you have not got enough experience and challenges yet.” — most non-understood point for me. I don’t really know why anyone in the world would continue to do things, if there is something to hate. I know there are people of this kind. It’s just not me. Not all moments in my job are the pleasure, but if there were something to even dislike, I would choose a different profession. There are a lot of them, you know. So if a developer loves all he does, is it a bad sign?</p>
+
+			<p class="post__text">“- We have a very tough homework and tech interview, I got impression, that you would not be able to pass that yet. I also participated yesterday in such an interview and it’s really not easy.” — that is just not professional. Nothing to comment.</p>
+
+			<p class="post__text">“- Salary expectations were way to high for the impression I got, which also questions if you know were you stand in the industry and how good are other people. I think it would help you a lot If you could join as a junior to a very good company with experienced devs in an open space office environment.” — word “discussable” wasn’t heard. I never knew why I should join as a junior… But this one seems a little offending for me. Not professional too, though.</p>
+
+			<p class="post__text">Don’t get me wrong. I enjoy communicating with strangers, especially from different cultures. And I’m totally fine with this one. It’s just not the way you ever treat anyone. If you’re professional — behave accordingly. And if you are in a bad mood before an interview, especially “call” one, postpone it, it’s okay.I would rather talk with you in a good mood tomorrow.</p>
+
+			<p class="post__text">There are a lot of very nice interviewers. I was in this role many times(I’m not the “very nice” one). The goal of my narrative is to prevent you from making simple mistakes by showing them into this real example. If you haven’t found this article any useful, you’re cool. And if you have, I believe, you’re going to be cooler now.</p>
+
+			<p class="post__text">This article is a little bit aggressive, but it’s just the way I write. “I did not not want to offend you in any way.”</p>
+
+			<p class="post__text">Thank you for attention and let me know what you think.</p>
+		`
 	}
+	// {
+	// 	title: ``,
+	// 	slug: ``,
+	//  posted: ``,
+	//	desc: ``,
+	// 	image: ``,
+	// 	content: ``
+	// }
+	//<p class="post__subtitle part1"></p>
+	//<p class="post__text"></p>
+	//<a href="link" rel="noreferrer" target="_blank" class="link"></a>
 ]
+
+
+
 
 export default posts

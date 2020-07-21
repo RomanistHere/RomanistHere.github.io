@@ -228,7 +228,8 @@ const content = {
 		apps: `Products I've developed`,
 		card: `You are welcome here`,
 		offer: `Let's see who I am`,
-		form: `Make me an offer`
+		form: `Make me an offer`,
+		posts: `Articles I write`
 	},
 	link_back: 'To main page',
 	no_page__text: '404',

@@ -89,7 +89,7 @@ const Offer = () => {
 
 	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
 
-    return  <section className="offer">
+    return  <section className="offer main">
   				<nav className="offer__nav">
 					<ul className="offer__nav_list">
 						{navItems}

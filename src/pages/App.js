@@ -15,6 +15,7 @@ const Apps = lazy(() => import('./Apps/Apps'))
 const Form = lazy(() => import('./Form/Form'))
 const NoPage = lazy(() => import('./NoPage/NoPage'))
 const Post = lazy(() => import('./Post/Post'))
+const Posts = lazy(() => import('./Posts/Posts'))
 
 const App = () => {
   return (
@@ -36,9 +37,9 @@ const App = () => {
                 <Route path="/posts/:slug">
                     <Post />
                 </Route>
-                {/* <Route path="/posts">
+                <Route path="/posts">
                     <Posts />
-                </Route> */}
+                </Route>
                 <Route>
                     <NoPage />
                 </Route>

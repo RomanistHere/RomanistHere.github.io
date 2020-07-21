@@ -61,7 +61,7 @@ const Apps = () => {
 		window.scrollTo(0, 0)
 	}, [])
 
-  	return	<section className={`${apps_page[projNumb].name} apps`}>
+  	return	<section className={`${apps_page[projNumb].name} apps main`}>
 	  			<header className="apps__head">
 		  			<h1 className="apps__head_title">
 		  				{apps_page[projNumb].name}

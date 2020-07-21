@@ -1,0 +1,38 @@
+import React, { useEffect } from "react"
+import { Link } from "react-router-dom"
+
+import posts from '../../static/posts'
+import content from '../../static/content'
+
+import './Posts.css'
+
+const items = posts.map(({
+    title,
+    slug,
+    posted,
+    image,
+    desc
+}, index) =>
+    <article key={index} className="posts__item">
+        <Link className="posts__link" to={`/posts/${slug}`}>
+            <h1 className="posts__title">{title}</h1>
+            <p className="posts__text">{desc}</p>
+            <span className="posts__capt">{posted}</span>
+            <span className="posts__mob">Read more</span>
+        </Link>
+    </article>)
+
+const Posts = () => {
+    useEffect(() => {
+        document.title = content.titles.posts
+    }, [])
+
+  	return 	<section className="main posts">
+                <main className="posts__wrap">
+                    {items}
+                </main>
+                <Link className="posts__back link_back" to='/'>{content.link_back}</Link>
+            </section>
+}
+
+export default Posts
