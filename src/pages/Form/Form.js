@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
 
-import './Form.css'
-
+import LinkBack from '../../components/LinkBack/LinkBack'
 import Input from '../../components/Input/Input'
 import Typing from '../../components/Typing/Typing'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
 import { removeElem } from '../../static/functions'
+
+import './Form.css'
 
 const formInputs = ({ inpFocused, nextLvl }) => content.form__info.map(({
 	form__lbl,
@@ -18,9 +18,9 @@ const formInputs = ({ inpFocused, nextLvl }) => content.form__info.map(({
 }, index) => {
     return  <div key={index} className="form__grp">
 				<label className="form__lbl">{form__lbl}:</label>
-				<Input 
-					isInput={isInput} 
-					placeholder={placeholder} 
+				<Input
+					isInput={isInput}
+					placeholder={placeholder}
 					inpFocused={inpFocused}
 					nextLvl={nextLvl}
 					name={form__lbl} />
@@ -78,7 +78,7 @@ const Form = () => {
 		form__typing_5__hide_time,
 		forbidShow_time,
 	} = manage
-	
+
 	const [shouldShow, setShowTyping] = useState(1)
 	const [inpFocusedTimes, changeFocusedTimes] = useState(1)
 	const [shownLvl, show] = useState([1, 3])
@@ -107,7 +107,7 @@ const Form = () => {
 	}
 
 	const nextLvl = newLvlNumb => {
-		if (!showNext) 
+		if (!showNext)
 			return
 
 		const shownLevels = shownLvl
@@ -139,8 +139,8 @@ const Form = () => {
 			setTimeout(() => nextLvl(0), form__typing_5__hide_time)
 	}
 
-  	return 	<section className="form_section">
-				<form 
+  	return 	<section className="form_section main">
+				<form
 					className="form"
 			  		action={content.formAction}
 				  	method="POST"
@@ -156,10 +156,8 @@ const Form = () => {
 
 					{formTypings(shouldShow)}
 				</form>
-				<Link className="link_back form__back" to='/'>{content.link_back}</Link>
-				
+				<LinkBack className="form__back" />
 		    </section>
 }
 
 export default Form
-

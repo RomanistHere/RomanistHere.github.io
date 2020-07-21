@@ -49,14 +49,9 @@ ul {
 }
 
 .main {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
 
     justify-content: center;
-    -ms-align-items: center;
     align-items: center;
 
     color: var(--main-text-color);
@@ -71,17 +66,9 @@ ul {
     transition: var(--def-trs);
 }
 
-.link:hover {
-    color: var(--bg-color2);
-    border-color: var(--bg-color2);
-}
-
-.link_back {
-    position: fixed;
-
-    bottom: 20px;
-    right: 20px;
-
-    color: var(--txt-color2);
-    font-family: var(--hand-font2);
+@media (hover: hover) {
+    .link:hover {
+        color: var(--bg-color2);
+        border-color: var(--bg-color2);
+    }
 }

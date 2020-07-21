@@ -5,8 +5,6 @@ import {
   Route,
 } from "react-router-dom";
 
-import './App.css'
-
 import Preloader from '../components/Preloader/Preloader'
 
 const Offer = lazy(() => import('./Offer/Offer'))

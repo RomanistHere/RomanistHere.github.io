@@ -1,6 +1,8 @@
 import React, { useEffect } from "react"
 import { Link } from "react-router-dom"
 
+import LinkBack from '../../components/LinkBack/LinkBack'
+
 import posts from '../../static/posts'
 import content from '../../static/content'
 import { importAll } from '../../static/functions'
@@ -35,7 +37,7 @@ const Posts = () => {
                 <main className="posts__wrap">
                     {items}
                 </main>
-                <Link className="posts__back link_back" to='/'>{content.link_back}</Link>
+                <LinkBack className="posts__back" />
             </section>
 }
 

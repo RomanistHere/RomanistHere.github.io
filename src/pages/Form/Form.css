@@ -217,8 +217,8 @@
 
 @media screen and (max-width: 1024px) {
     .form_section {
-        min-height: 100vh;
-        padding: 30px var(--pad-txt) 60px;
+        min-height: 700px;
+        padding: 10px var(--pad-txt);
 
         display: flex;
         justify-content: center;
@@ -237,6 +237,10 @@
     .form__typing {
         display: none;
     }
+
+    .form__back {
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -244,9 +248,5 @@
         font-size: 70%;
 
         top: 4px;
-    }
-
-    .form__back {
-        position: absolute;
     }
 }

@@ -1,9 +1,9 @@
 import React, { Fragment, useState, useEffect } from "react"
 import ReactHtmlParser from 'react-html-parser'
-import { Link } from "react-router-dom"
 
 import Slider from '../../components/Slider/Slider'
 import Typing from '../../components/Typing/Typing'
+import LinkBack from '../../components/LinkBack/LinkBack'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
@@ -101,7 +101,7 @@ const Apps = () => {
 							</a>)
 	  				}
 	  			</footer>
-	  			<Link className="apps__back link_back" to='/'>{content.link_back}</Link>
+				<LinkBack className="apps__back" />
 			</section>
 }
 

@@ -185,7 +185,7 @@ const content = {
 			name: 'Stylify',
 			tilt_desc: `Unique browser extension`,
 			apps__desc: {
-				Description: `Browser extension that fixes how "bad" websites look. Makes content readable.`,
+				Description: `Browser extension that fixes ugly-looking websites. Makes content readable.`,
 				Status: `- Works fine but not comfortable for everyday use; <br/>
 							- Needs redesign; <br/>
 		  					- In development;`,

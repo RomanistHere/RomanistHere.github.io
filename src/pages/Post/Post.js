@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import ReactHtmlParser from 'react-html-parser'
 import { useParams } from "react-router"
-import { Link } from "react-router-dom"
+import LinkBack from '../../components/LinkBack/LinkBack'
 
 import posts from '../../static/posts'
 import contPage from '../../static/content'
@@ -45,7 +45,7 @@ const Post = () => {
                     <img className="post__img" src={images[image]} alt=""/>
                     <div className="post__text">{ReactHtmlParser(content)}</div>
                 </article>
-                <Link className="post__back link_back" to='/'>{contPage.link_back}</Link>
+                <LinkBack className="post__back" />
 		    </main>
 }
 
