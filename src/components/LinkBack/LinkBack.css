@@ -2,8 +2,9 @@
     position: fixed;
     z-index: 2;
 
-    bottom: 20px;
-    right: 20px;
+    padding: 10px;
+    bottom: 10px;
+    right: 10px;
 
     color: var(--txt-color2);
     font-family: var(--hand-font2);

@@ -71,6 +71,12 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .posts__wrap {
+        width: 500px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .posts {
         height: auto;
