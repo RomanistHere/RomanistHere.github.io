@@ -1,0 +1,2 @@
+.link_back{position:fixed;z-index:2;bottom:20px;right:20px;color:var(--txt-color2);font-family:var(--hand-font2)}@media (hover:hover){.link_back__shadow{position:fixed;opacity:0;z-index:-1;top:0;left:0;right:0;bottom:0;transition:var(--def-trs)}.link_back:hover+.link_back__shadow{-webkit-backdrop-filter:grayscale(1);backdrop-filter:grayscale(1);opacity:1;z-index:1}}
+/*# sourceMappingURL=1.276a08e5.chunk.css.map */
