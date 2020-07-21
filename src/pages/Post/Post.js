@@ -13,10 +13,16 @@ const images = importAll(require.context('../../media/images/posts/', false, /\.
 
 const Post = () => {
     const { slug } = useParams()
-    const { image, title, content } = findPostBySlug(posts, slug)
+    const { image, title, content, desc } = findPostBySlug(posts, slug)
 
     useEffect(() => {
         document.title = title
+        document.querySelector('meta[name="Description"]').setAttribute("content", desc)
+        document.querySelector('meta[property=og\\:description]').setAttribute("content", desc)
+        document.querySelector('meta[property=og\\:title]').setAttribute("content", title)
+        document.querySelector('meta[property=og\\:image]').setAttribute("content", images[image])
+        document.querySelector('meta[property=og\\:type]').setAttribute("content", 'blog')
+        document.querySelector('meta[property=og\\:url]').setAttribute("content", `https://romanisthere.github.io/#/posts/${slug}`)
         // window.scrollTo(0, 0)
 
         const hashClass = window.location.hash.split("#", 3)[2]

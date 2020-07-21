@@ -274,6 +274,7 @@
   display: block;
 
   animation: appear 1s ease;
+  -moz-animation: none;
 }
 
 .apps__logo_link:nth-child(2) {

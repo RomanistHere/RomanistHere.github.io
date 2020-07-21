@@ -128,7 +128,7 @@ const content = {
 			'offer__text': `I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts.
 				<br>
 				</br>
-				From the technical side, I do really like <span class="offer__word">JavaScript</span>. There are a lot of good frameworks I am good with, like <span class="offer__word">Angular or React</span>, but I like plain JS most. I had a lot of projects with <span class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</span>. My <span class="offer__word">CSS3 and HTML5</span> are strong. I still care about <span class="offer__word">semantics</span> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <span class="offer__word">Web Components and functional programming</span> - I learn it in my spare time. Most complete stack of technologies I know how to use is in the CV.`
+				From the technical side, I do really like <span class="offer__word">JavaScript</span>. There are a lot of good frameworks I am good with, like <span class="offer__word">Angular or React</span>, but I like plain JS most. I had a lot of projects with <span class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</span>. My <span class="offer__word">CSS3 and HTML5</span> are strong. I still care about <span class="offer__word">semantics, cross-browser compatibility and accessibility</span> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <span class="offer__word">Web Components and functional programming</span> - I learn it in my spare time. Most complete stack of technologies I know how to use is in the CV.`
 		},
 		{
 			'offer__low_title': 'What do I do now',
@@ -136,7 +136,7 @@ const content = {
 		},
 		{
 			'offer__low_title': 'What am I seeking for',
-			'offer__text': `I would like to apply and improve my knowledge in <span class="offer__word">functional programming</span>, so I'd join the place where it matters. I also <span class="offer__word">plan to relocate</span> to an English speaking country in near future. So I am considering <span class="offer__word">onsite or remote positions</span> with the opportunity to relocate.`
+			'offer__text': `I would like to apply and improve my knowledge in <span class="offer__word">functional programming</span>, so I'd join the place where it matters. I also <span class="offer__word">plan to relocate</span> to an English speaking country in near future. So I am actively considering <span class="offer__word">onsite or remote positions</span> with the opportunity to relocate.`
 		},
 		{
 			'offer__low_title': 'How to reach me',

@@ -62,6 +62,7 @@
     box-sizing: border-box;
 
     animation: appear 1s ease;
+    -moz-animation: none;
 }
 
 @keyframes appear {
@@ -128,7 +129,8 @@
 }
 
 .offer__word {
-    background-color: rgba(110, 69, 50, .3);
+    background-color: rgba(110, 69, 50, .15);
+    /* background-color: rgba(110, 161, 190, .3); */
 
     transition: background-color ease .7s 0s;
 }
