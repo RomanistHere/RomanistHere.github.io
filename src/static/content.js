@@ -173,7 +173,7 @@ const content = {
 			apps__desc: {
 				Description: `Browser extension that eliminates all sort of popups, layouts, overlays and notifications from your screen.`,
 				Status: `- Comfortable and ready for everyday use; <br/>
-		  					- Some of features still is in development;`,
+		  					- Some of the features are still in development;`,
 		  		Details: `- Open source; <br/>
 		  					- Non-commercial. No pay content; <br/>
 		  					- MutationObserver API;`,
@@ -198,7 +198,7 @@ const content = {
 			name: 'PLAS',
 			tilt_desc: `Unique browser extension`,
 			apps__desc: {
-				Description: `Browser extension that adds search field to YouTube. Search within playlist.`,
+				Description: `Browser extension that adds search field to YouTube. Search within the playlist.`,
 				Status: `- Works fine but not comfortable for everyday use; <br/>
 							- Needs redesign; <br/>
 		  					- In development;`,
@@ -225,7 +225,7 @@ const content = {
 		}
 	},
 	titles: {
-		apps: `Products I've developed`,
+		apps: `Products I develop`,
 		card: `You are welcome here`,
 		offer: `Let's see who I am`,
 		form: `Make me an offer`,

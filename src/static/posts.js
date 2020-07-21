@@ -4,7 +4,7 @@ const posts = [
 		slug: `my-mission`,
 		posted: `Jul 21, 2020`,
 		desc: `My thoughts on how to choose software, make impact on the world and what am I doing here.`,
-		image: ``,
+		image: `presentation.png`,
 		content: `
 			<p class="post__subtitle part1">Part I</p>
 
@@ -171,7 +171,7 @@ const posts = [
 		slug: `test-blockers`,
 		posted: `Jun 3, 2019`,
 		desc: `This is the story about how I tested all popular Chrome popup blockers during recording a video showcase for the extension I created myself. And what are the results.`,
-		image: ``,
+		image: `blockers.jpg`,
 		content: `
 			<p class="post__text">Hello. This is the story about how I tested all popular Chrome popup blockers during recording a video showcase for the extension I created myself. And what are the results.</p>
 
@@ -225,7 +225,7 @@ const posts = [
 		slug: `letter`,
 		posted: `Jul 18, 2019`,
 		desc: `If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.`,
-		image: ``,
+		image: `interview.jpeg`,
 		content: `
 			<p class="post__text">If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.</p>
 

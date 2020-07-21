@@ -15,12 +15,24 @@
     transition: var(--def-trs);
 }
 
+.posts {
+    height: auto;
+}
+
+.posts__img {
+    width: 100%;
+}
+
 .posts__link {
     display: block;
 
     padding: 20px;
 
     text-decoration: none;
+}
+
+.posts__link:active {
+    color: var(--bg-color2);
 }
 
 .posts__mob {

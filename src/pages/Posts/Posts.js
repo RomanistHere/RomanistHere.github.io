@@ -3,8 +3,11 @@ import { Link } from "react-router-dom"
 
 import posts from '../../static/posts'
 import content from '../../static/content'
+import { importAll } from '../../static/functions'
 
 import './Posts.css'
+
+const images = importAll(require.context('../../media/images/posts/', false, /\.(png|jpe?g|svg)$/))
 
 const items = posts.map(({
     title,
@@ -15,6 +18,7 @@ const items = posts.map(({
 }, index) =>
     <article key={index} className="posts__item">
         <Link className="posts__link" to={`/posts/${slug}`}>
+            <img className="posts__img" src={images[image]} alt=""/>
             <h1 className="posts__title">{title}</h1>
             <p className="posts__text">{desc}</p>
             <span className="posts__capt">{posted}</span>
