@@ -1,4 +1,15 @@
 const posts = [
+	// {
+	// 	title: ``,
+	// 	slug: ``,
+	//  posted: ``,
+	//	desc: ``,
+	// 	image: ``,
+	// 	content: ``
+	// }
+	//<p class="post__subtitle part1"></p>
+	//<p class="post__text"></p>
+	//<a href="link" rel="noreferrer" target="_blank" class="link"></a>
 	{
 		title: `My mission as an independent developer`,
 		slug: `my-mission`,
@@ -167,6 +178,42 @@ const posts = [
 			<p class="post__text">As an independent developer, I promise to deliver best-I-can-do experience to you and never give up on this idea. Thank you for your time. Have a better life now, see ya:)</p>`
 	},
 	{
+		title: `Letter from developer to interviewer.`,
+		slug: `letter`,
+		posted: `Jul 18, 2019`,
+		desc: `If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.`,
+		image: `interview.jpeg`,
+		content: `
+			<p class="post__text">If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.</p>
+
+			<p class="post__text">I’ve got a conversation with “Head of integrations” at a few-year “startup X”. Below I will show and comment full content(without regarding part) of the letter, he sent me after.</p>
+
+			<p class="post__subtitle part1">This is how to not write your feedback letter.</p>
+
+			<p class="post__text">Even if it is what you really think. Keep things professional.</p>
+
+			<p class="post__text">“We-are-not-moving-forward-stuff and here is why:</p>
+
+			<p class="post__text">- Im expecting candidate to know what “startup X” does as a company and what is our product, meaning did a research and have a concise choice to join that company. Otherwise I have to question your motivation.” — I could say, that is totally wrong, I won’t, but it is. The company is going to get more profit from the developer, than the developer gets from the company. But he won’t decline an offer, because he is expecting to know who he is, or where he lives, etc before the interview. There are tons of jobs nowadays that developers can apply for. It’s the interviewer’s job to interest and make them motivated. It’s not working like this now, because of supply still above demand. With opposite conditions the developer would not change his line of conduct. But the interviewer would. That’s why this is wrong(okay, I said it). Let’s continue.</p>
+
+			<p class="post__text">“- Also I consider as a good quality of a person if he knows his weak and strong sides, which means that person has reflected on that and knows where he can improve. You mentioned that you get lazy and it turns out that you actually overwork yourself. Which is fine and you will figure it out, just that we want people who have figured out life/work balance” — this is about what the truth is and what a developer has to say to get hired. Every person in this world sometimes gets lazy. You can’t beat it. It’s from evolution. But an interviewer doesn’t expect to hear the truth. He expects a “right” template-based answer. There are discussions, like “can computers replace engineers?”. I don’t know, but a script with 50 strings can replace some interviewers.</p>
+
+			<p class="post__text">“- I absolutely believe that everyone in our industry, has things that they hate about the industry, coding etc. If a candidate tells that everything is lovely, then in get impression, that you have not got enough experience and challenges yet.” — most non-understood point for me. I don’t really know why anyone in the world would continue to do things, if there is something to hate. I know there are people of this kind. It’s just not me. Not all moments in my job are the pleasure, but if there were something to even dislike, I would choose a different profession. There are a lot of them, you know. So if a developer loves all he does, is it a bad sign?</p>
+
+			<p class="post__text">“- We have a very tough homework and tech interview, I got impression, that you would not be able to pass that yet. I also participated yesterday in such an interview and it’s really not easy.” — that is just not professional. Nothing to comment.</p>
+
+			<p class="post__text">“- Salary expectations were way to high for the impression I got, which also questions if you know were you stand in the industry and how good are other people. I think it would help you a lot If you could join as a junior to a very good company with experienced devs in an open space office environment.” — word “discussable” wasn’t heard. I never knew why I should join as a junior… But this one seems a little offending for me. Not professional too, though.</p>
+
+			<p class="post__text">Don’t get me wrong. I enjoy communicating with strangers, especially from different cultures. And I’m totally fine with this one. It’s just not the way you ever treat anyone. If you’re professional — behave accordingly. And if you are in a bad mood before an interview, especially “call” one, postpone it, it’s okay.I would rather talk with you in a good mood tomorrow.</p>
+
+			<p class="post__text">There are a lot of very nice interviewers. I was in this role many times(I’m not the “very nice” one). The goal of my narrative is to prevent you from making simple mistakes by showing them into this real example. If you haven’t found this article any useful, you’re cool. And if you have, I believe, you’re going to be cooler now.</p>
+
+			<p class="post__text">This article is a little bit aggressive, but it’s just the way I write. “I did not not want to offend you in any way.”</p>
+
+			<p class="post__text">Thank you for attention and let me know what you think.</p>
+		`
+	},
+	{
 		title: `How I tested popular popup blockers`,
 		slug: `test-blockers`,
 		posted: `Jun 3, 2019`,
@@ -219,54 +266,7 @@ const posts = [
 
 			<p class="post__text">Not saying goodbye. Have a good time!</p>
 		`
-	},
-	{
-		title: `Letter from developer to interviewer.`,
-		slug: `letter`,
-		posted: `Jul 18, 2019`,
-		desc: `If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.`,
-		image: `interview.jpeg`,
-		content: `
-			<p class="post__text">If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.</p>
-
-			<p class="post__text">I’ve got a conversation with “Head of integrations” at a few-year “startup X”. Below I will show and comment full content(without regarding part) of the letter, he sent me after.</p>
-
-			<p class="post__subtitle part1">This is how to not write your feedback letter.</p>
-
-			<p class="post__text">Even if it is what you really think. Keep things professional.</p>
-
-			<p class="post__text">“We-are-not-moving-forward-stuff and here is why:</p>
-
-			<p class="post__text">- Im expecting candidate to know what “startup X” does as a company and what is our product, meaning did a research and have a concise choice to join that company. Otherwise I have to question your motivation.” — I could say, that is totally wrong, I won’t, but it is. The company is going to get more profit from the developer, than the developer gets from the company. But he won’t decline an offer, because he is expecting to know who he is, or where he lives, etc before the interview. There are tons of jobs nowadays that developers can apply for. It’s the interviewer’s job to interest and make them motivated. It’s not working like this now, because of supply still above demand. With opposite conditions the developer would not change his line of conduct. But the interviewer would. That’s why this is wrong(okay, I said it). Let’s continue.</p>
-
-			<p class="post__text">“- Also I consider as a good quality of a person if he knows his weak and strong sides, which means that person has reflected on that and knows where he can improve. You mentioned that you get lazy and it turns out that you actually overwork yourself. Which is fine and you will figure it out, just that we want people who have figured out life/work balance” — this is about what the truth is and what a developer has to say to get hired. Every person in this world sometimes gets lazy. You can’t beat it. It’s from evolution. But an interviewer doesn’t expect to hear the truth. He expects a “right” template-based answer. There are discussions, like “can computers replace engineers?”. I don’t know, but a script with 50 strings can replace some interviewers.</p>
-
-			<p class="post__text">“- I absolutely believe that everyone in our industry, has things that they hate about the industry, coding etc. If a candidate tells that everything is lovely, then in get impression, that you have not got enough experience and challenges yet.” — most non-understood point for me. I don’t really know why anyone in the world would continue to do things, if there is something to hate. I know there are people of this kind. It’s just not me. Not all moments in my job are the pleasure, but if there were something to even dislike, I would choose a different profession. There are a lot of them, you know. So if a developer loves all he does, is it a bad sign?</p>
-
-			<p class="post__text">“- We have a very tough homework and tech interview, I got impression, that you would not be able to pass that yet. I also participated yesterday in such an interview and it’s really not easy.” — that is just not professional. Nothing to comment.</p>
-
-			<p class="post__text">“- Salary expectations were way to high for the impression I got, which also questions if you know were you stand in the industry and how good are other people. I think it would help you a lot If you could join as a junior to a very good company with experienced devs in an open space office environment.” — word “discussable” wasn’t heard. I never knew why I should join as a junior… But this one seems a little offending for me. Not professional too, though.</p>
-
-			<p class="post__text">Don’t get me wrong. I enjoy communicating with strangers, especially from different cultures. And I’m totally fine with this one. It’s just not the way you ever treat anyone. If you’re professional — behave accordingly. And if you are in a bad mood before an interview, especially “call” one, postpone it, it’s okay.I would rather talk with you in a good mood tomorrow.</p>
-
-			<p class="post__text">There are a lot of very nice interviewers. I was in this role many times(I’m not the “very nice” one). The goal of my narrative is to prevent you from making simple mistakes by showing them into this real example. If you haven’t found this article any useful, you’re cool. And if you have, I believe, you’re going to be cooler now.</p>
-
-			<p class="post__text">This article is a little bit aggressive, but it’s just the way I write. “I did not not want to offend you in any way.”</p>
-
-			<p class="post__text">Thank you for attention and let me know what you think.</p>
-		`
 	}
-	// {
-	// 	title: ``,
-	// 	slug: ``,
-	//  posted: ``,
-	//	desc: ``,
-	// 	image: ``,
-	// 	content: ``
-	// }
-	//<p class="post__subtitle part1"></p>
-	//<p class="post__text"></p>
-	//<a href="link" rel="noreferrer" target="_blank" class="link"></a>
 ]
 
 

@@ -10,13 +10,31 @@
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 
     background-color: var(--bg-color1);
-    color: var(--text-color1);
 
     transition: var(--def-trs);
 }
 
 .posts {
     height: auto;
+}
+
+.posts__title {
+    padding-bottom: 5px;
+
+    font-weight: bold;
+}
+
+.posts__text {
+    margin: 0;
+    padding-bottom: 5px;
+
+    font-weight: normal;
+}
+
+.posts__capt {
+    opacity: .5;
+
+    font-weight: normal;
 }
 
 .posts__img {
@@ -28,6 +46,7 @@
 
     padding: 20px;
 
+    color: var(--text-color1);
     text-decoration: none;
 }
 
@@ -37,6 +56,9 @@
 
 .posts__mob {
     display: none;
+
+    opacity: .6;
+    font-weight: normal;
 }
 
 @media (hover: hover) {
