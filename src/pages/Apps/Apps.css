@@ -273,8 +273,7 @@
 .apps__logo_link {
   display: block;
 
-  animation: appear 1s ease;
-  -moz-animation: none;
+  animation: appearX 1s ease;
 }
 
 .apps__logo_link:nth-child(2) {
@@ -289,7 +288,7 @@
     animation-name: appear4;
 }
 
-@keyframes appear {
+@keyframes appearX {
     0% {
         transform: translateX(300px);
     }

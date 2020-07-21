@@ -5,9 +5,6 @@
     left: 50%;
     width: 300px;
 
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
     background-color: inherit;
@@ -26,6 +23,8 @@
     display: block;
 
     border-bottom: solid 4px var(--third-bg-color);
+
+    font-weight: normal;
 }
 
 .form__button {
@@ -217,7 +216,7 @@
 
 @media screen and (max-width: 1024px) {
     .form_section {
-        min-height: 700px;
+        min-height: 770px;
         padding: 10px var(--pad-txt);
 
         display: flex;
