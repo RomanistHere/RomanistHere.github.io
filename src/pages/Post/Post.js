@@ -4,7 +4,6 @@ import { useParams } from "react-router"
 import LinkBack from '../../components/LinkBack/LinkBack'
 
 import posts from '../../static/posts'
-import contPage from '../../static/content'
 import { querySelector, findPostBySlug, addClass, importAll } from '../../static/functions'
 
 import './Post.css'
@@ -42,7 +41,7 @@ const Post = () => {
   	return 	<main className="post">
                 <article className="post__article">
                     <h1 className="post__title">{title}</h1>
-                    <img className="post__img" src={images[image]} alt=""/>
+                    <img className="post__img" src={images[image]} alt={title} loading="lazy"/>
                     <div className="post__text">{ReactHtmlParser(content)}</div>
                 </article>
                 <LinkBack className="post__back" />
