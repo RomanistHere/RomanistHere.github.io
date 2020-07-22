@@ -12,7 +12,7 @@ const images = importAll(require.context('../../media/images/posts/', false, /\.
 
 const Post = () => {
     const { slug } = useParams()
-    const { image, title, content, desc } = findPostBySlug(posts, slug)
+    const { image, title, content, desc, posted } = findPostBySlug(posts, slug)
 
     useEffect(() => {
         document.title = title
@@ -43,6 +43,7 @@ const Post = () => {
                     <h1 className="post__title">{title}</h1>
                     <img className="post__img" src={images[image]} alt={title} loading="lazy"/>
                     <div className="post__text">{ReactHtmlParser(content)}</div>
+                    <p className="post__date">{posted}</p>
                 </article>
                 <LinkBack className="post__back" />
 		    </main>
