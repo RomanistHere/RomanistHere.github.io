@@ -19,7 +19,7 @@ const posts = [
 		content: `
 			<p class="post__subtitle part1">Part I</p>
 
-			<p class="post__text">There are <span class="post__col-1">good</span> products and <span class="post__col-2">bad</span> ones. I’ll explain by example. Imagine the situation: You are using an <span class="post__strong">ad blocker/messenger app</span>. You’re using it because the day you installed it <span class="post__strong">it was most popular/everyone used it</span>. You're enjoying it and maybe even paying for it. But one day you see <span class="post__strong">ads on a popular website/news that the company listens to and reads everything you say through your messenger app</span> and you catch a glimpse: “Wow, that’s inappropriate. I have to deal with it” - And then… You just don’t. <span class="post__strong">There are no websites with ads other day/company that owns mess app publicly apologizes and assures that this will not happen again</span>. Everything is resolved "by itself" now. You forget about it till the next time something happens. And it certainly will. Because it's an example of a <span class="post__col-2">bad</span> product. An inappropriate behaviour here is <span class="post__strong">betrayal of the idea for profit/invasion of privacy</span>. And you not only are not fighting this treatment but letting it continue by doing nothing. If someone asked you advice about <span class="post__strong">an ad blocker/a mess app</span>, you would name the <span class="post__col-2">bad</span> one. This way you're making <span class="post__col-2">bad</span> products spread and letting everyone know that you are good with such an attitude towards you. So they build more apps and services like this. Sorry, but you’re making the internet worse.</p>
+			<p class="post__text">There are <span class="post__col-1">good</span> products and <span class="post__col-2">bad</span> ones. I’ll explain by example. Imagine the situation: You are using an <span class="post__strong">ad blocker/messenger app</span>. You’re using it because the day you installed <span class="post__strong">it was most popular/everyone used it</span>. You're enjoying it and maybe even paying for it. But one day you see <span class="post__strong">ads on a popular website/news that the company listens to and reads everything you say through your messenger app</span> and you catch a glimpse: “Wow, that’s inappropriate. I have to deal with it” - And then… You just don’t. <span class="post__strong">There are no websites with ads other day/company that owns mess app publicly apologizes and assures that this will not happen again</span>. Everything is resolved "by itself" now. You forget about it till the next time something will happen. And it certainly will. Because it's an example of a <span class="post__col-2">bad</span> product. An inappropriate behaviour here is <span class="post__strong">betrayal of the idea for profit/invasion of privacy</span>. And by doing nothing you are letting it continue. If someone asked your advice about <span class="post__strong">an ad blocker/a mess app</span>, you would name the <span class="post__col-2">bad</span> one. This way you're making <span class="post__col-2">bad</span> products spread and letting everyone know that you are good with such an attitude towards you. So they build more apps and services like this. Sorry, but you’re making the internet worse.</p>
 
 			<p class="post__subtitle part2">Part II</p>
 
@@ -27,7 +27,7 @@ const posts = [
 
 			<p class="post__subtitle part3">Part III</p>
 
-			<p class="post__text">As I wrote above, by not fighting inappropriate behaviour you let it continue. Sometimes spread it. You make the internet deteriorate. Let the guys who treat you like that see that you are ok with it, so they continue to treat you like this. So, once they can gain profit from doing so, they won't hesitate - they already succeeded the previous time. It’s a sort of a Vicious Cycle. You can’t sit, do nothing and expect that the world is going to treat you good just because it's you. Would you like to break the Vicious Cycle? What can you gain from it?</p>
+			<p class="post__text">As I wrote above, by not fighting inappropriate behaviour you let it continue. You make the internet deteriorate. Let the guys who treat you like that see that you are ok with it, so they continue to treat you like this. So, once they can gain profit from doing so, they won't hesitate - they already succeeded the last time. It’s a sort of a Vicious Cycle. You can’t sit, do nothing and expect that the world is going to treat you good just because it's you. Would you like to break the Vicious Cycle? What can you gain from it?</p>
 
 			<p class="post__text">What if… You uninstall a <span class="post__col-2">bad</span> application, find its <span class="post__col-1">good</span> alternative and start to use it? Let’s see:</p>
 			<ul class="post__list post__text">
@@ -145,15 +145,15 @@ const posts = [
 				</li>
 			</ul>
 
-			<p class="post__text">There are only examples above. Naming every thing is out of this article. But you've got my idea, have you? I do not consider non-facts. Like when you say something and then you instantly see the ad about it in Chrome or Instagram. Google and Facebook didn't confirm it. Though, you can read <a href="https://telegra.ph/Why-Using-WhatsApp-Is-Dangerous-01-30-4" rel="noreferrer" target="_blank" class="link">an article</a>, why any of Facebook products is dangerous to use - written by Pavel Durov, creator of Telegram.</p>
+			<p class="post__text">There are only examples above. Naming every thing is out of this article. But you've got my idea, haven't you? I do not consider non-facts. Like when you say something and then you instantly see the ad about it in Chrome or Instagram. Google and Facebook didn't confirm it. Though, you can read <a href="https://telegra.ph/Why-Using-WhatsApp-Is-Dangerous-01-30-4" rel="noreferrer" target="_blank" class="link">an article</a>, why Facebook services and apps are dangerous to use - written by Pavel Durov, creator of Telegram.</p>
 			<p class="post__text">How do you recognize <span class="post__col-1">good</span> software? Typically, there are only a few common points:</p>
 			<ul class="post__list post__text">
-				<li class="post__list_item">Open source.</li>
+				<li class="post__list_item">Open-source.</li>
 				<li class="post__list_item">Non-commercial.</li>
 			</ul>
 			If a product can be described as one of those, it might be a <span class="post__col-1">good</span> one. If both of above, it certainly is.</p>
 
-			<p class="post__text">Open source means everyone can see the code. So if there are some issues, people will find it out. People can improve it. For example, the most safe messenger app is Telegram. It is open source and there have been no major data leaks since the day it exists, because a lot of people collaborated and improved it. On the other hand, almost any other messenger app was hacked, or leaked some amount of personal data:
+			<p class="post__text">Open-source means everyone can see the code. So if there are some issues, people will find it out. People can improve it. For example, the most safe messenger app is Telegram. It is open-source and there have been no major data leaks since the day it exists, because a lot of people collaborated and improved it. On the other hand, almost any other messenger app was hacked, or leaked some amount of personal data:
 			<a href="https://www.reuters.com/article/us-un-whatsapp/u-n-says-officials-barred-from-using-whatsapp-since-june-2019-over-security-idUSKBN1ZM32P" rel="noreferrer" target="_blank" class="link">WhatsApp</a>,
 			<a href="https://www.theverge.com/2016/11/8/13561024/microsoft-skype-baidu-linkedin-hack" rel="noreferrer" target="_blank" class="link">Skype</a>,
 			<a href="https://www.independent.co.uk/news/world/asia/snapchat-hackers-india-poor-country-release-data-ceo-claim-users-account-information-a7687651.html" rel="noreferrer" target="_blank" class="link">Snapchat</a>,
@@ -165,15 +165,17 @@ const posts = [
 
 			<p class="post__text">And non-commercial means, that to gain profit from application is not the goal. So the creator is not interested in betraying his idea for money or anything else. I create non-commercial applications and PopUpOFF is a <span class="post__col-1">good</span> example. It provides unique functionality and is absolutely free. You are not going to see any ads either around any of my products or on this site.</p>
 
-			<p class="post__text">Here is <a href="https://en.wikipedia.org/wiki/List_of_free_and_open-source_software_packages" rel="noreferrer" target="_blank" class="link">a list</a> of all open source software, you might find something <span class="post__col-1">good</span>.</p>
+			<p class="post__text">Here is <a href="https://en.wikipedia.org/wiki/List_of_free_and_open-source_software_packages" rel="noreferrer" target="_blank" class="link">a list</a> of all open-source software, you might find something for yourself.</p>
+
+			<p class="post__text">It must be noted that it's possible for commercial and proprietary(closed-source) software to be the <span class="post__col-1">good</span> one but it's rather rare.</p>
 
 			<p class="post__subtitle part5">Part V</p>
 
-			<p class="post__text">Finally, what my mission is. As a  human - I want to live in a better world. And by “want” I don’t mean “I would like you to improve it”, but to do it by myself and motivate as many people as I can, hopefully, you.</p>
+			<p class="post__text">Finally, what my mission is. As a  human - I want to live in a better world. And by “want” I don’t mean “I would like you to improve it”, but to do it by myself and motivate as many people as I can, you for example.</p>
 
-			<p class="post__text">When we talk about the internet, I’m much more powerful than the average user here due to my profession. So I’m trying to apply my knowledge to make someone’s life better by <a href="/#/apps" class="link">my products</a>, and to make someone notice, by this article. Remember, it always matters.</p>
+			<p class="post__text">When we talk about the internet, I’m much more powerful than the average user due to my profession. So I’m trying to apply my knowledge to make someone’s life better by <a href="/#/apps" class="link">my products</a>, and to make someone notice, by this article. Remember, it always matters.</p>
 
-			<p class="post__text">If you have ideas where I could help you, do no hesitate to contact me. <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'm open.</p>
+			<p class="post__text">If I can help you with your ideas, do not hesitate to reach me: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'm here(<s>captain</s>RomanistHere).</p>
 
 			<p class="post__text">As an independent developer, I promise to deliver best-I-can-do experience to you and never give up on this idea. Thank you for your time. Have a better life now, see ya:)</p>`
 	},

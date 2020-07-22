@@ -205,12 +205,6 @@
     .offer__nav_item:hover .offer__link_text{
         color: var(--hover-color2);
     }
-
-
-    .offer__nav:hover + .offer__wrap {
-        background-color: var(--hover-color1);
-        color: var(--hover-color2);
-    }
 }
 
 @media screen and (max-width: 1024px) {
