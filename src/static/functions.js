@@ -85,6 +85,9 @@ const getRandom = (numb) =>
 const findPostBySlug = (posts, slug) =>
     posts.find(item => item.slug === slug)
 
+const isFocused = () =>
+	document.hasFocus()
+
 const importAll = (r) => {
     let images = {}
     r.keys().map((item, index) =>
@@ -106,4 +109,5 @@ export {
 	getRandom,
 	findPostBySlug,
 	importAll,
+	isFocused,
 }

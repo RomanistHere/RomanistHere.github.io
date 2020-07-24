@@ -9,7 +9,7 @@ import Typing from '../../components/Typing/Typing'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import { getRandom, useTimeout } from '../../static/functions'
+import { getRandom, isFocused } from '../../static/functions'
 
 const Card = () => {
     const [shouldSmile, setSmile] = useState(false)
@@ -22,26 +22,37 @@ const Card = () => {
     })
     const timeouts = useRef({
         hide: null,
-        show: null
+        show: null,
+        nonVis: null,
+        nextTyp: null,
+        startAnim: null,
     })
 
     useEffect(() => {
         document.title = content.titles.card
-        setShowTyping(true)
+        startAnimation(true)
 
         return () => {
             clearTimeout(timeouts.current.show)
             clearTimeout(timeouts.current.hide)
+            clearTimeout(timeouts.current.nonVis)
+            clearTimeout(timeouts.current.nextTyp)
+            clearTimeout(timeouts.current.startAnim)
         }
     }, [])
 
     const goNextTyping = (counter) => {
+        if (!isFocused()) {
+            timeouts.current.nextTyp = setTimeout(() => goNextTyping(counter), 1000)
+            return
+        }
+
+        const newCounter = counter + 1
         const newTyping = {
             text: content.card__typings[counter],
             pos: getRandom(9),
             show: true
         }
-        const newCounter = counter + 1
 
         setTypings(newTyping)
 
@@ -57,10 +68,18 @@ const Card = () => {
         }, manage.card__typings__show_time)
     }
 
-    useTimeout(() => {
-        setShowTyping(false)
-        goNextTyping(0)
-    }, manage.card__typing__hide_time)
+    const startAnimation = (bool) => {
+        if (!isFocused()) {
+            timeouts.current.startAnim = setTimeout(() => startAnimation(bool), 500)
+        } else {
+            setShowTyping(true)
+
+            timeouts.current.nonVis = setTimeout(() => {
+                setShowTyping(false)
+                goNextTyping(0)
+            }, manage.card__typing__hide_time)
+        }
+    }
 
     return  <section className="main">
                 <div className="card">

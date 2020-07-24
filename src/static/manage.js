@@ -11,6 +11,7 @@ const manage = {
 	'card__typing__hide_time': 30000,
 	'card__typings__show_time': 12000,
 	'card__typings__hide_time': 9000,
+	'apps__typing': 2000,
 	browsers: {
 		1: [0, 1, 2, 3],
 		2: [0, 1],

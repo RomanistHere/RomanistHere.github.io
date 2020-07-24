@@ -36,7 +36,7 @@ const Post = () => {
                 addClass(element, 'post__text-active')
             }, 100)
         }
-    }, [])
+    }, [title, desc, slug, image])
 
   	return 	<main className="post">
                 <article className="post__article">

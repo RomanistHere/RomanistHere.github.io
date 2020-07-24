@@ -8,8 +8,8 @@
 	opacity: 0;
 
 	background-color: inherit;
-	
-	transition: all ease 1s;
+
+	transition: opacity ease 1s;
 }
 
 .typing-active {
@@ -37,16 +37,16 @@
 }
 
 .typing-active .typing__hide {
-	position: relative; 
+	position: relative;
 
 	margin: 0;
 	width: 0;
 
-	clear: both; 
+	clear: both;
 	float: right;
 
 	background-color: inherit;
-	
+
 	animation: typing 2s steps(30, end);
 	animation-fill-mode: both;
 }

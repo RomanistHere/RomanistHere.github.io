@@ -63,10 +63,10 @@ const Offer = () => {
 	const [keyWords, setKeyWords] = useState(null)
 	const [shouldShow, setShowTyping] = useState(
 		JSON.parse(localStorage.getItem('showOfferTyping')) === false ? false : true)
-
-	useEffect(() => {
-        document.title = content.titles.offer
-    }, [])
+	const {
+		offer_switcher__hide_time,
+		offer_switcher__show_time,
+	} = manage
 
 	const toggleClassAll = items =>
 		items.map(item => toggleClass(item, 'offer__word-hide'))
@@ -82,10 +82,9 @@ const Offer = () => {
 			toggleClassAll(keyWords)
 	}
 
-	const {
-		offer_switcher__hide_time,
-		offer_switcher__show_time,
-	} = manage
+	useEffect(() => {
+        document.title = content.titles.offer
+    }, [])
 
 	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
 

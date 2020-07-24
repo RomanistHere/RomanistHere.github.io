@@ -15,6 +15,8 @@ import gitLogo from '../../media/images/gitLogo.svg'
 
 import './Apps.css'
 
+const { browsers } = manage
+const { apps_page, apps_page__links } = content
 const logos = {
 	0: gitLogo,
 	1: chromeLogo,
@@ -22,17 +24,12 @@ const logos = {
 	3: edgeLogo,
 }
 
-const browsers = manage.browsers
-const links = content.apps_page__links
-
 const getLogos = (projNumb) => {
 	const lgNumb = browsers[projNumb]
-	const linksObj = links[projNumb]
+	const linksObj = apps_page__links[projNumb]
 	const logoLinks = lgNumb.map(item => logos[item])
 	return { logoLinks, linksObj }
 }
-
-const { apps_page } = content
 
 const appsDesc = (projNumb) => Object.keys(apps_page[projNumb].apps__desc).map((item, index) => {
 	return  <Fragment key={index}>
@@ -45,16 +42,14 @@ const appsDesc = (projNumb) => Object.keys(apps_page[projNumb].apps__desc).map((
 			</Fragment>
 })
 
-
 const Apps = () => {
 	const [projNumb, changeProjNumb] = useState(1)
+	const { logoLinks, linksObj } = getLogos(projNumb)
 
 	const changeProj = (e) => {
 		const newProjNumb = e.realIndex + 1
 		changeProjNumb(newProjNumb)
 	}
-
-	const { logoLinks, linksObj } = getLogos(projNumb)
 
 	useEffect(() => {
 		document.title = content.titles.apps
@@ -80,7 +75,7 @@ const Apps = () => {
 	  			<Typing
 					text={`Let's make it all platinum!`}
 					className={`apps__typing`}
-					startDelay={2000}
+					startDelay={manage.apps__typing}
 					shouldShow={true}
 				/>
 

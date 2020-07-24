@@ -1,13 +1,18 @@
-import React, { useState } from "react"
-
-import { useTimeout } from '../../static/functions'
+import React, { useState, useEffect, useRef } from "react"
 
 import './Typing.css'
 
 const Typing = ({ text, className, startDelay = 0, shouldShow }) => {
-	const [isShow, setShow] = useState(false);
+	const [isShow, setShow] = useState(false)
+	const timeout = useRef(false)
 
-	useTimeout(() => setShow(true), startDelay)
+	useEffect(() => {
+		if (shouldShow)
+			timeout.current = setTimeout(() => setShow(true), startDelay)
+
+		return () =>
+			clearTimeout(timeout.current)
+    }, [shouldShow, startDelay])
 
   	return <div className={`typing ${className} ${(isShow && shouldShow) ? 'typing-active' : ''}`}>
 				<p className="typing__text">

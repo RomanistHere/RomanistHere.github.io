@@ -2,7 +2,7 @@ import React from "react"
 
 import './Face.css'
 
-const Face = ({shouldSmile}) => {
+const Face = ({ shouldSmile }) => {
   	return 	<div className="face">
 	            <span className="hair"></span>
 	            <span className={`ears ${shouldSmile ? 'ears-smiling' : ''}`}></span>
