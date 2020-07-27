@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: romanisthere.github.io
-Token: f6800a7f5941f6d8e1990752a6800d4acac6a274823ad420213467be2f12415f
