@@ -1,19 +1,19 @@
 import { useEffect, useRef, useState } from 'react'
 
 const querySelector = name =>
-	document.querySelector(`.${name?.toLowerCase()}`)
+	document.querySelector(`.${name.toLowerCase()}`)
 
 const querySelectorAll = name =>
 	document.querySelectorAll(`.${name}`)
 
 const addClass = (selector, className) =>
-	selector?.classList.add(className)
+	selector.classList.add(className)
 
 const removeClass = (selector, className) =>
-	selector?.classList.remove(className)
+	selector.classList.remove(className)
 
 const toggleClass = (selector, className) =>
-	selector?.classList.toggle(className)
+	selector.classList.toggle(className)
 
 const ifStringContArr = (string, arr) =>
 	arr.some(item => string.toLowerCase().includes(item))

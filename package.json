@@ -10,8 +10,7 @@
     "framer-motion": "^2.1.0",
     "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "preact": "^10.4.6",
     "react-html-parser": "^2.0.2",
     "react-meta-tags": "^0.7.4",
     "react-router-dom": "^5.2.0",
@@ -22,12 +21,11 @@
     "swiper": "^6.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "preact watch",
+    "build": "preact build",
+    "test": "jest",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-    "eject": "react-scripts eject",
     "sitemap": "babel-node src/settings/sitemap-generator.js"
   },
   "eslintConfig": {

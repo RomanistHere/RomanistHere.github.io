@@ -4,7 +4,7 @@ import ReactHtmlParser from 'react-html-parser'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import CV from '../../media/images/Roman Smunyov CV.pdf'
+// import CV from '../../media/images/Roman Smunyov CV.pdf'
 import {
 	querySelectorAll,
 	toggleClass,
@@ -49,7 +49,7 @@ const navItems = content.offer__nav.map(({
 				<DynamicComp className="offer__icon icon" />
 				<span className="offer__link_text">{text}</span>
 			</Link>
-		: 	<a href={CV} target="_blank" rel="noopener noreferrer" className="offer__link link">
+		: 	<a href='#' target="_blank" rel="noopener noreferrer" className="offer__link link">
 				<DynamicComp className="offer__icon icon" />
 				<span className="offer__link_text">{text}</span>
 			</a>
