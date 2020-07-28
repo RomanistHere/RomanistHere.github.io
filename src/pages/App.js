@@ -11,6 +11,16 @@ import NoPage from '../pages/NoPage/NoPage'
 import Post from '../pages/Post/Post'
 import Posts from '../pages/Posts/Posts'
 
+const pages = {
+	Card: '/',
+	Form: '/form/',
+	Apps: '/apps/',
+	Offer: '/offer/',
+	Post: '/posts/:slug/',
+	Posts: '/posts/',
+	// NoPage: null
+}
+
 const Route = (path, compName) =>
 	<AsyncRoute
 		path={path}
@@ -18,23 +28,13 @@ const Route = (path, compName) =>
 		loading={ () => <Preloader /> }
 	/>
 
-// const Routers = pages.map((item, index) => Route())
+const Routers = Object.entries(pages).map(([key, value], index) => Route(value, key))
 
 export default () => {
 
 	return (
 		<Router>
-			{Route('/', 'Card')}
-			{Route('/form/', 'Form')}
-			<AsyncRoute
-				path="/offer"
-				getComponent={ () => import('../pages/Offer/Offer').then(module => module.default) }
-				loading={ () => <Preloader /> }
-			/>
-			{/* <Apps path="/apps/" /> */}
-			{/* <Form path="/form/" /> */}
-			<Post path="/posts/:slug/" />
-			<Posts path="/posts/" />
+			{Routers}
 			<NoPage default />
 		</Router>
 	)
