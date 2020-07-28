@@ -11,22 +11,28 @@ import NoPage from '../pages/NoPage/NoPage'
 import Post from '../pages/Post/Post'
 import Posts from '../pages/Posts/Posts'
 
+const Route = (path, compName) =>
+	<AsyncRoute
+		path={path}
+		getComponent={ () => import(`../pages/${compName}/${compName}`).then(module => module.default) }
+		loading={ () => <Preloader /> }
+	/>
+
+// const Routers = pages.map((item, index) => Route())
+
 export default () => {
 
 	return (
 		<Router>
-			<AsyncRoute
-				path="/"
-				getComponent={ () => import('../pages/Card/Card').then(module => module.default) }
-				loading={ () => <Preloader /> }
-			/>
+			{Route('/', 'Card')}
+			{Route('/form/', 'Form')}
 			<AsyncRoute
 				path="/offer"
 				getComponent={ () => import('../pages/Offer/Offer').then(module => module.default) }
 				loading={ () => <Preloader /> }
 			/>
-			<Apps path="/apps/" />
-			<Form path="/form/" />
+			{/* <Apps path="/apps/" /> */}
+			{/* <Form path="/form/" /> */}
 			<Post path="/posts/:slug/" />
 			<Posts path="/posts/" />
 			<NoPage default />
