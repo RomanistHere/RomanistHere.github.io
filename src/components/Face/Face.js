@@ -1,5 +1,3 @@
-import React from "react"
-
 import './Face.css'
 
 const Face = ({ shouldSmile }) => {

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "preact/hooks"
+import { Link } from 'preact-router/match'
 import ReactHtmlParser from 'react-html-parser'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import CV from '../../media/images/RomanSmunyovCV.pdf'
+// import CV from '../../media/images/RomanSmunyovCV.pdf'
 import {
 	querySelectorAll,
 	toggleClass,
@@ -45,11 +45,11 @@ const navItems = content.offer__nav.map(({
 }, index) => {
 	const DynamicComp = navCopm[comp]
 	const NewLink = () => link
-		? 	<Link className="offer__link link" to={link}>
+		? 	<Link className="offer__link link" href={link}>
 				<DynamicComp className="offer__icon icon" />
 				<span className="offer__link_text">{text}</span>
 			</Link>
-		: 	<a href={CV} target="_blank" rel="noopener noreferrer" className="offer__link link">
+		: 	<a href={`#`} target="_blank" rel="noopener noreferrer" className="offer__link link">
 				<DynamicComp className="offer__icon icon" />
 				<span className="offer__link_text">{text}</span>
 			</a>
@@ -73,7 +73,7 @@ const Offer = () => {
 
 	const toggleHighlighting = () => {
 		if (!keyWords) {
-			const links = [...querySelectorAll('offer__word')]
+			const links = Array.from(querySelectorAll('offer__word'))
 			toggleClassAll(links)
 			setKeyWords(links)
 			setShowTyping(false)

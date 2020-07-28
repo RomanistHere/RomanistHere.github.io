@@ -1,13 +1,11 @@
-import React from "react"
-
 const RHIcon = ({className}) => {
-   return   <svg 
-				version="1.2" 
+   return   <svg
+				version="1.2"
 				className={className}
-				baseProfile="tiny" 
+				baseProfile="tiny"
 				xmlns="http://www.w3.org/2000/svg"
-				x="0px" y="0px" 
-				viewBox="0 0 566 576" 
+				x="0px" y="0px"
+				viewBox="0 0 566 576"
 				overflow="visible" >
 				<line stroke="#3e596c" strokeWidth="40" strokeMiterlimit="10" x1="114.5" y1="117.5" x2="114.5" y2="480"/>
 				<line stroke="#3e596c" strokeWidth="40" strokeMiterlimit="10" x1="114.5" y1="117.5" x2="253.5" y2="117.5"/>

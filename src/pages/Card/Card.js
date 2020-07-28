@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'preact/compat'
+import { useState, useEffect, useRef } from 'preact/hooks'
 
 import './Card.css'
 

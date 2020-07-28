@@ -1,5 +1,3 @@
-import React from "react"
-
 import RHIcon from '../../media/images/RHIcon'
 
 import './Preloader.css'

@@ -1,12 +1,10 @@
-import React from "react"
-
 const BackIcon = ({className}) => {
-   return <svg 
-			version="1.2" 
-			baseProfile="tiny" 
-			x="0px" y="0px" 
-			viewBox="0 0 70 80" 
-			overflow="visible" 
+   return <svg
+			version="1.2"
+			baseProfile="tiny"
+			x="0px" y="0px"
+			viewBox="0 0 70 80"
+			overflow="visible"
 			width="40"
 			className={className}>
 			<line stroke="#1B283B" strokeWidth="3" strokeMiterlimit="10" x1="1" y1="2.5" x2="21" y2="2.5"/>

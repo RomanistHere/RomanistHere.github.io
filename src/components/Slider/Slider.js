@@ -1,5 +1,3 @@
-import React from "react"
-
 import SwiperCore, { Navigation, Pagination, A11y, EffectCoverflow } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Tilty from "react-tilty"
@@ -10,11 +8,11 @@ import logo1 from '../../media/images/logo-1.png'
 import logo2 from '../../media/images/logo-2.png'
 import logo3 from '../../media/images/logo-3.png'
 
-import 'swiper/swiper.scss'
-import 'swiper/components/navigation/navigation.scss'
-import 'swiper/components/pagination/pagination.scss'
-import 'swiper/components/effect-coverflow/effect-coverflow.scss'
-// import 'swiper/swiper-bundle.css'
+// import 'swiper/swiper.scss'
+// import 'swiper/components/navigation/navigation.scss'
+// import 'swiper/components/pagination/pagination.scss'
+// import 'swiper/components/effect-coverflow/effect-coverflow.scss'
+import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Navigation, Pagination, A11y, EffectCoverflow])
 
@@ -74,16 +72,16 @@ const Slider = ({
 				className={classNameSlider} >
 			{
 				Object.values(content.apps_page).map(({name, tilt_desc}, index) =>
-					<SwiperSlide 
+					<SwiperSlide
 						className={`${classNameSlider}_slide`}
 						key={index}>
-						<Tilty 
+						<Tilty
 							settings={tiltSettings(width)}
 							className={`${classNameItem} ${name}_item tilt`} >
 							<div className="tilt__circle tilt__item">
-								<img 
-									src={getLogo(index)} 
-									alt={`${name} logo`} 
+								<img
+									src={getLogo(index)}
+									alt={`${name} logo`}
 									className={`${classNameItem}_img tilt__item`} />
 							</div>
 					        <h2 className={`${classNameItem}_title tilt__item`}>

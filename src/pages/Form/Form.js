@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "preact/hooks"
 
 import LinkBack from '../../components/LinkBack/LinkBack'
 import Input from '../../components/Input/Input'

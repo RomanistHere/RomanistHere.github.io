@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, memo } from "react"
+import { useState, useEffect, useRef } from "preact/hooks"
 
 import content from '../../static/content'
 import manage from '../../static/manage'
@@ -51,4 +51,4 @@ const Card__wr1 = () => {
             </ul>
 }
 
-export default memo(Card__wr1)
+export default Card__wr1

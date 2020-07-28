@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "preact/compat"
+import { Fragment, useState, useEffect } from "preact/compat"
 import ReactHtmlParser from 'react-html-parser'
 
 import Slider from '../../components/Slider/Slider'

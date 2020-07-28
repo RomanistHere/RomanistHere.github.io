@@ -1,50 +1,35 @@
-import React, { lazy, Suspense } from 'react'
-import {
-  HashRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { Router } from 'preact-router'
+import AsyncRoute from 'preact-async-route'
 
 import Preloader from '../components/Preloader/Preloader'
 
-const Offer = lazy(() => import('./Offer/Offer'))
-const Card = lazy(() => import('./Card/Card'))
-const Apps = lazy(() => import('./Apps/Apps'))
-const Form = lazy(() => import('./Form/Form'))
-const NoPage = lazy(() => import('./NoPage/NoPage'))
-const Post = lazy(() => import('./Post/Post'))
-const Posts = lazy(() => import('./Posts/Posts'))
+// import Card from '../pages/Card/Card'
+// import Offer from '../pages/Offer/Offer'
+import Apps from '../pages/Apps/Apps'
+import Form from '../pages/Form/Form'
+import NoPage from '../pages/NoPage/NoPage'
+import Post from '../pages/Post/Post'
+import Posts from '../pages/Posts/Posts'
 
-const App = () => {
-  return (
-    <Router>
-        <Suspense fallback={<Preloader />}>
-            <Switch>
-                <Route exact path="/">
-                    <Card />
-                </Route>
-                <Route path="/offer">
-                    <Offer />
-                </Route>
-                <Route path="/apps">
-                    <Apps />
-                </Route>
-                <Route path="/form">
-                    <Form />
-                </Route>
-                <Route path="/posts/:slug">
-                    <Post />
-                </Route>
-                <Route path="/posts">
-                    <Posts />
-                </Route>
-                <Route>
-                    <NoPage />
-                </Route>
-            </Switch>
-        </Suspense>
-    </Router>
-  )
+export default () => {
+
+	return (
+		<Router>
+			<AsyncRoute
+				path="/"
+				getComponent={ () => import('../pages/Card/Card').then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
+			<AsyncRoute
+				path="/offer"
+				getComponent={ () => import('../pages/Offer/Offer').then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
+			<Apps path="/apps/" />
+			<Form path="/form/" />
+			<Post path="/posts/:slug/" />
+			<Posts path="/posts/" />
+			<NoPage default />
+		</Router>
+	)
 }
-
-export default App

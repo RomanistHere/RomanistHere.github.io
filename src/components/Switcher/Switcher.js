@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "preact/hooks"
 
 import './Switcher.css'
 
@@ -12,7 +12,7 @@ const Switcher = ({ text, className, toggleHighlighting }) => {
 
   	return  <label className={`${className} switcher`}>
 			    <input
-			     	checked={checked} 
+			     	checked={checked}
 			     	onChange={onChange}
 			     	type="checkbox" />
 			    <span className="switch-left">On</span>

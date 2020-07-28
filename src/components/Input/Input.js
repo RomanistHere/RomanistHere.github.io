@@ -1,5 +1,3 @@
-import React from "react"
-
 import content from '../../static/content'
 import {
 	querySelector,
@@ -72,20 +70,20 @@ const Input = ({
 		}
 	}
 
-    return isInput 
-    		? <input 
-    			className="form__inp form__data" 
-    			type="text" 
-    			placeholder={placeholder} 
-    			name={name} 
+    return isInput
+    		? <input
+    			className="form__inp form__data"
+    			type="text"
+    			placeholder={placeholder}
+    			name={name}
     			onFocus={onFocus}
     			onBlur={onBlur}
     			onKeyUp={onKeyUp}
     			onKeyDown={onKeyDown}
 			/>
-    		: <textarea 
-    			className="form__txtarea form__data" 
-    			placeholder={placeholder} 
+    		: <textarea
+    			className="form__txtarea form__data"
+    			placeholder={placeholder}
     			name={name}
     			onFocus={onFocus}
     			onBlur={onBlur}

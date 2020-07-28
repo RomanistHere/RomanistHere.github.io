@@ -1,5 +1,5 @@
-import React, { useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useEffect } from "preact/hooks"
+import { Link } from 'preact-router/match'
 
 import LinkBack from '../../components/LinkBack/LinkBack'
 
@@ -19,7 +19,7 @@ const items = posts.map(({
     desc
 }, index) =>
     <article key={index} className="posts__item">
-        <Link className="posts__link" to={`/posts/${slug}`}>
+        <Link className="posts__link" href={`/posts/${slug}`}>
             <img className="posts__img" src={images[image]} alt={title} loading="lazy"/>
             <h1 className="posts__title">{title}</h1>
             <p className="posts__text">{desc}</p>

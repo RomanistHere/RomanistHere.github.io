@@ -1,5 +1,3 @@
-import React from "react"
-
 import content from '../../static/content'
 
 import LinkBack from '../../components/LinkBack/LinkBack'
