@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'preact/hooks'
 
 const querySelector = name =>
-	document.querySelector(`.${name.toLowerCase()}`)
+	document ? document.querySelector(`.${name.toLowerCase()}`) : null
 
 const querySelectorAll = name =>
-	document.querySelectorAll(`.${name}`)
+	document ? document.querySelectorAll(`.${name}`) : null
 
 const addClass = (selector, className) =>
 	selector.classList.add(className)
@@ -48,11 +48,13 @@ const useTimeout = (callback, delay) => {
 	}, [callback])
 
 	useEffect(() => {
-		if (typeof delay === 'number') {
-			timeoutRef.current = window.setTimeout(() =>
-			callbackRef.current(), delay)
+		if (typeof window !== 'undefined') {
+			if (typeof delay === 'number') {
+				timeoutRef.current = window.setTimeout(() =>
+				callbackRef.current(), delay)
 
-			return () => window.clearTimeout(timeoutRef.current)
+				return () => window.clearTimeout(timeoutRef.current)
+			}
 		}
 	}, [delay])
 
@@ -60,19 +62,21 @@ const useTimeout = (callback, delay) => {
 }
 
 const useViewport = () => {
-	const [width, setWidth] = useState(window.innerWidth)
+	const [width, setWidth] = useState(window ? window.innerWidth : 1920)
 	// Add a second state variable "height" and default it to the current window height
-	const [height, setHeight] = useState(window.innerHeight)
+	const [height, setHeight] = useState(window ? window.innerHeight : 900)
 
 	useEffect(() => {
-		const handleWindowResize = () => {
-			setWidth(window.innerWidth)
-			// Set the height in state as well as the width
-			setHeight(window.innerHeight)
-		}
+		if (typeof window !== 'undefined') {
+			const handleWindowResize = () => {
+				setWidth(window.innerWidth)
+				// Set the height in state as well as the width
+				setHeight(window.innerHeight)
+			}
 
-		window.addEventListener("resize", handleWindowResize)
-		return () => window.removeEventListener("resize", handleWindowResize)
+			window.addEventListener("resize", handleWindowResize)
+			return () => window.removeEventListener("resize", handleWindowResize)
+		}
 	}, [])
 
 	// Return both the height and width
@@ -86,7 +90,7 @@ const findPostBySlug = (posts, slug) =>
     posts.find(item => item.slug === slug)
 
 const isFocused = () =>
-	document.hasFocus()
+	document ? document.hasFocus() : false
 
 const importAll = (r) => {
     let images = {}

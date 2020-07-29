@@ -83,7 +83,8 @@ const Offer = () => {
 	}
 
 	useEffect(() => {
-        document.title = content.titles.offer
+		if (typeof window !== 'undefined')
+        	document.title = content.titles.offer
     }, [])
 
 	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)

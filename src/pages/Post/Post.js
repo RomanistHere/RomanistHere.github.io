@@ -14,25 +14,27 @@ const Post = ({ slug }) => {
     const { image, title, content, desc, posted } = findPostBySlug(posts, slug)
 
     useEffect(() => {
-        document.title = title
-        // document.querySelector('meta[name="Description"]').setAttribute("content", desc)
-        // document.querySelector('meta[property=og\\:description]').setAttribute("content", desc)
-        // document.querySelector('meta[property=og\\:title]').setAttribute("content", title)
-        // document.querySelector('meta[property=og\\:image]').setAttribute("content", images[image])
-        // document.querySelector('meta[property=og\\:type]').setAttribute("content", 'blog')
-        // document.querySelector('meta[property=og\\:url]').setAttribute("content", `https://romanisthere.github.io/#/posts/${slug}`)
-        // window.scrollTo(0, 0)
+        if (typeof window !== 'undefined') {
+            document.title = title
+            // document.querySelector('meta[name="Description"]').setAttribute("content", desc)
+            // document.querySelector('meta[property=og\\:description]').setAttribute("content", desc)
+            // document.querySelector('meta[property=og\\:title]').setAttribute("content", title)
+            // document.querySelector('meta[property=og\\:image]').setAttribute("content", images[image])
+            // document.querySelector('meta[property=og\\:type]').setAttribute("content", 'blog')
+            // document.querySelector('meta[property=og\\:url]').setAttribute("content", `https://romanisthere.github.io/#/posts/${slug}`)
+            // window.scrollTo(0, 0)
 
-        const hashClass = window.location.hash.split("#", 3)[2]
-        if (hashClass) {
-            const element = querySelector(hashClass)
-            setTimeout(() => {
-                window.scrollTo({
-                    behavior: "smooth",
-                    top: element.offsetTop
-                })
-                addClass(element, 'post__text-active')
-            }, 100)
+            const hashClass = window.location.hash.split("#", 3)[2]
+            if (hashClass) {
+                const element = querySelector(hashClass)
+                setTimeout(() => {
+                    window.scrollTo({
+                        behavior: "smooth",
+                        top: element.offsetTop
+                    })
+                    addClass(element, 'post__text-active')
+                }, 100)
+            }
         }
     }, [title, desc, slug, image])
 

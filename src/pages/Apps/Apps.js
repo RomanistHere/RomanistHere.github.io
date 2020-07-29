@@ -52,8 +52,10 @@ const Apps = () => {
 	}
 
 	useEffect(() => {
-		document.title = content.titles.apps
-		window.scrollTo(0, 0)
+		if (typeof window !== 'undefined') {
+			document.title = content.titles.apps
+			window.scrollTo(0, 0)
+		}
 	}, [])
 
   	return	<section className={`${apps_page[projNumb].name} apps main`}>

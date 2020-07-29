@@ -42,8 +42,10 @@ const formTypings = (shouldShow) => content.form__typings.map((item, index) => {
 
 const Form = () => {
 	useEffect(() => {
-        document.title = content.titles.form
-        window.scrollTo(0, 0)
+		if (typeof window !== 'undefined') {
+	        document.title = content.titles.form
+	        window.scrollTo(0, 0)
+		}
     }, [])
 
 	const onSubmit = (e) => {

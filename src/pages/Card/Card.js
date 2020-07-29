@@ -29,7 +29,9 @@ const Card = () => {
     })
 
     useEffect(() => {
-        document.title = content.titles.card
+        if (typeof window !== 'undefined')
+            document.title = content.titles.card
+            
         startAnimation(true)
 
         return () => {

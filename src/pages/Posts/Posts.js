@@ -30,7 +30,8 @@ const items = posts.map(({
 
 const Posts = () => {
     useEffect(() => {
-        document.title = content.titles.posts
+        if (typeof window !== 'undefined')
+            document.title = content.titles.posts
     }, [])
 
   	return 	<section className="main posts">
