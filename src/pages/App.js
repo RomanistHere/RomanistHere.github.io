@@ -1,7 +1,5 @@
 import { Router } from 'preact-router'
-import AsyncRoute from 'preact-async-route'
 
-import Preloader from '../components/Preloader/Preloader'
 import Route from '../components/Route/Route'
 import NoPage from '../pages/NoPage/NoPage'
 
