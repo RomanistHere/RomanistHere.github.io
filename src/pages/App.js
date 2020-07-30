@@ -1,22 +1,42 @@
 import { Router } from 'preact-router'
+import AsyncRoute from 'preact-async-route'
 
-import Route from '../components/Route/Route'
+import Preloader from '../components/Preloader/Preloader'
 import NoPage from '../pages/NoPage/NoPage'
-
-const pages = {
-	Card: '/',
-	Form: '/form/',
-	Apps: '/apps/',
-	Offer: '/offer/',
-	Post: '/posts/:slug/',
-	Posts: '/posts/'
-}
-const Routers = Object.entries(pages).map(([key, value], index) => Route(value, key))
 
 export default () => {
 	return (
 		<Router>
-			{Routers}
+			<AsyncRoute
+				path='/'
+				getComponent={ () => import(`../pages/Card/Card`).then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
+			<AsyncRoute
+				path='/offer/'
+				getComponent={ () => import(`../pages/Offer/Offer`).then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
+			<AsyncRoute
+				path='/apps/'
+				getComponent={ () => import(`../pages/Apps/Apps`).then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
+			<AsyncRoute
+				path='/form/'
+				getComponent={ () => import(`../pages/Form/Form`).then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
+			<AsyncRoute
+				path='/posts/'
+				getComponent={ () => import(`../pages/Posts/Posts`).then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
+			<AsyncRoute
+				path='/posts/:slug/'
+				getComponent={ () => import(`../pages/Post/Post`).then(module => module.default) }
+				loading={ () => <Preloader /> }
+			/>
 			<NoPage default />
 		</Router>
 	)
