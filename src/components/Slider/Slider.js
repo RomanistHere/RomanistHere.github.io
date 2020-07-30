@@ -59,9 +59,6 @@ const Slider = ({
 }) => {
 	const { width } = useViewport()
 
-	if (typeof window === 'undefined')
-		return <div>Loading...</div>
-
 	return  <Swiper
 				spaceBetween={30}
 				slidesPerView={3}

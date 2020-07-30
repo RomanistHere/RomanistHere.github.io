@@ -3,5 +3,10 @@
     "url": "/",
     "title": "Home",
     "description": "Foobar"
+  },
+  {
+    "url": "/offer",
+    "title": "Offer page",
+    "description": "Foobar"
   }
 ]
