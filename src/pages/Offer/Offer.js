@@ -61,8 +61,8 @@ const navItems = content.offer__nav.map(({
 
 const Offer = () => {
 	const [keyWords, setKeyWords] = useState(null)
-	const [shouldShow, setShowTyping] = useState(
-		JSON.parse(localStorage.getItem('showOfferTyping')) === false ? false : true)
+	const [shouldShow, setShowTyping] = useState(typeof window !== 'undefined' ?
+		(JSON.parse(localStorage.getItem('showOfferTyping')) === false ? false : true) : false)
 	const {
 		offer_switcher__hide_time,
 		offer_switcher__show_time,
@@ -72,7 +72,7 @@ const Offer = () => {
 		items.map(item => toggleClass(item, 'offer__word-hide'))
 
 	const toggleHighlighting = () => {
-		if (!keyWords) {
+		if (!keyWords && (typeof window !== 'undefined')) {
 			const links = Array.from(querySelectorAll('offer__word'))
 			toggleClassAll(links)
 			setKeyWords(links)
