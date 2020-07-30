@@ -11,13 +11,13 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="/media/public/favicon-32x32.png">
 	    <link rel="icon" type="image/png" sizes="16x16" href="/media/public/favicon-16x16.png">
 
-		<meta property="og:title" content="RomanistHere. An independent JavaScript developer." />
+		<meta property="og:title" content="<%= htmlWebpackPlugin.options.CLI_DATA.preRenderData.title %>" />
 	    <meta property="og:type" content="website" />
 	    <meta property="og:url" content="http://romanisthere.github.io/" />
-	    <meta property="og:description" content="Hey, I am Roman Smunyov and I am a JavaScript developer. It is time for you to finally meet me. My goal is to make the web better. I develop non-comercial open source projects. Join!"/>
-	    <meta property="og:image" content="/media/public/preview.png" />
+	    <meta property="og:description" content="<%= htmlWebpackPlugin.options.CLI_DATA.preRenderData.description %>" />
+	    <meta property="og:image" content="<%= htmlWebpackPlugin.options.CLI_DATA.preRenderData.img %>" />
 
-		<meta name="Description" content="Hey, I am Roman Smunyov and I am a JavaScript developer. It is time for you to finally meet me. My goal is to make the web better. I develop non-comercial open source projects. Join!">
+		<meta name="Description" content="<%= htmlWebpackPlugin.options.CLI_DATA.preRenderData.description %>">
 
 	    <meta name="google-site-verification" content="VOAqlvL1BbL_Glqy47fldDLcHlz8MjARlIfftmcdios" />
 		<link rel="icon" href="/media/public/favicon.ico" />
