@@ -1,23 +1,28 @@
-import { Router } from 'preact-router'
+import { Router, Route } from 'preact-router'
+import {Suspense} from "preact/compat/src/suspense";
 
-import Route from '../components/Route/Route'
 import NoPage from '../pages/NoPage/NoPage'
+import Preloader from "../components/Preloader/Preloader";
 
-const pages = {
-	Card: '/',
-	Form: '/form/',
-	Apps: '/apps/',
-	Offer: '/offer/',
-	Post: '/posts/:slug/',
-	Posts: '/posts/'
-}
-const Routers = Object.entries(pages).map(([key, value], index) => Route(value, key))
+import Card from 'async!./Card/Card';
+import Form from 'async!./Form/Form';
+import Apps from 'async!./Apps/Apps';
+import Offer from 'async!./Offer/Offer';
+import Post from 'async!./Post/Post';
+import Posts from 'async!./Posts/Posts';
 
 export default () => {
 	return (
 		<Router>
-			{Routers}
-			<NoPage default />
+			<Suspense fallback={<Preloader />}>
+				<Route path="/" component={Card} />
+				<Route path="/form" component={Form} />
+				<Route path="/apps" component={Apps} />
+				<Route path="/offer" component={Offer} />
+				<Route path="/posts/:slug" component={Post} />
+				<Route path="/posts" component={Posts} />
+				<NoPage default />
+			</Suspense>
 		</Router>
 	)
 }
