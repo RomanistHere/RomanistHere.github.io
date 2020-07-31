@@ -57,6 +57,23 @@ ul {
     color: var(--main-text-color);
 }
 
+/* // scrollbar */
+body {
+    scrollbar-color: var(--main-text-color) var(--dark-color4);
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--dark-color4);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--main-text-color);
+}
+
 .link {
     color: var(--text-color1);
 

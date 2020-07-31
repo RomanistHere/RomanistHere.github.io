@@ -25,6 +25,7 @@
     "enzyme-adapter-preact-pure": "^2.0.0",
     "eslint": "^6.0.1",
     "eslint-config-preact": "^1.1.0",
+    "esm": "^3.2.25",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
@@ -33,10 +34,8 @@
     "sirv-cli": "1.0.3"
   },
   "dependencies": {
-    "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.5",
     "preact": "^10.3.2",
-    "preact-async-route": "^2.2.1",
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
     "react-html-parser": "^2.0.2",
