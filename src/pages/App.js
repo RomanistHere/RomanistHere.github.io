@@ -1,4 +1,4 @@
-// import { Router, Route, Switch } from 'preact-router'
+// import { Router, Route } from 'preact-router'
 // import { Suspense, lazy } from 'preact/compat'
 //
 // import Preloader from "../components/Preloader/Preloader"
