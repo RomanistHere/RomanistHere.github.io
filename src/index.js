@@ -6,7 +6,7 @@ import './static/variables.css'
 import './index.css'
 
 // comment on build
-// import "preact/debug"
+import "preact/debug"
 
 import App from './pages/App'
 
