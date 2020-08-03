@@ -8,7 +8,6 @@ import { querySelector, findPostBySlug, addClass, importAll } from '../../static
 import './Post.css'
 
 const images = importAll(require.context('../../media/images/posts/', false, /\.(png|jpe?g|svg)$/))
-console.log(images)
 
 const Post = ({ slug }) => {
     const { image, title, content, desc, posted } = findPostBySlug(posts, slug)
@@ -41,7 +40,7 @@ const Post = ({ slug }) => {
   	return 	<main className="post">
                 <article className="post__article">
                     <h1 className="post__title">{title}</h1>
-                    <img className="post__img" src={images[image]} alt={title} loading="lazy"/>
+                    <img className="post__img" src={images[image].default} alt={title} loading="lazy"/>
                     <div className="post__text">{ReactHtmlParser(content)}</div>
                     <p className="post__date">{posted}</p>
                 </article>

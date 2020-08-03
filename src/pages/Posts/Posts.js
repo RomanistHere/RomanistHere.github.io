@@ -20,7 +20,7 @@ const items = posts.map(({
 }, index) =>
     <article key={index} className="posts__item">
         <Link className="posts__link" href={`/posts/${slug}`}>
-            <img className="posts__img" src={images[image]} alt={title} loading="lazy"/>
+            <img className="posts__img" src={images[image].default} alt={title} loading="lazy"/>
             <h1 className="posts__title">{title}</h1>
             <p className="posts__text">{desc}</p>
             <span className="posts__capt">{posted}</span>
