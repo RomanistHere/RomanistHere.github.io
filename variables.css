@@ -8,10 +8,10 @@
     src: local('handFont2'), url(../media/fonts/handFont2.ttf) format('truetype');
 }
 
-@font-face {
+/* @font-face {
     font-family: 'handFont3';
     src: local('handFont3'), url(../media/fonts/handFont3.otf) format('truetype');
-}
+} */
 
 :root {
     --dark-color1: #3e596c;
@@ -43,7 +43,7 @@
     /*fonts*/
     --hand-font: 'handFont';
     --hand-font2: 'handFont2';
-    --hand-font3: 'handFont3';
+    /* --hand-font3: 'handFont3'; */
     /*paddings for text*/
     --pad-txt: 30px;
     /* main colors */
