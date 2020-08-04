@@ -9,10 +9,10 @@ import logo1 from '../../media/images/logo-1.png'
 import logo2 from '../../media/images/logo-2.png'
 import logo3 from '../../media/images/logo-3.png'
 
-import 'swiper/swiper.scss'
-import 'swiper/components/navigation/navigation.scss'
-import 'swiper/components/pagination/pagination.scss'
-import 'swiper/components/effect-coverflow/effect-coverflow.scss'
+import '../../../node_modules/swiper/swiper.scss'
+import '../../../node_modules/swiper/components/navigation/navigation.scss'
+import '../../../node_modules/swiper/components/pagination/pagination.scss'
+import '../../../node_modules/swiper/components/effect-coverflow/effect-coverflow.scss'
 // import 'swiper/swiper-bundle.css'
 
 SwiperCore.use([Navigation, Pagination, A11y, EffectCoverflow])
