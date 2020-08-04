@@ -1,6 +1,7 @@
 import SwiperCore, { Navigation, Pagination, A11y, EffectCoverflow } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Tilty from "react-tilty"
+
+import Tilty from '../Tilty/Tilty'
 
 import content from '../../static/content'
 import { useViewport } from '../../static/functions'
