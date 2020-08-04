@@ -1,18 +1,26 @@
 {
     "name":"RomanistHere. An independent JavaScript developer",
     "short_name":"RomanistHere",
-  "start_url": "/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#fff",
-  "theme_color": "#673ab8",
-  "icons":[{
-    "src":"/media/public/android-chrome-192x192.png",
-    "sizes":"192x192",
-    "type":"image/png"
-  },{
-    "src":"/media/public/android-chrome-512x512.png",
-    "sizes":"512x512",
-    "type":"image/png"
-  }]
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#fff",
+    "theme_color": "#673ab8",
+    "icons":[
+        {
+            "src": "/assets/icons/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/assets/icons/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/assets/icons/apple-touch-icon.png",
+            "type": "image/png",
+            "sizes": "180x180"
+        }
+    ]
 }

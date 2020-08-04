@@ -9,7 +9,7 @@ import { importAll } from '../../static/functions'
 
 import './Posts.css'
 
-const images = importAll(require.context('../../media/images/posts/', false, /\.(png|jpe?g|svg)$/))
+const images = importAll(require.context('../../assets/posts/', false, /\.(png|jpe?g|svg)$/))
 
 const items = posts.map(({
     title,
