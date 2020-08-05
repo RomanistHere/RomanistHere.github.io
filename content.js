@@ -229,7 +229,8 @@ const content = {
 		card: `You are welcome here`,
 		offer: `Let's see who I am`,
 		form: `Make me an offer`,
-		posts: `Articles I write`
+		posts: `Articles I write`,
+		noPage: `No page like that. Try again:)`
 	},
 	link_back: 'To main page',
 	no_page__text: '404',
