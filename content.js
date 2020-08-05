@@ -25,6 +25,8 @@ const content = {
 		`I am pleased :)`,
 		`There are probably few more pages on this site`,
 		`Some of them could be even prettier than this one`,
+		`I've built this site in React, migrated it to Gatsby`,
+		`And now it's in Preact. There should be an article why`,
 		`Okay, all right, let's just watch this page`,
 		`This nice blue was picked by my lovely wife`,
 		`Try to point your cursor to a link in the card...`,
