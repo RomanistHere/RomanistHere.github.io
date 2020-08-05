@@ -4,7 +4,7 @@ import ReactHtmlParser from 'react-html-parser'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
-import CV from '../../media/images/RomanSmunyovCV.pdf'
+import CV from '../../assets/Roman Smunyov CV.pdf'
 import {
 	querySelectorAll,
 	toggleClass,
