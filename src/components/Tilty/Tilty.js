@@ -1,4 +1,4 @@
-import { Component } from 'preact/compat';
+import { Component } from 'preact/compat'
 
 class Tilty extends Component {
     constructor(props) {

@@ -43,12 +43,15 @@ const appsDesc = (projNumb) => Object.keys(apps_page[projNumb].apps__desc).map((
 })
 
 const Apps = () => {
+	const numbOfSlides = Object.values(content.apps_page).length
 	const [projNumb, changeProjNumb] = useState(1)
 	const { logoLinks, linksObj } = getLogos(projNumb)
 
 	const changeProj = (e) => {
 		const newProjNumb = e.realIndex + 1
-		changeProjNumb(newProjNumb)
+		const projNumb = newProjNumb - numbOfSlides > 0 ? newProjNumb - numbOfSlides : newProjNumb
+		
+		changeProjNumb(projNumb)
 	}
 
 	useEffect(() => {

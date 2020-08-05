@@ -10,18 +10,15 @@ const Card__wr2 = ({ onMouseOver, onMouseLeave }) => {
                     	href="/offer">Offer me</Link> a job or mentoring
                 </li>
                 <li className="card__item">
-                    Learn about <Link
+                    Explore <Link
                     	onMouseOver={onMouseOver}
                     	onMouseLeave={onMouseLeave}
                     	className="card__link link"
-                    	href="/apps">my apps</Link>
-                </li>
-                <li className="card__item">
-                    Or read <Link
+                    	href="/apps">my apps</Link> or read <Link
                     	onMouseOver={onMouseOver}
                     	onMouseLeave={onMouseLeave}
                     	className="card__link link"
-                    	href="/posts">articles</Link> I write
+                    	href="/posts">my blog</Link>
                 </li>
             </ul>
 }

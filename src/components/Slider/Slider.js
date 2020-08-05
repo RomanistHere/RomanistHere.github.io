@@ -1,5 +1,5 @@
-import SwiperCore, { Navigation, Pagination, A11y, EffectCoverflow } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import Swiper, { Navigation, Pagination, EffectCoverflow } from 'swiper'
+import { useRef, useEffect } from 'preact/hooks'
 
 import Tilty from '../Tilty/Tilty'
 
@@ -17,7 +17,7 @@ import logo3 from '../../media/images/logo-3.png'
 
 import './Slider.css'
 
-SwiperCore.use([Navigation, Pagination, A11y, EffectCoverflow])
+Swiper.use([Navigation, Pagination, EffectCoverflow])
 
 const breakPoint = 1359
 const touchBreakPoint = 1024
@@ -43,6 +43,25 @@ const getLogo = (index)  => {
 	return logos[index]
 }
 
+const sliderSettings = (width) => {
+	return {
+		loop: true,
+		spaceBetween: 30,
+		slidesPerView: 3,
+		effect: 'coverflow',
+		centeredSlides: true,
+		slideToClickedSlide: true,
+		initialSlide: 3,
+
+		coverflowEffect: covSettings(width),
+
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		}
+	}
+}
+
 const tiltSettings = (width) => {
 	const max = width <= touchBreakPoint ? 0 : 35
 
@@ -55,48 +74,54 @@ const tiltSettings = (width) => {
 	}
 }
 
+const slidesWrap = (classNameSlider, classNameItem, width, isSec, numbOfSlides) =>
+	Object.values(content.apps_page).map(({name, tilt_desc}, index) =>
+		<div
+			className={`${classNameSlider}_slide swiper-slide`}
+			key={isSec ? index + numbOfSlides : index}>
+			<Tilty
+				settings={tiltSettings(width)}
+				className={`${classNameItem} ${name}_item tilt`} >
+				<div className="tilt__circle tilt__item">
+					<img
+						src={getLogo(index)}
+						alt={`${name} logo`}
+						className={`${classNameItem}_img tilt__item`} />
+				</div>
+				<h2 className={`${classNameItem}_title tilt__item`}>
+					{ name }
+				</h2>
+				{width > breakPoint ? <div className="tilt__desc">
+					{ tilt_desc }
+				</div> : null}
+			</Tilty>
+		</div>)
+
 const Slider = ({
 	classNameSlider,
 	classNameItem,
 	onSlideChange
 }) => {
 	const { width } = useViewport()
+	const swiper = useRef(false)
+	const numbOfSlides = Object.values(content.apps_page).length
 
-	return  <Swiper
-				spaceBetween={30}
-				slidesPerView={3}
-				navigation
-				loop={true}
-				pagination={{ clickable: true }}
-				onSlideChange={onSlideChange}
-				effect='coverflow'
-				centeredSlides={true}
-				coverflowEffect={covSettings(width)}
-				className={classNameSlider} >
-			{
-				Object.values(content.apps_page).map(({name, tilt_desc}, index) =>
-					<SwiperSlide
-						className={`${classNameSlider}_slide`}
-						key={index}>
-						<Tilty
-							settings={tiltSettings(width)}
-							className={`${classNameItem} ${name}_item tilt`} >
-							<div className="tilt__circle tilt__item">
-								<img
-									src={getLogo(index)}
-									alt={`${name} logo`}
-									className={`${classNameItem}_img tilt__item`} />
-							</div>
-					        <h2 className={`${classNameItem}_title tilt__item`}>
-					        	{name}
-					        </h2>
-					        {width > breakPoint ? <div className="tilt__desc">
-					        	{ tilt_desc }
-					        </div> : null}
-					    </Tilty>
-					</SwiperSlide>)
-			}
-			</Swiper>
+	useEffect(() => {
+		swiper.current = new Swiper('.swiper-container', sliderSettings(width))
+		swiper.current.on('slideChange', onSlideChange)
+    }, [])
+
+	return <div className={`${classNameSlider} swiper-container`}>
+			    <div className={`swiper-wrapper`}>
+			        {
+						[...slidesWrap(classNameSlider, classNameItem, width, false, numbOfSlides),
+						...slidesWrap(classNameSlider, classNameItem, width, true, numbOfSlides)]
+					}
+			    </div>
+
+			    <div className="swiper-button-prev"></div>
+			    <div className="swiper-button-next"></div>
+			</div>
 }
 
 export default Slider
