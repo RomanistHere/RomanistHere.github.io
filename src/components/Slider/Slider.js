@@ -9,12 +9,6 @@ import logo1 from '../../media/images/logo-1.png'
 import logo2 from '../../media/images/logo-2.png'
 import logo3 from '../../media/images/logo-3.png'
 
-// import 'swiper/swiper.scss'
-// import 'swiper/components/navigation/navigation.scss'
-// import 'swiper/components/pagination/pagination.scss'
-// import 'swiper/components/effect-coverflow/effect-coverflow.scss'
-// import 'swiper/swiper-bundle.css'
-
 import './Slider.css'
 
 Swiper.use([Navigation, Pagination, EffectCoverflow])
@@ -43,7 +37,7 @@ const getLogo = (index)  => {
 	return logos[index]
 }
 
-const sliderSettings = (width) => {
+const sliderSettings = (width, numbOfSlides) => {
 	return {
 		loop: true,
 		spaceBetween: 30,
@@ -51,7 +45,7 @@ const sliderSettings = (width) => {
 		effect: 'coverflow',
 		centeredSlides: true,
 		slideToClickedSlide: true,
-		initialSlide: 3,
+		initialSlide: numbOfSlides,
 
 		coverflowEffect: covSettings(width),
 
@@ -107,7 +101,7 @@ const Slider = ({
 	const numbOfSlides = Object.values(content.apps_page).length
 
 	useEffect(() => {
-		swiper.current = new Swiper('.swiper-container', sliderSettings(width))
+		swiper.current = new Swiper('.swiper-container', sliderSettings(width, numbOfSlides))
 		swiper.current.on('slideChange', onSlideChange)
     }, [])
 
