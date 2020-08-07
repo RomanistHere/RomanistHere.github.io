@@ -90,7 +90,10 @@ const Card = () => {
                         <h1 className="card__title">
                             {content.card__title}
                         </h1>
-                        <SocLinks />
+                        <SocLinks
+                            onMouseOver={() => setSmile(true)}
+                            onMouseLeave={() => setSmile(false)}
+                        />
                     </div>
                     <div className="card__body">
                         <div className="card__photo">
