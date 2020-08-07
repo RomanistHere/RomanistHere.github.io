@@ -364,6 +364,8 @@ body::-webkit-scrollbar-thumb {
 
     border-radius: 6px 6px 0 0;
     background-color: var(--bg-color2);
+
+    overflow: hidden;
 }
 
 .card__item {
@@ -411,6 +413,30 @@ body::-webkit-scrollbar-thumb {
     width: 24px;
     height: 24px;
     top: 11px;
+
+    animation: card_logo 9s ease-out;
+}
+
+.card__soc_link:nth-child(2) {
+    animation-duration: 8.5s;
+}
+
+@keyframes card_logo {
+    0%, 94% {
+        transform: translateY(-50px);
+    }
+    96% {
+        transform: translateY(10px);
+    }
+    98% {
+        transform: translateY(-5px);
+    }
+    99% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .card__logo {
@@ -3032,4 +3058,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.5a992.css.map*/
+/*# sourceMappingURL=ssr-bundle.202d6.css.map*/
