@@ -1,5 +1,7 @@
 import { useEffect } from "preact/hooks"
 import ReactHtmlParser from 'react-html-parser'
+import IsScrolling from 'react-is-scrolling'
+
 import LinkBack from '../../components/LinkBack/LinkBack'
 
 import posts from '../../static/posts'
@@ -9,15 +11,14 @@ import './Post.css'
 
 const images = importAll(require.context('../../assets/posts/', false, /\.(png|jpe?g|svg)$/))
 
-const Post = ({ slug }) => {
+const Post = ({ slug, isScrolling }) => {
     const { image, title, content, desc, posted } = findPostBySlug(posts, slug)
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
             document.title = title
-            // window.scrollTo(0, 0)
 
-            const hashClass = window.location.hash.split("#", 3)[2]
+            const hashClass = window.location.hash.split("#", 3)[1]
             if (hashClass) {
                 const element = querySelector(hashClass)
                 setTimeout(() => {
@@ -27,6 +28,8 @@ const Post = ({ slug }) => {
                     })
                     addClass(element, 'post__text-active')
                 }, 100)
+            } else {
+                !isScrolling && window.scrollTo(0, 0)
             }
         }
     }, [title, desc, slug, image])
@@ -42,4 +45,4 @@ const Post = ({ slug }) => {
 		    </main>
 }
 
-export default Post
+export default IsScrolling(Post)

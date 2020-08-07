@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from "preact/compat"
 import ReactHtmlParser from 'react-html-parser'
+import IsScrolling from 'react-is-scrolling'
 
 import Slider from '../../components/Slider/Slider'
 import Typing from '../../components/Typing/Typing'
@@ -42,7 +43,7 @@ const appsDesc = (projNumb) => Object.keys(apps_page[projNumb].apps__desc).map((
 			</Fragment>
 })
 
-const Apps = () => {
+const Apps = ({ isScrolling }) => {
 	const numbOfSlides = Object.values(content.apps_page).length
 	const [projNumb, changeProjNumb] = useState(1)
 	const { logoLinks, linksObj } = getLogos(projNumb)
@@ -50,14 +51,14 @@ const Apps = () => {
 	const changeProj = (e) => {
 		const newProjNumb = e.realIndex + 1
 		const projNumb = newProjNumb - numbOfSlides > 0 ? newProjNumb - numbOfSlides : newProjNumb
-		
+
 		changeProjNumb(projNumb)
 	}
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
 			document.title = content.titles.apps
-			window.scrollTo(0, 0)
+			!isScrolling && window.scrollTo(0, 0)
 		}
 	}, [])
 
@@ -105,4 +106,4 @@ const Apps = () => {
 			</section>
 }
 
-export default Apps
+export default IsScrolling(Apps)

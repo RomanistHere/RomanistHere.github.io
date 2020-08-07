@@ -13,10 +13,6 @@ import {
     breakPoint,
 } from '../../static/sliderConfig'
 
-import logo1 from '../../media/images/logo-1.png'
-import logo2 from '../../media/images/logo-2.png'
-import logo3 from '../../media/images/logo-3.png'
-
 import './Slider.css'
 
 const slidesWrap = (classNameSlider, classNameItem, width, isSec, numbOfSlides) =>
