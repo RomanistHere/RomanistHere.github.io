@@ -43,7 +43,6 @@
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
     "react-html-parser": "^2.0.2",
-    "react-is-scrolling": "^1.0.1",
     "swiper": "^6.0.4"
   },
   "jest": {
