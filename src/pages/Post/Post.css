@@ -126,4 +126,12 @@
     .post__title {
         font-size: 30px;
     }
+
+    .post__text {
+        padding-bottom: 6px;
+    }
+
+    .post__date {
+        padding-bottom: 10px;
+    }
 }

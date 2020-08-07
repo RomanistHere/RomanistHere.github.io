@@ -138,7 +138,7 @@ const content = {
 		},
 		{
 			'offer__low_title': 'What am I seeking for',
-			'offer__text': `I would like to apply and improve my knowledge in <span class="offer__word">functional programming</span>, so I'd join the place where it matters. I also <span class="offer__word">plan to relocate</span> to an English speaking country in near future. So I am actively considering <span class="offer__word">onsite or remote positions</span> with the opportunity to relocate.`
+			'offer__text': `I would like to apply and improve my knowledge in <span class="offer__word">functional programming</span>, so I'd join the place where it matters. I also <span class="offer__word">plan to relocate</span> to an English speaking country in near future. So I am actively considering <span class="offer__word">onsite or remote positions</span> with such an opportunity.`
 		},
 		{
 			'offer__low_title': 'How to reach me',

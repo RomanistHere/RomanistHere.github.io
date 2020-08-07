@@ -61,6 +61,7 @@ const Slider = ({
 	return <div className={`${classNameSlider} swiper-container`}>
 			    <div className={`swiper-wrapper`}>
 			        {
+						// fix for swiper loop: true feature not working properly
 						[...slidesWrap(classNameSlider, classNameItem, width, false, numbOfSlides),
 						...slidesWrap(classNameSlider, classNameItem, width, true, numbOfSlides)]
 					}
