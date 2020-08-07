@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'preact/hooks'
 import './Card.css'
 
 import Face from '../../components/Face/Face'
+import SocLinks from '../../components/SocLinks/SocLinks'
 import Card__wr1 from '../../components/Card__wr1/Card__wr1'
 import Card__wr2 from '../../components/Card__wr2/Card__wr2'
 import Typing from '../../components/Typing/Typing'
@@ -89,6 +90,7 @@ const Card = () => {
                         <h1 className="card__title">
                             {content.card__title}
                         </h1>
+                        <SocLinks />
                     </div>
                     <div className="card__body">
                         <div className="card__photo">
