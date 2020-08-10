@@ -1,12 +1,10 @@
 import { useEffect } from "preact/hooks"
-import ReactHtmlParser from 'react-html-parser'
 
-import LinkBack from '../../components/LinkBack/LinkBack'
+import TextPage from '../../components/TextPage/TextPage'
 
 import posts from '../../static/posts'
 import { querySelector, findPostBySlug, addClass, importAll } from '../../static/functions'
 
-import './Post.css'
 
 const images = importAll(require.context('../../assets/posts/', false, /\.(png|jpe?g|svg)$/))
 
@@ -31,17 +29,14 @@ const Post = ({ slug }) => {
                 window.scrollTo(0, 0)
             }
         }
-    }, [title, desc, slug, image])
+    }, [])
 
-  	return 	<main className="post">
-                <article className="post__article">
-                    <h1 className="post__title">{title}</h1>
-                    <img className="post__img" src={images[image].default} alt={title} loading="lazy"/>
-                    <div className="post__text">{ReactHtmlParser(content)}</div>
-                    <p className="post__date">{posted}</p>
-                </article>
-                <LinkBack className="post__back" />
-		    </main>
+  	return 	<TextPage
+                title={title}
+                content={content}
+                image={images[image].default}
+                posted={posted}
+            />
 }
 
 export default Post

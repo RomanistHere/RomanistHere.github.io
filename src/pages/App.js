@@ -30,7 +30,7 @@
 
 // BUILD WORKING
 
-import { Router, Route } from 'preact-router'
+import { Router } from 'preact-router'
 
 import Card from '../pages/Card/Card'
 import Form from '../pages/Form/Form'
@@ -39,16 +39,18 @@ import Offer from '../pages/Offer/Offer'
 import Post from '../pages/Post/Post'
 import Posts from '../pages/Posts/Posts'
 import NoPage from '../pages/NoPage/NoPage'
+import Policy from '../pages/Policy/Policy'
 
 export default () => {
 	return (
 		<Router>
-			<Route path="/" component={Card} />
-			<Route path="/form" component={Form} />
-			<Route path="/apps" component={Apps} />
-			<Route path="/offer" component={Offer} />
-			<Route path="/posts/:slug" component={Post} />
-			<Route path="/posts" component={Posts} />
+			<Card path="/" />
+			<Form path="/form" />
+			<Apps path="/apps" />
+			<Policy path="/apps/policy" />
+			<Offer path="/offer" />
+			<Post path="/posts/:slug" />
+			<Posts path="/posts" />
 			<NoPage default />
 		</Router>
 	)

@@ -87,6 +87,11 @@
     background-color: #ff000033;
 }
 
+.post__col-3 {
+    border-bottom: .1em solid var(--main-text-color);
+    background-color: #c6b7634d;
+}
+
 .post__text-active {
     position: relative;
 }

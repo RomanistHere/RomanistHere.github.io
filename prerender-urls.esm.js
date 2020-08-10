@@ -41,6 +41,12 @@ const staticData = [
         description: `Free applications for everyday use. Find something for yourself.`,
         img: `/assets/pages/preview.png`
     },{
+        url: `/apps/policy/`,
+        title: `Privacy Policy: General notes`,
+        ogTitle: `Privacy Policy: General notes`,
+        description: `I do not share or sell any of your personal data. I am proud to say that I am one of the fighters for users privacy and I am strongly committed to this principle and to being as transparent as possible.`,
+        img: `/assets/pages/preview.png`
+    },{
         url: `/form/`,
         title: `Make me an offer`,
         ogTitle: `Make me an offer`,
