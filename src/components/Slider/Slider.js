@@ -1,7 +1,6 @@
-import Swiper, { Navigation, EffectCoverflow } from 'swiper'
 import { useRef, useEffect } from 'preact/hooks'
-
-import Tilty from '../Tilty/Tilty'
+import Swiper, { Navigation, EffectCoverflow } from 'swiper'
+import Tilt from 'preact-tilt'
 
 import content from '../../static/content'
 import { useViewport } from '../../static/functions'
@@ -20,7 +19,7 @@ const slidesWrap = (classNameSlider, classNameItem, width, isSec, numbOfSlides) 
 		<div
 			className={`${classNameSlider}_slide swiper-slide`}
 			key={isSec ? index + numbOfSlides : index}>
-			<Tilty
+			<Tilt
 				settings={tiltSettings(width)}
 				className={`${classNameItem} ${name}_item tilt`} >
 				<div className="tilt__circle tilt__item">
@@ -35,7 +34,7 @@ const slidesWrap = (classNameSlider, classNameItem, width, isSec, numbOfSlides) 
 				{width > breakPoint ? <div className="tilt__desc">
 					{ tilt_desc }
 				</div> : null}
-			</Tilty>
+			</Tilt>
 		</div>)
 
 const Slider = ({
