@@ -160,140 +160,6 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-/*.preloader {
-  width: 300px;
-  height: 300px;
-
-  border-radius: 50%;
-  box-shadow:
-    0 0 20px #fff,
-    -20px 0 80px #f0f,
-    20px 0 80px #0ff,
-    inset 0 0 50px #fff,
-    inset 50px 0 80px #f0f,
-    inset -50px 0 80px #0ff,
-    inset 50px 0 300px #f0f,
-    inset -50px 0 300px #0ff;
-
-  animation: pulsating 6s ease infinite;
-}
-
-@keyframes pulsating {
-  50% {
-    box-shadow:
-      0 0 20px #fff,
-      20px 0 80px #f0f,
-      -20px 0 80px #0ff,
-      inset 0 0 50px #fff,
-      inset -50px 0 80px #f0f,
-      inset 50px 0 80px #0ff,
-      inset -50px 0 300px #f0f,
-      inset 50px 0 300px #0ff;
-  }
-}
-*/
-
-.preloader {
-  height: 400px;
-
-  overflow: hidden;
-}
-
-.preloader__cube {
-  position: relative;
-
-  width: 300px;
-  height: 400px;
-
-  background-image: linear-gradient(30deg, var(--main-bg-color) 30%, rgba(170,170,170,0) 30.1%), linear-gradient(-30deg, var(--main-bg-color) 30%, rgba(170,170,170,0) 30.1%);
-  transform-style: preserve-3d;
-}
-
-.preloader__cube:before,
-.preloader__cube:after {
-  display: block;
-  content: '';
-  position: absolute;
-}
-
-.preloader__cube:before {
-  width: 200px;
-  height: 280px;
-  left: 50px;
-  top: -8px;
-
-  background-repeat: no-repeat;
-  background-image: linear-gradient(30deg, transparent 26%, #ccc 26.3%, #ccc 74%, transparent 74.3%), linear-gradient(150deg, transparent 26%, #999 26.3%, #999 74%, transparent 74.3%), linear-gradient(150deg, transparent 26%, #eee 26.3%, #eee 73%, transparent 73%), linear-gradient(30deg, transparent 27%, #eee 27%, #eee 74%, transparent 74.3%), radial-gradient(circle at center, #eee 20%, transparent 20%);
-  background-size: 50% 60%;
-  background-position: 0 100%, 100% 100%, 0 48.5%, 100% 48.5%, 50% 60%;
-
-  animation: cubing 3s infinite alternate linear;
-
-  z-index: -1;
-}
-
-.preloader__cube:after {
-  width: 113px;
-  height: 100px;
-  left: 92px;
-  top: 164px;
-
-  animation: shadowing 3s infinite alternate linear;
-
-  z-index: 0;
-}
-
-@keyframes cubing {
-  20% {
-    transform: translateY(0) translateZ(-1px);
-  }
-  80%, 100% {
-    transform: translateY(153px) translateZ(-1px);
-  }
-}
-
-@keyframes shadowing {
-  0%, 20% {
-    transform: translateY(0) rotate(-30deg) skew(30deg);
-    box-shadow: -50px 45px 10px -10px rgba(0,0,0,0.3);
-  }
-  37% {
-    box-shadow: -2px 2px 2px rgba(0,0,0,0.5);
-  }
-  37%, 100% {
-    transform: translateY(42px) rotate(-30deg) skew(30deg);
-  }
-  39%, 100% {
-    box-shadow: -2px 2px 1px rgba(0,0,0,0);
-  }
-}
-
-.preloader__surface {
-  position: absolute;
-
-  width: 116px;
-  height: 100px;
-  /*top: 55px;
-  left: 93px;*/
-  top: 53px;
-  left: 92px;
-
-  -ms-transform: translateY(0) rotate(30deg) skew(-30deg);
-
-      transform: translateY(0) rotate(30deg) skew(-30deg);
-
-  animation: surfacing 3s infinite alternate linear;
-}
-
-@keyframes surfacing {
-  0%, 20% { 
-    transform: translateY(0) rotate(30deg) skew(-30deg)
-  }
-  80%, 100% {
-    transform: translateY(153px) rotate(30deg) skew(-30deg)
-  }
-}
-
 .card {
     --card-space: 20px;
 
@@ -2803,6 +2669,7 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 .post__article {
+    position: relative;
     width: 676px;
     margin: 50px auto;
     padding: 60px;
@@ -2845,6 +2712,29 @@ input:checked:focus + .switch-left + .switch-right {
 .post__img {
     width: 100%;
     padding-bottom: 12px;
+    min-height: 310px;
+}
+
+.post__img::before {
+    content: 'There should be an image soon \A\A Wait a little :)';
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+
+    left: 60px;
+    top: 140px;
+    right: 60px;
+    height: 310px;
+
+    background-color: var(--bg-color2);
+
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 24px;
 }
 
 .post__text {
@@ -2862,6 +2752,11 @@ input:checked:focus + .switch-left + .switch-right {
 
 .post__col-2 {
     background-color: #ff000033;
+}
+
+.post__col-3 {
+    border-bottom: .1em solid var(--main-text-color);
+    background-color: #c6b7634d;
 }
 
 .post__text-active {
@@ -2905,6 +2800,17 @@ input:checked:focus + .switch-left + .switch-right {
     .post__back {
         position: absolute;
     }
+
+    .post__img {
+        min-height: 270px;
+    }
+
+    .post__img::before {
+        left: 30px;
+        right: 30px;
+        top: 97px;
+        height: 270px;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -2931,6 +2837,14 @@ input:checked:focus + .switch-left + .switch-right {
 
     .post__date {
         padding-bottom: 10px;
+    }
+
+    .post__img {
+        min-height: unset;
+    }
+
+    .post__img::before {
+        display: none;
     }
 }
 
@@ -2975,9 +2889,33 @@ input:checked:focus + .switch-left + .switch-right {
 
 .posts__img {
     width: 100%;
+    min-height: 280px;
+}
+
+.posts__img::before {
+    content: 'There should be an image soon \A\A Wait a little :)';
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    height: 270px;
+
+    background-color: var(--bg-color2);
+
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 24px;
 }
 
 .posts__link {
+    position: relative;
     display: block;
 
     padding: 20px;
@@ -3013,6 +2951,14 @@ input:checked:focus + .switch-left + .switch-right {
     .posts__wrap {
         width: 500px;
     }
+
+    .posts__img {
+        min-height: 200px;
+    }
+
+    .posts__img::before {
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -3028,6 +2974,11 @@ input:checked:focus + .switch-left + .switch-right {
     .posts__back {
         position: absolute;
     }
+
+    .posts__img::before {
+        left: 20px;
+        right: 20px;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -3041,6 +2992,14 @@ input:checked:focus + .switch-left + .switch-right {
     }
 
     .posts__capt {
+        display: none;
+    }
+
+    .posts__img {
+        min-height: unset;
+    }
+
+    .posts__img::before {
         display: none;
     }
 }
@@ -3058,4 +3017,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.202d6.css.map*/
+/*# sourceMappingURL=ssr-bundle.b0eac.css.map*/

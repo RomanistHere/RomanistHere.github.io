@@ -232,10 +232,78 @@ const content = {
 		offer: `Let's see who I am`,
 		form: `Make me an offer`,
 		posts: `Articles I write`,
-		noPage: `No page like that. Try again:)`
+		noPage: `No page like that. Try again:)`,
+		policy: `Privacy Policy: General notes`,
 	},
 	link_back: 'To main page',
 	no_page__text: '404',
+	policy__title: `Privacy Policy: General notes`,
+	policy__content: `
+		<p class="post__text"><span class="post__col-3">Keynote:</span> I do not share or sell any of your personal data. I am proud to say that I am one of the fighters for users privacy and I am strongly committed to this principle and to being as transparent as possible.</p>
+
+		<p class="post__subtitle part1">Who am I</p>
+
+		<p class="post__text">I am RomanistHere, the independent developer. I collect and process your Personal Data in accordance with this Privacy Policy and in compliance with the applicable data protection laws. This Policy provides you with the necessary information regarding your rights and my obligations, and explains how, why and when I process your personal data. <span class="post__col-3">My general principle is to collect only the information that is necessary to provide you with full functionality of my products and services.</span> If you do not agree to this Privacy Policy, please do not access or otherwise use the App.</p>
+
+		<p class="post__subtitle part2">1. Introduction.</p>
+
+		<p class="post__text">I have implemented this Privacy Policy because your privacy, and the privacy of other users, is important to me.  This Privacy Policy explains my online information practices and the choices you can make about the way your Personal Information is collected and used in connection with the App.  "Personal Information" means any information that may be used, either alone or in combination with other information, to personally identify an individual, including, but not limited to, a first and last name, a personal profile, an email address, a home or other physical address, or other contact information.</p>
+
+		<p class="post__subtitle part3">2. Modification</p>
+
+		<p class="post__text">I reserve the right, at my discretion, to change this Privacy Policy at any time. Such change will be effective ten (10) days following posting of the revised Privacy Policy on the App, and your continued use of the App thereafter means that you accept those changes.</p>
+
+		<p class="post__subtitle part4">3. What Personal Information I Collect and How I Collect It.</p>
+
+		<p class="post__text">I receive and/or collect Personal Information from you in the following ways:</p>
+
+		<ul class="post__list post__text">
+			<li class="post__list_item">
+				<span class="post__col-3">3.1.</span>     'Contact Me' Information.  If you send me feedback by sending an email to an email address that I display on the App, you may be required to provide me with certain information such as your name and email address.
+			</li>
+			</br>
+			<li class="post__list_item">
+				<span class="post__col-3">3.2.</span>     Analytics Tools.  The App may use analytical tools such as “Google Analytics” to collect information about use of the App (“Analytics Tools”). This Analytics Tool collect information, such as how often users use the App and what App features they use. I use the information I get from these Analytics Tools to maintain and improve the App and my products. I do not combine the information collected through the use of Analytics Tools with personally identifiable information. Analytics Tools typically utilize “cookies”, small text files that may serve to recall Personal Information, such as an IP address, previously indicated by a user.
+			</br>
+			</br>
+				Most browsers allow you to control cookies, including whether or not to accept and/or remove them.  You may set most browsers to notify you if you receive a cookie, or you may choose to block cookies with your browser. Google’s ability to use and share information collected by Google Analytics is restricted by the Google Analytics Terms of Service, available <a href="http://www.google.com/analytics/terms/us.html" rel="noreferrer" target="_blank" class="link">here</a>, and the Google Privacy Policy, available <a href="http://www.google.com/policies/privacy/" rel="noreferrer" target="_blank" class="link">here</a>. You may learn more about how Google collects and processes data specifically in connection with Google Analytics <a href="http://www.google.com/policies/privacy/partners/" rel="noreferrer" target="_blank" class="link">here</a>. You may prevent your data from being used by Google Analytics by downloading and installing the Google Analytics Opt-out Browser Add-on, available <a href="https://tools.google.com/dlpage/gaoptout/" rel="noreferrer" target="_blank" class="link">here</a>.
+			</li>
+		</ul>
+
+		<p class="post__subtitle part5">4. The Way I Use Personal Information.</p>
+
+		<p class="post__text">If you submit or I collect Personal Information through the App, then such Personal Information may be used by me in the following ways:</p>
+		<ul class="post__list post__text">
+			<li class="post__list_item">
+				<span class="post__col-3">4.1.</span>     I will use your Personal Information to provide and improve the App, to contact you in connection with the App and certain programs that you may have registered for, and to identify and authenticate your access to the parts of the App that you are authorized to access.
+			</li>
+			<li class="post__list_item">
+				<span class="post__col-3">4.2.</span>     I may use your designated email address to: <span class="post__col-3">(i)</span> send you updates or news regarding the App and my products; and/or <span class="post__col-3">(ii)</span> respond to a "Contact Me" or administrative request or feedback message.
+			</li>
+		</ul>
+
+		<p class="post__subtitle part6">5. Use of Anonymous Information.</p>
+
+		<p class="post__text">I may collect and use Anonymous Information (as defined below) or disclose it to third party service providers in order to improve my App and enhance your experience with the App. I may also disclose Anonymous Information (with or without compensation) to third parties, including advertisers and partners. "Anonymous Information" means information which cannot enable identification of an individual user, such as aggregated information about the use of my App, including the types of advertisements that users engage with. If at any point in the future anonymous data will be paired with Personal Information, the paired data will be treated as Personal Information for as long as it remains paired.</p>
+
+		<p class="post__subtitle part7">6. Access/Accuracy.</p>
+
+		<p class="post__text">To the extent that you do provide me with Personal Information, I wish to maintain accurate Personal Information.  If you would like to delete or correct any of your Personal Information that I may be storing, you may submit an access request by sending an email to <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>.  Your email should include adequate details of your request.</p>
+
+		<p class="post__subtitle part8">7. Links to and Interaction with Third Party Products.</p>
+
+		<p class="post__text">The App may enable you to interact with or contain links to third party websites, products and services that are not owned or controlled by me (each a “Third Party Provider”). While the App contains certain features to protect you from collection of data about you by Third Party Providers, I am not responsible for the privacy practices or the content of these Third Party Providers and the Third Party Provider may collect Personal Information from you. Accordingly, I encourage you to read the terms and conditions and privacy policy of each Third Party Provider that you choose to use or interact with.</p>
+
+		<p class="post__subtitle part9">8. Children's Privacy.</p>
+
+		<p class="post__text">The App is not structured to attract children under the age of 13 years.  Accordingly, I do not intend to collect Personal Information from anyone I know to be under 13 years.  If I learn that I have collected Personal Information from a child under 13 years, I will delete that information as quickly as possible. If you believe that I might have any such information, please contact me at <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</p>
+
+
+		<p class="post__subtitle part10">9. Commitment.</p>
+
+		<p class="post__text">I am committed to protecting your privacy.  Protecting your privacy online is an evolving area, and I am constantly evolving my App to meet these demands.  If you have any comments or questions regarding Privacy Policy, or your Personal Information that I may be storing and using, please contact me at <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a></p>
+		`,
+	policy__posted: `June 2020`,
 }
 
 export default content
