@@ -32,8 +32,6 @@
 
 import { Router, Route } from 'preact-router'
 
-import Preloader from "../components/Preloader/Preloader"
-
 import Card from '../pages/Card/Card'
 import Form from '../pages/Form/Form'
 import Apps from '../pages/Apps/Apps'

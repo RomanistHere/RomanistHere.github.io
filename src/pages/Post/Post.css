@@ -5,6 +5,7 @@
 }
 
 .post__article {
+    position: relative;
     width: 676px;
     margin: 50px auto;
     padding: 60px;
@@ -47,6 +48,26 @@
 .post__img {
     width: 100%;
     padding-bottom: 12px;
+    min-height: 310px;
+}
+
+.post__img::before {
+    content: 'There should be an image soon \A\A Wait a little :)';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 60px;
+    top: 140px;
+    right: 60px;
+    height: 310px;
+
+    background-color: var(--bg-color2);
+
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 24px;
 }
 
 .post__text {
@@ -107,6 +128,17 @@
     .post__back {
         position: absolute;
     }
+
+    .post__img {
+        min-height: 270px;
+    }
+
+    .post__img::before {
+        left: 30px;
+        right: 30px;
+        top: 97px;
+        height: 270px;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -133,5 +165,13 @@
 
     .post__date {
         padding-bottom: 10px;
+    }
+
+    .post__img {
+        min-height: unset;
+    }
+
+    .post__img::before {
+        display: none;
     }
 }

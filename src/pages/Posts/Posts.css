@@ -39,9 +39,30 @@
 
 .posts__img {
     width: 100%;
+    min-height: 280px;
+}
+
+.posts__img::before {
+    content: 'There should be an image soon \A\A Wait a little :)';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    height: 270px;
+
+    background-color: var(--bg-color2);
+
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 24px;
 }
 
 .posts__link {
+    position: relative;
     display: block;
 
     padding: 20px;
@@ -75,6 +96,14 @@
     .posts__wrap {
         width: 500px;
     }
+
+    .posts__img {
+        min-height: 200px;
+    }
+
+    .posts__img::before {
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -90,6 +119,11 @@
     .posts__back {
         position: absolute;
     }
+
+    .posts__img::before {
+        left: 20px;
+        right: 20px;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -103,6 +137,14 @@
     }
 
     .posts__capt {
+        display: none;
+    }
+
+    .posts__img {
+        min-height: unset;
+    }
+
+    .posts__img::before {
         display: none;
     }
 }
