@@ -355,6 +355,13 @@
     transition: all ease .3s .1s;
 }
 
+.apps__policy {
+    display: block;
+
+    color: var(--txt-color);
+    font-size: 90%;
+}
+
 .apps__socials {
     position: absolute;
     z-index: 2;
@@ -407,6 +414,7 @@
 
 @media (hover: hover) {
     .apps__soc_link,
+    .apps__policy,
     .apps__logo,
     .apps__logo_part {
         transition: var(--def-trs);
@@ -419,6 +427,10 @@
     .apps__soc_link:hover .apps__logo_part,
     .apps__soc_link:hover .apps__logo{
         fill: var(--txt-color);
+    }
+
+    .apps__policy:hover {
+        color: var(--txt-color2);
     }
 
     .apps__footer:hover .apps__logo_img{
@@ -580,7 +592,7 @@
     .apps__footer {
         position: static;
 
-        padding: 20px var(--pad-txt) 0;
+        padding: 30px var(--pad-txt) 10px;
 
         flex-direction: unset;
     }

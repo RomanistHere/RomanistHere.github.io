@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from "preact/compat"
 import ReactHtmlParser from 'react-html-parser'
+import { Link } from 'preact-router/match'
 
 import Slider from '../../components/Slider/Slider'
 import Typing from '../../components/Typing/Typing'
@@ -77,6 +78,11 @@ const Apps = () => {
 
 	  			<article className="apps__desc">
 	  				{appsDesc(projNumb)}
+					<Link
+						className="apps__title apps__policy"
+						href="/apps/policy/">
+						Privacy Policy
+					</Link>
 	  			</article>
 
 	  			<Typing
