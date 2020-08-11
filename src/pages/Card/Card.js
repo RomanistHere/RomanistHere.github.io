@@ -93,6 +93,7 @@ const Card = () => {
                         <SocLinks
                             onMouseOver={() => setSmile(true)}
                             onMouseLeave={() => setSmile(false)}
+                            shouldInherit='card'
                         />
                     </div>
                     <div className="card__body">

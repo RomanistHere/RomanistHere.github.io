@@ -1,8 +1,11 @@
 import TelegramIcon from '../../media/images/TelegramIcon'
 import TwitterIcon from '../../media/images/TwitterIcon'
 
-const SocLinks = ({ onMouseOver, onMouseLeave }) => {
-  	return 	<div className="soc_links">
+const SocLinks = ({ onMouseOver, onMouseLeave, shouldInherit = null, className = '' }) => {
+    const iconClassToInh = shouldInherit ? `${shouldInherit}__logo` : ''
+    const linkClassToInh = shouldInherit ? `${shouldInherit}__soc_link` : ''
+
+  	return 	<div className={`${className} soc_links`}>
                 <a
                     onMouseOver={onMouseOver}
                     onMouseLeave={onMouseLeave}
@@ -11,8 +14,8 @@ const SocLinks = ({ onMouseOver, onMouseLeave }) => {
                     aria-label="link to Telegram"
                     rel="noreferrer"
                     target="_blank"
-                    class="card__soc_link card__tel">
-                    <TelegramIcon className="card__logo" />
+                    class={`soc_links__link ${linkClassToInh}`}>
+                    <TelegramIcon className={iconClassToInh} />
                 </a>
                 <a
                     onMouseOver={onMouseOver}
@@ -22,8 +25,8 @@ const SocLinks = ({ onMouseOver, onMouseLeave }) => {
                     aria-label="link to Twitter"
                     rel="noreferrer"
                     target="_blank"
-                    class="card__soc_link card__tw">
-                    <TwitterIcon className="card__logo " />
+                    class={`soc_links__link ${linkClassToInh}`}>
+                    <TwitterIcon className={iconClassToInh} />
                 </a>
 		    </div>
 }

@@ -170,7 +170,7 @@ const content = {
 	apps_page: {
 		1: {
 			name: 'PopUpOFF',
-			tilt_desc: `Unique browser extension`,
+			tilt_desc: `Clean the screen`,
 			apps__desc: {
 				Description: `Browser extension that eliminates all sort of popups, layouts, overlays and notifications from your screen.`,
 				Status: `- Comfortable and ready for everyday use; <br/>
@@ -184,7 +184,7 @@ const content = {
 		},
 		2: {
 			name: 'Stylify',
-			tilt_desc: `Unique browser extension`,
+			tilt_desc: `Make it readable`,
 			apps__desc: {
 				Description: `Browser extension that fixes ugly-looking websites. Makes content readable.`,
 				Status: `- Works fine but not comfortable for everyday use; <br/>
@@ -197,7 +197,7 @@ const content = {
 		},
 		3: {
 			name: 'PLAS',
-			tilt_desc: `Unique browser extension`,
+			tilt_desc: `Native YouTube search`,
 			apps__desc: {
 				Description: `Browser extension that adds search field to YouTube. Search within the playlist.`,
 				Status: `- Works fine but not comfortable for everyday use; <br/>

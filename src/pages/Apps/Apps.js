@@ -4,6 +4,7 @@ import ReactHtmlParser from 'react-html-parser'
 import Slider from '../../components/Slider/Slider'
 import Typing from '../../components/Typing/Typing'
 import LinkBack from '../../components/LinkBack/LinkBack'
+import SocLinks from '../../components/SocLinks/SocLinks'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
@@ -71,7 +72,8 @@ const Apps = () => {
 	  			<Slider
 	  				onSlideChange={changeProj}
 	  				classNameItem='apps__item'
-	  				classNameSlider='apps__slider'/>
+	  				classNameSlider='apps__slider'
+				/>
 
 	  			<article className="apps__desc">
 	  				{appsDesc(projNumb)}
@@ -82,6 +84,11 @@ const Apps = () => {
 					className={`apps__typing`}
 					startDelay={manage.apps__typing}
 					shouldShow={true}
+				/>
+
+				<SocLinks
+					className="apps__socials"
+					shouldInherit='apps'
 				/>
 
 	  			<footer className="apps__footer">
@@ -97,7 +104,7 @@ const Apps = () => {
 								<img
 									src={item}
 									alt={`${item} link`}
-									className={`apps__logo`} />
+									className={`apps__logo_img`} />
 							</a>)
 	  				}
 	  			</footer>
