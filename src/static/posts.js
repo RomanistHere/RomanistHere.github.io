@@ -173,7 +173,7 @@ const posts = [
 
 			<p class="article__text">Finally, what my mission is. As a  human - I want to live in a better world. And by “want” I don’t mean “I would like you to improve it”, but to do it by myself and motivate as many people as I can, you for example.</p>
 
-			<p class="article__text">When we talk about the internet, I’m much more powerful than the average user due to my profession. So I’m trying to apply my knowledge to make someone’s life better by <a href="/#/apps" class="link">my products</a>, and to make someone notice, by this article. Remember, it always matters.</p>
+			<p class="article__text">When we talk about the internet, I’m much more powerful than the average user due to my profession. So I’m trying to apply my knowledge to make someone’s life better by <a href="/apps" class="link">my products</a>, and to make someone notice, by this article. Remember, it always matters.</p>
 
 			<p class="article__text">If I can help you with your ideas, do not hesitate to reach me: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'm here, <s>captain</s>Romanist Here.</p>
 
