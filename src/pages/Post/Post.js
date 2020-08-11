@@ -23,7 +23,7 @@ const Post = ({ slug }) => {
                         behavior: "smooth",
                         top: element.offsetTop
                     })
-                    addClass(element, 'post__text-active')
+                    addClass(element, 'article__text-active')
                 }, 100)
             } else {
                 window.scrollTo(0, 0)

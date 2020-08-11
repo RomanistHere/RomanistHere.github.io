@@ -1,17 +1,18 @@
 import ReactHtmlParser from 'react-html-parser'
 
-import LinkBack from '../../components/LinkBack/LinkBack'
+import LinkBack from '../LinkBack/LinkBack'
+import Article from '../Article/Article'
 
 import './TextPage.css'
 
 const TextPage = ({ title = null, content = null, posted = null, image = null }) =>
     <main className="post">
-        <article className="post__article">
-            {title && <h1 className="post__title">{title}</h1>}
-            {image && <img className="post__img" src={image} alt={title} loading="lazy"/>}
-            {content && <div className="post__text">{ReactHtmlParser(content)}</div>}
-            {posted && <p className="post__date">{posted}</p>}
-        </article>
+        <Article
+            title={title}
+            content={content}
+            posted={posted}
+            image={image}
+        />
         <LinkBack className="post__back" />
     </main>
 

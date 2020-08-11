@@ -1,6 +1,5 @@
 import { useState, useEffect } from "preact/hooks"
 import { Link } from 'preact-router/match'
-import ReactHtmlParser from 'react-html-parser'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
@@ -18,18 +17,9 @@ import BackIcon from '../../media/images/BackIcon'
 
 import Typing from '../../components/Typing/Typing'
 import Switcher from '../../components/Switcher/Switcher'
+import Article from '../../components/Article/Article'
 
 import './Offer.css'
-
-const items = content.offer__list.map(({
-	offer__low_title,
-	offer__text
-}, index) => {
-    return  <li key={index} className="offer__item">
-    			<h4 className="offer__low_title">{offer__low_title}?</h4>
-				<p className="offer__text">{ReactHtmlParser(offer__text)}</p>
-			</li>
-})
 
 const navCopm = {
 	CV: CVIcon,
@@ -101,12 +91,13 @@ const Offer = () => {
 		  			/>
 	  			</nav>
 
-	  			<main className="offer__wrap">
-	  				<h1 className="offer__title">{content.offer__title}</h1>
-					<ul className="offer__list">
-						{items}
-					</ul>
-	  			</main>
+				<Article
+		            className="offer__article"
+		            title={content.offer__title}
+		            content={content.offer__content}
+					shouldInherit='offer'
+		        />
+
 				<Typing
 					text={content.offer__typing}
 					className='offer__typing'
