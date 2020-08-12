@@ -31,6 +31,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
     "jest-preset-preact": "^1.0.0",
+    "liquid-route": "^1.1.0",
     "node-sass": "^4.14.1",
     "preact-cli": "^3.0.0",
     "preact-render-spy": "^1.2.1",
@@ -44,6 +45,7 @@
     "preact-render-to-string": "^5.1.4",
     "preact-router": "^3.2.1",
     "preact-tilt": "^1.0.2",
+    "preact-transition-group": "^2.0.0",
     "react-html-parser": "^2.0.2",
     "swiper": "^6.0.4"
   },
