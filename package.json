@@ -1,59 +1,66 @@
 {
-  "private": true,
-  "name": "website",
-  "version": "1.0.0",
-  "license": "MIT",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
-    "build": "preact build --prerenderUrls ./prerender-urls.js",
-    "serve": "sirv build --port 8080 --cors --single",
-    "dev": "preact watch",
-    "lint": "eslint src",
-    "test": "jest"
-  },
-  "eslintConfig": {
-    "extends": "preact",
-    "ignorePatterns": [
-      "build/"
+    "private": true,
+    "name": "website",
+    "version": "1.0.0",
+    "license": "MIT",
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -b master -d build",
+        "build": "preact build --prerenderUrls ./prerender-urls.js",
+        "serve": "sirv build --port 8080 --cors --single",
+        "dev": "preact watch",
+        "lint": "eslint src",
+        "test": "jest"
+    },
+    "eslintConfig": {
+        "extends": "preact",
+        "ignorePatterns": [
+            "build/"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.5",
+        "@babel/preset-env": "^7.10.4",
+        "@babel/preset-react": "^7.10.4",
+        "@babel/register": "^7.0.0",
+        "enzyme": "^3.10.0",
+        "enzyme-adapter-preact-pure": "^2.0.0",
+        "eslint": "^6.0.1",
+        "eslint-config-preact": "^1.1.0",
+        "esm": "^3.2.25",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^24.9.0",
+        "jest-preset-preact": "^1.0.0",
+        "liquid-route": "^1.1.0",
+        "node-sass": "^4.14.1",
+        "preact-cli": "^3.0.0",
+        "preact-render-spy": "^1.2.1",
+        "sass-loader": "^9.0.2",
+        "sirv-cli": "1.0.3"
+    },
+    "dependencies": {
+        "@babel/register": "^7.10.5",
+        "gh-pages": "^3.1.0",
+        "preact": "^10.3.2",
+        "preact-render-to-string": "^5.1.4",
+        "preact-router": "^3.2.1",
+        "preact-tilt": "^1.0.2",
+        "preact-transition-group": "^2.0.0",
+        "swiper": "^6.0.4"
+    },
+    "jest": {
+        "preset": "jest-preset-preact",
+        "setupFiles": [
+            "<rootDir>/tests/__mocks__/browserMocks.js",
+            "<rootDir>/tests/__mocks__/setupTests.js"
+        ]
+    },
+    "browserslist": [
+        "defaults",
+        "not ie 11",
+        "not ie_mob 11",
+        "not baidu >= 7.12",
+        "not and_qq >= 1.2",
+        "not op_mini all"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
-    "@babel/preset-react": "^7.10.4",
-    "@babel/register": "^7.0.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-preact-pure": "^2.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-preact": "^1.1.0",
-    "esm": "^3.2.25",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0",
-    "jest-preset-preact": "^1.0.0",
-    "liquid-route": "^1.1.0",
-    "node-sass": "^4.14.1",
-    "preact-cli": "^3.0.0",
-    "preact-render-spy": "^1.2.1",
-    "sass-loader": "^9.0.2",
-    "sirv-cli": "1.0.3"
-  },
-  "dependencies": {
-    "@babel/register": "^7.10.5",
-    "gh-pages": "^3.1.0",
-    "preact": "^10.3.2",
-    "preact-render-to-string": "^5.1.4",
-    "preact-router": "^3.2.1",
-    "preact-tilt": "^1.0.2",
-    "preact-transition-group": "^2.0.0",
-    "react-html-parser": "^2.0.2",
-    "swiper": "^6.0.4"
-  },
-  "jest": {
-    "preset": "jest-preset-preact",
-    "setupFiles": [
-      "<rootDir>/tests/__mocks__/browserMocks.js",
-      "<rootDir>/tests/__mocks__/setupTests.js"
-    ]
-  }
 }

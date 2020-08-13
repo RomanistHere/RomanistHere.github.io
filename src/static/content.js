@@ -295,7 +295,7 @@ const content = {
 
 		<p class="article__subtitle part9">8. Children's Privacy.</p>
 
-		<p class="article__text">The App is not structured to attract children under the age of 13 years.  Accordingly, I do not intend to collect Personal Information from anyone I know to be under 13 years.  If I learn that I have collected Personal Information from a child under 13 years, I will delete that information as quickly as possible. If you believe that I might have any such information, please contact me at <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</p>
+		<p class="article__text">The App is not structured to attract children under the age of 13 years.  Accordingly, I do not intend to collect Personal Information from anyone I know to be under 13 years.  If I learn that I have collected Personal Information from a child under 13 years, I will delete that information as quickly as possible. If you believe that I might have any such information, please contact me at <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a></p>
 
 
 		<p class="article__subtitle part10">9. Commitment.</p>

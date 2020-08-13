@@ -1,5 +1,4 @@
 import { Fragment, useState, useEffect } from "preact/compat"
-import ReactHtmlParser from 'react-html-parser'
 import { Link } from 'preact-router/match'
 
 import Slider from '../../components/Slider/Slider'
@@ -38,9 +37,7 @@ const appsDesc = (projNumb) => Object.keys(apps_page[projNumb].apps__desc).map((
 				<h2 className="apps__title">
 					{item}:
 				</h2>
-				<p className="apps__text">
-					{ReactHtmlParser(apps_page[projNumb].apps__desc[item])}
-				</p>
+				<p className="apps__text" dangerouslySetInnerHTML={{ __html: apps_page[projNumb].apps__desc[item] }} />
 			</Fragment>
 })
 

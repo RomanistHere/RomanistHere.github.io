@@ -1,5 +1,3 @@
-import ReactHtmlParser from 'react-html-parser'
-
 import LinkBack from '../LinkBack/LinkBack'
 import Article from '../Article/Article'
 

@@ -3,13 +3,13 @@
 //
 // import Preloader from "../components/Preloader/Preloader"
 //
-// const Card = lazy(() => import('../pages/Card/Card'))
-// const Form = lazy(() => import('../pages/Form/Form'))
-// const Apps = lazy(() => import('../pages/Apps/Apps'))
-// const Offer = lazy(() => import('../pages/Offer/Offer'))
-// const Post = lazy(() => import('../pages/Post/Post'))
-// const Posts = lazy(() => import('../pages/Posts/Posts'))
-// const NoPage = lazy(() => import('../pages/NoPage/NoPage'))
+// const Card = lazy(() => import('./Card/Card'))
+// const Form = lazy(() => import('./Form/Form'))
+// const Apps = lazy(() => import('./Apps/Apps'))
+// const Offer = lazy(() => import('./Offer/Offer'))
+// const Post = lazy(() => import('./Post/Post'))
+// const Posts = lazy(() => import('./Posts/Posts'))
+// const NoPage = lazy(() => import('./NoPage/NoPage'))
 //
 // export default () => {
 // 	return (
@@ -32,14 +32,14 @@
 
 import { Router } from 'preact-router'
 
-import Card from '../pages/Card/Card'
-import Form from '../pages/Form/Form'
-import Apps from '../pages/Apps/Apps'
-import Offer from '../pages/Offer/Offer'
-import Post from '../pages/Post/Post'
-import Posts from '../pages/Posts/Posts'
-import NoPage from '../pages/NoPage/NoPage'
-import Policy from '../pages/Policy/Policy'
+import Card from './Card/Card'
+import Form from './Form/Form'
+import Apps from './Apps/Apps'
+import Offer from './Offer/Offer'
+import Post from './Post/Post'
+import Posts from './Posts/Posts'
+import NoPage from './NoPage/NoPage'
+import Policy from './Policy/Policy'
 
 export default () => {
 	return (
