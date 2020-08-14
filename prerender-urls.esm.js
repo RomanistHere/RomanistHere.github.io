@@ -20,7 +20,7 @@ const staticData = [
         url: `/`,
         title: `RomanistHere. An independent JavaScript developer.`,
         ogTitle: `RomanistHere. An independent JavaScript developer.`,
-        description: `Hey, I am Roman Smunyov and I am a JavaScript developer. It is time for you to finally meet me. My goal is to make the web better. I develop non-commercial open source projects. Join!`,
+        description: `Hey, I am Roman Smunyov and I am a JavaScript developer. My goal is to make the web better. I develop non-commercial open source projects. Join!`,
         img: `/assets/pages/card.jpg`
     }, {
         url: `/offer/`,

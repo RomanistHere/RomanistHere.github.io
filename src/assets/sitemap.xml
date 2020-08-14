@@ -12,7 +12,9 @@
     <url> <loc>https://romanisthere.github.io/apps/policy/</loc> </url>
     <url> <loc>https://romanisthere.github.io/apps</loc> </url>
     <url> <loc>https://romanisthere.github.io/form</loc> </url>
-    <url> <loc>https://romanisthere.github.io/posts/:slug</loc> </url>
+    <url> <loc>https://romanisthere.github.io/posts/my-mission</loc> </url>
+    <url> <loc>https://romanisthere.github.io/posts/letter</loc> </url>
+    <url> <loc>https://romanisthere.github.io/posts/test-blockers</loc> </url>
     <url> <loc>https://romanisthere.github.io/posts</loc> </url>
     <url> <loc>https://romanisthere.github.io/</loc> </url>
 </urlset>
