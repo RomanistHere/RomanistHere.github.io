@@ -1,0 +1,9 @@
+.magic {
+    flex-wrap: wrap;
+
+    text-align: center;
+}
+
+.magic__text {
+    width: 100%;
+}

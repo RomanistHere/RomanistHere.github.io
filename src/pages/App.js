@@ -40,6 +40,7 @@ import Post from './Post/Post'
 import Posts from './Posts/Posts'
 import NoPage from './NoPage/NoPage'
 import Policy from './Policy/Policy'
+import Magic from './Magic/Magic'
 
 export default () => {
 	return (
@@ -51,6 +52,7 @@ export default () => {
 			<Offer path="/offer" />
 			<Post path="/posts/:slug" />
 			<Posts path="/posts" />
+			<Magic path="/magic" />
 			<NoPage default />
 		</Router>
 	)
