@@ -43,6 +43,10 @@ ul {
     list-style: none
 }
 
+strong {
+    font-weight: unset;
+}
+
 *::selection {
     background-color: var(--bg-color2);
     /* color: var(--dark-color2); */
