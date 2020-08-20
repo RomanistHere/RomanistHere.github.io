@@ -7,14 +7,12 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url> <loc>https://romanisthere.github.io/</loc> </url>
-    <url> <loc>https://romanisthere.github.io/</loc> </url>
-    <url> <loc>https://romanisthere.github.io/offer</loc> </url>
+    <url> <loc>https://romanisthere.github.io/offer/</loc> </url>
+    <url> <loc>https://romanisthere.github.io/apps/</loc> </url>
     <url> <loc>https://romanisthere.github.io/apps/policy/</loc> </url>
-    <url> <loc>https://romanisthere.github.io/apps</loc> </url>
-    <url> <loc>https://romanisthere.github.io/form</loc> </url>
-    <url> <loc>https://romanisthere.github.io/posts/my-mission</loc> </url>
-    <url> <loc>https://romanisthere.github.io/posts/letter</loc> </url>
-    <url> <loc>https://romanisthere.github.io/posts/test-blockers</loc> </url>
-    <url> <loc>https://romanisthere.github.io/posts</loc> </url>
-    <url> <loc>https://romanisthere.github.io/</loc> </url>
+    <url> <loc>https://romanisthere.github.io/form/</loc> </url>
+    <url> <loc>https://romanisthere.github.io/posts/</loc> </url>
+    <url> <loc>https://romanisthere.github.io/posts/my-mission/</loc> </url>
+    <url> <loc>https://romanisthere.github.io/posts/letter/</loc> </url>
+    <url> <loc>https://romanisthere.github.io/posts/test-blockers/</loc> </url>
 </urlset>
