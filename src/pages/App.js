@@ -35,24 +35,24 @@ import { Router } from 'preact-router'
 import Card from './Card/Card'
 import Form from './Form/Form'
 import Apps from './Apps/Apps'
-import Offer from './Offer/Offer'
 import Post from './Post/Post'
+import Offer from './Offer/Offer'
 import Posts from './Posts/Posts'
 import NoPage from './NoPage/NoPage'
 import Policy from './Policy/Policy'
-import Magic from './Magic/Magic'
+import Secrets from './Secrets/Secrets'
 
 export default () => {
 	return (
 		<Router>
 			<Card path="/" />
-			<Form path="/form" />
-			<Apps path="/apps" />
-			<Policy path="/apps/policy" />
-			<Offer path="/offer" />
+			<Form path="/form/" />
+			<Apps path="/apps/" />
+			<Policy path="/apps/policy/" />
+			<Offer path="/offer/" />
 			<Post path="/posts/:slug" />
-			<Posts path="/posts" />
-			<Magic path="/magic" />
+			<Posts path="/posts/" />
+			<Secrets path="/secrets/" />
 			<NoPage default />
 		</Router>
 	)

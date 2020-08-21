@@ -7,8 +7,8 @@ import { secondsToHms } from '../../static/functions'
 const setText = (ratio, key) => {
     const text = {
         less: `the size of`,
-        equal: `is almost like`,
-        more: `times bigger then the size of`,
+        equal: `almost like the size of`,
+        more: `times bigger than the size of`,
     }
 
     return key === 'equal' ? text[key] : `${ratio.toFixed(1)} ${text[key]}`
@@ -35,7 +35,7 @@ const getArea = (val, numb = 1) => {
         const fullText = text ? `${text} ${value}` : getArea(val, numb + 1)
         return fullText
     } catch (e) {
-        return `It's almost nothing`
+        return `almost nothing`
     }
 }
 
@@ -66,7 +66,7 @@ const animateValue = (start, finish, duration, useHook) => {
     return timer
 }
 
-const MagicContent = ({ stats }) => {
+const SecretsContent = ({ stats }) => {
     const { cleanedArea, numbOfItems } = stats
     const time = secondsToHms(cleanedArea * 1.32)
     const averageScreenArea = 0.12
@@ -77,6 +77,12 @@ const MagicContent = ({ stats }) => {
     const [count1, setCount1] = useState(cleanedArea)
     const [count2, setCount2] = useState(numbOfItems)
     const [count3, setCount3] = useState(areaInMetres)
+
+    useEffect(() => {
+        setCount1(cleanedArea)
+        setCount2(numbOfItems)
+        setCount3(areaInMetres)
+    }, [stats])
 
     useEffect(() => {
         const timer1 = animateValue(0, count1, 3000, setCount1)
@@ -90,37 +96,38 @@ const MagicContent = ({ stats }) => {
         }
     }, [])
 
-    return  <main className="magic_wr">
-                <div className="magic__start"></div>
-                <article className="magic__info">
-                    <h1 className="magic__header">The numbers:</h1>
-                    <p className="magic__text magic__text-1">
-                        Total area of removed overlays is about
+    return  <main className="secrets_wr">
+                <div className="secrets__start"></div>
+                <article className="secrets__info">
+                    <h1 className="secrets__header">Total numbers:</h1>
+                    <p className="secrets__text secrets__text-1">
+                        Area of removed overlays is about
                         {' '}
-                        <span className="magic__note magic__note-1">{count1.toFixed(1)}</span>
+                        <span className="secrets__note secrets__note-1">{count1.toFixed(1)}</span>
                         {' '}
-                        of your screen sizes
+                        of your screen sizes.
                     </p>
-                    <p className="magic__text magic__text-2">
-                        And total number of this popups, overlays and other elements is
+                    <p className="secrets__text secrets__text-2">
+                        And the number of these popups, overlays and other elements is
                         {' '}
-                        <span className="magic__note magic__note-3">{count2}</span>
+                        <span className="secrets__note secrets__note-3">{count2}</span>.
                     </p>
-                    <p className="magic__text magic__text-3">
-                        Saved time: {time ? time : '0 seconds'}
+                    <p className="secrets__text secrets__text-3">
+                        Saved time: {time ? time : '0 seconds'}.
                     </p>
-                    <p className="magic__text magic__text-4">
-                        Area in square metres:
+                    <p className="secrets__text secrets__text-4">
+                        Approximate cleared area is
                         {' '}
-                        <span className="magic__note magic__note-2">{count3.toFixed(1)}</span>
+                        <span className="secrets__note secrets__note-2">{count3.toFixed(1)}</span>
                         {' '}
-                        or {areaInFt.toFixed(1)} square feet
+                        square metres or {areaInFt.toFixed(1)} square feet.
                     </p>
-                    <p className="magic__text magic__text-5">
-                        {getArea(areaInMetres)}
+                    <p className="secrets__text secrets__text-5">
+                        It's {getArea(areaInMetres)}.
                     </p>
+                    <span className="secrets__caption">Noone else can see your stats</span>
                 </article>
             </main>
 }
 
-export default MagicContent
+export default SecretsContent
