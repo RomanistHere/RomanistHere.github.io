@@ -52,6 +52,12 @@ const staticData = [
         ogTitle: `Make me an offer`,
         description: `Very special form I created. Please fill it.`,
         img: `/assets/pages/form.jpg`
+    },{
+        url: `/secrets/`,
+        title: `Let's see some secrets`,
+        ogTitle: `The very secret page`,
+        description: `Its existing is under the question`,
+        img: `/assets/pages/secrets.jpg`
     }
 ]
 
