@@ -4,7 +4,7 @@ import Article from '../Article/Article'
 import './TextPage.css'
 
 const TextPage = ({ title = null, content = null, posted = null, image = null }) =>
-    <main className="post">
+    <section className="post">
         <Article
             title={title}
             content={content}
@@ -12,6 +12,6 @@ const TextPage = ({ title = null, content = null, posted = null, image = null })
             image={image}
         />
         <LinkBack className="post__back" />
-    </main>
+    </section>
 
 export default TextPage

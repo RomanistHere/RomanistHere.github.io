@@ -17,15 +17,21 @@ const Secrets = () => {
         numbOfItems: 0
     })
 
+    const onMessage = ({ detail }) => {
+        setStats(detail)
+        allow(true)
+    }
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             document.title = `Let's see some secrets`
             // connect to PopUpOFF
             document.dispatchEvent(new CustomEvent('showPopUpOFFStats', { detail: 'letTheShowBegin' }))
-            document.addEventListener('PopUpOFFStats', ({ detail }) => {
-                setStats(detail)
-                allow(true)
-            })
+            document.addEventListener('PopUpOFFStats', onMessage)
+        }
+
+        return () => {
+            document.removeEventListener('PopUpOFFStats', onMessage)
         }
     }, [])
 

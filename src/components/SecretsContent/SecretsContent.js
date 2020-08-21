@@ -90,9 +90,9 @@ const SecretsContent = ({ stats }) => {
         const timer3 = animateValue(0, count3, 3000, setCount3)
 
         return () => {
-            clearTimeout(timer1)
-            clearTimeout(timer2)
-            clearTimeout(timer3)
+            clearInterval(timer1)
+            clearInterval(timer2)
+            clearInterval(timer3)
         }
     }, [])
 
