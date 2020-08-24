@@ -4,6 +4,8 @@ import content from '../../static/content'
 import manage from '../../static/manage'
 import { secondsToHms } from '../../static/functions'
 
+import Draw from '../../components/Draw/Draw'
+
 const setText = (ratio, key) => {
     const text = {
         less: `the size of`,
@@ -97,6 +99,7 @@ const SecretsContent = ({ stats }) => {
     }, [])
 
     return  <main className="secrets_wr">
+                <Draw />
                 <div className="secrets__start"></div>
                 <article className="secrets__info">
                     <h1 className="secrets__header">Total numbers:</h1>

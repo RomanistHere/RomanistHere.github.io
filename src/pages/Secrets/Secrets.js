@@ -11,7 +11,7 @@ import { secondsToHms } from '../../static/functions'
 import './Secrets.css'
 
 const Secrets = () => {
-    const [isAllowed, allow] = useState(false)
+    const [isAllowed, allow] = useState(true)
     const [stats, setStats] = useState({
         cleanedArea: 0,
         numbOfItems: 0
