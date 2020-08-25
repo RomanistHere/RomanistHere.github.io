@@ -12,7 +12,7 @@
 }
 
 .offer__article {
-    position: static;
+    position: relative;
 }
 
 .offer__low_title {

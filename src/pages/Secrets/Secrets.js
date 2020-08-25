@@ -3,6 +3,7 @@ import { useState, useEffect } from "preact/hooks"
 import Typing from '../../components/Typing/Typing'
 import LinkBack from '../../components/LinkBack/LinkBack'
 import SecretsContent from '../../components/SecretsContent/SecretsContent'
+import Draw from '../../components/Draw/Draw'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
@@ -11,7 +12,7 @@ import { secondsToHms } from '../../static/functions'
 import './Secrets.css'
 
 const Secrets = () => {
-    const [isAllowed, allow] = useState(true)
+    const [isAllowed, allow] = useState(false)
     const [stats, setStats] = useState({
         cleanedArea: 0,
         numbOfItems: 0
@@ -55,6 +56,8 @@ const Secrets = () => {
                             startDelay={9000}
                             shouldShow={true}
                         />
+
+                        <Draw />
                     </>
                 }
                 <span className="secrets__mob">

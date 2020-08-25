@@ -18,6 +18,7 @@ import BackIcon from '../../media/images/BackIcon'
 import Typing from '../../components/Typing/Typing'
 import Switcher from '../../components/Switcher/Switcher'
 import Article from '../../components/Article/Article'
+import Draw from '../../components/Draw/Draw'
 
 import './Offer.css'
 
@@ -80,6 +81,15 @@ const Offer = () => {
 	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
 
     return  <section className="offer main">
+				<Draw />
+
+				<Article
+		            className="offer__article"
+		            title={content.offer__title}
+		            content={content.offer__content}
+					shouldInherit='offer'
+		        />
+
   				<nav className="offer__nav">
 					<ul className="offer__nav_list">
 						{navItems}
@@ -90,13 +100,6 @@ const Offer = () => {
 		  				className='offer__switcher'
 		  			/>
 	  			</nav>
-
-				<Article
-		            className="offer__article"
-		            title={content.offer__title}
-		            content={content.offer__content}
-					shouldInherit='offer'
-		        />
 
 				<Typing
 					text={content.offer__typing}
