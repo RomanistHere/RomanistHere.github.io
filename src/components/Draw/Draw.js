@@ -14,17 +14,11 @@ const Draw = () => {
         width: null,
         height: null,
         context: null,
+        randomNumb: null,
+        caps: ['round', 'butt', 'square'],
     })
 
     const canvas = useRef(null)
-
-    const onClick = e => {
-		e.preventDefault()
-        setState({...state,
-            col: getRandColor(),
-            col2: getRandColor(),
-        })
-	}
 
     const onMouseMove = e => {
         const { startPos, prevPos, dist } = state
@@ -46,11 +40,11 @@ const Draw = () => {
 
 	   // draw
         if (state.isFocused) {
-            const lWidth = 3* Math.random()*size
-            state.context.lineWidth = lWidth
-            state.context.strokeWidth = lWidth
+            const lineWidth = 3* Math.random()*size
+            state.context.lineWidth = lineWidth
+            state.context.strokeWidth = lineWidth
 
-            state.context.lineCap = 'round'
+            state.context.lineCap = state.caps[state.randomNumb]
             state.context.lineJoin = 'round'
 
             state.context.beginPath()
@@ -77,6 +71,15 @@ const Draw = () => {
         })
 	}
 
+    const onClick = e => {
+		e.preventDefault()
+        setState({...state,
+            col: getRandColor(),
+            col2: getRandColor(),
+            randomNumb: Math.floor(Math.random()*3),
+        })
+	}
+
     const onMouseLeave = e => {
         setState({...state,
             isFocused: false
@@ -98,6 +101,7 @@ const Draw = () => {
                 width: window.innerWidth,
                 height: window.innerHeight,
                 context: canvas.current.getContext('2d'),
+                randomNumb: Math.floor(Math.random()*3),
             })
         }
     }, [])
