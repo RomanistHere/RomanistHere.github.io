@@ -166,6 +166,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card {
+    position: relative;
+    
     --card-space: 20px;
 
     border-radius: 10px;
@@ -286,7 +288,7 @@ body::-webkit-scrollbar-thumb {
 
 .card__soc_link:nth-child(2) {
     right: 20px;
-    
+
     animation-duration: 8.5s;
 }
 
@@ -2344,6 +2346,19 @@ button.swiper-pagination-bullet {
     }
 }
 
+.draw {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .draw {
+        display: none;
+    }
+}
+
 .post {
     position: relative;
 
@@ -2538,7 +2553,7 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 .offer__article {
-    position: static;
+    position: relative;
 }
 
 .offer__low_title {
@@ -2949,7 +2964,7 @@ input:checked:focus + .switch-left + .switch-right {
     border: solid 20px var(--third-bg-color);
     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 
-    animation: fadeIn .5s ease;
+    animation: fadeIn .7s ease;
     background-color: var(--bg-color1);
 
     color: var(--text-color1);
@@ -3187,4 +3202,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.96132.css.map*/
+/*# sourceMappingURL=ssr-bundle.192b9.css.map*/
