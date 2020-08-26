@@ -522,7 +522,7 @@
     }
 }
 
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 720px) {
     .apps {
         --header-height: 60px;
     }

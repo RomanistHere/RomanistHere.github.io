@@ -16,6 +16,7 @@ const Draw = () => {
         context: null,
         randomNumb: null,
         caps: ['round', 'butt', 'square'],
+        shouldShow: true
     })
 
     const canvas = useRef(null)
@@ -40,7 +41,7 @@ const Draw = () => {
 
 	   // draw
         if (state.isFocused) {
-            const lineWidth = 3* Math.random()*size
+            const lineWidth = 5* Math.random()*size
             state.context.lineWidth = lineWidth
             state.context.strokeWidth = lineWidth
 
@@ -102,11 +103,12 @@ const Draw = () => {
                 height: window.innerHeight,
                 context: canvas.current.getContext('2d'),
                 randomNumb: Math.floor(Math.random()*3),
+                shouldShow: window.innerWidth > 1024 ? true : false
             })
         }
     }, [])
 
-  	return <canvas
+  	return  state.shouldShow ? <canvas
                 ref={canvas}
                 onMouseMove={onMouseMove}
                 onMouseLeave={onMouseLeave}
@@ -115,7 +117,7 @@ const Draw = () => {
                 width={state.width}
                 height={state.height}
                 className='draw'
-            ></canvas>
+            ></canvas> : null
 }
 
 export default Draw
