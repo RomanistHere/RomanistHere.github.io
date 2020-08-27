@@ -8,6 +8,13 @@
 
     color: var(--txt-color2);
     font-family: var(--hand-font2);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .link_back {
+        font-size: 18px;
+    }
 }
 
 @media (hover: hover) {
