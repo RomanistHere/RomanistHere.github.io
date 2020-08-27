@@ -1,11 +1,21 @@
 @font-face {
-    font-family: 'handFont';
-    src: local('handFont'), url(/33ef2ff9091d612e1f7a0b6c6caaf444.ttf) format('truetype');
+    font-family: 'GloriaHallelujah';
+    src: url(/6fc8e9a9f7337812ab6ceb20559e158c.eot?#iefix) format('embedded-opentype'),
+    url(/b6756f5e7b9e25dd5c75bacff13a6f06.woff) format('woff'),
+    url(/33ef2ff9091d612e1f7a0b6c6caaf444.ttf)  format('truetype'),
+    url(/92b659fde161aae2c39a8f1d29fb2df7.svg#GloriaHallelujah) format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'handFont2';
-    src: local('handFont2'), url(/8e0809258860386d2a289434678ce2aa.ttf) format('truetype');
+    font-family: 'PermanentMarker';
+    src: url(/22d53d3e2a904299f5eda1e9aef31fa1.eot?#iefix) format('embedded-opentype'),
+    url(/6f816d8dc8b82bef8778f1179b9ad632.woff) format('woff'),
+    url(/8e0809258860386d2a289434678ce2aa.ttf)  format('truetype'),
+    url(/518d022f1da4dc6392d8ff6816288011.svg#PermanentMarker) format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
@@ -39,8 +49,8 @@
     /*transition*/
     --def-trs: all ease .3s;
     /*fonts*/
-    --hand-font: 'handFont';
-    --hand-font2: 'handFont2';
+    --hand-font: 'GloriaHallelujah';
+    --hand-font2: 'PermanentMarker';
     /* --hand-font3: 'handFont3'; */
     /*paddings for text*/
     --pad-txt: 30px;
@@ -3294,4 +3304,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.14242.css.map*/
+/*# sourceMappingURL=ssr-bundle.91e67.css.map*/
