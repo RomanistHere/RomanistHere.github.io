@@ -8,11 +8,6 @@
     src: local('handFont2'), url(../media/fonts/handFont2.ttf) format('truetype');
 }
 
-/* @font-face {
-    font-family: 'handFont3';
-    src: local('handFont3'), url(../media/fonts/handFont3.otf) format('truetype');
-} */
-
 :root {
     --dark-color1: #3e596c;
     --dark-color1: #324758;
@@ -38,6 +33,9 @@
     --jerry-color: #6e4532;
     /*pink*/
     --pink: #ffc0cb;
+
+    /* // USED // */
+
     /*transition*/
     --def-trs: all ease .3s;
     /*fonts*/
@@ -58,8 +56,17 @@
     --main-text-color: var(--yellow-color2);
 }
 
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
     :root {
         --pad-txt: 20px;
+
+        --art-fz: 16px;
+        --art-fz-subtitle: 20px;
+
+        --art-lh: 26px;
+        --art-lh-subtitle: 32px;
+
+        --art-margin-1: 26px;
+        --art-margin-2: 6px;
     }
-}
+} */
