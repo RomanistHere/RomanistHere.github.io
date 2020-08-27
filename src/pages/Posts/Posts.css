@@ -17,15 +17,6 @@
 .posts {
     height: auto;
 
-    --art-fz: 20px;
-    --art-fz-subtitle: 25px;
-
-    --art-lh: 1.7;
-    --art-lh-subtitle: 1.64;
-
-    --art-margin-1: 34px;
-    --art-margin-2: 13px;
-
     font-size: var(--art-fz);
     line-height: var(--art-lh);
 }
