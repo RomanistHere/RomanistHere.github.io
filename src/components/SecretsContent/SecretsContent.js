@@ -81,9 +81,19 @@ const SecretsContent = ({ stats }) => {
     const [count3, setCount3] = useState(areaInMetres)
 
     useEffect(() => {
+        const timer1 = animateValue(count1, cleanedArea, 400, setCount1)
+        const timer2 = animateValue(count2, numbOfItems, 400, setCount2)
+        const timer3 = animateValue(count3, areaInMetres, 400, setCount3)
+
         setCount1(cleanedArea)
         setCount2(numbOfItems)
         setCount3(areaInMetres)
+
+        return () => {
+            clearInterval(timer1)
+            clearInterval(timer2)
+            clearInterval(timer3)
+        }
     }, [stats])
 
     useEffect(() => {
