@@ -5,7 +5,7 @@ const updates = {
         <h3 class="article__subtitle" id="1.1.3">1.1.3</h3>
 
         <p class="article__text">
-            From now on, you can use a keyboard shortcut to activate one mode - you need to enable it first <a class="link optPage" href="#">at the options page</a>. Command is <strong class="article__col-4">Alt + x</strong> - after you use it for some period of time, please let me know, what do you think, would it be better to make shortcut command toggle mode(activate/deactivate) instead. Do you need one more shortcut combination for another mode or are you fine with the favourite one? Would it be better for you to set up your custom key combination? I would pke to hear your thoughts about it!
+            From now on, you can use a keyboard shortcut to activate one mode - you need to enable it first <a class="link optPage" href="#">at the options page</a>. Command is <strong class="article__col-4">Alt + x</strong> - after you use it for some period of time, please let me know, what do you think, would it be better to make shortcut command toggle mode(activate/deactivate) instead. Do you need one more shortcut combination for another mode or are you fine with the favourite one? Would it be better for you to set up your custom key combination? I would like to hear your thoughts about it!
         </p>
 
         <p class="article__text">
@@ -13,16 +13,18 @@ const updates = {
         </p>
 
         <p class="article__text">
-            <span class="updates__text">Also, now you can see what mode is enabled by looking at the icon. Helps with new keyboard shortcut feature:</span>
-            <div class="updates__img_wr">
-                <img src="../../assets/updates/iconE.JPG" class="updates__img" alt="[E] icon" loading="lazy">
-                <span class="updates__im_capt">- Easy mode</span>
-            </div>
-            <div class="updates__img_wr">
-                <img src="../../assets/updates/iconH.JPG" class="updates__img" alt="[H] icon" loading="lazy">
-                <span class="updates__im_capt">- Hard mode</span>
-            </div>
+            Also, now you can see what mode is enabled by looking at the icon. Helps with new keyboard shortcut feature:
         </p>
+
+        <div class="updates__img_wr">
+            <img src="../../assets/updates/iconE.JPG" class="updates__img" alt="[E] icon" loading="lazy">
+            <span class="updates__im_capt">- Easy mode</span>
+        </div>
+
+        <div class="updates__img_wr">
+            <img src="../../assets/updates/iconH.JPG" class="updates__img" alt="[H] icon" loading="lazy">
+            <span class="updates__im_capt">- Hard mode</span>
+        </div>
 
         <h3 class="article__subtitle" id="1.1.5">1.1.5</h3>
 
@@ -35,16 +37,17 @@ const updates = {
         </p>
 
         <p class="article__text">
-            <span class="updates__text">Also, now you will get a nice small <strong class="article__col-4">notification</strong> when you activate the mode from a keyboard. Just to be sure that you enabled it on purpose. Let's see how it looks like:</span>
-            <div class="updates__img_wr">
-                <img
-                    src="../../assets/updates/notification.png"
-                    width="150"
-                    class="updates__img"
-                    alt="notification example"
-                    loading="lazy">
-            </div>
+            Also, now you will get a nice small <strong class="article__col-4">notification</strong> when you activate the mode from a keyboard. Just to be sure that you enabled it on purpose. Let's see how it looks like:
         </p>
+
+        <div class="updates__img_wr">
+            <img
+                src="../../assets/updates/notification.png"
+                width="150"
+                class="updates__img"
+                alt="notification example"
+                loading="lazy">
+        </div>
 
         <h3 class="article__subtitle" id="1.1.6">1.1.6 The big one</h3>
 
@@ -78,7 +81,7 @@ const updates = {
 
         <p class="article__text"><strong class="article__col-4">The statistics.</strong> Just a little bit of fun for you. Noone <strong class="article__col-4">except you</strong> (even me) is able to see it. Activated by default. You can disable it <a class="link optPage" href="#">at the options page</a>. After you add some, try clicking it :) <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">My stats during the development</a></p>
 
-        <p class="article__text">I removed all the tracking from PopUpOFF and this page. It's not like I'm not interested anymore, I just don't want <a class="link" target="_blank" rel="noreferrer" href="https://deletegoogle.com/#privacyForSale">Google to sell</a> info about you and me. I wrote <a class="link" target="_blank" rel="noreferrer" href="https://romanisthere.github.io/posts/my-mission/">an article about software</a> - it will <strong class="article__col-4">help you to understand</strong> what is happening more clearly.</p>
+        <p class="article__text">I removed all the tracking from PopUpOFF and there are none on this site. It's not like I'm not interested anymore, I just don't want <a class="link" target="_blank" rel="noreferrer" href="https://deletegoogle.com/#privacyForSale">Google to sell</a> info about you and me. I wrote <a class="link" target="_blank" rel="noreferrer" href="https://romanisthere.github.io/posts/my-mission/">an article about software</a> - it will <strong class="article__col-4">help you to understand</strong> what is happening more clearly.</p>
 
         <p class="article__text"><a href="#1.1.3" class="link">Earlier</a> I added a keyboard shortcut. From now on you can toggle chosen mode with <strong class="article__col-4">Alt + x</strong> (activate and deactivate with the same key combination).</p>
 
