@@ -41,6 +41,7 @@ import Posts from './Posts/Posts'
 import NoPage from './NoPage/NoPage'
 import Policy from './Policy/Policy'
 import Secrets from './Secrets/Secrets'
+import Updates from './Updates/Updates'
 
 export default () => {
 	return (
@@ -53,6 +54,7 @@ export default () => {
 			<Post path="/posts/:slug" />
 			<Posts path="/posts/" />
 			<Secrets path="/secrets/" />
+			<Updates path="/updates/" />
 			<NoPage default />
 		</Router>
 	)

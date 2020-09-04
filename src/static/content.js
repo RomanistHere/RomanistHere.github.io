@@ -303,6 +303,54 @@ const content = {
 		<p class="article__text">I am committed to protecting your privacy.  Protecting your privacy online is an evolving area, and I am constantly evolving my App to meet these demands.  If you have any comments or questions regarding Privacy Policy, or your Personal Information that I may be storing and using, please contact me at <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a></p>
 		`,
 	policy__posted: `June 2020`,
+	upd__title: `Some fine updates.`,
+	upd__content: `
+		<h3 class="article__subtitle">1.1.6</h3>
+
+		<ul class="article__list article__text">
+			<li class="article__list_item">
+				New (experimental) feature: prevent paid content from hiding;
+			</li>
+			<li class="article__list_item">
+				New feature: collect and display stats;
+			</li>
+			<li class="article__list_item">
+				Remove all tracking and analytics systems;
+			</li>
+			<li class="article__list_item">
+				Activate/deactivate on shortcut (Alt + x);
+			</li>
+			<li class="article__list_item">
+				Changes in design and performance;
+			</li>
+		</ul>
+
+		<p class="article__text">Okay Alright, we've got <strong class="article__col-4">a lot</strong> of interesting things going on:</p>
+
+		<p class="article__text">First things first. I added <strong class="article__col-4">a new feature</strong> (experimental). It's supposed to <strong class="article__col-4">prevent content from hiding</strong>. You know, when you open a website (usually some cool newspaper), see the article you wanted to read, and then puf... It's reduced, you can see only a few strings and note that you should pay money to see more. <a class="link" target="_blank" rel="noreferrer" href="https://www.reviewjournal.com/local/education/north-las-vegas-debuts-microschool-home-school-options-2103633/">Example</a>. Thanks to Whatatay T, I've got an idea - to interfere. So now you can enable this feature <a class="link optPage" href="#">at the options page</a>. After you turn it on, it will work when you <strong class="article__col-4">activate Hard or Easy mode</strong> and load the needed page (important: <strong class="article__col-4">mode should be active before content removed</strong>). I have only a few examples of websites like I described above so if you sent me some more, I'd improve this feature. Okay, let's go further.</p>
+
+		<p class="article__text"><strong class="article__col-4">The statistics.</strong> Just a little bit of fun for you. Noone <strong class="article__col-4">except you</strong> (even me) is able to see it. Activated by default. You can disable it <a class="link optPage" href="#">at the options page</a>. After you add some, try clicking it :)</p>
+
+		<p class="article__text">I removed all the tracking from PopUpOFF and this page. It's not like I'm not interested anymore, I just don't want <a class="link" target="_blank" rel="noreferrer" href="https://deletegoogle.com/#privacyForSale">Google to sell</a> info about you and me. I wrote <a class="link" target="_blank" rel="noreferrer" href="https://romanisthere.github.io/posts/my-mission/">an article about software</a> - it will <strong class="article__col-4">help you to understand</strong> what is happening more clearly.</p>
+
+		<p class="article__text"><a href="#1.1.3" class="link">Earlier</a> I added a keyboard shortcut. From now on you can toggle chosen mode with <strong class="article__col-4">Alt + x</strong> (activate and deactivate with the same key combination).</p>
+
+		<p class="article__text">Not so important: <a class="link optPage" href="#">options page</a> updated; performance improved by removing 1 layer of protection - if you have troubles, let me know, I will revert changes - I think it's for good; PopUpOFF menu updated, added little question marks - they're going to help you to choose the right mode.</p>
+
+		<p class="article__text"><strong class="article__col-4">We have reached 4k users.</strong> Thank you!</p>
+	`,
 }
+
+// Legend:
+
+// <a href="https://join.skype.com/invite/o2l5a5Qb2YWn"  rel="noreferrer" target="_blank" class="link">
+// <strong class="article__col-4">
+// <span class="article__col-3">
+// <span class="article__col-2">
+// <span class="article__col-1">
+// <ul class="article__list article__text">
+//		<li class="article__list_item">
+//		</li>
+//	</ul>
 
 export default content

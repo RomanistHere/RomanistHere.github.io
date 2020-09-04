@@ -78,6 +78,12 @@
     background-color: #c6b7634d;
 }
 
+.article__col-4 {
+    background-color: rgba(110, 69, 50, .15);
+
+    transition: background-color ease .7s 0s;
+}
+
 .article__list {
     padding-left: 22px;
 }
@@ -107,7 +113,7 @@
         width: 100%;
         max-width: 100%;
         padding: var(--pad-txt) var(--pad-txt) 40px;
-        
+
         border: none;
     }
 
