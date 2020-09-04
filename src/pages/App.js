@@ -50,11 +50,11 @@ export default () => {
 			<Form path="/form/" />
 			<Apps path="/apps/" />
 			<Policy path="/apps/policy/" />
+			<Updates path="/apps/popupoff/updates/" />
 			<Offer path="/offer/" />
 			<Post path="/posts/:slug" />
 			<Posts path="/posts/" />
 			<Secrets path="/secrets/" />
-			<Updates path="/updates/" />
 			<NoPage default />
 		</Router>
 	)

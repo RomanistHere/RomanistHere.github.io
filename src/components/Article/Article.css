@@ -105,6 +105,10 @@
     .article__img {
         min-height: 270px;
     }
+
+    .article-desktop {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 735px) {
