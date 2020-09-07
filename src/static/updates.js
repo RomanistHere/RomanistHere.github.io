@@ -16,14 +16,14 @@ const updates = {
             Also, now you can see what mode is enabled by looking at the icon. Helps with new keyboard shortcut feature:
         </p>
 
-        <div class="updates__img_wr">
-            <img src="../../assets/updates/iconE.JPG" class="updates__img" alt="[E] icon" loading="lazy">
-            <span class="updates__im_capt">- Easy mode</span>
+        <div class="article__img_wr">
+            <img src="../../assets/updates/iconE.JPG" class="article__img_small" alt="[E] icon" loading="lazy">
+            <span class="article__img_capt">- Easy mode</span>
         </div>
 
-        <div class="updates__img_wr">
-            <img src="../../assets/updates/iconH.JPG" class="updates__img" alt="[H] icon" loading="lazy">
-            <span class="updates__im_capt">- Hard mode</span>
+        <div class="article__img_wr">
+            <img src="../../assets/updates/iconH.JPG" class="article__img_small" alt="[H] icon" loading="lazy">
+            <span class="article__img_capt">- Hard mode</span>
         </div>
 
         <h3 class="article__subtitle" id="1.1.5">1.1.5</h3>
@@ -40,11 +40,11 @@ const updates = {
             Also, now you will get a nice small <strong class="article__col-4">notification</strong> when you activate the mode from a keyboard. Just to be sure that you enabled it on purpose. Let's see how it looks like:
         </p>
 
-        <div class="updates__img_wr">
+        <div class="article__img_wr">
             <img
                 src="../../assets/updates/notification.png"
                 width="150"
-                class="updates__img"
+                class="article__img_small"
                 alt="notification example"
                 loading="lazy">
         </div>
@@ -77,7 +77,7 @@ const updates = {
 
         <p class="article__text">Okay Alright, we've got <strong class="article__col-4">a lot</strong> of interesting things going on:</p>
 
-        <p class="article__text">First things first. I added <strong class="article__col-4">a new feature</strong> (experimental). It's supposed to <strong class="article__col-4">prevent content from hiding</strong>. You know, when you open a website (usually some cool newspaper), see the article you wanted to read, and then puf... It's reduced, you can see only a few strings and note that you should pay money to see more. <a class="link" target="_blank" rel="noreferrer" href="https://www.reviewjournal.com/local/education/north-las-vegas-debuts-microschool-home-school-options-2103633/">Example</a>. Thanks to Whatatay T, I've got an idea - to interfere. So now you can enable this feature <a class="link optPage" href="#">at the options page</a>. After you turn it on, it will work when you <strong class="article__col-4">activate Hard or Easy mode</strong> and load the needed page (important: <strong class="article__col-4">mode should be active before content removed</strong>). I have only a few examples of websites like I described above so if you sent me some more, I'd improve this feature. Okay, let's go further.</p>
+        <p class="article__text">First things first. I added <strong class="article__col-4">a new (experimental) feature</strong>. It's supposed to <strong class="article__col-4">prevent paid content from hiding</strong>. You know, when you open a website (usually some cool newspaper), see the article you wanted to read, and then puf... It's reduced, you can see only a few strings and note that you should pay money to see more. Examples: <a class="link" target="_blank" rel="noreferrer" href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election">The Economist</a>, <a class="link" target="_blank" rel="noreferrer" href="https://www.reviewjournal.com/local/education/ccsd-public-comment-format-proves-puzzling-in-covid-era-2113032/">Las Vegas Review-Journal</a>. Thanks to Whatatay T, I've got an idea - to interfere it. So now you can enable this feature <a class="link optPage" href="#">at the options page</a>. After you turn it on, it will work when you <strong class="article__col-4">activate Hard or Easy mode</strong> and load the needed page (important: <strong class="article__col-4">mode should be active before content removed</strong>). I have only a few examples of websites like I described above so if you sent me some more, I'd improve this feature (important: <strong class="article__col-4">it's not possible to make it work on every website</strong>). Okay, let's go further.</p>
 
         <p class="article__text"><strong class="article__col-4">The statistics.</strong> Just a little bit of fun for you. Noone <strong class="article__col-4">except you</strong> (even me) is able to see it. Activated by default. You can disable it <a class="link optPage" href="#">at the options page</a>. After you add some, try clicking it :) <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">My stats during the development</a></p>
 
