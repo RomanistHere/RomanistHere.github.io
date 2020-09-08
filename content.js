@@ -305,4 +305,16 @@ const content = {
 	policy__posted: `June 2020`,
 }
 
+// Legend:
+
+// <a href="https://join.skype.com/invite/o2l5a5Qb2YWn"  rel="noreferrer" target="_blank" class="link">
+// <strong class="article__col-4">
+// <span class="article__col-3">
+// <span class="article__col-2">
+// <span class="article__col-1">
+// <ul class="article__list article__text">
+//		<li class="article__list_item">
+//		</li>
+//	</ul>
+
 export default content
