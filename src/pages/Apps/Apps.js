@@ -80,6 +80,11 @@ const Apps = () => {
 						href="/apps/policy/">
 						Privacy Policy
 					</Link>
+					{projNumb === 1 && <Link
+						className="apps__title apps__policy apps__updates"
+						href="/apps/popupoff/updates/">
+						Updates
+					</Link>}
 	  			</article>
 
 	  			<Typing

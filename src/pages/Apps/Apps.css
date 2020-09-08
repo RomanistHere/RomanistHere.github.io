@@ -358,8 +358,14 @@
 .apps__policy {
     display: block;
 
+    padding-bottom: 0;
+
     color: var(--txt-color);
     font-size: 90%;
+}
+
+.apps__updates {
+    padding: 0;
 }
 
 .apps__socials {

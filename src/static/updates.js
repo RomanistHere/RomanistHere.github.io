@@ -17,12 +17,12 @@ const updates = {
         </p>
 
         <div class="article__img_wr">
-            <img src="../../assets/updates/iconE.JPG" class="article__img_small" alt="[E] icon" loading="lazy">
+            <img src="../../../assets/updates/iconE.JPG" class="article__img_small" alt="[E] icon" loading="lazy">
             <span class="article__img_capt">- Easy mode</span>
         </div>
 
         <div class="article__img_wr">
-            <img src="../../assets/updates/iconH.JPG" class="article__img_small" alt="[H] icon" loading="lazy">
+            <img src="../../../assets/updates/iconH.JPG" class="article__img_small" alt="[H] icon" loading="lazy">
             <span class="article__img_capt">- Hard mode</span>
         </div>
 
@@ -42,7 +42,7 @@ const updates = {
 
         <div class="article__img_wr">
             <img
-                src="../../assets/updates/notification.png"
+                src="../../../assets/updates/notification.png"
                 width="200"
                 class="article__img_small"
                 alt="notification example"
@@ -79,7 +79,7 @@ const updates = {
 
         <div class="article__img_wr">
             <img
-                src="../../assets/updates/prevent.jpg"
+                src="../../../assets/updates/prevent.jpg"
                 class="article__img_small article__img_small-full_width"
                 alt="prevent content example"
                 loading="lazy">
@@ -91,7 +91,7 @@ const updates = {
 
         <div class="article__img_wr">
             <img
-                src="../../assets/updates/stats.jpg"
+                src="../../../assets/updates/stats.jpg"
                 width="250"
                 class="article__img_small"
                 alt="stats example"
