@@ -1986,8 +1986,14 @@ button.swiper-pagination-bullet {
 .apps__policy {
     display: block;
 
+    padding-bottom: 0;
+
     color: var(--txt-color);
     font-size: 90%;
+}
+
+.apps__updates {
+    padding: 0;
 }
 
 .apps__socials {
@@ -3326,4 +3332,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.f81d3.css.map*/
+/*# sourceMappingURL=ssr-bundle.0b007.css.map*/
