@@ -59,7 +59,7 @@ const staticData = [
         description: `Its existence is under the question.`,
         img: `/assets/pages/secrets.jpg`
     },{
-        url: `apps/popupoff/updates/`,
+        url: `/apps/popupoff/updates/`,
         title: `Updates time`,
         ogTitle: `PopUpOFF. Updates`,
         description: `Check out last big releases.`,

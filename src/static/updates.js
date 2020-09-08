@@ -33,7 +33,7 @@ const updates = {
             <a class="link" target="_blank" rel="noreferrer" href="https://chrome.google.com/webstore/detail/popupoff-popup-blocker/ifnkdbpmgkdbfklnbfidaackdenlmhgh">Chrome</a>,
             <a class="link" target="_blank" rel="noreferrer" href="https://addons.mozilla.org/en-US/firefox/addon/popupoff/">Firefox</a>
             and new
-            <a class="link" target="_blank" rel="noreferrer" href="https://microsoftedge.microsoft.com/addons/detail/elacdkdmimelpnkbccdanmnabhajdccm">Edge</a>. Feel free to use it. It's absolutely the same except new versions are coming faster in <strong class="article__col-4">Firefox</strong> store.
+            <a class="link" target="_blank" rel="noreferrer" href="https://microsoftedge.microsoft.com/addons/detail/elacdkdmimelpnkbccdanmnabhajdccm">Edge</a>. Feel free to use it. It's absolutely the same except new versions are coming faster in Firefox store.
         </p>
 
         <p class="article__text">
@@ -107,6 +107,23 @@ const updates = {
         <p class="article__text">6. Ah ha! You got it right. I do plan to add the automatic mode with next release. I will keep <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">my twitter</a> updated on this. If you follow it, you're going to be part of PopUpOFF feature:)</p>
 
         <p class="article__text">And... <strong class="article__col-4">We have reached 4k users.</strong> Thank you!</p>
+
+        <p class="article__text">Useful links:</p>
+
+        <ul class="article__list article__text">
+            <li class="article__list_item">
+                <a class="link optPage" href="#">PopUpOFF options page</a>
+            </li>
+            <li class="article__list_item">
+                <a class="link" href="/posts/prev-cont">Prevent paid content from hiding. Tutorial</a>
+            </li>
+            <li class="article__list_item">
+                <a class="link" target="_blank" rel="noreferrer" href="https://twitter.com/RomanistHere">My twitter</a>
+            </li>
+            <li class="article__list_item">
+                <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>
+            </li>
+        </ul>
     `,
     posted: `Updated: Sep 8, 2020`,
 }
