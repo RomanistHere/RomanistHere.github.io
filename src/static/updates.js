@@ -1,6 +1,6 @@
 const updates = {
     title: `Updates time`,
-    upd__title: `Some fine updates.`,
+    upd__title: `Updates time.`,
     upd__content: `
         <h3 class="article__subtitle" id="1.1.3">1.1.3</h3>
 
@@ -43,7 +43,7 @@ const updates = {
         <div class="article__img_wr">
             <img
                 src="../../assets/updates/notification.png"
-                width="150"
+                width="200"
                 class="article__img_small"
                 alt="notification example"
                 loading="lazy">
@@ -77,19 +77,38 @@ const updates = {
 
         <p class="article__text">Okay Alright, we've got <strong class="article__col-4">a lot</strong> of interesting things going on:</p>
 
-        <p class="article__text">First things first. I added <strong class="article__col-4">a new (experimental) feature</strong>. It's supposed to <strong class="article__col-4">prevent paid content from hiding</strong>. You know, when you open a website (usually some cool newspaper), see the article you wanted to read, and then puf... It's reduced, you can see only a few strings and note that you should pay money to see more. Examples: <a class="link" target="_blank" rel="noreferrer" href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election">The Economist</a>, <a class="link" target="_blank" rel="noreferrer" href="https://www.reviewjournal.com/local/education/ccsd-public-comment-format-proves-puzzling-in-covid-era-2113032/">Las Vegas Review-Journal</a>. Thanks to Whatatay T, I've got an idea - to interfere it. So now you can enable this feature <a class="link optPage" href="#">at the options page</a>. After you turn it on, it will work when you <strong class="article__col-4">activate Hard or Easy mode</strong> and load the needed page (important: <strong class="article__col-4">mode should be active before content removed</strong>). I have only a few examples of websites like I described above so if you sent me some more, I'd improve this feature (important: <strong class="article__col-4">it's not possible to make it work on every website</strong>). Okay, let's go further.</p>
+        <div class="article__img_wr">
+            <img
+                src="../../assets/updates/prevent.jpg"
+                class="article__img_small article__img_small-full_width"
+                alt="prevent content example"
+                loading="lazy">
+        </div>
 
-        <p class="article__text"><strong class="article__col-4">The statistics.</strong> Just a little bit of fun for you. Noone <strong class="article__col-4">except you</strong> (even me) is able to see it. Activated by default. You can disable it <a class="link optPage" href="#">at the options page</a>. After you add some, try clicking it :) <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">My stats during the development</a></p>
+        <p class="article__text">1. I added <strong class="article__col-4">a new (experimental) feature</strong>. It's supposed to <strong class="article__col-4">prevent paid content from hiding</strong>. You know, when you open a website (usually some cool newspaper), see the article you wanted to read, and then puf... It's reduced, you can see only a few strings and note that you should pay money to see more. Examples: <a class="link" target="_blank" rel="noreferrer" href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election">The Economist</a>, <a class="link" target="_blank" rel="noreferrer" href="https://www.reviewjournal.com/local/education/ccsd-public-comment-format-proves-puzzling-in-covid-era-2113032/">Las Vegas Review-Journal</a>. Thanks to Whatatay T, I've got an idea - to interfere it. So now you can enable this feature <a class="link optPage" href="#">at the options page</a>. After you turn it on, it will work when you <strong class="article__col-4">activate Hard or Easy mode</strong> and load the needed page (important: <strong class="article__col-4">mode should be active before content removed</strong>). I have only a few examples of websites like I described above so if you sent me some more, I'd improve this feature (important: <strong class="article__col-4">it's not possible to make it work on every website</strong>).</p>
 
-        <p class="article__text">I removed all the tracking from PopUpOFF and there are none on this site. It's not like I'm not interested anymore, I just don't want <a class="link" target="_blank" rel="noreferrer" href="https://deletegoogle.com/#privacyForSale">Google to sell</a> info about you and me. I wrote <a class="link" target="_blank" rel="noreferrer" href="https://romanisthere.github.io/posts/my-mission/">an article about software</a> - it will <strong class="article__col-4">help you to understand</strong> what is happening more clearly.</p>
+        <p class="article__text">2. <strong class="article__col-4">The statistics.</strong> Just a little bit of fun for you. Noone <strong class="article__col-4">except you</strong> (even me) is able to see it. Activated by default. You can disable it <a class="link optPage" href="#">at the options page</a>. After you add some, try clicking it :) <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">My stats during the development</a></p>
 
-        <p class="article__text"><a href="#1.1.3" class="link">Earlier</a> I added a keyboard shortcut. From now on you can toggle chosen mode with <strong class="article__col-4">Alt + x</strong> (activate and deactivate with the same key combination).</p>
+        <div class="article__img_wr">
+            <img
+                src="../../assets/updates/stats.jpg"
+                width="250"
+                class="article__img_small"
+                alt="stats example"
+                loading="lazy">
+        </div>
 
-        <p class="article__text">Not so important: <a class="link optPage" href="#">options page</a> updated; performance improved by removing 1 layer of protection - if you have troubles, let me know, I will revert changes - I think it's for good; PopUpOFF menu updated, added little question marks - they're going to help you to choose the right mode.</p>
+        <p class="article__text">3. I removed all the tracking from PopUpOFF and there are none on this site. It's not like I'm not interested anymore, I just don't want <a class="link" target="_blank" rel="noreferrer" href="https://deletegoogle.com/#privacyForSale">Google to sell</a> info about you and me. I wrote <a class="link" target="_blank" rel="noreferrer" href="https://romanisthere.github.io/posts/my-mission/">an article about software</a> - it will <strong class="article__col-4">help you to understand</strong> what is happening more clearly.</p>
 
-        <p class="article__text"><strong class="article__col-4">We have reached 4k users.</strong> Thank you!</p>
+        <p class="article__text">4. <a href="#1.1.3" class="link">Earlier</a> I added a keyboard shortcut. From now on you can toggle chosen mode with <strong class="article__col-4">Alt + x</strong> (activate and deactivate with the same key combination).</p>
+
+        <p class="article__text">5. Not so important: <a class="link optPage" href="#">options page</a> updated; performance improved by removing 1 layer of protection - I think it's for good - but if you have troubles, let me know, I will revert changes; PopUpOFF menu updated, added little question marks - they're going to help you to choose the right mode.</p>
+
+        <p class="article__text">6. Ah ha! You got it right. I do plan to add the automatic mode with next release. I will keep <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">my twitter</a> updated on this. If you follow it, you're going to be part of PopUpOFF feature:)</p>
+
+        <p class="article__text">And... <strong class="article__col-4">We have reached 4k users.</strong> Thank you!</p>
     `,
-    posted: `Updated: Sep 4, 2020`,
+    posted: `Updated: Sep 8, 2020`,
 }
 
 // Legend:
@@ -103,5 +122,6 @@ const updates = {
 //		<li class="article__list_item">
 //		</li>
 //	</ul>
+// <p class="article__text">
 
 export default updates

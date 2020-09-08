@@ -1,15 +1,74 @@
+// Legend:
+
+// {
+// 	title: ``,
+// 	slug: ``,
+//  posted: ``,
+//	desc: ``,
+// 	image: ``,
+// 	content: ``
+// }
+
+// <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">
+// <strong class="article__col-4">
+// <span class="article__col-3">
+// <span class="article__col-2">
+// <span class="article__col-1">
+// <ul class="article__list article__text">
+//		<li class="article__list_item">
+//		</li>
+//	</ul>
+// <p class="article__text">
+
 const posts = [
-	// {
-	// 	title: ``,
-	// 	slug: ``,
-	//  posted: ``,
-	//	desc: ``,
-	// 	image: ``,
-	// 	content: ``
-	// }
-	//<h3 class="article__subtitle part1"></h3>
-	//<p class="article__text"></p>
-	//<a href="link" rel="noreferrer" target="_blank" class="link"></a>
+	{
+		title: `Prevent paid content from hiding. Tutorial`,
+		slug: `prev-cont`,
+		posted: `Sep 8, 2020`,
+		desc: `How to make sure you are using it right.`,
+		image: `prevent.jpg`,
+		content: `
+			<p class="article__text">You are trying to use the “Prevent content from hiding” feature of PopUpOFF and <strong class="article__col-4">it doesn’t work</strong>, right? Let’s see why:</p>
+
+			<h3 class="article__subtitle part1">How to use this feature the right way.</h3>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					Go to <a class="link optPage" href="#">the options page</a> and <strong class="article__col-4">enable it</strong>.
+				</li>
+				<li class="article__list_item">
+					Go to the needed page (<a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">example</a>) and <strong class="article__col-4">activate</strong> "Easy" or "Hard" mode <strong class="article__col-4">before the content is reduced</strong>.
+				</li>
+				<li class="article__list_item">
+					If it is or you had the page already opened, don’t worry. Make sure "Hard" or "Easy" mode is active and <strong class="article__col-4">reload the page</strong>.
+				</li>
+				<li class="article__list_item">
+					You did everything right, if it’s not working, there could be <strong class="article__col-4">two possibilities why</strong> described below.
+				</li>
+			</ul>
+
+			<h3 class="article__subtitle part2">I still can't see the full content of the article.</h3>
+
+			<p class="article__text">PopUpOFF isn’t working properly if:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					After (or during) the page is downloaded <strong class="article__col-4">you can see the full article</strong> and after some time pass, it’s <strong class="article__col-4">reduced</strong>.
+				</li>
+				<li class="article__list_item">
+					You can see popups and overlays everywhere.
+				</li>
+			</ul>
+
+			<p class="article__text">In this case, please, <a href="mailto:romanisthere@gmail.com" class="link">send me</a> the link - I will fix it.</p>
+
+			<h3 class="article__subtitle part3">Sometimes it's just impossible :(</h3>
+
+			<p class="article__text">If you can’t see the full article <strong class="article__col-4">during the loading of the page - there is nothing I can do</strong>. PopUpOFF can prevent content from reducing. But if there was no content from the start, it has nothing to work with.</p>
+
+			<p class="article__text">Sorry, but we are not hacking anyone.</p>
+		`
+	},
 	{
 		title: `My mission as an independent developer`,
 		slug: `my-mission`,
@@ -268,10 +327,7 @@ const posts = [
 
 			<p class="article__text">Not saying goodbye. Have a good time!</p>
 		`
-	}
+	},
 ]
-
-
-
 
 export default posts

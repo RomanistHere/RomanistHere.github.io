@@ -43,7 +43,7 @@
 
 .posts__img {
     width: 100%;
-    min-height: 280px;
+    min-height: 250px;
 }
 
 .posts__img::before {
@@ -113,7 +113,7 @@
     }
 
     .posts__img {
-        min-height: 200px;
+        min-height: 180px;
     }
 
     .posts__img::before {
