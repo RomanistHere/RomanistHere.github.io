@@ -104,7 +104,7 @@ const updates = {
 
         <p class="article__text">5. Not so important: <a class="link optPage" href="#">options page</a> updated; performance improved by removing 1 layer of protection - I think it's for good - but if you have troubles, let me know, I will revert changes; PopUpOFF menu updated, added little question marks - they're going to help you to choose the right mode.</p>
 
-        <p class="article__text">6. Ah ha! You got it right. I do plan to add the automatic mode with next release. I will keep <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">my twitter</a> updated on this. If you follow it, you're going to be part of PopUpOFF feature:)</p>
+        <p class="article__text">6. Ah ha! You got it right. I do plan to add the automatic mode with the next release. I will keep <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">my twitter</a> updated on this. If you follow it, you're going to be part of the PopUpOFF feature:)</p>
 
         <p class="article__text">And... <strong class="article__col-4">We have reached 4k users.</strong> Thank you!</p>
 
@@ -118,10 +118,10 @@ const updates = {
                 <a class="link" href="/posts/prev-cont">Prevent paid content from hiding. Tutorial</a>
             </li>
             <li class="article__list_item">
-                <a class="link" target="_blank" rel="noreferrer" href="https://twitter.com/RomanistHere">My twitter</a>
+                <a class="link" target="_blank" rel="noreferrer" href="https://twitter.com/RomanistHere">My twitter (project updates)</a>
             </li>
             <li class="article__list_item">
-                <a class="link" target="_blank" rel="noreferrer" href="https://t.me/BetterWebNews">Telegram</a>
+                <a class="link" target="_blank" rel="noreferrer" href="https://t.me/BetterWebNews">Telegram (better than twitter)</a>
             </li>
             <li class="article__list_item">
                 <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>
