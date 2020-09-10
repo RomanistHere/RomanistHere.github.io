@@ -38,7 +38,7 @@ const Post = ({ slug }) => {
     			})
             )
         }
-    }, [])
+    }, [slug])
 
   	return 	<TextPage
                 title={title}
