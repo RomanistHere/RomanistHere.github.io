@@ -55,6 +55,10 @@
     margin: -21px 0 var(--art-margin-1);
 }
 
+.article__img_wr-header {
+    margin-top: 0;
+}
+
 .article__img_small {
     display: inline-block;
 }

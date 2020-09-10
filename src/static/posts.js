@@ -19,9 +19,78 @@
 //		</li>
 //	</ul>
 // <p class="article__text">
-
+// <a class="link optPage" href="#">the options page</a>
 const posts = [
 	{
+		title: `PopUpOFF tutorial`,
+		slug: `popupoff-tutorial`,
+		posted: `Sep 10, 2020`,
+		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
+		image: `your life be like.jpg`,
+		content: `
+			<p class="article__text">How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.</p>
+
+			<h3 class="article__subtitle part1">The popup.</h3>
+
+			<div class="article__img_wr article__img_wr-header">
+	            <img
+	                src="../../../assets/inline/popup.jpg"
+	                width="300"
+	                class="article__img_small"
+	                alt="how popup looks like"
+	                loading="lazy">
+	        </div>
+
+			<p class="article__text">There are three modes. Is it bad-named? <a href="https://twitter.com/RomanistHere/status/1303339699369582592"  rel="noreferrer" target="_blank" class="link">Propose your one.</a> Seriously, do it.</p>
+
+			<p class="article__text">After you use "Hard" or "Easy" mode on the given website, PopUpOFF will remember it and the next time you visit any page on the site, it will be active already.</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					<strong class="article__col-4">Hard mode</strong> stands for making things hard. Hard for other guys to interrupt you from reading. I'm joking. It's called "Hard" because <strong class="article__col-4">it removes every stuck to your screen element</strong>. Not any overlay, popup or whatever it's called is going to distract you from reading. <strong class="article__col-4">It is best choice</strong>
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Easy mode</strong>. However, if <strong class="article__col-4">you need sticky headers</strong> and navigation bars to be displayed - this is what you are looking for. Due to a lot of <a href="https://github.com/RomanistHere/PopUpOFF#remove"  rel="noreferrer" target="_blank" class="link">technical stuff</a>, it loads your computer more and isn't working perfectly (it will one day). So I'd suggest you use it only for decent websites.
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">I JUST WANT TO READ!</strong> is for hopeless souls. If the first two ones didn't help you at all, there are overlays and popups everywhere, this guy is created to deal with it. <strong class="article__col-4">Stops to work after you leave</strong> or reload the page. Breaks the rules.
+				</li>
+			</ul>
+
+			<p class="article__text">There are also <strong class="article__col-4">stats</strong> (at the top) and <strong class="article__col-4">instructions</strong> (at the bottom) links in the popup. Just click it :)</p>
+
+			<p class="article__text">You can disable stats at <a class="link optPage" href="#">the options page</a></p>
+
+			<h3 class="article__subtitle part2"><a class="link optPage" href="#">Options page.</a></h3>
+
+			<p class="article__text">It is well-described by itself. But we're talking about efficiency, so there are three main points:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					<strong class="article__col-4">Statistics.</strong> It takes a little bit of performance and returns a lot of <a class="link" href="/secrets/">fun</a>. If you feel like 5-10% will make a difference for you, disable it.
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Prevent content from hiding</strong>. I wrote <a class="link" href="/posts/prev-cont/">a tutorial<a> on this. If you don't read websites with paid content, disable it.
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Most efficiency-adding option</strong> here. "Keyboard shortcut". Scroll to the bottom. Drag (or click) to the mode you use most (left - Easy, right - Hard). Now when you open a new website with popups, just press <strong class="article__col-4">Alt + x</strong>. Closed all the overlays in 0.1 sec. Splendidly done!
+				</li>
+			</ul>
+
+			<div class="article__img_wr">
+	            <img
+	                src="../../../assets/inline/shortcut.jpg"
+	                width="300"
+	                class="article__img_small"
+	                alt="shortcut enabled"
+	                loading="lazy">
+	        </div>
+
+			<p class="article__text">There are also <strong class="article__col-4">tutorial</strong> and <strong class="article__col-4">developer's (that's me) supervision</strong>. Last one is for guys who can accidentally remove Google search input or Facebook navigation from the page. Is it not you? Sure? Disable it.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+		`
+	},{
 		title: `Prevent paid content from hiding. Tutorial`,
 		slug: `prev-cont`,
 		posted: `Sep 8, 2020`,
