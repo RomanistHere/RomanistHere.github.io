@@ -43,14 +43,14 @@ const posts = [
 
 			<p class="article__text">There are three modes. Is it bad-named? <a href="https://twitter.com/RomanistHere/status/1303339699369582592"  rel="noreferrer" target="_blank" class="link">Propose your one.</a> Seriously, do it.</p>
 
-			<p class="article__text">After you use "Hard" or "Easy" mode on the given website, PopUpOFF will remember it and the next time you visit any page on the site, it will be active already.</p>
+			<p class="article__text">After you use "Hard" or "Easy" mode on the given website, PopUpOFF will remember it and the next time you visit any page on the site, it will be active already and prevent overlays from appearing.</p>
 
 			<ul class="article__list article__text">
 				<li class="article__list_item">
-					<strong class="article__col-4">Hard mode</strong> stands for making things hard. Hard for other guys to interrupt you from reading. I'm joking. It's called "Hard" because <strong class="article__col-4">it removes every stuck to your screen element</strong>. Not any overlay, popup or whatever it's called is going to distract you from reading. <strong class="article__col-4">It is best choice</strong>
+					<strong class="article__col-4">Hard mode</strong> stands for making things hard. Hard for other guys to interrupt you from reading. I'm joking. It's called "Hard" because <strong class="article__col-4">it removes every stuck to your screen element</strong>. Not any overlay, popup or whatever it's called is going to distract you from reading. <strong class="article__col-4">The best choice.</strong>
 				</li>
 				<li class="article__list_item">
-					<strong class="article__col-4">Easy mode</strong>. However, if <strong class="article__col-4">you need sticky headers</strong> and navigation bars to be displayed - this is what you are looking for. Due to a lot of <a href="https://github.com/RomanistHere/PopUpOFF#remove"  rel="noreferrer" target="_blank" class="link">technical stuff</a>, it loads your computer more and isn't working perfectly (it will one day). So I'd suggest you use it only for decent websites.
+					<strong class="article__col-4">Easy mode</strong>. However, if <strong class="article__col-4">you need sticky headers</strong> and navigation bars to be displayed - this is what you are looking for. Due to a lot of <a href="https://github.com/RomanistHere/PopUpOFF#remove" rel="noreferrer" target="_blank" class="link">technical stuff</a>, it loads your computer more and isn't working perfectly (it will one day). So I'd suggest you use it only for decent websites.
 				</li>
 				<li class="article__list_item">
 					<strong class="article__col-4">I JUST WANT TO READ!</strong> is for hopeless souls. If the first two ones didn't help you at all, there are overlays and popups everywhere, this guy is created to deal with it. <strong class="article__col-4">Stops to work after you leave</strong> or reload the page. Breaks the rules.
@@ -67,7 +67,7 @@ const posts = [
 
 			<ul class="article__list article__text">
 				<li class="article__list_item">
-					<strong class="article__col-4">Statistics.</strong> It takes a little bit of performance and returns a lot of <a class="link" href="/secrets/">fun</a>. If you feel like 5-10% will make a difference for you, disable it.
+					<strong class="article__col-4">Statistics.</strong> It takes a little bit of performance and returns a lot of <a class="link" rel="noreferrer" target="_blank" href="/secrets/">fun</a>. If you feel like 5-10% will make a difference for you, disable it.
 				</li>
 				<li class="article__list_item">
 					<strong class="article__col-4">Prevent content from hiding</strong>. I wrote <a class="link" href="/posts/prev-cont/">a tutorial<a> on this. If you don't read websites with paid content, disable it.
