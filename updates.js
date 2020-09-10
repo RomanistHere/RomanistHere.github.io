@@ -115,6 +115,9 @@ const updates = {
                 <a class="link optPage" href="#">PopUpOFF options page</a>
             </li>
             <li class="article__list_item">
+                <a class="link" href="/posts/popupoff-tutorial">PopUpOFF. Tutorial</a>
+            </li>
+            <li class="article__list_item">
                 <a class="link" href="/posts/prev-cont">Prevent paid content from hiding. Tutorial</a>
             </li>
             <li class="article__list_item">
