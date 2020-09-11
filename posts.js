@@ -45,7 +45,7 @@ const posts = [
 
 			<p class="article__text">Guys described all the profits of using this browser very well on <a href="https://brave.com/features/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">their website</a>, so there is no need to do it from my side.</p>
 
-			<p class="article__text">I just want to mention that it looks like Chrome, works like Chrome, you can synchronize between devices like in Chrome, but it works <strong class="article__col-4">much faster and <a href="https://deletegoogle.com/#privacyForSale"  rel="noreferrer" target="_blank" class="link">does not spy</a> on you.</strong></p>
+			<p class="article__text">I just want to mention that it looks like Chrome, works like Chrome, you can synchronize between devices like in Chrome, but it works <strong class="article__col-4">much faster and <a href="https://deletegoogle.com/#privacyForSale"  rel="noreferrer" target="_blank" class="link">does not spy</a> on you.</strong> You can migrate your data from Chrome as well.</p>
 
 			<p class="article__text">Results from the picture above are mine. It's for less than 50 days. Previously I used Chrome with two different ad blocks in pair. They did well with ads, but about the time, they <a href="https://help.getadblock.com/support/solutions/articles/6000087874-adblock-is-using-lots-of-memory"  rel="noreferrer" target="_blank" class="link">consumed it</a>, not saved.</p>
 
@@ -64,7 +64,7 @@ const posts = [
 
 			<p class="article__text">If not me, who? If not now, when?</p>
 
-			<p class="article__text">If you're reading services like <a href="https://medium.com/kaizen-habits/7-modern-life-habits-doing-the-most-damage-to-your-brain-e392c9cfee42"  rel="noreferrer" target="_blank" class="link">Medium</a> or <a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">the Economist</a>, my extension will spare you <strong class="article__col-4">a lot of time</strong>. Medium is actually the one that inspired me to create PopUpOFF. I used to read articles there but I neurotically had to close or remove all the overlays from the screen every time I open a new page, so I investigated whether I can do something with it or not. As you noticed, I can and I did.</p>
+			<p class="article__text">If you're reading services like <a href="https://medium.com/kaizen-habits/7-modern-life-habits-doing-the-most-damage-to-your-brain-e392c9cfee42"  rel="noreferrer" target="_blank" class="link">Medium</a> or <a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">the Economist</a>, my extension will spare you <strong class="article__col-4">a lot of time or money</strong>. Medium is actually the one that inspired me to create PopUpOFF. I used to read articles there but I neurotically had to close or remove all the overlays from the screen every time I open a new page, so I investigated whether I can do something with it or not. As you noticed, I can and I did.</p>
 
 			<p class="article__text">Even if you're not such a neurotic I was those days, sometimes you just <strong class="article__col-4">HAVE to close</strong> some overlays to continue the reading. That's where my boy comes. Once you visit such a wonderful website and enable my extension, every time you visit after, it will be <strong class="article__col-4">enabled automatically and prevent</strong> every naughty overlay from being "popuped".</p>
 
