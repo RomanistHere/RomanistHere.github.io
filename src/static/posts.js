@@ -26,7 +26,7 @@ const posts = [
 		slug: `two-tools`,
 		posted: `Sep 11, 2020`,
 		desc: `Do you use the internet? Unexcpected! Let these two apps make some optimizations with your time and productivity. Behave as usual, no changes required!`,
-		image: `2 tools.jpg`,
+		image: `two_tools.jpg`,
 		content: `
 			<p class="article__text">I won't take more than a few minutes of your time.</p>
 
@@ -77,7 +77,7 @@ const posts = [
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
 		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
-		image: `your life be like.jpg`,
+		image: `your_life_be_like.jpg`,
 		content: `
 			<p class="article__text">How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.</p>
 
