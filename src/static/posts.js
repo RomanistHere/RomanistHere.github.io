@@ -22,6 +22,51 @@
 // <a class="link optPage" href="#">the options page</a>
 const posts = [
 	{
+		title: `Chrome Extension “Receiving end does not exist.”`,
+		slug: `receiving-end`,
+		posted: `Sep 14, 2020`,
+		desc: `You must have faced such an error if you ever developed an extension.`,
+		image: `receiving.jpg`,
+		content: `
+			<p class="article__text">I have personally spent a tremendous amount of time investigating this problem. Let's see why it's trickier than it seems like.</p>
+
+			<p class="article__text">There are actually <strong class="article__col-4">three main points</strong> what could go wrong if you're facing this problem with your extensions:</p>
+
+			<h3 class="article__subtitle part1">Not following the official API</h3>
+
+			<p class="article__text">Google writes pretty decent tutorials and explanations, so I won't be copywriting it. <strong class="article__col-4"><a href="https://developer.chrome.com/extensions/messaging"  rel="noreferrer" target="_blank" class="link">This article</a> is a great showcase</strong> of what and in what cases you should be doing to make a chat between your scripts. The hints:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					<a href="https://developer.chrome.com/extensions/runtime#method-sendMessage"  rel="noreferrer" target="_blank" class="link">How to send a message</a> (sendMessage). <a href="https://github.com/RomanistHere/PopUpOFF/blob/develop/content/content.js#L62"  rel="noreferrer" target="_blank" class="link">Live example</a> in PopUpOFF content script.
+				</li>
+				<li class="article__list_item">
+					<a href="https://developer.chrome.com/extensions/runtime#event-onMessage"  rel="noreferrer" target="_blank" class="link">How to handle it</a> - get and process (onMessage). <a href="https://github.com/RomanistHere/PopUpOFF/blob/develop/background/background.js#L90"  rel="noreferrer" target="_blank" class="link">Example</a> from background.js.
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Don't use 'chrome.extension.sendRequest || .onRequest' or 'chrome.extension.sendMessage || .onMessage'</strong> if you don't need to support the Chrome oldest versions. You most likely don't.
+				</li>
+			</ul>
+
+			<p class="article__text">You know it all well already? Still doesn't work?</p>
+
+			<h3 class="article__subtitle part2">You must've messed scripts up.</h3>
+
+			<p class="article__text">Make sure your background/content scripts are <strong class="article__col-4">updated, loaded (reloaded) and available</strong> to each other at <strong class="article__col-4">the very same moment</strong> you're trying to pass a message. Try incognito mode, disable all other extensions, go get some <s>cofee</s>water. If you're pretty sure you did everything right, but it's not working anyway - take counsel of one's pillow.</p>
+
+			<p class="article__text"><strong class="article__col-4">It is working</strong>, but the error keeps randomly appearing? Why didn't you tell me at the start? Let's go see why:</p>
+
+			<h3 class="article__subtitle part2">Browser getting you there</h3>
+
+			<p class="article__text">Every time you update the dev version of your extension, Chrome, or whatever browser you use, starts to use <strong class="article__col-4">the newest version of your scripts on the opened pages (if you interact with any) but content scripts are kept from the previous "version"</strong>. They are not updating automatically (you most likely set the property "run_at": "document_end", so don't blame the browser). So, technically, <strong class="article__col-4">you're trying to reach the not injected (yet!) content script from the new version - but there is no</strong> (because you didn't load the page after the extensions update), so the browser throws an error. But it can work just as well because your new script can be identical to the old one.</p>
+
+			<p class="article__text">What to do then? Basically, you can <strong class="article__col-4">track if an old connection is not needed</strong> and disable it or manually update your scripts. I'm going to write an article about it later.</p>
+
+			<p class="article__text">If your content script in production is updating only with the extension itself, it should not be a problem. But now you know why you're getting this error during the development and not in production.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+		`
+	},{
 		title: `Two tools to save your time`,
 		slug: `two-tools`,
 		posted: `Sep 11, 2020`,
@@ -51,7 +96,7 @@ const posts = [
 
 			<p class="article__text">I was happy to discover it.</p>
 
-			<h3 class="article__subtitle part1">PopUpOFF</h3>
+			<h3 class="article__subtitle part2">PopUpOFF</h3>
 
 			<div class="article__img_wr article__img_wr-header">
 	            <img
