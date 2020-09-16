@@ -130,8 +130,46 @@ const updates = {
                 <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>
             </li>
         </ul>
+
+        <h3 class="article__subtitle" id="1.1.7">1.1.7</h3>
+
+        <ul class="article__list article__text">
+            <li class="article__list_item">
+                "Prevent paid content from hiding" improved;
+            </li>
+            <li class="article__list_item">
+                Instructions updated (new tutorial);
+            </li>
+            <li class="article__list_item">
+                Bug with stats fixed;
+            </li>
+        </ul>
+
+        <div class="article__img_wr">
+            <img
+                src="../../../assets/updates/newspapers.jpg"
+                class="article__img_small"
+                width="450"
+                alt="available newspapers"
+                loading="lazy">
+        </div>
+
+        <p class="article__text">Thank you for your feedback guys. <strong class="article__col-4">Together</strong> we have discovered a few more websites, where new prevent-content feature didn't work. It will now. <strong class="article__col-4">PopUpOFF is cleaning a few more restrictions up now</strong>. Have a look yourself:
+            <a class="link" target="_blank" rel="noreferrer" href="https://www.theguardian.com/international">The Guardian</a>,
+            <a class="link" target="_blank" rel="noreferrer" href="https://www.bostonglobe.com/">The Boston Globe</a>,
+            <a class="link" target="_blank" rel="noreferrer" href="https://www.economist.com/">The Economist</a>,
+            <a class="link" target="_blank" rel="noreferrer" href="https://www.reviewjournal.com/">Review-journal</a>,
+            <a class="link" target="_blank" rel="noreferrer" href="https://ccheadliner.com/">CCHeadliner</a>
+        - just make sure you are <a class="link" href="/posts/prev-cont/">using it right</a>:)
+        </p>
+
+        <p class="article__text">There is a <a class="link" href="/posts/popupoff-tutorial/">new tutorial</a> that covers all the features. Squeeze up <strong class="article__col-4">the maximum value</strong> from the extension.</p>
+
+        <p class="article__text">If you experienced any weird behaviour with <a class="link" target="_blank" href="/secrets/">the stats</a>, I'm sorry. Fixed it.</p>
+
+        <p class="article__text"><a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">Join us</a> in improving the web! And I hope, next time you will read something from this page - it will be about automatic mode.</p>
     `,
-    posted: `Updated: Sep 8, 2020`,
+    posted: `Updated: Sep 16, 2020`,
 }
 
 // Legend:
