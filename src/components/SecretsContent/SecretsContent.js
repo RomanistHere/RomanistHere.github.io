@@ -110,35 +110,39 @@ const SecretsContent = ({ stats }) => {
 
     return  <main className="secrets_wr">
                 <Draw />
-                <div className="secrets__start"></div>
+                <div className={`${numbOfItems ? 'secrets__start' : ''}`}></div>
                 <article className="secrets__info">
-                    <h1 className="secrets__header">Total numbers:</h1>
-                    <p className="secrets__text secrets__text-1">
-                        Area of removed overlays is about
-                        {' '}
-                        <span className="secrets__note secrets__note-1">{count1.toFixed(1)}</span>
-                        {' '}
-                        of your screen sizes.
-                    </p>
-                    <p className="secrets__text secrets__text-2">
-                        And the number of these popups, overlays and other elements is
-                        {' '}
-                        <span className="secrets__note secrets__note-3">{count2}</span>.
-                    </p>
-                    <p className="secrets__text secrets__text-3">
-                        Saved time: {time ? time : '0 seconds'}.
-                    </p>
-                    <p className="secrets__text secrets__text-4">
-                        Approximate cleared area is
-                        {' '}
-                        <span className="secrets__note secrets__note-2">{count3.toFixed(1)}</span>
-                        {' '}
-                        square metres or {areaInFt.toFixed(1)} square feet.
-                    </p>
-                    <p className="secrets__text secrets__text-5">
-                        It's {getArea(areaInMetres)}.
-                    </p>
-                    <span className="secrets__caption">Noone else can see your stats</span>
+                    { numbOfItems ?
+                        <>
+                            <h1 className="secrets__header">Total numbers:</h1>
+                            <p className="secrets__text secrets__text-1">
+                                Area of removed overlays is about
+                                {' '}
+                                <span className="secrets__note secrets__note-1">{count1.toFixed(1)}</span>
+                                {' '}
+                                of your screen sizes.
+                            </p>
+                            <p className="secrets__text secrets__text-2">
+                                And the number of these popups, overlays and other elements is
+                                {' '}
+                                <span className="secrets__note secrets__note-3">{count2}</span>.
+                            </p>
+                            <p className="secrets__text secrets__text-3">
+                                Saved time: {time ? time : '0 seconds'}.
+                            </p>
+                            <p className="secrets__text secrets__text-4">
+                                Approximate cleared area is
+                                {' '}
+                                <span className="secrets__note secrets__note-2">{count3.toFixed(1)}</span>
+                                {' '}
+                                square metres or {areaInFt.toFixed(1)} square feet.
+                            </p>
+                            <p className="secrets__text secrets__text-5">
+                                It's {getArea(areaInMetres)}.
+                            </p>
+                            <span className="secrets__caption">Noone else can see your stats</span>
+                        </> : <div className="secrets__none">Go use PopUpOFF, kid. You are not ready yet.</div>
+                    }
                 </article>
             </main>
 }
