@@ -25,10 +25,10 @@ const Draw = () => {
     })
     const canvas = useRef(null)
     const showTip = () => {
-        if (typeof window !== 'undefined' && JSON.parse(localStorage.getItem('showedTip')) === null) {
+        // if (typeof window !== 'undefined' && JSON.parse(localStorage.getItem('showedTip')) === null) {
             setPopup(true)
-            localStorage.setItem('showedTip', JSON.stringify(true))
-        }
+            // localStorage.setItem('showedTip', JSON.stringify(true))
+        // }
     }
 
     const onMouseMove = e => {
@@ -134,6 +134,10 @@ const Draw = () => {
 
   	return  state.shouldShow ?
             <>
+                <aside className={`draw_popup ${showPopup ? 'draw_popup-show' : ''}`}>
+                    Click to change colors
+                    Double click to reset
+                </aside>
                 <canvas
                     ref={canvas}
                     onMouseMove={onMouseMove}
@@ -144,10 +148,6 @@ const Draw = () => {
                     height={state.height}
                     className='draw'
                 ></canvas>
-                <aside className={`draw_popup ${showPopup ? 'draw_popup-show' : ''}`}>
-                    Click to change colors
-                    Double click to reset
-                </aside>
             </> : null
 }
 
