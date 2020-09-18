@@ -3087,6 +3087,18 @@ input:checked:focus + .switch-left + .switch-right {
     text-align: center;
 }
 
+.secrets__none {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 44px;
+    font-weight: normal;
+}
+
 .secrets_wr {
     position: relative;
 
@@ -3375,4 +3387,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.cd761.css.map*/
+/*# sourceMappingURL=ssr-bundle.ddc66.css.map*/
