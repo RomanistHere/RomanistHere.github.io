@@ -2436,6 +2436,45 @@ button.swiper-pagination-bullet {
     left: 0;
 }
 
+.draw_popup {
+    position: fixed;
+
+    right: 10px;
+    top: 100px;
+    width: 190px;
+    transform: translateX(110%);
+
+    border: solid 8px var(--third-bg-color);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    background-color: var(--bg-color1);
+
+    color: var(--text-color1);
+    line-height: var(--art-lh);
+    text-align: center;
+}
+
+.draw_popup-show {
+    animation: drawPopup 5s ease-out;
+}
+
+@keyframes drawPopup {
+    0%, 100% {
+        transform: translateX(110%);
+    }
+    10% {
+        transform: translateX(-4px);
+    }
+    12% {
+        transform: translateX(2px);
+    }
+    13% {
+        transform: translateX(-1px);
+    }
+    14%, 90% {
+        transform: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .draw {
         display: none;
@@ -3336,4 +3375,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.fd436.css.map*/
+/*# sourceMappingURL=ssr-bundle.cd761.css.map*/
