@@ -2,8 +2,11 @@ import { useState, useEffect, useRef } from "preact/hooks"
 
 import './Draw.css'
 
+const tipPoint = 2500
+
 const Draw = () => {
     const getRandColor = () => `#${Math.floor(Math.random()*16777215).toString(16)}`
+    const [showPopup, setPopup] = useState(false)
     const [state, setState] = useState({
         isFocused: false,
         col: '#000',
@@ -16,13 +19,24 @@ const Draw = () => {
         context: null,
         randomNumb: null,
         caps: ['round', 'butt', 'square'],
-        shouldShow: true
+        shouldShow: true,
+        totalDistance: 0,
+        tipShowed: false
     })
-
     const canvas = useRef(null)
+    const showTip = () => {
+        if (typeof window !== 'undefined' && JSON.parse(localStorage.getItem('showedTip')) === null) {
+            setPopup(true)
+            localStorage.setItem('showedTip', JSON.stringify(true))
+        }
+    }
 
     const onMouseMove = e => {
-        const { startPos, prevPos, dist } = state
+        const { startPos, prevPos, dist, totalDistance, tipShowed } = state
+        const distState = {
+            newDistance: 0,
+            tipShowed: tipShowed
+        }
 		const distance = Math.sqrt(Math.pow(prevPos.x - startPos.x, 2) +
 								 Math.pow(prevPos.y - startPos.y, 2))
 
@@ -62,6 +76,14 @@ const Draw = () => {
             state.context.fill()
 
             state.context.closePath()
+
+            if (!distState.tipShowed)
+                distState.newDistance = totalDistance + distance
+        }
+
+        if (!distState.tipShowed && distState.newDistance >= tipPoint) {
+            distState.tipShowed = true
+            showTip()
         }
 
         setState({...state,
@@ -69,6 +91,8 @@ const Draw = () => {
             dist: dist,
             startPos: startPos,
             prevPos: prevPos,
+            totalDistance: distState.newDistance ? distState.newDistance : totalDistance,
+            tipShowed: distState.tipShowed
         })
 	}
 
@@ -108,16 +132,23 @@ const Draw = () => {
         }
     }, [])
 
-  	return  state.shouldShow ? <canvas
-                ref={canvas}
-                onMouseMove={onMouseMove}
-                onMouseLeave={onMouseLeave}
-                onClick={onClick}
-                onDoubleClick={onDoubleClick}
-                width={state.width}
-                height={state.height}
-                className='draw'
-            ></canvas> : null
+  	return  state.shouldShow ?
+            <>
+                <canvas
+                    ref={canvas}
+                    onMouseMove={onMouseMove}
+                    onMouseLeave={onMouseLeave}
+                    onClick={onClick}
+                    onDoubleClick={onDoubleClick}
+                    width={state.width}
+                    height={state.height}
+                    className='draw'
+                ></canvas>
+                <aside className={`draw_popup ${showPopup ? 'draw_popup-show' : ''}`}>
+                    Click to change colors
+                    Double click to reset
+                </aside>
+            </> : null
 }
 
 export default Draw

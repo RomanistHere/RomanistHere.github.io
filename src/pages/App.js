@@ -1,31 +1,36 @@
 // import { Router, Route } from 'preact-router'
 // import { Suspense, lazy } from 'preact/compat'
+// import prepass from 'preact-ssr-prepass'
 //
 // import Preloader from "../components/Preloader/Preloader"
 //
 // const Card = lazy(() => import('./Card/Card'))
-// const Form = lazy(() => import('./Form/Form'))
 // const Apps = lazy(() => import('./Apps/Apps'))
 // const Offer = lazy(() => import('./Offer/Offer'))
-// const Post = lazy(() => import('./Post/Post'))
-// const Posts = lazy(() => import('./Posts/Posts'))
 // const NoPage = lazy(() => import('./NoPage/NoPage'))
 //
-// export default () => {
-// 	return (
+// // export default () => {
+// 	// return (
+// const App = (
 // 		<Suspense fallback={<Preloader />}>
 // 			<Router>
 // 				<Route path="/" component={Card} />
-// 				<Route path="/form" component={Form} />
 // 				<Route path="/apps" component={Apps} />
 // 				<Route path="/offer" component={Offer} />
-// 				<Route path="/posts/:slug" component={Post} />
-// 				<Route path="/posts" component={Posts} />
 // 				<NoPage default />
 // 			</Router>
 // 		</Suspense>
-// 	)
-// }
+// 	// )
+// // }
+// )
+//
+// export default App
+
+// prepass(vnode)
+//     .then(() => {
+//         console.log('heh')
+// 		console.log(vnode)
+//     })
 
 
 // BUILD WORKING

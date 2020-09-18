@@ -165,7 +165,7 @@ const updates = {
 
         <p class="article__text">There is a <a class="link" href="/posts/popupoff-tutorial/">new tutorial</a> that covers all the features. Squeeze up <strong class="article__col-4">the maximum value</strong> from the extension.</p>
 
-        <p class="article__text">If you experienced any weird behaviour with the stats, I'm sorry. Fixed it.</p>
+        <p class="article__text">If you experienced any weird behaviour with <a class="link" target="_blank" href="/secrets/">the stats</a>, I'm sorry. Fixed it.</p>
 
         <p class="article__text"><a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">Join us</a> in improving the web! And I hope, next time you will read something from this page - it will be about automatic mode.</p>
     `,
