@@ -176,6 +176,7 @@ const posts = [
 		posted: `Sep 10, 2020`,
 		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
 		image: `your_life_be_like.jpg`,
+		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
 		content: `
 			<p class="article__text">How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.</p>
 
@@ -245,6 +246,7 @@ const posts = [
 		posted: `Sep 8, 2020`,
 		desc: `How to make sure you are using it right.`,
 		image: `prevent.jpg`,
+		imageLink: `https://www.economist.com/leaders/2020/09/03/americas-ugly-election`,
 		content: `
 			<p class="article__text">You are trying to use the “Prevent content from hiding” feature of PopUpOFF and <strong class="article__col-4">it doesn’t work</strong>, right? Let’s see why:</p>
 
