@@ -22,6 +22,59 @@
 // <a class="link optPage" href="#">the options page</a>
 const posts = [
 	{
+		title: `I removed Google Analytics. Why?`,
+		slug: `google-analytics`,
+		posted: `Sep 21, 2020`,
+		desc: `You must have faced such an error if you ever developed an extension.`,
+		image: `google_privacy.jpg`,
+		imageLink: `https://policies.google.com/privacy`,
+		content: `
+			<p class="article__text">First things first. Most important for me is:</p>
+
+			<h3 class="article__subtitle part1">Our privacy</h3>
+
+			<p class="article__text">Google Analytics is a first thing that comes to mind when you think about tracking your app or webpage. It’s free, big, and it’s used ubiquitously. It comes with the Google quality. Where is the fallback?</p>
+
+			<p class="article__text">Google is <a href="https://plausible.io/blog/remove-google-analytics#its-owned-by-google-the-largest-ad-tech-company-in-the-world" rel="noreferrer" target="_blank" class="link">the largest ad-tech company in the world</a>, so it constantly <a href="https://deletegoogle.com/#privacyForSale"  rel="noreferrer" target="_blank" class="link">sells our data</a>. While you could use it to understand how your users use the application, Google might use it differently. There is no way to know how, but <strong class="article__col-4">Google asks you to trust</strong>. <a href="https://en.wikipedia.org/wiki/Privacy_concerns_regarding_Google"  rel="noreferrer" target="_blank" class="link">We can only guess...</a></p>
+
+			<p class="article__text">I could be trusting it with my data (I do not though). But not yours. So there will be no Google Analytics in my products again. Sorry Google.</p>
+
+			<p class="article__text">There is also some amount of technical stuff to be considered:</p>
+
+			<h3 class="article__subtitle part2">It slows down the speed</h3>
+
+			<p class="article__text">Because of "<strong class="article__col-4">more than 53% of all sites</strong> on the web track their visitors using Google Analytics", it's usually cached, but anyway there are always requests between your page and the server. And any new data has to be processed. Downloaded code is also packed with the features, most site-owners will never use.</p>
+
+			<h3 class="article__subtitle part2">Not so efficient</h3>
+
+			<p class="article__text">Due to its ubiquity, a lot of tracking-blocking systems simply are <strong class="article__col-4">not allowing Google to collect</strong> any data from the users.</p>
+
+			<h3 class="article__subtitle part3">Some ending words</h3>
+
+			<p class="article__text">But if you can't afford yourself to buy a server or a good paid analytic tool, there are not a lot of choices:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					<strong class="article__col-4">No tracking</strong>. This website has none, for example.
+				</li>
+				<li class="article__list_item">
+					Ask some <s>strangers</s>friends <strong class="article__col-4">to host one of the <a href="https://matomo.org/docs/installation/"  rel="noreferrer" target="_blank" class="link">open-sourced</a> solutions</strong>.
+				</li>
+				<li class="article__list_item">
+					You can try to keep <a href="https://plausible.io/register"  rel="noreferrer" target="_blank" class="link">trialling</a> some analytic tools. I'm not sure if it's going to work though.
+				</li>
+				<li class="article__list_item">
+					And <s>Yandex</s>Google Analytics.
+				</li>
+			</ul>
+
+			<p class="article__text">As you can see, sometimes you don't have much choice. There is an important note to understand: <strong class="article__col-4">it's not bad to use GA in your product - nothing is completely bad - but if you want to live in a better world, think about what matters to you and what might to your users</strong>.</p>
+
+			<p class="article__text">There is still a lot of info I haven't covered in this article. <a href="https://plausible.io/blog/remove-google-analytics#its-a-liability-considering-gdpr-ccpa-and-other-privacy-regulations"  rel="noreferrer" target="_blank" class="link">About policies</a>, for example. It's because it doesn't matter to me so much. But I left a lot of links, so you will find your way around here.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+		`
+	},{
 		title: `Chrome Extension “Receiving end does not exist.”`,
 		slug: `receiving-end`,
 		posted: `Sep 14, 2020`,
@@ -123,6 +176,7 @@ const posts = [
 		posted: `Sep 10, 2020`,
 		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
 		image: `your_life_be_like.jpg`,
+		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
 		content: `
 			<p class="article__text">How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.</p>
 
@@ -192,6 +246,7 @@ const posts = [
 		posted: `Sep 8, 2020`,
 		desc: `How to make sure you are using it right.`,
 		image: `prevent.jpg`,
+		imageLink: `https://www.economist.com/leaders/2020/09/03/americas-ugly-election`,
 		content: `
 			<p class="article__text">You are trying to use the “Prevent content from hiding” feature of PopUpOFF and <strong class="article__col-4">it doesn’t work</strong>, right? Let’s see why:</p>
 
