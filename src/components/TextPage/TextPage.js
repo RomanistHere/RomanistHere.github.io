@@ -4,7 +4,7 @@ import Draw from '../Draw/Draw'
 
 import './TextPage.css'
 
-const TextPage = ({ title = null, content = null, posted = null, image = null }) =>
+const TextPage = ({ title = null, content = null, posted = null, image = null, imageLink = null }) =>
     <section className="post">
         <Draw />
         <Article
@@ -12,6 +12,7 @@ const TextPage = ({ title = null, content = null, posted = null, image = null })
             content={content}
             posted={posted}
             image={image}
+            imageLink={imageLink}
         />
         <LinkBack className="post__back" />
     </section>

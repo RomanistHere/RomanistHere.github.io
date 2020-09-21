@@ -9,7 +9,7 @@ import { querySelector, querySelectorAll, findPostBySlug, addClass, importAll } 
 const images = importAll(require.context('../../assets/posts/', false, /\.(png|jpe?g|svg)$/))
 
 const Post = ({ slug }) => {
-    const { image, title, content, desc, posted } = findPostBySlug(posts, slug)
+    const { image, title, content, desc, posted, imageLink } = findPostBySlug(posts, slug)
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -45,6 +45,7 @@ const Post = ({ slug }) => {
                 content={content}
                 image={images[image].default}
                 posted={posted}
+                imageLink={imageLink}
             />
 }
 
