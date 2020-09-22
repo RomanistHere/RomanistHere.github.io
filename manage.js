@@ -13,7 +13,7 @@ const manage = {
 	card__typings__hide_time: 9000,
 	apps__typing: 2000,
 	browsers: {
-		1: [0, 1, 2, 3],
+		1: [0, 1, 2, 3, 4],
 		2: [0, 1],
 		3: [0, 1],
 	},

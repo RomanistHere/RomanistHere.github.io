@@ -1916,6 +1916,10 @@ button.swiper-pagination-bullet {
     animation-name: appear4;
 }
 
+.apps__logo_link:nth-child(5) {
+    animation-name: appear5;
+}
+
 @keyframes appearX {
     0% {
         transform: translateX(300px);
@@ -1970,6 +1974,21 @@ button.swiper-pagination-bullet {
     }
     95% {
         transform: translateX(2px);
+    }
+    90%, 100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear5 {
+    0% {
+        transform: translateX(400px);
+    }
+    85% {
+        transform: translateX(-6px);
+    }
+    98% {
+        transform: translateX(1px);
     }
     90%, 100% {
         transform: translateX(0);
@@ -3387,4 +3406,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.ddc66.css.map*/
+/*# sourceMappingURL=ssr-bundle.b5cbf.css.map*/

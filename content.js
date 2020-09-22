@@ -215,6 +215,7 @@ const content = {
 			1: 'https://chrome.google.com/webstore/detail/popupoff-popup-blocker/ifnkdbpmgkdbfklnbfidaackdenlmhgh',
 			2: 'https://addons.mozilla.org/en-US/firefox/addon/popupoff/',
 			3: 'https://microsoftedge.microsoft.com/addons/detail/elacdkdmimelpnkbccdanmnabhajdccm',
+			4: 'https://addons.opera.com/en/extensions/details/popupoff-popup-and-overlay-blocker/',
 		},
 		2: {
 			0: 'https://github.com/RomanistHere/StyLIFy',
