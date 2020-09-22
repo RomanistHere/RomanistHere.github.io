@@ -12,6 +12,7 @@ import manage from '../../static/manage'
 import chromeLogo from '../../media/images/chromeLogo.svg'
 import firefoxLogo from '../../media/images/firefoxLogo.svg'
 import edgeLogo from '../../media/images/edgeLogo.svg'
+import operaLogo from '../../media/images/operaLogo.svg'
 import gitLogo from '../../media/images/gitLogo.svg'
 
 import './Apps.css'
@@ -23,6 +24,7 @@ const logos = {
 	1: chromeLogo,
 	2: firefoxLogo,
 	3: edgeLogo,
+	4: operaLogo,
 }
 
 const getLogos = (projNumb) => {

@@ -288,6 +288,10 @@
     animation-name: appear4;
 }
 
+.apps__logo_link:nth-child(5) {
+    animation-name: appear5;
+}
+
 @keyframes appearX {
     0% {
         transform: translateX(300px);
@@ -342,6 +346,21 @@
     }
     95% {
         transform: translateX(2px);
+    }
+    90%, 100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear5 {
+    0% {
+        transform: translateX(400px);
+    }
+    85% {
+        transform: translateX(-6px);
+    }
+    98% {
+        transform: translateX(1px);
     }
     90%, 100% {
         transform: translateX(0);
