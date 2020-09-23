@@ -25,10 +25,10 @@ const Draw = () => {
     })
     const canvas = useRef(null)
     const showTip = () => {
-        // if (typeof window !== 'undefined' && JSON.parse(localStorage.getItem('showedTip')) === null) {
+        if (typeof window !== 'undefined' && JSON.parse(localStorage.getItem('showedTip')) === null) {
             setPopup(true)
-            // localStorage.setItem('showedTip', JSON.stringify(true))
-        // }
+            localStorage.setItem('showedTip', JSON.stringify(true))
+        }
     }
 
     const onMouseMove = e => {
