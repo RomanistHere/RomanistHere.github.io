@@ -44,7 +44,7 @@ const posts = [
 
 			<p class="article__text"><a href="https://www.dictionary.com/browse/black"  rel="noreferrer" target="_blank" class="link">Dictionary.com</a>: “being a color that lacks hue and brightness and absorbs light without reflecting any of the rays composing it”</p>
 
-			<p class="article__text"><a href="https://www.colormatters.com/color-and-design/are-black-and-white-colors"  rel="noreferrer" target="_blank" class="link">Physics</a>: <strong class="article__col-4">black means no light</strong>. That’s why if you went in a larder and shut the door, all you would see is blackness.</p>
+			<p class="article__text"><a href="https://www.colormatters.com/color-and-design/are-black-and-white-colors"  rel="noreferrer" target="_blank" class="link">Physics</a>: <strong class="article__col-4">black means no light</strong>. That’s why if we went in a larder and shut the door, all we would see is blackness.</p>
 
 			<p class="article__text">White color is the opposite - it is all the colors, all the light.</p>
 
@@ -67,7 +67,7 @@ const posts = [
 
 			<p class="article__text">The thing is that <strong class="article__col-4">we can put any value into any object or word</strong>. We can do it on a local level - like some family traditions - or as society. Let’s get back to our example.</p>
 
-			<p class="article__text"><strong class="article__col-4">The moment we start to care whether we should use the word “black” or not - it is the moment we create racism</strong>. You add a new layer of meaning to the word that is to obscure everything it meant before. Literally displace it.</p>
+			<p class="article__text"><strong class="article__col-4">The moment we start to care whether we should use the word “black” or not - it is the moment we create racism</strong>. We add a new layer of meaning to the word that is to obscure everything it meant before. Literally displace it.</p>
 
 			<h3 class="article__subtitle part1">Philosophy</h3>
 
@@ -89,7 +89,7 @@ const posts = [
 
 			<p class="article__text">There are two, actually, as I see it. <strong class="article__col-4">Racism is just a symbol</strong> here. And we are constantly replacing meaning with symbols and signs.</p>
 
-			<p class="article__text">Imagine the world, where everything we discuss, everything we do has sense. You are not afraid of using any words, moves, colors, e.t.c. Everything around us: mass media, people, art, objects - has its own meaning, value. They do not just point to something (<a href="https://en.wikipedia.org/wiki/Simulacrum#Philosophy"  rel="noreferrer" target="_blank" class="link">or to nothing at all</a>). Imagined? Our world is going in the exact opposite direction.</p>
+			<p class="article__text">Imagine the world, where everything we discuss, everything we do has sense. We are not afraid of using any words, moves, colors, e.t.c. Everything around us: mass media, people, art, objects - has its own meaning, value. They do not just point to something (<a href="https://en.wikipedia.org/wiki/Simulacrum#Philosophy"  rel="noreferrer" target="_blank" class="link">or to nothing at all</a>). Imagined? Our world is going in the exact opposite direction.</p>
 
 			<p class="article__text">And secondly, does it not sound <a href="https://en.wikipedia.org/wiki/Newspeak#Principles"  rel="noreferrer" target="_blank" class="link">a little bit familiar</a> to you? Don’t you think we will be better without the word “black”? Shouldn’t we <a href="https://en.wikipedia.org/wiki/Newspeak"  rel="noreferrer" target="_blank" class="link">add a new word</a>, “nolight”, for example, and use it to describe black color? George Orwell <a href="https://en.wikipedia.org/wiki/Nineteen_Eighty-Four"  rel="noreferrer" target="_blank" class="link">would approve</a>:)</p>
 
