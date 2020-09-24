@@ -33,7 +33,7 @@ const posts = [
 		title: `Why is «blacklist» bad?`,
 		slug: `blacklist`,
 		posted: `Sep 24, 2020`,
-		desc: `And why Google, Microsoft and Twitter don't want to use this word anymore?`,
+		desc: `Google, Microsoft and Twitter don't want to use this word anymore. What's the problem with it?`,
 		image: `black.jpg`,
 		content: `
 			<p class="article__text"><a href="https://en.wikipedia.org/wiki/Simulacra_and_Simulation#Summary"  rel="noreferrer" target="_blank" class="link">Baudrillard claims</a> that our current <strong class="article__col-4">society has replaced all reality and meaning with symbols and signs, and that human experience is a simulation of reality</strong>. How is it connected with "blacklist" and why <a href="https://tech.hindustantimes.com/tech/news/after-google-s-chrome-microsoft-s-github-to-replace-slave-master-references-with-neutral-terms-71592189721415.html"  rel="noreferrer" target="_blank" class="link">it's not good to use this word anymore</a>?</p>
