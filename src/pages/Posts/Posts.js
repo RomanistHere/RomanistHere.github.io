@@ -11,7 +11,13 @@ import './Posts.css'
 
 const images = importAll(require.context('../../assets/posts/', false, /\.(png|jpe?g|svg)$/))
 
-const items = posts.map(({
+const tags = [...new Set(posts.flatMap(item => item.tags))]
+console.log(tags)
+
+const postsByTags = tag =>
+    posts.filter(obj => obj.tags.includes(tag))
+
+const createItem = ({
     title,
     slug,
     posted,
@@ -26,7 +32,11 @@ const items = posts.map(({
             <span className="posts__capt">{posted}</span>
             <span className="posts__mob">Read more</span>
         </Link>
-    </article>)
+    </article>
+
+const items = postsByTags('PopUpOFF').map(createItem)
+// const allItems = postsByTags('other').map(createItem)
+const allItems = posts.map(createItem)
 
 const Posts = () => {
     useEffect(() => {
@@ -35,9 +45,12 @@ const Posts = () => {
     }, [])
 
   	return 	<section className="main posts">
-                <main className="posts__wrap">
+                <div className="posts__wrap">
+                    {allItems}
+                </div>
+                <div className="posts__wrap">
                     {items}
-                </main>
+                </div>
                 <LinkBack className="posts__back" />
             </section>
 }

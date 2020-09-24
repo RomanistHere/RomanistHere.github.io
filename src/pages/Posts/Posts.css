@@ -1,6 +1,15 @@
 .posts__wrap {
     width: 676px;
-    margin: 50px auto;
+    margin: 50px 0;
+    height: 100%;
+    padding: 0 20px 100px;
+
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.posts__wrap::-webkit-scrollbar {
+  display: none;
 }
 
 .posts__item {
@@ -16,9 +25,13 @@
 
 .posts {
     height: auto;
+    height: 100%;
+    overflow: hidden;
 
     font-size: var(--art-fz);
     line-height: var(--art-lh);
+
+    align-items: flex-start;
 }
 
 .posts__title {
