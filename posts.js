@@ -110,7 +110,7 @@ const posts = [
 		title: `I removed Google Analytics. Why?`,
 		slug: `google-analytics`,
 		posted: `Sep 21, 2020`,
-		desc: `You must have faced such an error if you ever developed an extension.`,
+		desc: `Google Analytics is a first thing that comes to mind when you think about tracking your app or webpage. It’s free, big, and it’s used ubiquitously. It comes with the Google quality. Where is the fallback?.`,
 		image: `google_privacy.jpg`,
 		imageLink: `https://policies.google.com/privacy`,
 		content: `
