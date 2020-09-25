@@ -33,6 +33,7 @@ const posts = [
 		title: `Why is «blacklist» bad?`,
 		slug: `blacklist`,
 		posted: `Sep 24, 2020`,
+		tags: ['other'],
 		desc: `Google, Microsoft and Twitter don't want to use this word anymore. What's the problem with it?`,
 		image: `black.jpg`,
 		content: `
@@ -72,7 +73,7 @@ const posts = [
 			<h3 class="article__subtitle part1">Philosophy</h3>
 
 
-			<p class="article__text">If you don’t agree with the previous paragraph or don’t understand why, let me show you a little example. There is a thing like desecration. It could mean that some guy tells (or shows) a group of people that their sacred thing is not that sacred in the most disrespectful way. For example <a href="https://www.google.com/search?q=desecrating+the+flag&newwindow=1&tbm=isch"  rel="noreferrer" target="_blank" class="link">burning the flag</a>. <strong class="article__col-4">By doing so, one accepts that it has value</strong>. Noone will publicly and disrespectfully burn something valueless. So <strong class="article__col-4">an act of desecration is an act of both acceptance and sacralizing</strong>.</p>
+			<p class="article__text">If you don’t agree with the previous paragraph or don’t understand why, let me show you a little example. There is a thing like desecration. It could mean that some guy tells (or shows) a group of people that their sacred thing is not that sacred in the most disrespectful way. For example <a href="https://www.google.com/search?q=desecrating+the+flag&newwindow=1&tbm=isch"  rel="noreferrer" target="_blank" class="link">burning the flag</a>. <strong class="article__col-4">By doing so, one accepts that it has value</strong>. No one will publicly and disrespectfully burn something valueless. So <strong class="article__col-4">an act of desecration is an act of both acceptance and sacralizing</strong>.</p>
 
 			<div class="article__img_wr article__img_wr-header">
 	            <img
@@ -110,6 +111,7 @@ const posts = [
 		title: `I removed Google Analytics. Why?`,
 		slug: `google-analytics`,
 		posted: `Sep 21, 2020`,
+		tags: ['dev'],
 		desc: `Google Analytics is a first thing that comes to mind when you think about tracking your app or webpage. It’s free, big, and it’s used ubiquitously. It comes with the Google quality. Where is the fallback?.`,
 		image: `google_privacy.jpg`,
 		imageLink: `https://policies.google.com/privacy`,
@@ -163,6 +165,7 @@ const posts = [
 		title: `Chrome Extension “Receiving end does not exist.”`,
 		slug: `receiving-end`,
 		posted: `Sep 14, 2020`,
+		tags: ['dev'],
 		desc: `You must have faced such an error if you ever developed an extension.`,
 		image: `receiving.jpg`,
 		content: `
@@ -208,6 +211,7 @@ const posts = [
 		title: `Two tools to save your time`,
 		slug: `two-tools`,
 		posted: `Sep 11, 2020`,
+		tags: ['products'],
 		desc: `Do you use the internet? Unexcpected! Let these two apps make some optimizations with your time and productivity. Behave as usual, no changes required!`,
 		image: `two_tools.jpg`,
 		content: `
@@ -259,6 +263,7 @@ const posts = [
 		title: `PopUpOFF tutorial`,
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
+		tags: ['products', 'PopUpOFF'],
 		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
 		image: `your_life_be_like.jpg`,
 		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
@@ -329,6 +334,7 @@ const posts = [
 		title: `Prevent paid content from hiding. Tutorial`,
 		slug: `prev-cont`,
 		posted: `Sep 8, 2020`,
+		tags: ['products', 'PopUpOFF'],
 		desc: `How to make sure you are using it right.`,
 		image: `prevent.jpg`,
 		imageLink: `https://www.economist.com/leaders/2020/09/03/americas-ugly-election`,
@@ -378,6 +384,7 @@ const posts = [
 		title: `My mission as an independent developer`,
 		slug: `my-mission`,
 		posted: `Jul 21, 2020`,
+		tags: ['other', 'products'],
 		desc: `My thoughts on how to choose software, make impact on the world and what am I doing here.`,
 		image: `presentation.png`,
 		content: `
@@ -547,6 +554,7 @@ const posts = [
 		title: `Letter from developer to interviewer.`,
 		slug: `letter`,
 		posted: `Jul 18, 2019`,
+		tags: ['other'],
 		desc: `If you ever were interviewing and you recognize yourself into this post, think about the words I wrote. If you are going to, I'll show you mistakes on the example. It’s 2019. Interviewers still do their job, like they were interviewed when they started their career 10 years ago.`,
 		image: `interview.jpeg`,
 		content: `
@@ -583,6 +591,7 @@ const posts = [
 		title: `How I tested popular popup blockers`,
 		slug: `test-blockers`,
 		posted: `Jun 3, 2019`,
+		tags: ['products'],
 		desc: `This is the story about how I tested all popular Chrome popup blockers during recording a video showcase for the extension I created myself. And what are the results.`,
 		image: `blockers.jpg`,
 		content: `
