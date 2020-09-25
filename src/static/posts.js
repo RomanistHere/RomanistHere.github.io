@@ -73,7 +73,7 @@ const posts = [
 			<h3 class="article__subtitle part1">Philosophy</h3>
 
 
-			<p class="article__text">If you don’t agree with the previous paragraph or don’t understand why, let me show you a little example. There is a thing like desecration. It could mean that some guy tells (or shows) a group of people that their sacred thing is not that sacred in the most disrespectful way. For example <a href="https://www.google.com/search?q=desecrating+the+flag&newwindow=1&tbm=isch"  rel="noreferrer" target="_blank" class="link">burning the flag</a>. <strong class="article__col-4">By doing so, one accepts that it has value</strong>. Noone will publicly and disrespectfully burn something valueless. So <strong class="article__col-4">an act of desecration is an act of both acceptance and sacralizing</strong>.</p>
+			<p class="article__text">If you don’t agree with the previous paragraph or don’t understand why, let me show you a little example. There is a thing like desecration. It could mean that some guy tells (or shows) a group of people that their sacred thing is not that sacred in the most disrespectful way. For example <a href="https://www.google.com/search?q=desecrating+the+flag&newwindow=1&tbm=isch"  rel="noreferrer" target="_blank" class="link">burning the flag</a>. <strong class="article__col-4">By doing so, one accepts that it has value</strong>. No one will publicly and disrespectfully burn something valueless. So <strong class="article__col-4">an act of desecration is an act of both acceptance and sacralizing</strong>.</p>
 
 			<div class="article__img_wr article__img_wr-header">
 	            <img
@@ -112,7 +112,7 @@ const posts = [
 		slug: `google-analytics`,
 		posted: `Sep 21, 2020`,
 		tags: ['dev'],
-		desc: `Google Analytics is a first thing that comes to mind when you think about tracking your app or webpage. It’s free, big, and it’s used ubiquitously. It comes with the Google quality. Where is the fallback?.`,
+		desc: `Google Analytics is a first thing that comes to mind when you think about tracking your app or webpage. It’s free, big, and it’s used ubiquitously. It comes with the Google quality. Where is the fallback?`,
 		image: `google_privacy.jpg`,
 		imageLink: `https://policies.google.com/privacy`,
 		content: `
