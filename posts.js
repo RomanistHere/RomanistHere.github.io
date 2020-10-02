@@ -112,7 +112,7 @@ const posts = [
 		slug: `google-analytics`,
 		posted: `Sep 21, 2020`,
 		tags: ['dev'],
-		desc: `Google Analytics is a first thing that comes to mind when you think about tracking your app or webpage. It’s free, big, and it’s used ubiquitously. It comes with the Google quality. Where is the fallback?.`,
+		desc: `Google Analytics is a first thing that comes to mind when you think about tracking your app or webpage. It’s free, big, and it’s used ubiquitously. It comes with the Google quality. Where is the fallback?`,
 		image: `google_privacy.jpg`,
 		imageLink: `https://policies.google.com/privacy`,
 		content: `

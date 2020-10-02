@@ -168,8 +168,37 @@ const updates = {
         <p class="article__text">If you experienced any weird behaviour with <a class="link" target="_blank" href="/secrets/">the stats</a>, I'm sorry. Fixed it.</p>
 
         <p class="article__text"><a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">Join us</a> in improving the web! And I hope, next time you will read something from this page - it will be about automatic mode.</p>
+
+        <h3 class="article__subtitle" id="1.1.8">1.1.8</h3>
+
+        <ul class="article__list article__text">
+            <li class="article__list_item">
+                Detect and remove gradients;
+            </li>
+            <li class="article__list_item">
+                Fix issue with scripts appearing at the top of the page;
+            </li>
+            <li class="article__list_item">
+                Minor fixes and improvements;
+            </li>
+            <li class="article__list_item">
+                Update tutorial;
+            </li>
+        </ul>
+
+        <div class="article__img_wr">
+            <img
+                src="../../../assets/updates/gradients.jpg"
+                class="article__img_small article__img_small-full_width"
+                alt="No more gradients"
+                loading="lazy">
+        </div>
+
+        <p class="article__text">This update is mainly focused on the improvement of the user experience after recent changes. Now PopUpOFF can detect and remove gradients when preventing content from hiding. Also there were issues with scripts appearing at the top of the page - now fixed.</p>
+
+        <p class="article__text">Next stop is automode:)</p>
     `,
-    posted: `Updated: Sep 16, 2020`,
+    posted: `Updated: Oct 2, 2020`,
 }
 
 // Legend:
