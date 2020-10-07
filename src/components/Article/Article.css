@@ -108,6 +108,15 @@
     list-style: circle;
 }
 
+.article__text,
+.article__subtitle,
+.article__title,
+.article__img,
+.article__img_small {
+    content-visibility: auto;
+    contain-intrinsic-size: 600px;
+}
+
 @media screen and (max-width: 1024px) {
     .article {
         padding: 30px;
