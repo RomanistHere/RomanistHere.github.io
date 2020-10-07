@@ -2922,180 +2922,183 @@ input:checked:focus + .switch-left + .switch-right {
     }
 }
 
- .posts__wrap {
-     width: 676px;
-     margin: 50px auto;
- }
+.posts__wrap {
+    width: 676px;
+    margin: 50px auto;
+}
 
- .posts__item {
-     margin-bottom: 20px;
+.posts__item {
+    margin-bottom: 20px;
 
-     border: solid 10px var(--third-bg-color);
-     box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+    border: solid 10px var(--third-bg-color);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
 
-     background-color: var(--bg-color1);
+    background-color: var(--bg-color1);
 
-     transition: var(--def-trs);
- }
+    transition: var(--def-trs);
 
- .posts {
-     height: auto;
+    content-visibility: auto;
+    contain-intrinsic-size: 600px;
+}
 
-     font-size: var(--art-fz);
-     line-height: var(--art-lh);
- }
+.posts {
+    height: auto;
 
- .posts__title {
-     margin: var(--art-margin-2) 0;
+    font-size: var(--art-fz);
+    line-height: var(--art-lh);
+}
 
-     font-weight: bold;
-     font-size: var(--art-fz-subtitle);
-     line-height: var(--art-lh-subtitle);
- }
+.posts__title {
+    margin: var(--art-margin-2) 0;
 
- .posts__text {
-     margin: 0 0 var(--art-margin-2);
+    font-weight: bold;
+    font-size: var(--art-fz-subtitle);
+    line-height: var(--art-lh-subtitle);
+}
 
-     font-weight: normal;
- }
+.posts__text {
+    margin: 0 0 var(--art-margin-2);
 
- .posts__capt {
-     opacity: .7;
+    font-weight: normal;
+}
 
-     font-weight: normal;
- }
+.posts__capt {
+    opacity: .7;
 
- .posts__img {
-     width: 100%;
-     min-height: 250px;
- }
+    font-weight: normal;
+}
 
- .posts__img::before {
-     content: 'There should be an image soon \A\A Wait a little :)';
-     position: absolute;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+.posts__img {
+    width: 100%;
+    min-height: 250px;
+}
 
-     left: 20px;
-     top: 20px;
-     right: 20px;
-     height: 270px;
+.posts__img::before {
+    content: 'There should be an image soon \A\A Wait a little :)';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-     background-color: var(--bg-color2);
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    height: 270px;
 
-     white-space: pre-wrap;
-     text-align: center;
-     font-size: 24px;
- }
+    background-color: var(--bg-color2);
 
- .posts__link {
-     position: relative;
-     display: block;
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 24px;
+}
 
-     padding: 20px;
+.posts__link {
+    position: relative;
+    display: block;
 
-     color: var(--text-color1);
-     text-decoration: none;
- }
+    padding: 20px;
 
- .posts__link:active {
-     color: var(--bg-color2);
- }
+    color: var(--text-color1);
+    text-decoration: none;
+}
 
- .posts__mob {
-     display: none;
+.posts__link:active {
+    color: var(--bg-color2);
+}
 
-     opacity: .6;
-     font-weight: normal;
- }
+.posts__mob {
+    display: none;
 
- @media (hover: hover) {
-     .posts__wrap:hover .posts__item{
-         filter: blur(.7px);
-     }
+    opacity: .6;
+    font-weight: normal;
+}
 
-     .posts__wrap:hover .posts__item:hover{
-         filter: drop-shadow( 0px 0px 8px rgba(0, 0, 0, 1)) blur(0);
-     }
- }
+@media (hover: hover) {
+    .posts__wrap:hover .posts__item{
+        filter: blur(.7px);
+    }
 
- @media screen and (max-width: 1275px) {
-     .posts {
-         --art-fz: 18px;
-         --art-fz-subtitle: 23px;
+    .posts__wrap:hover .posts__item:hover{
+        filter: drop-shadow( 0px 0px 8px rgba(0, 0, 0, 1)) blur(0);
+    }
+}
 
-         --art-lh: 31px;
-         --art-lh-subtitle: 38px;
+@media screen and (max-width: 1275px) {
+    .posts {
+        --art-fz: 18px;
+        --art-fz-subtitle: 23px;
 
-         --art-margin-1: 31px;
-         --art-margin-2: 12px;
-     }
+        --art-lh: 31px;
+        --art-lh-subtitle: 38px;
 
-     .posts__wrap {
-         width: 510px;
-     }
+        --art-margin-1: 31px;
+        --art-margin-2: 12px;
+    }
 
-     .posts__img {
-         min-height: 180px;
-     }
+    .posts__wrap {
+        width: 510px;
+    }
 
-     .posts__img::before {
-         height: 200px;
-     }
- }
+    .posts__img {
+        min-height: 180px;
+    }
 
- @media screen and (max-width: 1024px) {
-     .posts__wrap {
-         padding: var(--pad-txt);
-         margin: 30px auto;
-     }
+    .posts__img::before {
+        height: 200px;
+    }
+}
 
-     .posts__back {
-         position: absolute;
-     }
+@media screen and (max-width: 1024px) {
+    .posts__wrap {
+        padding: var(--pad-txt);
+        margin: 30px auto;
+    }
 
-     .posts__img::before {
-         left: 20px;
-         right: 20px;
-     }
- }
+    .posts__back {
+        position: absolute;
+    }
 
- @media screen and (max-width: 735px) {
-     .posts__wrap {
-         padding: 10px;
-         margin: 0 0 40px;
-     }
+    .posts__img::before {
+        left: 20px;
+        right: 20px;
+    }
+}
 
-     .posts__mob {
-         display: block;
-     }
+@media screen and (max-width: 735px) {
+    .posts__wrap {
+        padding: 10px;
+        margin: 0 0 40px;
+    }
 
-     .posts__capt {
-         display: none;
-     }
+    .posts__mob {
+        display: block;
+    }
 
-     .posts__img {
-         min-height: unset;
-     }
+    .posts__capt {
+        display: none;
+    }
 
-     .posts__img::before {
-         display: none;
-     }
- }
+    .posts__img {
+        min-height: unset;
+    }
 
- @media screen and (max-width: 375px) {
-     .posts {
-         --art-fz: 16px;
-         --art-fz-subtitle: 20px;
+    .posts__img::before {
+        display: none;
+    }
+}
 
-         --art-lh: 26px;
-         --art-lh-subtitle: 32px;
+@media screen and (max-width: 375px) {
+    .posts {
+        --art-fz: 16px;
+        --art-fz-subtitle: 20px;
 
-         --art-margin-1: 26px;
-         --art-margin-2: 6px;
-     }
- }
+        --art-lh: 26px;
+        --art-lh-subtitle: 32px;
+
+        --art-margin-1: 26px;
+        --art-margin-2: 6px;
+    }
+}
 
 .no_page__text {
     font-size: 30vh;
@@ -3415,4 +3418,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.bbac3.css.map*/
+/*# sourceMappingURL=ssr-bundle.764ba.css.map*/
