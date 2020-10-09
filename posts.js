@@ -30,6 +30,58 @@
 //  </div>
 const posts = [
 	{
+		title: `Two tools to save your time`,
+		slug: `two-tools`,
+		posted: `Sep 11, 2020`,
+		tags: ['products'],
+		desc: `Do you use the internet? Unexcpected! Let these two apps make some optimizations with your time and productivity. Behave as usual, no changes required!`,
+		image: `two_tools.jpg`,
+		content: `
+			<p class="article__text">I won't take more than a few minutes of your time.</p>
+
+			<p class="article__text">We will consider <a href="https://brave.com/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">the Brave browser</a> and <a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  rel="noreferrer" target="_blank" class="link"> the PopUpOFF extension</a>. Let these two apps make some optimizations with your time and productivity. <strong class="article__col-4">Behave yourself as usual, no changes required!</strong></p>
+
+			<h3 class="article__subtitle part1">Brave</h3>
+
+			<div class="article__img_wr article__img_wr-header">
+	            <img
+	                src="../../../assets/inline/brave.jpg"
+	                class="article__img_small article__img_small-full_width"
+					alt="my brave stats for about 50 days"
+	                title="my brave stats for about 50 days"
+	                loading="lazy">
+	        </div>
+
+			<p class="article__text">Guys described all the profits of using this browser very well on <a href="https://brave.com/features/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">their website</a>, so there is no need to do it from my side.</p>
+
+			<p class="article__text">I just want to mention that it looks like Chrome, works like Chrome, you can synchronize between devices like in Chrome, but it works <strong class="article__col-4">much faster and <a href="https://deletegoogle.com/#privacyForSale"  rel="noreferrer" target="_blank" class="link">does not spy</a> on you.</strong> You can migrate your data from Chrome as well.</p>
+
+			<p class="article__text">Results from the picture above are mine. It's for less than 50 days. Previously I used Chrome with two different ad blocks in pair. They did well with ads, but about the time, they <a href="https://help.getadblock.com/support/solutions/articles/6000087874-adblock-is-using-lots-of-memory"  rel="noreferrer" target="_blank" class="link">consumed it</a>, not saved.</p>
+
+			<p class="article__text">I was happy to discover it.</p>
+
+			<h3 class="article__subtitle part2">PopUpOFF</h3>
+
+			<div class="article__img_wr article__img_wr-header">
+	            <img
+	                src="../../../assets/inline/stats.jpg"
+	                class="article__img_small article__img_small-full_width"
+					alt="my popupoff stats for 1 month"
+	                title="my popupoff stats for 1 month"
+	                loading="lazy">
+	        </div>
+
+			<p class="article__text">If not me, who? If not now, when?</p>
+
+			<p class="article__text">If you're reading services like <a href="https://medium.com/kaizen-habits/7-modern-life-habits-doing-the-most-damage-to-your-brain-e392c9cfee42"  rel="noreferrer" target="_blank" class="link">Medium</a> or <a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">the Economist</a>, my extension will spare you <strong class="article__col-4">a lot of time or money</strong>. Medium is actually the one that inspired me to create PopUpOFF. I used to read articles there but I neurotically had to close or remove all the overlays from the screen every time I open a new page, so I investigated whether I can do something with it or not. As you noticed, I can and I did.</p>
+
+			<p class="article__text">Even if you're not such a neurotic I was those days, sometimes you just <strong class="article__col-4">HAVE to close</strong> some overlays to continue the reading. That's where my boy comes. Once you visit such a wonderful website and enable my extension, every time you visit after, it will be <strong class="article__col-4">enabled automatically and prevent</strong> every naughty overlay from being "popuped".</p>
+
+			<p class="article__text">Here is <a class="link" href="/posts/popupoff-tutorial/">how to squeeze</a> the maximum value from PopUpOFF.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+		`
+	},{
 		title: `My mission as an independent developer`,
 		slug: `my-mission`,
 		posted: `Jul 21, 2020`,
@@ -198,8 +250,7 @@ const posts = [
 			<p class="article__text">If I can help you with your ideas, do not hesitate to reach me: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'm here, <s>captain</s>Romanist Here.</p>
 
 			<p class="article__text">As an independent developer, I promise to deliver best-I-can-do experience to you and never give up on this idea. Thank you for your time. Have a better life now, see ya:)</p>`
-	},
-	{
+	},{
 		title: `Why is «blacklist» bad?`,
 		slug: `blacklist`,
 		posted: `Sep 24, 2020`,
@@ -378,58 +429,6 @@ const posts = [
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
-		title: `Two tools to save your time`,
-		slug: `two-tools`,
-		posted: `Sep 11, 2020`,
-		tags: ['products'],
-		desc: `Do you use the internet? Unexcpected! Let these two apps make some optimizations with your time and productivity. Behave as usual, no changes required!`,
-		image: `two_tools.jpg`,
-		content: `
-			<p class="article__text">I won't take more than a few minutes of your time.</p>
-
-			<p class="article__text">We will consider <a href="https://brave.com/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">the Brave browser</a> and <a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  rel="noreferrer" target="_blank" class="link"> the PopUpOFF extension</a>. Let these two apps make some optimizations with your time and productivity. <strong class="article__col-4">Behave yourself as usual, no changes required!</strong></p>
-
-			<h3 class="article__subtitle part1">Brave</h3>
-
-			<div class="article__img_wr article__img_wr-header">
-	            <img
-	                src="../../../assets/inline/brave.jpg"
-	                class="article__img_small article__img_small-full_width"
-					alt="my brave stats for about 50 days"
-	                title="my brave stats for about 50 days"
-	                loading="lazy">
-	        </div>
-
-			<p class="article__text">Guys described all the profits of using this browser very well on <a href="https://brave.com/features/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">their website</a>, so there is no need to do it from my side.</p>
-
-			<p class="article__text">I just want to mention that it looks like Chrome, works like Chrome, you can synchronize between devices like in Chrome, but it works <strong class="article__col-4">much faster and <a href="https://deletegoogle.com/#privacyForSale"  rel="noreferrer" target="_blank" class="link">does not spy</a> on you.</strong> You can migrate your data from Chrome as well.</p>
-
-			<p class="article__text">Results from the picture above are mine. It's for less than 50 days. Previously I used Chrome with two different ad blocks in pair. They did well with ads, but about the time, they <a href="https://help.getadblock.com/support/solutions/articles/6000087874-adblock-is-using-lots-of-memory"  rel="noreferrer" target="_blank" class="link">consumed it</a>, not saved.</p>
-
-			<p class="article__text">I was happy to discover it.</p>
-
-			<h3 class="article__subtitle part2">PopUpOFF</h3>
-
-			<div class="article__img_wr article__img_wr-header">
-	            <img
-	                src="../../../assets/inline/stats.jpg"
-	                class="article__img_small article__img_small-full_width"
-					alt="my popupoff stats for 1 month"
-	                title="my popupoff stats for 1 month"
-	                loading="lazy">
-	        </div>
-
-			<p class="article__text">If not me, who? If not now, when?</p>
-
-			<p class="article__text">If you're reading services like <a href="https://medium.com/kaizen-habits/7-modern-life-habits-doing-the-most-damage-to-your-brain-e392c9cfee42"  rel="noreferrer" target="_blank" class="link">Medium</a> or <a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">the Economist</a>, my extension will spare you <strong class="article__col-4">a lot of time or money</strong>. Medium is actually the one that inspired me to create PopUpOFF. I used to read articles there but I neurotically had to close or remove all the overlays from the screen every time I open a new page, so I investigated whether I can do something with it or not. As you noticed, I can and I did.</p>
-
-			<p class="article__text">Even if you're not such a neurotic I was those days, sometimes you just <strong class="article__col-4">HAVE to close</strong> some overlays to continue the reading. That's where my boy comes. Once you visit such a wonderful website and enable my extension, every time you visit after, it will be <strong class="article__col-4">enabled automatically and prevent</strong> every naughty overlay from being "popuped".</p>
-
-			<p class="article__text">Here is <a class="link" href="/posts/popupoff-tutorial/">how to squeeze</a> the maximum value from PopUpOFF.</p>
-
-			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
-		`
-	},{
 		title: `PopUpOFF tutorial`,
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
@@ -549,8 +548,7 @@ const posts = [
 
 			<p class="article__text">Sorry, but we are not hacking anyone.</p>
 		`
-	},
-	{
+	},{
 		title: `Letter from developer to interviewer.`,
 		slug: `letter`,
 		posted: `Jul 18, 2019`,
