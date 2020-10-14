@@ -30,226 +30,98 @@
 //  </div>
 const posts = [
 	{
-		title: `Two tools to save your time`,
-		slug: `two-tools`,
-		posted: `Sep 11, 2020`,
-		tags: ['products'],
-		desc: `Do you use the internet? Unexcpected! Let these two apps make some optimizations with your time and productivity. Behave as usual, no changes required!`,
-		image: `two_tools.jpg`,
+		title: `Plausible vs GA vs Matomo. Part I.`,
+		slug: `analytics-one`,
+		posted: `Oct 14, 2020`,
+		tags: ['dev'],
+		desc: `Comaprsion of the most popular analytics before I remove it.`,
+		image: `analytics.jpg`,
+		imageLink: `/assets/posts/analytics_full.jpg`,
 		content: `
-			<p class="article__text">I won't take more than a few minutes of your time.</p>
+			<p class="article__text">Click the image above to see the infographic.</p>
 
-			<p class="article__text">We will consider <a href="https://brave.com/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">the Brave browser</a> and <a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  rel="noreferrer" target="_blank" class="link"> the PopUpOFF extension</a>. Let these two apps make some optimizations with your time and productivity. <strong class="article__col-4">Behave yourself as usual, no changes required!</strong></p>
+			<h3 class="article__subtitle part1">Prehistory</h3>
 
-			<h3 class="article__subtitle part1">Brave</h3>
+			<p class="article__text"><a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  rel="noreferrer" target="_blank" class="link">Website itself</a> is not the easiest target. You get there right after you install PopUpOFF. And some guys are known to reinstall my extension programmatically. Let's see how our analytics will treat them.</p>
+
+			<p class="article__text">There are 6 full days considered. I won't promise it's real data, but it's <s>plausible</s><strong class="article__col-4">accurate for our needs</strong>. And our needs are:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					to check the adequacy;
+				</li>
+				<li class="article__list_item">
+					to compare accuracy;
+				</li>
+				<li class="article__list_item">
+					to see how untrackable different browsers are;
+				</li>
+				<li class="article__list_item">
+					to pick the best one;
+				</li>
+			</ul>
+
+			<h3 class="article__subtitle part2">Visits</h3>
+
+			<p class="article__text"><strong class="article__col-4">Unique visitors</strong>. Different services detect "unique" in different ways. We can never know the real data, but GA looks like the weakest here, sorry Google.</p>
+
+			<p class="article__text"><strong class="article__col-4">Total pageviews</strong>. Let the fun begin. Plausible seemed good in unique visitors, but this one is "not plausible"(c). By the data we have we can say that Matomo and GA are very similar in this case. My logic tells me that they handle bots better.</p>
+
+			<p class="article__text"><strong class="article__col-4">Visit duration. Matomo and GA are ridiculous</strong>. Bounce rate was nonsense, so I just skipped it. Plausible seems like the leader here. What's next?</p>
+
+			<h3 class="article__subtitle part3">Installs</h3>
 
 			<div class="article__img_wr article__img_wr-header">
 	            <img
-	                src="../../../assets/inline/brave.jpg"
+	                src="../../../assets/inline/analytic_browsers.jpg"
 	                class="article__img_small article__img_small-full_width"
-					alt="my brave stats for about 50 days"
-	                title="my brave stats for about 50 days"
+					alt="Install events"
+	                title="Install events"
 	                loading="lazy">
 	        </div>
 
-			<p class="article__text">Guys described all the profits of using this browser very well on <a href="https://brave.com/features/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">their website</a>, so there is no need to do it from my side.</p>
+			<p class="article__text">It's the data for all the days together. "From stores" is supposed to be equal to the total number of events. It's the number I get from Google store itself, for example. Edge doesn't provide any<s>thing</s> data. There are few interesting points:</p>
 
-			<p class="article__text">I just want to mention that it looks like Chrome, works like Chrome, you can synchronize between devices like in Chrome, but it works <strong class="article__col-4">much faster and <a href="https://deletegoogle.com/#privacyForSale"  rel="noreferrer" target="_blank" class="link">does not spy</a> on you.</strong> You can migrate your data from Chrome as well.</p>
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					Plausible catched not a lot of unique Chrome installs. Unexpectedly bad.
+				</li>
+				<li class="article__list_item">
+					Firefox <a href="https://www.searchenginejournal.com/google-analytics-is-blocked-by-firefox-mozilla-explains-why/311471/"  rel="noreferrer" target="_blank" class="link">blocks only GA</a>, <strong class="article__col-4">does it bad</strong>, though.
+				</li>
+				<li class="article__list_item">
+					Opera users are the <strong class="article__col-4">most uncatchable</strong> here. Good for them.
+				</li>
+				<li class="article__list_item">
+					Google store's stats look not accurate:(
+				</li>
+			</ul>
 
-			<p class="article__text">Results from the picture above are mine. It's for less than 50 days. Previously I used Chrome with two different ad blocks in pair. They did well with ads, but about the time, they <a href="https://help.getadblock.com/support/solutions/articles/6000087874-adblock-is-using-lots-of-memory"  rel="noreferrer" target="_blank" class="link">consumed it</a>, not saved.</p>
+			<p class="article__text">Results are similar. Though Plausible's a little bit worse. Let's see the last category.</p>
 
-			<p class="article__text">I was happy to discover it.</p>
-
-			<h3 class="article__subtitle part2">PopUpOFF</h3>
+			<h3 class="article__subtitle part4">Page events</h3>
 
 			<div class="article__img_wr article__img_wr-header">
 	            <img
-	                src="../../../assets/inline/stats.jpg"
+	                src="../../../assets/inline/analytic_events.jpg"
 	                class="article__img_small article__img_small-full_width"
-					alt="my popupoff stats for 1 month"
-	                title="my popupoff stats for 1 month"
+					alt="Page events"
+	                title="Page events"
 	                loading="lazy">
 	        </div>
 
-			<p class="article__text">If not me, who? If not now, when?</p>
+			<p class="article__text">Results look the same. GA is, as expected, behind - any <a href="https://duckduckgo.com/app" rel="noreferrer" target="_blank" class="link">privacy tool</a> <strong class="article__col-4">can block it</strong> nowadays. Plausible got a little bit more, assuming Matomo shows only total numbers, not unique.</p>
 
-			<p class="article__text">If you're reading services like <a href="https://medium.com/kaizen-habits/7-modern-life-habits-doing-the-most-damage-to-your-brain-e392c9cfee42"  rel="noreferrer" target="_blank" class="link">Medium</a> or <a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">the Economist</a>, my extension will spare you <strong class="article__col-4">a lot of time or money</strong>. Medium is actually the one that inspired me to create PopUpOFF. I used to read articles there but I neurotically had to close or remove all the overlays from the screen every time I open a new page, so I investigated whether I can do something with it or not. As you noticed, I can and I did.</p>
+			<h3 class="article__subtitle part5">Conclusion</h3>
 
-			<p class="article__text">Even if you're not such a neurotic I was those days, sometimes you just <strong class="article__col-4">HAVE to close</strong> some overlays to continue the reading. That's where my boy comes. Once you visit such a wonderful website and enable my extension, every time you visit after, it will be <strong class="article__col-4">enabled automatically and prevent</strong> every naughty overlay from being "popuped".</p>
+			<p class="article__text">You have all the data. Any tool will give you an average understanding of what's happening with your app or website. Though as I see it, Plausible will give you more accurate data.</p>
 
-			<p class="article__text">Here is <a class="link" href="/posts/popupoff-tutorial/">how to squeeze</a> the maximum value from PopUpOFF.</p>
+			<p class="article__text">There is a second part coming. Technical, UX and UI comparison.</p>
 
-			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+			<h3 class="article__subtitle part6">P.S.</h3>
+
+			<p class="article__text">I'm using <a href="https://brave.com/"  rel="noreferrer" target="_blank" class="link">Brave</a> browser. <strong class="article__col-4">Haven't been tracked yet</strong>. Hello to all Firefox users:)</p>
 		`
-	},{
-		title: `My mission as an independent developer`,
-		slug: `my-mission`,
-		posted: `Jul 21, 2020`,
-		tags: ['other', 'products'],
-		desc: `My thoughts on how to choose software, make impact on the world and what am I doing here.`,
-		image: `presentation.png`,
-		content: `
-			<h3 class="article__subtitle part1">Part I</h3>
-
-			<p class="article__text">There are <span class="article__col-1">good</span> products and <span class="article__col-2">bad</span> ones. I’ll explain by example. Imagine the situation: You are using an <span class="article__strong">ad blocker/messenger app</span>. You’re using it because the day you installed <span class="article__strong">it was most popular/everyone used it</span>. You're enjoying it and maybe even paying for it. But one day you see <span class="article__strong">ads on a popular website/news that the company listens to and reads everything you say through your messenger app</span> and you catch a glimpse: “Wow, that’s inappropriate. I have to deal with it” - And then… You just don’t. <span class="article__strong">There are no websites with ads other day/company that owns mess app publicly apologizes and assures that this will not happen again</span>. Everything is resolved "by itself" now. You forget about it till the next time something will happen. And it certainly will. Because it's an example of a <span class="article__col-2">bad</span> product. An inappropriate behaviour here is <span class="article__strong">betrayal of the idea for profit/invasion of privacy</span>. Not only are you not fighting it, but also letting it circulate. If someone asked your advice about <span class="article__strong">an ad blocker/a mess app</span>, you would name the <span class="article__col-2">bad</span> one. This way you're making <span class="article__col-2">bad</span> products spread and letting everyone know that you are good with such an attitude towards you. So they build more apps and services like this. Sorry, but you’re making the internet worse.</p>
-
-			<h3 class="article__subtitle part2">Part II</h3>
-
-			<p class="article__text">So… What can you do? Almost any product has its <span class="article__col-1">good</span> analogs. You can find it if you spend a few more minutes before installing. But your friends(if we're talking about messenger, for example) are not going to be there, aren’t they? Changing the world isn’t our goal - changing ourselves is. If one does want to chat with you, one is going to find a way to do it. You would be surprised how much you can change outside yourself once you did it inside. Explain your position to your friends. Tell them you want to use <span class="article__col-1">good</span> software and not <span class="article__col-2">bad</span> one and why. By the way, why would you want it?</p>
-
-			<h3 class="article__subtitle part3">Part III</h3>
-
-			<p class="article__text">As I wrote above, by not fighting inappropriate behaviour you let it continue. You make the internet deteriorate. Let the guys who treat you like that see that you are ok with it, so they continue to treat you like this. So, once they can gain profit from doing so, they won't hesitate - they already succeeded the last time. It’s a sort of a Vicious Cycle. You can’t sit, do nothing and expect that the world is going to treat you good just because it's you. Would you like to break the Vicious Cycle? What can you gain from it?</p>
-
-			<p class="article__text">What if… You uninstall a <span class="article__col-2">bad</span> application, find its <span class="article__col-1">good</span> alternative and start to use it? Let’s see:</p>
-			<ul class="article__list article__text">
-				<li class="article__list_item">You improve the quality of your life. Obviously.</li>
-				<li class="article__list_item">You let the app owner know that you’re refusing to use it anymore. No big deal, you can think, is it not?</li>
-				<li class="article__list_item">You stop spreading this soft towards your surroundings. It is actually the way you can leverage any company in the world.</li>
-			</ul>
-			<p class="article__text">If everyone had behaved themself like this, there wouldn’t have been <span class="article__col-2">bad</span> products across the world. And I'm not talking about software now. But since our topic is, there is a list of some nice(not) treatment you could have missed:</p>
-
-			<h3 class="article__subtitle part4">Part IV</h3>
-
-			<p class="article__text">Below are only the facts, confirmed and apologized by companies:</p>
-			<ul class="article__list article__text">
-				<li class="article__list_item">
-					Apple is eavesdropping.
-					<a href="https://www.theguardian.com/technology/2019/jul/26/apple-contractors-regularly-hear-confidential-details-on-siri-recordings" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>,
-					<a href="https://www.forbes.com/sites/jeanbaptiste/2019/08/28/apple-apologizes-for-eavesdropping-on-customers-keeping-siri-recordings-without-permission/#437e40467b8f" rel="noreferrer" target="_blank" class="link">
-						[2]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Facebook is eavesdropping.
-					<a href="https://www.bloomberg.com/news/articles/2019-08-13/facebook-paid-hundreds-of-contractors-to-transcribe-users-audio" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Google is eavesdropping.
-					<a href="https://www.vrt.be/vrtnws/en/2019/07/10/google-employees-are-eavesdropping-even-in-flemish-living-rooms/" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Amazon is doing so as well.
-					<a href="https://www.washingtonpost.com/business/technology/2019/05/08/2af2d282-71cc-11e9-b5ca-3d72a9fa8ff1_story.html?utm_term=.5dcccce7ed8e/" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>,
-					<a href="https://www.usatoday.com/story/tech/2019/05/09/amazon-accused-secretly-recording-kids-echo-dot-speakers/1150651001/" rel="noreferrer" target="_blank" class="link">
-						[2]
-					</a>,
-					<a href="https://www.washingtonpost.com/news/the-switch/wp/2018/05/24/an-amazon-echo-recorded-a-familys-conversation-then-sent-it-to-a-random-person-in-their-contacts-report-says/?noredirect=on&utm_term=.86744938ffc2&itid=lk_inline_manual_6" rel="noreferrer" target="_blank" class="link">
-						[3]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Facebook is reading your messages.
-					<a href="https://www.digitaltrends.com/social-media/facebook-reads-messenger-messages/" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Microsoft is listening to your skype calls.
-					<a href="https://www.vice.com/en_us/article/xweqbq/microsoft-contractors-listen-to-skype-calls" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>,
-					<a href="https://www.theguardian.com/technology/2020/jan/10/skype-audio-graded-by-workers-in-china-with-no-security-measures" rel="noreferrer" target="_blank" class="link">
-						[2]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Apple is cooperating with the FBI.
-					<a href="https://www.reuters.com/article/us-apple-fbi-icloud-exclusive/exclusive-apple-dropped-plan-for-encrypting-backups-after-fbi-complained-sources-idUSKBN1ZK1CT" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Ridiculous: Apple is slowing down their phones.
-					<a href="https://www.vox.com/2017/12/22/16807056/apple-slow-iphone-batteries" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Ridiculous[2]: Samsung is slowing down their phones.
-					<a href="https://wccftech.com/samsung-lied-about-not-using-updates-to-slow-down-older-phones/#:~:text=Samsung%20found%20to%20be%20actively,updates%20to%20prevent%20accidental%20shutdowns.&text=At%20that%20time%2C%20Samsung%20explicitly,life%20cycles%20of%20its%20smartphones" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Facebook services are leaking personal data.
-					<a href="https://www.forbes.com/sites/daveywinder/2019/09/05/facebook-security-snafu-exposes-419-million-user-phone-numbers/#729422f81ab7" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>,
-					<a href="https://www.thesun.co.uk/tech/9119279/instagram-leak-49-million-users/" rel="noreferrer" target="_blank" class="link">
-						[2]
-					</a>,
-					<a href="https://www.thesun.co.uk/tech/10863583/social-captain-instagram-password-leak-online-how-to/" rel="noreferrer" target="_blank" class="link">
-						[3]
-					</a>,
-					<a href="https://www.businessinsider.fr/us/jeff-bezos-hack-whatsapp-disclosed-security-flaws-last-year-ft-2020-1" rel="noreferrer" target="_blank" class="link">
-						[4]
-					</a>
-				</li>
-				<li class="article__list_item">
-					VK is cooperating with the government.
-					<a href="https://www.theverge.com/2014/1/31/5363990/how-putins-cronies-seized-control-over-russias-facebook-pavel-durov-vk" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>,
-					<a href="https://info24.ru/news/v-kontakte-s-fsb-pochemu-socset-vydaet-dannye-polzovatelej-specsluzhbam.html" rel="noreferrer" target="_blank" class="link">
-						[2]
-					</a>
-				</li>
-				<li class="article__list_item">
-					Snapchat is spying.
-					<a href="https://www.vice.com/en_us/article/xwnva7/snapchat-employees-abused-data-access-spy-on-users-snaplion" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-				<li class="article__list_item">
-					TikTok is spying.
-					<a href="https://www.forbes.com/sites/zakdoffman/2020/06/26/warning-apple-suddenly-catches-tiktok-secretly-spying-on-millions-of-iphone-users/#4e1ac35f34ef" rel="noreferrer" target="_blank" class="link">
-						[1]
-					</a>
-				</li>
-			</ul>
-
-			<p class="article__text">There are only examples above. Naming every thing is out of this article. But you've got my idea, haven't you? I do not consider non-facts. Like when you say something and then you instantly see the ad about it in Chrome or Instagram. Google and Facebook didn't confirm it. Though, you can read <a href="https://telegra.ph/Why-Using-WhatsApp-Is-Dangerous-01-30-4" rel="noreferrer" target="_blank" class="link">an article</a>, why Facebook services and apps are dangerous to use - written by Pavel Durov, creator of Telegram.</p>
-			<p class="article__text">How do you recognize <span class="article__col-1">good</span> software? Typically, there are only a few common points:</p>
-			<ul class="article__list article__text">
-				<li class="article__list_item">Open-source.</li>
-				<li class="article__list_item">Non-commercial.</li>
-			</ul>
-			If a product can be described as one of those, it might be a <span class="article__col-1">good</span> one. If both of above, it certainly is.</p>
-
-			<p class="article__text">Open-source means everyone can see the code. So if there are some issues, people will find it out. People can improve it. For example, the most safe messenger app is Telegram. It is open-source and there have been no major data leaks since the day it exists, because a lot of people collaborated and improved it. On the other hand, almost any other messenger app was hacked, or leaked some amount of personal data:
-			<a href="https://www.reuters.com/article/us-un-whatsapp/u-n-says-officials-barred-from-using-whatsapp-since-june-2019-over-security-idUSKBN1ZM32P" rel="noreferrer" target="_blank" class="link">WhatsApp</a>,
-			<a href="https://www.theverge.com/2016/11/8/13561024/microsoft-skype-baidu-linkedin-hack" rel="noreferrer" target="_blank" class="link">Skype</a>,
-			<a href="https://www.independent.co.uk/news/world/asia/snapchat-hackers-india-poor-country-release-data-ceo-claim-users-account-information-a7687651.html" rel="noreferrer" target="_blank" class="link">Snapchat</a>,
-			<a href="https://www.cnbc.com/2020/01/09/tiktok-security-flaw-found-that-allowed-hackers-to-access-accounts.html" rel="noreferrer" target="_blank" class="link">TikTok</a>,
-			<a href="https://techbeacon.com/security/zoom-fails-grow-530000-passwords-leaked-details-sale-hacker" rel="noreferrer" target="_blank" class="link">Zoom</a>.
-			You can see more here: <a href="https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/" rel="noreferrer" target="_blank" class="link">"World's Biggest Data Breaches & Hacks"</a>.
-			</p>
-
-
-			<p class="article__text">And non-commercial means, that to gain profit from application is not the goal. So the creator is not interested in betraying his idea for money or anything else. I create non-commercial applications and PopUpOFF is a <span class="article__col-1">good</span> example. It provides unique functionality and is absolutely free. You are not going to see any ads either around any of my products or on this site.</p>
-
-			<p class="article__text">Here is <a href="https://en.wikipedia.org/wiki/List_of_free_and_open-source_software_packages" rel="noreferrer" target="_blank" class="link">a list</a> of all open-source software, you might find something for yourself.</p>
-
-			<p class="article__text">It must be noted that it's possible for commercial and proprietary(closed-source) software to be the <span class="article__col-1">good</span> one but it's rather rare.</p>
-
-			<h3 class="article__subtitle part5">Part V</h3>
-
-			<p class="article__text">Finally, what my mission is. As a  human - I want to live in a better world. And by “want” I don’t mean “I would like you to improve it”, but to do it by myself and motivate as many people as I can, you for example.</p>
-
-			<p class="article__text">When we talk about the internet, I’m much more powerful than the average user due to my profession. So I’m trying to apply my knowledge to make someone’s life better by <a href="/apps" class="link">my products</a>, and to make someone notice, by this article. Remember, it always matters.</p>
-
-			<p class="article__text">If I can help you with your ideas, do not hesitate to reach me: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'm here, <s>captain</s>Romanist Here.</p>
-
-			<p class="article__text">As an independent developer, I promise to deliver best-I-can-do experience to you and never give up on this idea. Thank you for your time. Have a better life now, see ya:)</p>`
 	},{
 		title: `Why is «blacklist» bad?`,
 		slug: `blacklist`,
@@ -429,6 +301,58 @@ const posts = [
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
+		title: `Two tools to save your time`,
+		slug: `two-tools`,
+		posted: `Sep 11, 2020`,
+		tags: ['products'],
+		desc: `Do you use the internet? Unexpected! Let these two apps make some optimizations with your time and productivity. Behave as usual, no changes required!`,
+		image: `two_tools.jpg`,
+		content: `
+			<p class="article__text">I won't take more than a few minutes of your time.</p>
+
+			<p class="article__text">We will consider <a href="https://brave.com/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">the Brave browser</a> and <a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  rel="noreferrer" target="_blank" class="link"> the PopUpOFF extension</a>. Let these two apps make some optimizations with your time and productivity. <strong class="article__col-4">Behave yourself as usual, no changes required!</strong></p>
+
+			<h3 class="article__subtitle part1">Brave</h3>
+
+			<div class="article__img_wr article__img_wr-header">
+	            <img
+	                src="../../../assets/inline/brave.jpg"
+	                class="article__img_small article__img_small-full_width"
+					alt="my brave stats for about 50 days"
+	                title="my brave stats for about 50 days"
+	                loading="lazy">
+	        </div>
+
+			<p class="article__text">Guys described all the profits of using this browser very well on <a href="https://brave.com/features/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">their website</a>, so there is no need to do it from my side.</p>
+
+			<p class="article__text">I just want to mention that it looks like Chrome, works like Chrome, you can synchronize between devices like in Chrome, but it works <strong class="article__col-4">much faster and <a href="https://deletegoogle.com/#privacyForSale"  rel="noreferrer" target="_blank" class="link">does not spy</a> on you.</strong> You can migrate your data from Chrome as well.</p>
+
+			<p class="article__text">Results from the picture above are mine. It's for less than 50 days. Previously I used Chrome with two different ad blocks in pair. They did well with ads, but about the time, they <a href="https://help.getadblock.com/support/solutions/articles/6000087874-adblock-is-using-lots-of-memory"  rel="noreferrer" target="_blank" class="link">consumed it</a>, not saved.</p>
+
+			<p class="article__text">I was happy to discover it.</p>
+
+			<h3 class="article__subtitle part2">PopUpOFF</h3>
+
+			<div class="article__img_wr article__img_wr-header">
+	            <img
+	                src="../../../assets/inline/stats.jpg"
+	                class="article__img_small article__img_small-full_width"
+					alt="my popupoff stats for 1 month"
+	                title="my popupoff stats for 1 month"
+	                loading="lazy">
+	        </div>
+
+			<p class="article__text">If not me, who? If not now, when?</p>
+
+			<p class="article__text">If you're reading services like <a href="https://medium.com/kaizen-habits/7-modern-life-habits-doing-the-most-damage-to-your-brain-e392c9cfee42"  rel="noreferrer" target="_blank" class="link">Medium</a> or <a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">the Economist</a>, my extension will spare you <strong class="article__col-4">a lot of time or money</strong>. Medium is actually the one that inspired me to create PopUpOFF. I used to read articles there but I neurotically had to close or remove all the overlays from the screen every time I open a new page, so I investigated whether I can do something with it or not. As you noticed, I can and I did.</p>
+
+			<p class="article__text">Even if you're not such a neurotic I was those days, sometimes you just <strong class="article__col-4">HAVE to close</strong> some overlays to continue the reading. That's where my boy comes. Once you visit such a wonderful website and enable my extension, every time you visit after, it will be <strong class="article__col-4">enabled automatically and prevent</strong> every naughty overlay from being "popuped".</p>
+
+			<p class="article__text">Here is <a class="link" href="/posts/popupoff-tutorial/">how to squeeze</a> the maximum value from PopUpOFF.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+		`
+	},{
 		title: `PopUpOFF tutorial`,
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
@@ -548,7 +472,178 @@ const posts = [
 
 			<p class="article__text">Sorry, but we are not hacking anyone.</p>
 		`
-	},{
+	},
+	{
+		title: `My mission as an independent developer`,
+		slug: `my-mission`,
+		posted: `Jul 21, 2020`,
+		tags: ['other', 'products'],
+		desc: `My thoughts on how to choose software, make impact on the world and what am I doing here.`,
+		image: `presentation.png`,
+		content: `
+			<h3 class="article__subtitle part1">Part I</h3>
+
+			<p class="article__text">There are <span class="article__col-1">good</span> products and <span class="article__col-2">bad</span> ones. I’ll explain by example. Imagine the situation: You are using an <span class="article__strong">ad blocker/messenger app</span>. You’re using it because the day you installed <span class="article__strong">it was most popular/everyone used it</span>. You're enjoying it and maybe even paying for it. But one day you see <span class="article__strong">ads on a popular website/news that the company listens to and reads everything you say through your messenger app</span> and you catch a glimpse: “Wow, that’s inappropriate. I have to deal with it” - And then… You just don’t. <span class="article__strong">There are no websites with ads other day/company that owns mess app publicly apologizes and assures that this will not happen again</span>. Everything is resolved "by itself" now. You forget about it till the next time something will happen. And it certainly will. Because it's an example of a <span class="article__col-2">bad</span> product. An inappropriate behaviour here is <span class="article__strong">betrayal of the idea for profit/invasion of privacy</span>. Not only are you not fighting it, but also letting it circulate. If someone asked your advice about <span class="article__strong">an ad blocker/a mess app</span>, you would name the <span class="article__col-2">bad</span> one. This way you're making <span class="article__col-2">bad</span> products spread and letting everyone know that you are good with such an attitude towards you. So they build more apps and services like this. Sorry, but you’re making the internet worse.</p>
+
+			<h3 class="article__subtitle part2">Part II</h3>
+
+			<p class="article__text">So… What can you do? Almost any product has its <span class="article__col-1">good</span> analogs. You can find it if you spend a few more minutes before installing. But your friends(if we're talking about messenger, for example) are not going to be there, aren’t they? Changing the world isn’t our goal - changing ourselves is. If one does want to chat with you, one is going to find a way to do it. You would be surprised how much you can change outside yourself once you did it inside. Explain your position to your friends. Tell them you want to use <span class="article__col-1">good</span> software and not <span class="article__col-2">bad</span> one and why. By the way, why would you want it?</p>
+
+			<h3 class="article__subtitle part3">Part III</h3>
+
+			<p class="article__text">As I wrote above, by not fighting inappropriate behaviour you let it continue. You make the internet deteriorate. Let the guys who treat you like that see that you are ok with it, so they continue to treat you like this. So, once they can gain profit from doing so, they won't hesitate - they already succeeded the last time. It’s a sort of a Vicious Cycle. You can’t sit, do nothing and expect that the world is going to treat you good just because it's you. Would you like to break the Vicious Cycle? What can you gain from it?</p>
+
+			<p class="article__text">What if… You uninstall a <span class="article__col-2">bad</span> application, find its <span class="article__col-1">good</span> alternative and start to use it? Let’s see:</p>
+			<ul class="article__list article__text">
+				<li class="article__list_item">You improve the quality of your life. Obviously.</li>
+				<li class="article__list_item">You let the app owner know that you’re refusing to use it anymore. No big deal, you can think, is it not?</li>
+				<li class="article__list_item">You stop spreading this soft towards your surroundings. It is actually the way you can leverage any company in the world.</li>
+			</ul>
+			<p class="article__text">If everyone had behaved themself like this, there wouldn’t have been <span class="article__col-2">bad</span> products across the world. And I'm not talking about software now. But since our topic is, there is a list of some nice(not) treatment you could have missed:</p>
+
+			<h3 class="article__subtitle part4">Part IV</h3>
+
+			<p class="article__text">Below are only the facts, confirmed and apologized by companies:</p>
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					Apple is eavesdropping.
+					<a href="https://www.theguardian.com/technology/2019/jul/26/apple-contractors-regularly-hear-confidential-details-on-siri-recordings" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>,
+					<a href="https://www.forbes.com/sites/jeanbaptiste/2019/08/28/apple-apologizes-for-eavesdropping-on-customers-keeping-siri-recordings-without-permission/#437e40467b8f" rel="noreferrer" target="_blank" class="link">
+						[2]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Facebook is eavesdropping.
+					<a href="https://www.bloomberg.com/news/articles/2019-08-13/facebook-paid-hundreds-of-contractors-to-transcribe-users-audio" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Google is eavesdropping.
+					<a href="https://www.vrt.be/vrtnws/en/2019/07/10/google-employees-are-eavesdropping-even-in-flemish-living-rooms/" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Amazon is doing so as well.
+					<a href="https://www.washingtonpost.com/business/technology/2019/05/08/2af2d282-71cc-11e9-b5ca-3d72a9fa8ff1_story.html?utm_term=.5dcccce7ed8e/" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>,
+					<a href="https://www.usatoday.com/story/tech/2019/05/09/amazon-accused-secretly-recording-kids-echo-dot-speakers/1150651001/" rel="noreferrer" target="_blank" class="link">
+						[2]
+					</a>,
+					<a href="https://www.washingtonpost.com/news/the-switch/wp/2018/05/24/an-amazon-echo-recorded-a-familys-conversation-then-sent-it-to-a-random-person-in-their-contacts-report-says/?noredirect=on&utm_term=.86744938ffc2&itid=lk_inline_manual_6" rel="noreferrer" target="_blank" class="link">
+						[3]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Facebook is reading your messages.
+					<a href="https://www.digitaltrends.com/social-media/facebook-reads-messenger-messages/" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Microsoft is listening to your skype calls.
+					<a href="https://www.vice.com/en_us/article/xweqbq/microsoft-contractors-listen-to-skype-calls" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>,
+					<a href="https://www.theguardian.com/technology/2020/jan/10/skype-audio-graded-by-workers-in-china-with-no-security-measures" rel="noreferrer" target="_blank" class="link">
+						[2]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Apple is cooperating with the FBI.
+					<a href="https://www.reuters.com/article/us-apple-fbi-icloud-exclusive/exclusive-apple-dropped-plan-for-encrypting-backups-after-fbi-complained-sources-idUSKBN1ZK1CT" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Ridiculous: Apple is slowing down their phones.
+					<a href="https://www.vox.com/2017/12/22/16807056/apple-slow-iphone-batteries" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Ridiculous[2]: Samsung is slowing down their phones.
+					<a href="https://wccftech.com/samsung-lied-about-not-using-updates-to-slow-down-older-phones/#:~:text=Samsung%20found%20to%20be%20actively,updates%20to%20prevent%20accidental%20shutdowns.&text=At%20that%20time%2C%20Samsung%20explicitly,life%20cycles%20of%20its%20smartphones" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Facebook services are leaking personal data.
+					<a href="https://www.forbes.com/sites/daveywinder/2019/09/05/facebook-security-snafu-exposes-419-million-user-phone-numbers/#729422f81ab7" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>,
+					<a href="https://www.thesun.co.uk/tech/9119279/instagram-leak-49-million-users/" rel="noreferrer" target="_blank" class="link">
+						[2]
+					</a>,
+					<a href="https://www.thesun.co.uk/tech/10863583/social-captain-instagram-password-leak-online-how-to/" rel="noreferrer" target="_blank" class="link">
+						[3]
+					</a>,
+					<a href="https://www.businessinsider.fr/us/jeff-bezos-hack-whatsapp-disclosed-security-flaws-last-year-ft-2020-1" rel="noreferrer" target="_blank" class="link">
+						[4]
+					</a>
+				</li>
+				<li class="article__list_item">
+					VK is cooperating with the government.
+					<a href="https://www.theverge.com/2014/1/31/5363990/how-putins-cronies-seized-control-over-russias-facebook-pavel-durov-vk" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>,
+					<a href="https://info24.ru/news/v-kontakte-s-fsb-pochemu-socset-vydaet-dannye-polzovatelej-specsluzhbam.html" rel="noreferrer" target="_blank" class="link">
+						[2]
+					</a>
+				</li>
+				<li class="article__list_item">
+					Snapchat is spying.
+					<a href="https://www.vice.com/en_us/article/xwnva7/snapchat-employees-abused-data-access-spy-on-users-snaplion" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+				<li class="article__list_item">
+					TikTok is spying.
+					<a href="https://www.forbes.com/sites/zakdoffman/2020/06/26/warning-apple-suddenly-catches-tiktok-secretly-spying-on-millions-of-iphone-users/#4e1ac35f34ef" rel="noreferrer" target="_blank" class="link">
+						[1]
+					</a>
+				</li>
+			</ul>
+
+			<p class="article__text">There are only examples above. Naming every thing is out of this article. But you've got my idea, haven't you? I do not consider non-facts. Like when you say something and then you instantly see the ad about it in Chrome or Instagram. Google and Facebook didn't confirm it. Though, you can read <a href="https://telegra.ph/Why-Using-WhatsApp-Is-Dangerous-01-30-4" rel="noreferrer" target="_blank" class="link">an article</a>, why Facebook services and apps are dangerous to use - written by Pavel Durov, creator of Telegram.</p>
+			<p class="article__text">How do you recognize <span class="article__col-1">good</span> software? Typically, there are only a few common points:</p>
+			<ul class="article__list article__text">
+				<li class="article__list_item">Open-source.</li>
+				<li class="article__list_item">Non-commercial.</li>
+			</ul>
+			If a product can be described as one of those, it might be a <span class="article__col-1">good</span> one. If both of above, it certainly is.</p>
+
+			<p class="article__text">Open-source means everyone can see the code. So if there are some issues, people will find it out. People can improve it. For example, the most safe messenger app is Telegram. It is open-source and there have been no major data leaks since the day it exists, because a lot of people collaborated and improved it. On the other hand, almost any other messenger app was hacked, or leaked some amount of personal data:
+			<a href="https://www.reuters.com/article/us-un-whatsapp/u-n-says-officials-barred-from-using-whatsapp-since-june-2019-over-security-idUSKBN1ZM32P" rel="noreferrer" target="_blank" class="link">WhatsApp</a>,
+			<a href="https://www.theverge.com/2016/11/8/13561024/microsoft-skype-baidu-linkedin-hack" rel="noreferrer" target="_blank" class="link">Skype</a>,
+			<a href="https://www.independent.co.uk/news/world/asia/snapchat-hackers-india-poor-country-release-data-ceo-claim-users-account-information-a7687651.html" rel="noreferrer" target="_blank" class="link">Snapchat</a>,
+			<a href="https://www.cnbc.com/2020/01/09/tiktok-security-flaw-found-that-allowed-hackers-to-access-accounts.html" rel="noreferrer" target="_blank" class="link">TikTok</a>,
+			<a href="https://techbeacon.com/security/zoom-fails-grow-530000-passwords-leaked-details-sale-hacker" rel="noreferrer" target="_blank" class="link">Zoom</a>.
+			You can see more here: <a href="https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/" rel="noreferrer" target="_blank" class="link">"World's Biggest Data Breaches & Hacks"</a>.
+			</p>
+
+
+			<p class="article__text">And non-commercial means, that to gain profit from application is not the goal. So the creator is not interested in betraying his idea for money or anything else. I create non-commercial applications and PopUpOFF is a <span class="article__col-1">good</span> example. It provides unique functionality and is absolutely free. You are not going to see any ads either around any of my products or on this site.</p>
+
+			<p class="article__text">Here is <a href="https://en.wikipedia.org/wiki/List_of_free_and_open-source_software_packages" rel="noreferrer" target="_blank" class="link">a list</a> of all open-source software, you might find something for yourself.</p>
+
+			<p class="article__text">It must be noted that it's possible for commercial and proprietary(closed-source) software to be the <span class="article__col-1">good</span> one but it's rather rare.</p>
+
+			<h3 class="article__subtitle part5">Part V</h3>
+
+			<p class="article__text">Finally, what my mission is. As a  human - I want to live in a better world. And by “want” I don’t mean “I would like you to improve it”, but to do it by myself and motivate as many people as I can, you for example.</p>
+
+			<p class="article__text">When we talk about the internet, I’m much more powerful than the average user due to my profession. So I’m trying to apply my knowledge to make someone’s life better by <a href="/apps" class="link">my products</a>, and to make someone notice, by this article. Remember, it always matters.</p>
+
+			<p class="article__text">If I can help you with your ideas, do not hesitate to reach me: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'm here, <s>captain</s>Romanist Here.</p>
+
+			<p class="article__text">As an independent developer, I promise to deliver best-I-can-do experience to you and never give up on this idea. Thank you for your time. Have a better life now, see ya:)</p>`
+	},
+	{
 		title: `Letter from developer to interviewer.`,
 		slug: `letter`,
 		posted: `Jul 18, 2019`,
