@@ -32,9 +32,9 @@ const posts = [
 	{
 		title: `Plausible vs GA vs Matomo. Part I.`,
 		slug: `analytics-one`,
-		posted: `Oct 14, 2020`,
+		posted: `Oct 15, 2020`,
 		tags: ['dev'],
-		desc: `Comaprsion of the most popular analytics before I remove it.`,
+		desc: `Comaprsion of the most popular analytics before I remove it. Data.`,
 		image: `analytics.jpg`,
 		imageLink: `/assets/posts/analytics_full.jpg`,
 		content: `
@@ -42,7 +42,7 @@ const posts = [
 
 			<h3 class="article__subtitle part1">Prehistory</h3>
 
-			<p class="article__text"><a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  rel="noreferrer" target="_blank" class="link">Website itself</a> is not the easiest target. You get there right after you install PopUpOFF. And some guys are known to reinstall my extension programmatically. Let's see how our analytics will treat them.</p>
+			<p class="article__text"><a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  rel="noreferrer" target="_blank" class="link">Website I have this analytics on</a> is not the easiest target. Users get forwarded there right after the installation of PopUpOFF. And some guys (bots) are known to reinstall my extension programmatically. Let's see how our analytics will treat them.</p>
 
 			<p class="article__text">There are 6 full days considered. I won't promise it's real data, but it's <s>plausible</s><strong class="article__col-4">accurate for our needs</strong>. And our needs are:</p>
 
@@ -67,7 +67,7 @@ const posts = [
 
 			<p class="article__text"><strong class="article__col-4">Total pageviews</strong>. Let the fun begin. Plausible seemed good in unique visitors, but this one is "not plausible"(c). By the data we have we can say that Matomo and GA are very similar in this case. My logic tells me that they handle bots better.</p>
 
-			<p class="article__text"><strong class="article__col-4">Visit duration. Matomo and GA are ridiculous</strong>. Bounce rate was nonsense, so I just skipped it. Plausible seems like the leader here. What's next?</p>
+			<p class="article__text"><strong class="article__col-4">Visit duration. Matomo and GA are ridiculous</strong>. Bounce rate was nonsense, so I just skipped it. <strong class="article__col-4">Plausible seems like the strong leader here</strong>. What's next?</p>
 
 			<h3 class="article__subtitle part3">Installs</h3>
 
@@ -80,7 +80,7 @@ const posts = [
 	                loading="lazy">
 	        </div>
 
-			<p class="article__text">It's the data for all the days together. "From stores" is supposed to be equal to the total number of events. It's the number I get from Google store itself, for example. Edge doesn't provide any<s>thing</s> data. There are few interesting points:</p>
+			<p class="article__text">It's the data for all 6 days together. "From stores" is supposed to be equal to the total number of events. It's the number I get from Google store itself, for example. Edge doesn't provide any<s>thing</s> data. There are few interesting points:</p>
 
 			<ul class="article__list article__text">
 				<li class="article__list_item">
@@ -97,7 +97,7 @@ const posts = [
 				</li>
 			</ul>
 
-			<p class="article__text">Results are similar. Though Plausible's a little bit worse. Let's see the last category.</p>
+			<p class="article__text">Results are similar. Though Plausible has disappointed me a bit. Let's see the last category, shall we?</p>
 
 			<h3 class="article__subtitle part4">Page events</h3>
 
@@ -114,7 +114,7 @@ const posts = [
 
 			<h3 class="article__subtitle part5">Conclusion</h3>
 
-			<p class="article__text">You have all the data. Any tool will give you an average understanding of what's happening with your app or website. Though as I see it, Plausible will give you more accurate data.</p>
+			<p class="article__text"><strong class="article__col-4">Any tool will give you an average understanding</strong> of what's happening with your app or website. Most of the <a href="https://www.csoonline.com/article/2975193/9-steps-completely-anonymous-online.html"  rel="noreferrer" target="_blank" class="link">I-am-anonymous</a> guys are going to be uncaught by all the tracking services anyway. Plausible, as I see it, will give you more accurate data.</p>
 
 			<p class="article__text">There is a second part coming. Technical, UX and UI comparison.</p>
 
