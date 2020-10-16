@@ -27,7 +27,6 @@
 }
 
 .posts {
-    height: auto;
     height: 100%;
 
     font-size: var(--art-fz);

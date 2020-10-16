@@ -11,7 +11,7 @@ import './Posts.css'
 
 const images = importAll(require.context('../../assets/posts/', false, /\.(png|jpe?g|svg)$/))
 
-const tags = [...new Set(posts.flatMap(item => item.tags))]
+const tags = [...new Set(posts.flatMap(item => item.tags))].sort((a, b) => a.localeCompare(b))
 
 const createItem = ({
     title,
@@ -38,7 +38,7 @@ const postsByTags = tag =>
 const allItems = posts.map(createItem)
 
 const Posts = () => {
-    const [curTag, setTag] = useState(tags[tags.length - 1])
+    const [curTag, setTag] = useState(tags[0])
     let items = postsByTags(curTag).map(createItem)
 
     const changeTag = (newItem, e) => {
