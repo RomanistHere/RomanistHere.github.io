@@ -6,6 +6,8 @@
 
     overflow: auto;
     box-sizing: border-box;
+
+    scrollbar-width: none;
 }
 
 .posts__wrap::-webkit-scrollbar {

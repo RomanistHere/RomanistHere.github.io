@@ -32,9 +32,6 @@ const createItem = ({
 
 const postsByTags = tag =>
     posts.filter(obj => obj.tags.includes(tag))
-
-
-// const allItems = postsByTags('other').map(createItem)
 const allItems = posts.map(createItem)
 
 const Posts = () => {
