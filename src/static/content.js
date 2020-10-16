@@ -158,12 +158,12 @@ const content = {
 		},
 		{
 			'text': 'Try the form',
-			'link': '/form',
+			'link': '/form/',
 			'comp': 'Form'
 		},
 		{
 			'text': 'See the projects',
-			'link': '/apps',
+			'link': '/apps/',
 			'comp': 'Projects'
 		},
 	],
