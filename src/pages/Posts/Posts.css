@@ -143,7 +143,7 @@
     }
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1599px) {
     .posts {
         --art-fz: 18px;
         --art-fz-subtitle: 23px;
@@ -165,6 +165,28 @@
 
     .posts__img::before {
         height: 200px;
+    }
+}
+@media screen and (max-width: 1275px) {
+    .posts__wrap-filter,
+    .posts__nav {
+        display: none;
+    }
+
+    .posts {
+        overflow: auto;
+        height: auto;
+    }
+
+    .posts__wrap {
+        width: 600px;
+        height: auto;
+
+        overflow: auto;
+    }
+
+    .posts__item {
+        margin-bottom: 20px;
     }
 }
 

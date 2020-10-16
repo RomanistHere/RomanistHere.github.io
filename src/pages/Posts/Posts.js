@@ -55,14 +55,14 @@ const Posts = () => {
     }, [curTag])
 
   	return 	<section className="main posts">
-
                 <div className="posts__wrap">
                     <div className="posts__nav">
                         <span className="posts__nav_item">All articles:</span>
                     </div>
                     {allItems}
                 </div>
-                <div className="posts__wrap">
+
+                <div className="posts__wrap posts__wrap-filter">
                     <nav className="posts__nav">
                         { tags.map((item, i) =>
                             <a
@@ -74,6 +74,7 @@ const Posts = () => {
 
                     {items}
                 </div>
+
                 <LinkBack className="posts__back" />
             </section>
 }
