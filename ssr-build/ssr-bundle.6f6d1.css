@@ -2930,6 +2930,8 @@ input:checked:focus + .switch-left + .switch-right {
 
     overflow: auto;
     box-sizing: border-box;
+
+    scrollbar-width: none;
 }
 
 .posts__wrap::-webkit-scrollbar {
@@ -3483,4 +3485,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.374f3.css.map*/
+/*# sourceMappingURL=ssr-bundle.6f6d1.css.map*/
