@@ -81,6 +81,13 @@ const Offer = () => {
 	useTimeout(() => (shouldShow && setShowTyping(false)), offer_switcher__hide_time)
 
     return  <section className="offer main">
+				<Typing
+					text={content.offer__typing}
+					className='offer__typing'
+					startDelay={offer_switcher__show_time}
+					shouldShow={shouldShow}
+				/>
+
 				<Draw />
 
 				<Article
@@ -100,13 +107,6 @@ const Offer = () => {
 		  				className='offer__switcher'
 		  			/>
 	  			</nav>
-
-				<Typing
-					text={content.offer__typing}
-					className='offer__typing'
-					startDelay={offer_switcher__show_time}
-					shouldShow={shouldShow}
-				/>
   			</section>
 }
 

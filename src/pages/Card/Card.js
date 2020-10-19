@@ -7,7 +7,7 @@ import SocLinks from '../../components/SocLinks/SocLinks'
 import Card__wr1 from '../../components/Card__wr1/Card__wr1'
 import Card__wr2 from '../../components/Card__wr2/Card__wr2'
 import Typing from '../../components/Typing/Typing'
-// import Draw from '../../components/Draw/Draw'
+import Draw from '../../components/Draw/Draw'
 
 import content from '../../static/content'
 import manage from '../../static/manage'
@@ -99,7 +99,7 @@ const Card = () => {
                     shouldShow={typings.show}
                 />
 
-                {/* <Draw /> */}
+                <Draw />
 
                 <div className="card">
                     <div className="card__cap">

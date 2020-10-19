@@ -38,9 +38,8 @@ const allItems = posts.map(createItem)
 const Posts = () => {
     const scrollBox = useRef(null)
     const [curTag, setTag] = useState(tags[0])
-    const [shouldShow, setShow] = useState(typeof window !== 'undefined' ?
-		JSON.parse(localStorage.getItem('showPostsArrow')) === null ? '' : 'posts__arrow-hide'
-        : '')
+    const [shouldShow, setShow] = useState('')
+
     let items = postsByTags(curTag).map(createItem)
 
     const changeTag = (newItem, e) => {
@@ -49,10 +48,9 @@ const Posts = () => {
     }
 
     const removeArrow = () => {
-        if (shouldShow.length === 0 && typeof window !== 'undefined') {
+        if (!shouldShow) {
             setShow('posts__arrow-hiding')
             setTimeout(() => { setShow('posts__arrow-hide') }, 1000)
-            localStorage.setItem('showPostsArrow', JSON.stringify('posts__arrow-hide'))
         }
     }
 
