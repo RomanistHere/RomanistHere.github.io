@@ -1,4 +1,4 @@
-import { useEffect, useState } from "preact/hooks"
+import { useEffect, useState, useRef } from "preact/hooks"
 import { Link } from 'preact-router/match'
 
 import LinkBack from '../../components/LinkBack/LinkBack'
@@ -35,6 +35,7 @@ const postsByTags = tag =>
 const allItems = posts.map(createItem)
 
 const Posts = () => {
+    const scrollBox = useRef(null)
     const [curTag, setTag] = useState(tags[0])
     let items = postsByTags(curTag).map(createItem)
 
@@ -44,6 +45,12 @@ const Posts = () => {
         return false
     }
 
+    const onWheel = e => {
+        e.preventDefault()
+        const scrollTo = (e.deltaY) + scrollBox.current.scrollTop
+        scrollBox.current.scrollTop = scrollTo
+    }
+
     useEffect(() => {
         if (typeof window !== 'undefined')
             document.title = content.titles.posts
@@ -51,15 +58,21 @@ const Posts = () => {
         items = postsByTags(curTag).map(createItem)
     }, [curTag])
 
-  	return 	<section className="main posts">
-                <div className="posts__wrap">
+  	return 	<section onWheel={onWheel} className="main posts">
+                <div
+                    className="posts__wrap"
+                    ref={scrollBox}
+                    onWheel={e => e.stopPropagation()}
+                >
                     <div className="posts__nav">
                         <span className="posts__nav_item">All articles:</span>
                     </div>
                     {allItems}
                 </div>
 
-                <div className="posts__wrap posts__wrap-filter">
+                <div
+                    onWheel={e => e.stopPropagation()}
+                    className="posts__wrap posts__wrap-filter">
                     <nav className="posts__nav">
                         { tags.map((item, i) =>
                             <a
