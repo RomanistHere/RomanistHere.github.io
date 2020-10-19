@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from "preact/hooks"
 import { Link } from 'preact-router/match'
 
 import LinkBack from '../../components/LinkBack/LinkBack'
+import Arrow from '../../components/Arrow/Arrow'
 
 import posts from '../../static/posts'
 import content from '../../static/content'
@@ -37,16 +38,32 @@ const allItems = posts.map(createItem)
 const Posts = () => {
     const scrollBox = useRef(null)
     const [curTag, setTag] = useState(tags[0])
+    const [shouldShow, setShow] = useState(typeof window !== 'undefined' ?
+		JSON.parse(localStorage.getItem('showPostsArrow')) === null ? '' : 'posts__arrow-hide'
+        : '')
     let items = postsByTags(curTag).map(createItem)
 
     const changeTag = (newItem, e) => {
         e.preventDefault()
         setTag(newItem)
-        return false
+    }
+
+    const removeArrow = () => {
+        if (shouldShow.length === 0 && typeof window !== 'undefined') {
+            setShow('posts__arrow-hiding')
+            setTimeout(() => { setShow('posts__arrow-hide') }, 1000)
+            localStorage.setItem('showPostsArrow', JSON.stringify('posts__arrow-hide'))
+        }
+    }
+
+    const onPrevWheel = e => {
+        e.nativeEvent.stopImmediatePropagation()
+        removeArrow()
     }
 
     const onWheel = e => {
         e.preventDefault()
+        removeArrow()
         const scrollTo = (e.deltaY) + scrollBox.current.scrollTop
         scrollBox.current.scrollTop = scrollTo
     }
@@ -62,7 +79,7 @@ const Posts = () => {
                 <div
                     className="posts__wrap"
                     ref={scrollBox}
-                    onWheel={e => e.stopPropagation()}
+                    onWheel={onPrevWheel}
                 >
                     <div className="posts__nav">
                         <span className="posts__nav_item">All articles:</span>
@@ -71,7 +88,7 @@ const Posts = () => {
                 </div>
 
                 <div
-                    onWheel={e => e.stopPropagation()}
+                    onWheel={onPrevWheel}
                     className="posts__wrap posts__wrap-filter">
                     <nav className="posts__nav">
                         { tags.map((item, i) =>
@@ -84,6 +101,10 @@ const Posts = () => {
 
                     {items}
                 </div>
+
+                <Arrow
+                    text='Scroll'
+                    className={`${shouldShow} posts__arrow`} />
 
                 <LinkBack className="posts__back" />
             </section>
