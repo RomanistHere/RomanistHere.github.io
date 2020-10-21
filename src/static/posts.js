@@ -421,6 +421,8 @@ const posts = [
 
 			<p class="article__text">There are also <strong class="article__col-4">tutorial</strong> and <strong class="article__col-4">developer's (that's me) supervision</strong>. Last one is for guys who can accidentally remove Google search input or Facebook navigation from the page. Is it not you? Sure? Disable it.</p>
 
+			<p class="article__text">Remember, it's a <strong class="article__col-4">non-commercial</strong> project. The only money supporting it - from you guys. <a class="link" target="_blank" rel="noreferrer" href="https://www.paypal.com/donate?hosted_button_id=CNYME27N3G5Z8">Donate</a> if you think your joy is worth it.</p>
+
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
