@@ -3005,13 +3005,13 @@ input:checked:focus + .switch-left + .switch-right {
     white-space: nowrap;
 
     color: var(--txt-color2);
-    opacity: .25;
+    opacity: 1;
     animation: pulse 2s linear alternate infinite;
 }
 
 @keyframes pulse {
     to {
-        opacity: 1;
+        opacity: .25;
     }
 }
 
@@ -3617,4 +3617,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.a2626.css.map*/
+/*# sourceMappingURL=ssr-bundle.d8ec6.css.map*/
