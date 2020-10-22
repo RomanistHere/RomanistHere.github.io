@@ -57,7 +57,7 @@
 
 .posts__img {
     width: 100%;
-    min-height: 250px;
+    min-height: 225px;
 }
 
 .posts__img::before {
@@ -192,7 +192,7 @@
     }
 
     .posts__img {
-        min-height: 180px;
+        min-height: 150px;
     }
 
     .posts__img::before {

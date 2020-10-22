@@ -81,12 +81,12 @@
     white-space: nowrap;
 
     color: var(--txt-color2);
-    opacity: .25;
+    opacity: 1;
     animation: pulse 2s linear alternate infinite;
 }
 
 @keyframes pulse {
     to {
-        opacity: 1;
+        opacity: .25;
     }
 }

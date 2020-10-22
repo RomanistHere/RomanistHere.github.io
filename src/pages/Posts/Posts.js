@@ -22,6 +22,7 @@ const createItem = ({
     desc
 }, index) =>
     <article key={index} className="posts__item">
+        {/* <link rel="preload" as="image" href={images[image].default} /> */}
         <Link className="posts__link" href={`/posts/${slug}/`}>
             <img className="posts__img" src={images[image].default} alt={title} loading="lazy"/>
             <h1 className="posts__title">{title}</h1>
