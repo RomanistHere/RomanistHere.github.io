@@ -3074,7 +3074,7 @@ input:checked:focus + .switch-left + .switch-right {
 
 .posts__img {
     width: 100%;
-    min-height: 250px;
+    min-height: 225px;
 }
 
 .posts__img::before {
@@ -3209,7 +3209,7 @@ input:checked:focus + .switch-left + .switch-right {
     }
 
     .posts__img {
-        min-height: 180px;
+        min-height: 150px;
     }
 
     .posts__img::before {
@@ -3617,4 +3617,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.56e4c.css.map*/
+/*# sourceMappingURL=ssr-bundle.a2626.css.map*/
