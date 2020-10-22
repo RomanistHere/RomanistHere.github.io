@@ -423,6 +423,12 @@ const posts = [
 
 			<p class="article__text">Remember, it's a <strong class="article__col-4">non-commercial</strong> project. The only money supporting it - from you guys. <a class="link" target="_blank" rel="noreferrer" href="https://www.paypal.com/donate?hosted_button_id=CNYME27N3G5Z8">Donate</a> if you think your joy is worth it.</p>
 
+			<h3 class="article__subtitle part3">Important update!</h3>
+
+			<p class="article__text"><strong class="article__col-4">Automatic mode is coming. If you want to try/test it before the release, let me know:</strong> <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>, <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">Twitter</a> - I shall explain what to do.</p>
+
+			<p class="article__text"><strong class="article__col-4">For experienced users:</strong> I will tweet once the alpha version is in the git. Clone (download) <a href="https://github.com/RomanistHere/PopUpOFF"  rel="noreferrer" target="_blank" class="link">the repository</a>, enable developer mode in your browser and load the unpacked extension.</p>
+
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
