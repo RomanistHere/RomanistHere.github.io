@@ -3313,6 +3313,7 @@ input:checked:focus + .switch-left + .switch-right {
 
 .secrets {
     flex-wrap: wrap;
+    overflow: hidden;
 
     text-align: center;
 }
@@ -3447,17 +3448,17 @@ input:checked:focus + .switch-left + .switch-right {
 @keyframes magNote2 {
     0%, 10%, 50% {
         opacity: 0;
-        transform: translate(300px, 200px) scale(2);
+        transform: translate(300px, 160px) scale(2);
     }
     30%, 60% {
         opacity: 1;
-        transform: translate(300px, 200px) scale(2);
+        transform: translate(300px, 160px) scale(2);
     }
     60% {
-        transform: translate(300px, 200px) scale(4);
+        transform: translate(300px, 160px) scale(4);
     }
     70% {
-        transform: translate(300px, 200px) scale(2.5);
+        transform: translate(300px, 160px) scale(2.5);
     }
     90%, 100% {
         transform: none;
@@ -3617,4 +3618,4 @@ input:checked:focus + .switch-left + .switch-right {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.d8ec6.css.map*/
+/*# sourceMappingURL=ssr-bundle.b6d2c.css.map*/
