@@ -421,8 +421,6 @@ const posts = [
 
 			<p class="article__text">There are also <strong class="article__col-4">tutorial</strong> and <strong class="article__col-4">developer's (that's me) supervision</strong>. Last one is for guys who can accidentally remove Google search input or Facebook navigation from the page. Is it not you? Sure? Disable it.</p>
 
-			<p class="article__text">Remember, it's a <strong class="article__col-4">non-commercial</strong> project. The only money supporting it - from you guys. <a class="link" target="_blank" rel="noreferrer" href="https://www.paypal.com/donate?hosted_button_id=CNYME27N3G5Z8">Donate</a> if you think your joy is worth it.</p>
-
 			<h3 class="article__subtitle part3">Important update!</h3>
 
 			<p class="article__text"><strong class="article__col-4">Automatic mode is coming. If you want to try/test it before the release, let me know:</strong> <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>, <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">Twitter</a> - I shall explain what to do.</p>
