@@ -140,7 +140,7 @@ const SecretsContent = ({ stats }) => {
                             <p className="secrets__text secrets__text-5">
                                 It's {getArea(areaInMetres)}.
                             </p>
-                            <span className="secrets__caption">Noone else can see your stats</span>
+                            <span className="secrets__caption">No one else can see your stats</span>
                         </> : <div className="secrets__none">Go use PopUpOFF, kid. You are not ready yet.</div>
                     }
                 </article>
