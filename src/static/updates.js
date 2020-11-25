@@ -241,7 +241,7 @@ const updates = {
                 loading="lazy">
         </div>
 
-        <p class="article__text">I enjoyed working on the new version very much. You guys inspired me on it. Let's test it and see how it goes! Would be happy to hear from you! Check the <a href="https://www.youtube.com/watch?v=3jTKRCxLyPE"  rel="noreferrer" target="_blank" class="link">new video</a>. Rate our extension in the store. Have a great day!</p>
+        <p class="article__text">I enjoyed working on the new version very much. You guys inspired me on it. Let's test and see how it's going! Would be happy to hear from you! Check the <a href="https://www.youtube.com/watch?v=3jTKRCxLyPE"  rel="noreferrer" target="_blank" class="link">new video</a>. Rate our extension in the store. Have a great day!</p>
     `,
     posted: `Updated: Nov 25, 2020`,
 }

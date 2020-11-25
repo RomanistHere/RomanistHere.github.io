@@ -65,6 +65,8 @@ const posts = [
 			<p class="article__text">If you can’t see the full article <strong class="article__col-4">during the loading of the page - there is nothing I can do</strong>. PopUpOFF can prevent content from reducing. But if there was no content from the start, it has nothing to work with.</p>
 
 			<p class="article__text">Sorry, but we are not hacking anyone.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
 		title: `PopUpOFF 2.0 tutorial`,
