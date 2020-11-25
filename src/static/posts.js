@@ -30,7 +30,7 @@
 //  </div>
 const posts = [
 	{
-		title: `Unlock paid content`,
+		title: `Unlock paid content (Anti-paid)`,
 		slug: `prev-cont-2`,
 		posted: `Nov 25, 2020`,
 		tags: ['products', 'PopUpOFF'],
@@ -455,7 +455,7 @@ const posts = [
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
-		title: `PopUpOFF tutorial (deprecated)`,
+		title: `PopUpOFF tutorial (deprecated 1.1.9 version)`,
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
 		tags: ['products', 'PopUpOFF'],
@@ -534,7 +534,7 @@ const posts = [
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
-		title: `Prevent paid content from hiding. Tutorial (deprecated)`,
+		title: `Prevent paid content from hiding. Tutorial (deprecated 1.1.9 version)`,
 		slug: `prev-cont`,
 		posted: `Sep 8, 2020`,
 		tags: ['products', 'PopUpOFF'],
