@@ -53,22 +53,22 @@ const updates = {
 
         <ul class="article__list article__text">
             <li class="article__list_item">
-                New (experimental) feature: prevent paid content from hiding;
+                New (experimental) feature: prevent paid content from hiding
             </li>
             <li class="article__list_item">
-                New feature: collect and display stats;
+                New feature: collect and display stats
             </li>
             <li class="article__list_item">
-                Remove all tracking and analytics systems;
+                Remove all tracking and analytics systems
             </li>
             <li class="article__list_item">
-                Activate/deactivate on shortcut (Alt + x);
+                Activate/deactivate on shortcut (Alt + x)
             </li>
             <li class="article__list_item">
-                Changes in design and performance;
+                Changes in design and performance
             </li>
             <li class="article__list_item">
-                Next update is going to have something with automatic mode (finally!);
+                Next update is going to have something with automatic mode (finally!)
             </li>
             <li class="article__list_item article-desktop">
                 You can draw something on the right side. Try clicking too - - - - - - - - ->
@@ -135,13 +135,13 @@ const updates = {
 
         <ul class="article__list article__text">
             <li class="article__list_item">
-                "Prevent paid content from hiding" improved;
+                "Prevent paid content from hiding" improved
             </li>
             <li class="article__list_item">
-                Instructions updated (new tutorial);
+                Instructions updated (new tutorial)
             </li>
             <li class="article__list_item">
-                Bug with stats fixed;
+                Bug with stats fixed
             </li>
         </ul>
 
@@ -173,16 +173,16 @@ const updates = {
 
         <ul class="article__list article__text">
             <li class="article__list_item">
-                Detect and remove gradients;
+                Detect and remove gradients
             </li>
             <li class="article__list_item">
-                Fix issue with scripts appearing at the top of the page;
+                Fix issue with scripts appearing at the top of the page
             </li>
             <li class="article__list_item">
-                Minor fixes and improvements;
+                Minor fixes and improvements
             </li>
             <li class="article__list_item">
-                Update tutorial;
+                Update tutorial
             </li>
         </ul>
 
@@ -197,8 +197,53 @@ const updates = {
         <p class="article__text">This update is mainly focused on the improvement of the user experience after recent changes. Now PopUpOFF can detect and remove gradients when preventing content from hiding. Also there were issues with scripts appearing at the top of the page - now fixed.</p>
 
         <p class="article__text">Next stop is automode:)</p>
+
+        <h3 class="article__subtitle" id="2.0.0">2.0.0 - Here we go</h3>
+
+        <ul class="article__list article__text">
+            <li class="article__list_item">
+                Automode
+            </li>
+            <li class="article__list_item">
+                Redesign
+            </li>
+            <li class="article__list_item">
+                Context menu
+            </li>
+            <li class="article__list_item">
+                Major performance improvements
+            </li>
+            <li class="article__list_item">
+                Content updates
+            </li>
+        </ul>
+
+        <p class="article__text">Biggest update so far. More than 4 000 strings of code were written by me during the update. I highly recommend reading the <a class="link" href="/posts/popupoff-tutorial-2/">new tutorial</a>.</p>
+
+        <p class="article__text">Now you can set any of 3 new modes as automode (default mode for every website) <a class="link optPage" href="#">at the options page</a>. Aggressive - Hard mode, Moderate - Easy mode, Dormant - new one, making PopUpOFF inactive. You can also change how strict the Moderate mode block is.</p>
+
+        <div class="article__img_wr">
+            <img
+                src="../../../assets/inline/newpopup.jpg"
+                class="article__img_small article__img_small-full_width"
+                alt="new popup"
+                loading="lazy">
+        </div>
+
+        <p class="article__text">Now you need to pick what website you apply prevent content feature ("Anti-paid") to. You can do so from our popup. There is also an option to manage PopUpOFF from the context menu now.</p>
+
+        <div class="article__img_wr">
+            <img
+                src="../../../assets/updates/context_menu.jpg"
+                class="article__img_small"
+                width="400"
+                alt="context menu"
+                loading="lazy">
+        </div>
+
+        <p class="article__text">I enjoyed working on the new version very much. You guys inspired me on it. Let's test it and see how it goes! Would be happy to hear from you! Check the <a href="https://www.youtube.com/watch?v=3jTKRCxLyPE"  rel="noreferrer" target="_blank" class="link">new video</a>. Rate our extension in the store. Have a great day!</p>
     `,
-    posted: `Updated: Oct 2, 2020`,
+    posted: `Updated: Nov 25, 2020`,
 }
 
 // Legend:
