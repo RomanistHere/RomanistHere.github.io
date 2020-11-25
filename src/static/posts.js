@@ -75,7 +75,7 @@ const posts = [
 		image: `your_life_be_like.jpg`,
 		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
 		content: `
-			<p class="article__text">There is a room for personalization and optimization in PopUpOFF - make sure you understand it correctly and get advantage of it.</p>
+			<p class="article__text">There is a room for personalization and optimization in PopUpOFF - get advantage of it.</p>
 
 			<h3 class="article__subtitle part1">The popup.</h3>
 
@@ -88,46 +88,48 @@ const posts = [
 	                loading="lazy">
 	        </div>
 
-			<p class="article__text">New design! There are three modes: Aggressive, Moderate, Dormant. If we used PopUpOFF before update, Dormant is our default now, otherwise - Moderate. So, let's see what are they:</p>
+			<p class="article__text">There are three modes: Aggressive, Moderate, Dormant. If we used previous versions of PopUpOFF, Dormant is our default now. Just installed - Moderate. So, let's see what are they:</p>
 
 			<ul class="article__list article__text">
 				<li class="article__list_item">
 					<strong class="article__col-4">Aggressive removes every stuck to our screen element</strong>. Not any overlay, popup or whatever it's called is going to distract us from reading. It's the reason this extension exists! Enjoy a clean screen:)
 				</li>
 				<li class="article__list_item">
-					However, mostly <strong class="article__col-4">we need sticky headers and navigation bars</strong> to be displayed (some other popups too). That's where <strong class="article__col-4">Moderate</strong> comes. I worked very hard on this, so be gentle if something isn't working as you expect to. Let me know - it will:)
+					However, mostly <strong class="article__col-4">we need sticky headers and navigation bars</strong> to be displayed (some other popups too). That's where <strong class="article__col-4">Moderate</strong> comes. I worked very hard on this, so be gentle if something isn't working as you expect to. <a href="mailto:romanisthere@gmail.com" class="link">Let me know</a> - I'll fix it:)
 				</li>
 				<li class="article__list_item">
-					<strong class="article__col-4">Dormant</strong> does nothing. By clicking it, we are going to <a href="/posts/blacklist/" class="link">whitelist</a> the website. Default options for services like YouTube, Twitter, <a href="https://github.com/RomanistHere/PopUpOFF/blob/develop/constants/data.js#L15"  rel="noreferrer" target="_blank" class="link">etc</a>.
+					<strong class="article__col-4">Dormant</strong> does nothing. By clicking it, we are going to <a href="/posts/blacklist/" class="link">whitelist</a> the website. Default option for services like YouTube, Twitter, <a href="https://github.com/RomanistHere/PopUpOFF/blob/develop/constants/data.js#L15"  rel="noreferrer" target="_blank" class="link">etc</a>.
 				</li>
 			</ul>
 
-			<p class="article__text">There are also <strong class="article__col-4">stats</strong> (at the top) and <strong class="article__col-4">"How to use"</strong> (at the bottom) links in the popup. Stats are fun, aren't they? We are going to learn how to disable it later (<a class="link optPage" href="#">if we need</a>). How-to-use-one is just a link for the page we're at.</p>
+			<p class="article__text">There are also <strong class="article__col-4">stats</strong> (at the top) and <strong class="article__col-4">"How to use"</strong> (at the bottom) links in the popup. Stats are fun, aren't they? We are going to learn how to disable it later. How-to-use-link leads us to the page we're at.</p>
 
-			<p class="article__text"><strong class="article__col-4">Anti-paid</strong> sometimes allows us to read paid content after it's reduced. <a href="/posts/prev-cont/" class="link">Does it work for every website?</a></p>
+			<p class="article__text"><strong class="article__col-4">Anti-paid</strong> sometimes allows us to read paid content after it's reduced. <a href="/posts/prev-cont-2/" class="link">Does it work for every website?</a></p>
 
 			<h3 class="article__subtitle part2"><a class="link optPage" href="#">Options page.</a></h3>
 
-			<p class="article__text">It is well-described by itself. I will give more explanations though:</p>
+			<p class="article__text">It is well-described by itself. Well, I'm going to share some thoughts with you anyway:</p>
 
 			<ul class="article__list article__text">
 				<li class="article__list_item">
-					<strong class="article__col-4">Automode</strong>. We can pick Dormant and add all websites we hate because of popups manually (like in the old version) or Moderate and change it to Aggressive or Dormant on some websites. If we really hate sticky elements we can pick Aggressive as your automode. We are going to have hard times searching in Google or YouTube though.
+					<strong class="article__col-4">Automode</strong>. We can set Dormant as our automode and enable PopUpOFF manually (like in the old versions) on the needed websites. Or we can pick Moderate and change it to Aggressive or Dormant depending on the situation. If we really hated sticky elements we could pick Aggressive as our automode. We would have hard times searching in Google or YouTube though.
 				</li>
 				<li class="article__list_item">
-					<strong class="article__col-4">Statistics</strong>. It takes a little bit of performance and returns a lot of <a class="link" rel="noreferrer" target="_blank" href="/secrets/">fun</a>. If you feel like a 5-10% boost will make a difference for you, disable it.
+					<strong class="article__col-4">Statistics</strong>. It takes a little bit of performance and returns a lot of <a class="link" rel="noreferrer" target="_blank" href="/secrets/">fun</a>. If you feel like a 2-5% boost in performance will make a difference for you, disable it.
 				</li>
 				<li class="article__list_item">
-					<strong class="article__col-4">Keyboard shortcut</strong>. Drag (or click) to the mode you want fast access to. For example, automode - Moderate and shortcut - Aggressive (my setup). Now we open the page, but there is a lot of scrolling content not removed by Moderate mode. We press <strong class="article__col-4">Alt + x</strong> - and there none anymore. Aggressive mode activated.
+					<strong class="article__col-4">Keyboard shortcut</strong>. Drag (or click) to the mode you want fast access to. My setup, for example: automode - Moderate, shortcut - Aggressive. Now if we opened the page and there was a lot of scrolling content not removed by Moderate mode, we would press <strong class="article__col-4">Alt + x</strong> - and enjoy our ride. Aggressive mode activated.
 				</li>
 				<li class="article__list_item">
 					<strong class="article__col-4">Smart blocking</strong>. If you pick the "Strict" option - PopUpOFF will be leaving only headers and nav bars in Moderate mode. Default option should be fine for most websites in English, but if you want more, or read in other languages - "Strict" is probably your option.
 				</li>
 			</ul>
 
-			<p class="article__text">It's a <strong class="article__col-4">non-commercial</strong> project. I'm not selling your stats or something. The only money supporting it - from you guys. <a class="link" target="_blank" rel="noreferrer" href="https://www.donationalerts.com/r/romanisthere">Donate</a> if you think your joy is worth it.</p>
+			<p class="article__text">You can also manage our extension from <strong class="article__col-4">the context menu</strong> (right click) now.</p>
 
-			<p class="article__text">PopUpOFF 2.0 was recently released, so if something's wrong, don't worry, let me know, I will fix it.</p>
+			<p class="article__text">That seems to be it. PopUpOFF 2.0 was recently released, so if something's wrong, don't worry, let me know, I will fix it.</p>
+
+			<p class="article__text">Remember, it's a <strong class="article__col-4">non-commercial</strong> project. I'm not selling your stats or something. The only money supporting it - from you guys. <a class="link" target="_blank" rel="noreferrer" href="https://www.donationalerts.com/r/romanisthere">Donate</a> if you think your joy is worth it.</p>
 
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
