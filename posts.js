@@ -30,6 +30,112 @@
 //  </div>
 const posts = [
 	{
+		title: `Unlock paid content (Anti-paid)`,
+		slug: `prev-cont-2`,
+		posted: `Nov 25, 2020`,
+		tags: ['products', 'PopUpOFF'],
+		desc: `How to make sure you are using it right.`,
+		image: `prevent2.jpg`,
+		imageLink: `https://www.economist.com/leaders/2020/09/03/americas-ugly-election`,
+		content: `
+			<p class="article__text">PopUpOFF has the “Anti-paid” feature. It's created <strong class="article__col-4">to prevent paid content from hiding.</strong> In this article we are going to learn how to use it.</p>
+
+			<h3 class="article__subtitle part1">How to make it right.</h3>
+
+			<p class="article__text">There are websites (<a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">example</a>) that show you a full article, and after a few seconds - boom, it's reduced and the only thing you see is a note that you need to subscribe/login/donate in order to continue your reading. That's where PopUpOFF comes. Press the “Anti-paid” button, wait till the page load and voilà... Enjoy your free story.</p>
+
+
+			<h3 class="article__subtitle part2">I still can't see the full content of the article.</h3>
+
+			<p class="article__text">PopUpOFF isn’t working properly if:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					After (or during) the page is downloaded <strong class="article__col-4">you can see the full article</strong> and after some time pass, it’s <strong class="article__col-4">reduced</strong>.
+				</li>
+				<li class="article__list_item">
+					You see popups and overlays everywhere.
+				</li>
+			</ul>
+
+			<p class="article__text">In this case, please, <a href="mailto:romanisthere@gmail.com" class="link">send me</a> the link - I will fix it.</p>
+
+			<h3 class="article__subtitle part3">Sometimes it's just impossible :(</h3>
+
+			<p class="article__text">If you can’t see the full article <strong class="article__col-4">during the loading of the page - there is nothing I can do</strong>. PopUpOFF can prevent content from reducing. But if there was no content from the start, it has nothing to work with.</p>
+
+			<p class="article__text">Sorry, but we are not hacking anyone.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+		`
+	},{
+		title: `PopUpOFF 2.0 tutorial`,
+		slug: `popupoff-tutorial-2`,
+		posted: `Nov 25, 2020`,
+		tags: ['products', 'PopUpOFF', 'best'],
+		desc: `There is a room for personalization and optimization in PopUpOFF - make sure you understand it correctly and get advantage of it.`,
+		image: `your_life_be_like.jpg`,
+		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
+		content: `
+			<p class="article__text">There is a room for personalization and optimization in PopUpOFF - get advantage of it.</p>
+
+			<h3 class="article__subtitle part1">The popup.</h3>
+
+			<div class="article__img_wr article__img_wr-header">
+	            <img
+	                src="../../../assets/inline/newpopup.jpg"
+	                class="article__img_small article__img_small-full_width"
+					alt="Install events"
+	                title="Install events"
+	                loading="lazy">
+	        </div>
+
+			<p class="article__text">There are three modes: Aggressive, Moderate, Dormant. If we used previous versions of PopUpOFF, Dormant is our default now. Just installed - Moderate. So, let's see what are they:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					<strong class="article__col-4">Aggressive removes every stuck to our screen element</strong>. Not any overlay, popup or whatever it's called is going to distract us from reading. It's the reason this extension exists! Enjoy a clean screen:)
+				</li>
+				<li class="article__list_item">
+					However, mostly <strong class="article__col-4">we need sticky headers and navigation bars</strong> to be displayed (some other popups too). That's where <strong class="article__col-4">Moderate</strong> comes. I worked very hard on this, so be gentle if something isn't working as you expect to. <a href="mailto:romanisthere@gmail.com" class="link">Let me know</a> - I'll fix it:)
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Dormant</strong> does nothing. By clicking it, we are going to <a href="/posts/blacklist/" class="link">whitelist</a> the website. Default option for services like YouTube, Twitter, <a href="https://github.com/RomanistHere/PopUpOFF/blob/develop/constants/data.js#L15"  rel="noreferrer" target="_blank" class="link">etc</a>.
+				</li>
+			</ul>
+
+			<p class="article__text">There are also <strong class="article__col-4">stats</strong> (at the top) and <strong class="article__col-4">"How to use"</strong> (at the bottom) links in the popup. Stats are fun, aren't they? We are going to learn how to disable it later. How-to-use-link leads us to the page we're at.</p>
+
+			<p class="article__text"><strong class="article__col-4">Anti-paid</strong> sometimes allows us to read paid content after it's reduced. <a href="/posts/prev-cont-2/" class="link">Does it work for every website?</a></p>
+
+			<h3 class="article__subtitle part2"><a class="link optPage" href="#">Options page.</a></h3>
+
+			<p class="article__text">It is well-described by itself. Well, I'm going to share some thoughts with you anyway:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					<strong class="article__col-4">Automode</strong>. We can set Dormant as our automode and enable PopUpOFF manually (like in the old versions) on the needed websites. Or we can pick Moderate and change it to Aggressive or Dormant depending on the situation. If we really hated sticky elements we could pick Aggressive as our automode. We would have hard times searching in Google or YouTube though.
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Statistics</strong>. It takes a little bit of performance and returns a lot of <a class="link" rel="noreferrer" target="_blank" href="/secrets/">fun</a>. If you feel like a 2-5% boost in performance will make a difference for you, disable it.
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Keyboard shortcut</strong>. Drag (or click) to the mode you want fast access to. My setup, for example: automode - Moderate, shortcut - Aggressive. Now if we opened the page and there was a lot of scrolling content not removed by Moderate mode, we would press <strong class="article__col-4">Alt + x</strong> - and enjoy our ride. Aggressive mode activated.
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-4">Smart blocking</strong>. If you pick the "Strict" option - PopUpOFF will be leaving only headers and nav bars in Moderate mode. Default option should be fine for most websites in English, but if you want more, or read in other languages - "Strict" is probably your option.
+				</li>
+			</ul>
+
+			<p class="article__text">You can also manage our extension from <strong class="article__col-4">the context menu</strong> (right click) now.</p>
+
+			<p class="article__text">That seems to be it. PopUpOFF 2.0 was recently released, so if something's wrong, don't worry, let me know, I will fix it.</p>
+
+			<p class="article__text">Remember, it's a <strong class="article__col-4">non-commercial</strong> project. I'm not selling your stats or something. The only money supporting it - from you guys. <a class="link" target="_blank" rel="noreferrer" href="https://www.donationalerts.com/r/romanisthere">Donate</a> if you think your joy is worth it.</p>
+
+			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
+		`
+	},{
 		title: `Plausible vs GA vs Matomo. Part I.`,
 		slug: `analytics-one`,
 		posted: `Oct 15, 2020`,
@@ -353,10 +459,10 @@ const posts = [
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
-		title: `PopUpOFF tutorial`,
+		title: `PopUpOFF tutorial (deprecated 1.1.9 version)`,
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
-		tags: ['products', 'PopUpOFF', 'best'],
+		tags: ['products', 'PopUpOFF'],
 		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
 		image: `your_life_be_like.jpg`,
 		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
@@ -432,7 +538,7 @@ const posts = [
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
-		title: `Prevent paid content from hiding. Tutorial`,
+		title: `Prevent paid content from hiding. Tutorial (deprecated 1.1.9 version)`,
 		slug: `prev-cont`,
 		posted: `Sep 8, 2020`,
 		tags: ['products', 'PopUpOFF'],
