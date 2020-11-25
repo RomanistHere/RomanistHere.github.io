@@ -30,9 +30,46 @@
 //  </div>
 const posts = [
 	{
+		title: `Unlock paid content`,
+		slug: `prev-cont-2`,
+		posted: `Nov 25, 2020`,
+		tags: ['products', 'PopUpOFF'],
+		desc: `How to make sure you are using it right.`,
+		image: `prevent2.jpg`,
+		imageLink: `https://www.economist.com/leaders/2020/09/03/americas-ugly-election`,
+		content: `
+			<p class="article__text">PopUpOFF has the “Anti-paid” feature. It's created <strong class="article__col-4">to prevent paid content from hiding.</strong> In this article we are going to learn how to use it.</p>
+
+			<h3 class="article__subtitle part1">How to make it right.</h3>
+
+			<p class="article__text">There are websites (<a href="https://www.economist.com/leaders/2020/09/03/americas-ugly-election"  rel="noreferrer" target="_blank" class="link">example</a>) that show you a full article, and after a few seconds - boom, it's reduced and the only thing you see is a note that you need to subscribe/login/donate in order to continue your reading. That's where PopUpOFF comes. Press the “Anti-paid” button, wait till the page load and voilà... Enjoy your free story.</p>
+
+
+			<h3 class="article__subtitle part2">I still can't see the full content of the article.</h3>
+
+			<p class="article__text">PopUpOFF isn’t working properly if:</p>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					After (or during) the page is downloaded <strong class="article__col-4">you can see the full article</strong> and after some time pass, it’s <strong class="article__col-4">reduced</strong>.
+				</li>
+				<li class="article__list_item">
+					You see popups and overlays everywhere.
+				</li>
+			</ul>
+
+			<p class="article__text">In this case, please, <a href="mailto:romanisthere@gmail.com" class="link">send me</a> the link - I will fix it.</p>
+
+			<h3 class="article__subtitle part3">Sometimes it's just impossible :(</h3>
+
+			<p class="article__text">If you can’t see the full article <strong class="article__col-4">during the loading of the page - there is nothing I can do</strong>. PopUpOFF can prevent content from reducing. But if there was no content from the start, it has nothing to work with.</p>
+
+			<p class="article__text">Sorry, but we are not hacking anyone.</p>
+		`
+	},{
 		title: `PopUpOFF 2.0 tutorial`,
 		slug: `popupoff-tutorial-2`,
-		posted: `Nov 20, 2020`,
+		posted: `Nov 25, 2020`,
 		tags: ['products', 'PopUpOFF', 'best'],
 		desc: `There is a room for personalization and optimization in PopUpOFF - make sure you understand it correctly and get advantage of it.`,
 		image: `your_life_be_like.jpg`,
@@ -421,7 +458,7 @@ const posts = [
 		title: `PopUpOFF tutorial (deprecated)`,
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
-		tags: ['products', 'PopUpOFF', 'best'],
+		tags: ['products', 'PopUpOFF'],
 		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
 		image: `your_life_be_like.jpg`,
 		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
@@ -497,7 +534,7 @@ const posts = [
 			<p class="article__text">Thank you for attention and have a great life now. See ya!</p>
 		`
 	},{
-		title: `Prevent paid content from hiding. Tutorial`,
+		title: `Prevent paid content from hiding. Tutorial (deprecated)`,
 		slug: `prev-cont`,
 		posted: `Sep 8, 2020`,
 		tags: ['products', 'PopUpOFF'],
