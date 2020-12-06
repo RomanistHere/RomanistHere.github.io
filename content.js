@@ -109,7 +109,7 @@ const content = {
 		'Position': ['back', 'бэк', 'full', 'фул'],
 		'Salary': ['1000', '2000', '1500', '2500'],
 	},
-	formAction: 'https://formspree.io/xdowzzgv',
+	formAction: 'http://193.46.198.230:3000/contact',
 	form__typings: [
 		'Best way to fill would be like in example',
 		'You can jump to the next field by pressing tab',
