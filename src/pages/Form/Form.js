@@ -10,7 +10,7 @@ import { removeElem } from '../../static/functions'
 
 import './Form.css'
 
-const formInputs = ({ inpFocused, nextLvl }) => content.form__info.map(({
+const formInputs = ({ inpFocused, nextLvl, saveData }) => content.form__info.map(({
 	form__lbl,
 	isInput,
 	placeholder,
@@ -22,6 +22,7 @@ const formInputs = ({ inpFocused, nextLvl }) => content.form__info.map(({
 					isInput={isInput}
 					placeholder={placeholder}
 					inpFocused={inpFocused}
+					saveData={saveData}
 					nextLvl={nextLvl}
 					name={form__lbl} />
 				<span className="form__focus"></span>
@@ -40,6 +41,13 @@ const formTypings = (shouldShow) => content.form__typings.map((item, index) => {
 			/>
 })
 
+const handleErrors = (response) => {
+    if (!response.ok) {
+        throw Error(response.statusText)
+    }
+    return response
+}
+
 const Form = () => {
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -51,22 +59,22 @@ const Form = () => {
 	const onSubmit = (e) => {
 		e.preventDefault()
 
-		const form = e.target
-	    const data = new FormData(form)
-	    const xhr = new XMLHttpRequest()
-
-	    xhr.open(form.method, form.action)
-	    xhr.setRequestHeader("Accept", "application/json")
-	    xhr.onreadystatechange = () => {
-	      if (xhr.readyState !== XMLHttpRequest.DONE) return
-	      if (xhr.status === 200) {
-	        form.reset()
-	      } else {
-
-	      }
-	    }
-	    nextLvl(7)
-	    xhr.send(data)
+		fetch(content.formAction, {
+			method: "POST",
+			body: JSON.stringify(formData),
+			headers: {
+				'Accept': 'application/json',
+				'Content-Type': 'application/json'
+			},
+		}).then(handleErrors)
+	    .then(response => {
+			updData({})
+			e.target.reset()
+		})
+	    .catch(error => {
+			console.log(error)
+			alert('Something went wrong, sorry')
+		})
 	}
 
 	// 2 user focus second input => display second message and hide first one
@@ -85,6 +93,7 @@ const Form = () => {
 	const [inpFocusedTimes, changeFocusedTimes] = useState(1)
 	const [shownLvl, show] = useState([1, 3])
 	const [showNext, setShowNext] = useState(true)
+	const [formData, updData] = useState({})
 
 	const forbidShow = () => {
 		setShowNext(false)
@@ -106,6 +115,10 @@ const Form = () => {
 
 	const changeShow = arr => {
 		show([...new Set(arr)])
+	}
+
+	const saveData = (inpName, inpText) => {
+		updData({ ...formData, [inpName]: inpText })
 	}
 
 	const nextLvl = newLvlNumb => {
@@ -151,7 +164,8 @@ const Form = () => {
 				>
 					{formInputs({
 						inpFocused,
-						nextLvl
+						nextLvl,
+						saveData
 					})}
 
 					<button className="form__button">Submit</button>

@@ -10,6 +10,7 @@ const Input = ({
 	isInput,
 	placeholder,
 	inpFocused,
+	saveData,
 	nextLvl,
 	name
 }) => {
@@ -29,6 +30,7 @@ const Input = ({
 	}
 
 	const leftInput = (inpName, inpText) => {
+		saveData(inpName, inpText)
 		const mess = querySelector(inpName)
 		removeClass(mess, 'form__mess-show')
 

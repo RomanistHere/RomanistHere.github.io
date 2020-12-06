@@ -6,7 +6,7 @@
     "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -b master -d build",
-        "build": "preact build --prerenderUrls ./prerender-urls.js",
+        "build": "preact build --prerenderUrls ./prerender-urls.js --no-sw",
         "serve": "sirv build --port 8080 --cors --single",
         "dev": "preact watch",
         "lint": "eslint src",
