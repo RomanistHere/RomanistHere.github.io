@@ -70,6 +70,7 @@ const Form = () => {
 	    .then(response => {
 			updData({})
 			e.target.reset()
+			nextLvl(7)
 		})
 	    .catch(error => {
 			console.log(error)
