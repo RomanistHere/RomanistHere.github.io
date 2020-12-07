@@ -110,7 +110,6 @@ const content = {
 		'Salary': ['1000', '2000', '1500', '2500'],
 	},
 	formAction: 'https://romanisthere.com:3000/contact',
-	// formAction: 'https://193.46.198.230:3000/contact',
 	// formAction: 'https://formspree.io/xdowzzgv',
 	form__typings: [
 		'Best way to fill would be like in example',
