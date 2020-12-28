@@ -242,6 +242,32 @@ const updates = {
         </div>
 
         <p class="article__text">I enjoyed working on the new version very much. You guys inspired me on it. Let's test and see how it's going! Would be happy to hear from you! Check the <a href="https://www.youtube.com/watch?v=3jTKRCxLyPE"  rel="noreferrer" target="_blank" class="link">new video</a>. Rate our extension in the store. Have a great day!</p>
+
+        <h3 class="article__subtitle" id="2.0.2">2.0.1 - 2.0.2</h3>
+
+        <ul class="article__list article__text">
+            <li class="article__list_item">
+                Add "Reset to default" buttons
+            </li>
+            <li class="article__list_item">
+                Add some additional info at the options page
+            </li>
+            <li class="article__list_item">
+                Minor fixes and improvements
+            </li>
+            <li class="article__list_item">
+                Don't auto-reload when Dormant mode enabled
+            </li>
+            <li class="article__list_item">
+                Add quiz on uninstall
+            </li>
+        </ul>
+
+        <p class="article__text">Most of this update's changes are invisible for you, my dear user, nevertheless there are few noticeable things. I made gentle (default) Moderate mode a bit nicer, so it's <strong class="article__col-4">not going to block payment confirmations</strong> and other important popups. PopUpOFF <strong class="article__col-4">doesn't reload the page automatically when you enable Dormant</strong> mode now. It was my mistake to make it so.</p>
+
+        <p class="article__text">There are also two new fields at the options page. <strong class="article__col-4">Reset-to-default buttons and additional info</strong>.</p>
+
+        <p class="article__text">Plans. <a href="https://github.com/users/RomanistHere/projects/1"  rel="noreferrer" target="_blank" class="link">Here</a> you can watch ongoing changes. I have an idea to make a special <strong class="article__col-4">"Incognito" mode for private browsing</strong> in the most popular services like YouTube without please-sign-in-popups. But it's going to be 2021. I'll be in touch:)</p>
     `,
     posted: `Updated: Nov 25, 2020`,
 }
