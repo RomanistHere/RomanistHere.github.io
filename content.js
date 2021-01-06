@@ -124,7 +124,7 @@ const content = {
 	offer__content: `
 		<h3 class="article__subtitle">Who am I</h3>
 
-		<p class="article__text">I'm <strong class="offer__word">a front-end developer</strong> with over <strong class="offer__word">4.5 years of experience and bachelor's in math</strong>. In case this text is not up-to-date there is a link for my CV below.</p>
+		<p class="article__text">I'm <strong class="offer__word">a front-end developer</strong> with <strong class="offer__word">5 years of experience and bachelor's in math</strong>. In case this text is not up-to-date there is a link for my CV below.</p>
 
 		<h3 class="article__subtitle">What am I good at</h3>
 
