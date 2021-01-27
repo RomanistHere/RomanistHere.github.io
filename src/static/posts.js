@@ -30,6 +30,82 @@
 //  </div>
 const posts = [
 	{
+		title: `Digital wellbeing and parasitism. What you should keep in mind.`,
+		slug: `digital-parasitism`,
+		posted: `Jan 27, 2020`,
+		tags: ['psychology'],
+		desc: `An aggressive article about the digital wellness trend. Or why FAANG interested in keeping you fresh.`,
+		image: `prevent2.jpg`,
+		content: `
+			<h3 id="start" class="article__subtitle part1">An aggressive article about the digital wellness trend.</h3>
+
+			<p class="article__text">It’s hard to explain one that something he believes good… is actually bad. I’m sure you heard that since the time pandemic started usage of all sorts of online services has increased. Video and streaming platforms, social networks, whatever it is, if it’s online, it did most likely <a href="https://www.nytimes.com/interactive/2020/04/07/technology/coronavirus-internet-use.html"  rel="noreferrer" target="_blank" class="link">grow a lot</a> since last year.</p>
+
+			<p class="article__text">I bet you are also aware that using too much of these is hurting you. My point is not to explain how or why
+
+			(<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4183915/"  rel="noreferrer" target="_blank" class="link">[1]</a>,
+			<a href="https://www.commlinks.co.uk/about-us/blog/social-media-mental-health/"  rel="noreferrer" target="_blank" class="link">[2]</a>,
+			<a href="https://nordpass.com/digital-stress-management/?ref=romanisthere"  rel="noreferrer" target="_blank" class="link">[3]</a>,
+			<a href="https://www.independent.co.uk/life-style/health-and-families/health-news/too-much-exposure-smartphone-screens-ruins-your-sleep-study-shows-10019185.html"  rel="noreferrer" target="_blank" class="link">[4]</a>,
+			<a href="https://www.centreformentalhealth.org.uk/blogs/anxiety-loneliness-and-fear-missing-out-impact-social-media-young-peoples-mental-health"  rel="noreferrer" target="_blank" class="link">[5]</a>,
+			<a href="https://nypost.com/2017/06/15/this-is-what-your-netflix-binge-is-doing-to-your-mental-health/"  rel="noreferrer" target="_blank" class="link">[6]</a>,
+			<a href="https://therooster.com/blog/many-reasons-why-using-your-phone-toilet-bad-idea"  rel="noreferrer" target="_blank" class="link">[7]</a>,
+			<a href="https://www.mentalhelp.net/porn/"  rel="noreferrer" target="_blank" class="link">[8]</a>,
+			<a href="https://www.socialmediatoday.com/news/is-social-media-ruining-your-sex-life/454041/"  rel="noreferrer" target="_blank" class="link">[9]</a>,
+			<a href="https://www.vice.com/en/article/newe7b/gamers-have-lower-sex-drives-than-other-men-study-finds"  rel="noreferrer" target="_blank" class="link">[10]</a>,
+			<a href="https://www.helpguide.org/articles/mental-health/social-media-and-mental-health.htm"  rel="noreferrer" target="_blank" class="link">[11]</a>),
+
+			but to show you the things happening right now from a different point of view. A lot of the most popular online platforms made something to “improve” your mental health. Showing you notifications about the time you’ve used the feed, reminding that it’s midnight, etc. Well, they are great companies, ruled by the great guys, they do care about you, don’t they?</p>
+
+			<p class="article__text">Well… actually I doubt they do. It’s neither because I think they are bad nor because my wife is addicted to some of the services. It's not even because I know how exactly these services are designed to exploit our biases
+
+			(<a href="https://uxdesign.cc/do-stories-make-social-media-more-addictive-3a1519983565"  rel="noreferrer" target="_blank" class="link">[1]</a>,
+			<a href="https://growth.design/case-studies/instagram-monetization/"  rel="noreferrer" target="_blank" class="link">[2]</a>,
+			<a href="https://growth.design/case-studies/tiktok-feed-psychology/"  rel="noreferrer" target="_blank" class="link">[3]</a>).
+
+			But because I think of it as system, not people.</p>
+
+			<p class="article__text">Does “system” mean bad? Let’s see. First rule of any system should be: “to survive”. There are no rules without a system, right? So it's the most important one. One of the next main rules would be: “to spread, grow and conquer”. It’s all we need to know for this topic.</p>
+
+			<h3 class="article__subtitle part2">Let's compare it with how evolution “designs”.</h3>
+
+			<p class="article__text">Natural selection created a tremendous number of organisms. Sort I want to talk about are parasites. I would like to quote <a href="https://en.wikipedia.org/wiki/Parasitism"  rel="noreferrer" target="_blank" class="link">wiki</a>: “...the parasite, lives on or inside another organism, the host, causing it some harm, and is adapted structurally to this way of life... ...Parasites reduce host fitness by general or specialised pathology, from parasitic castration to modification of host behaviour. Parasites increase their own fitness by exploiting hosts for resources necessary for their survival, in particular by feeding on them and by using intermediate (secondary) hosts to assist in their transmission from one definitive (primary) host to another...” - One more thing to keep in mind is that parasites need their host. Most terrible event that can happen is to lose it, so they are not interested in killing or losing "master". Instead most <a href="https://factrepublic.com/facts/16527/"  rel="noreferrer" target="_blank" class="link">advanced-designed</a> parasites make sure its master is happy, healthy so it can carry pests to the spread and grow.</p>
+
+			<p class="article__text">You should be getting my point now. If you pause and think for a little, you’re going to easily find that it’s not so ridiculous as it seems at the first sight. From this point all this “Digital wellness” is just a hypocrisy to make us (hosts) more happy, so we can carry and spread the system further.</p>
+
+			<h3 class="article__subtitle part3">Quote explanation (skip if you got it).</h3>
+
+			<p class="article__text">“...the parasite, lives on or inside another organism, the host, causing it some harm..." - Uses someone for a living, causing some harm. I provided 11 links about the "harm" part <a href="#start" class="link">above</a>. There are different ways, check it out. "...and is adapted structurally to this way of life..." - Isn't it a dream? Technology that <a href="https://www.ukrealty.in/blog/2019/09/10/a-home-that-adapts-to-you-smart-home-tech-is-already-here/"  rel="noreferrer" target="_blank" class="link">adapts</a> to you?</p>
+
+			<p class="article__text">"...Parasites reduce host fitness by general or specialised pathology, from parasitic castration to modification of host behaviour..." - do you care about your comments online? The way you look in those photos? How much likes are you going to get? What was that notification on your phone a few minutes ago? Would you care on the same level about all of it without the internet?</p>
+
+			<p class="article__text">Sexuality and online services:
+
+			<a href="https://thriveglobal.com/stories/social-media-technology-relationships-hurting-sex-drive/"  rel="noreferrer" target="_blank" class="link">[1]</a>,
+			<a href="https://onlinedoctor.lloydspharmacy.com/uk/sexual-health-advice/can-porn-really-damage-your-sex-life"  rel="noreferrer" target="_blank" class="link">[2]</a>,
+			<a href="https://rewardfoundation.org/health/mental-effects-of-porn/"  rel="noreferrer" target="_blank" class="link">[3]</a>,
+			<a href="https://www.issm.info/news/sex-health-headlines/videogames-might-influence-male-sexual-function-study-reports/"  rel="noreferrer" target="_blank" class="link">[4]</a>
+
+			- You can say, that term castration does not fit here. On the physiological level it doesn't, let's expand it to the philosophycal one. When we think what we would like to do more, watch Netflix, play WoW or go meet someone, whoever we are, there are always chances that our brain would go for the easiest dopamine shot (open browser easy). It's one of the ways I see digital castration could work. It sounds ridiculous, but has every reason to exist.</p>
+
+			<p class="article__text">"...Parasites increase their own fitness by exploiting hosts for resources necessary for their survival..." - Time. They take away it from us and convert to "their own fitness" - every spent there hour is taken from you forever. "transmission from one definitive (primary) host to another..." - It even "transmiss" the same way...</p>
+
+			<h3 class="article__subtitle part4">Final words.</h3>
+
+			<p class="article__text">I don’t claim that I’m right, but it should be an interesting thing to think about. I encourage you! Here and right now we have the opportunity to observe how the system evolves.</p>
+
+			<p class="article__text">It’s important to understand that there is no man beyond that. Probably back in days… but now it’s the system. It’s evolving, it grows, it conquires. Truly digital parasitism!</p>
+
+			<p class="article__text">It’s not critical, we can live with parasites. In fact a lot of us do even with more obvious ones
+
+			(<a href="https://www.who.int/news-room/fact-sheets/detail/soil-transmitted-helminth-infections"  rel="noreferrer" target="_blank" class="link">[1]</a>,
+			<a href="https://www.vice.com/en/article/a3m88j/millions-of-americans-have-a-parasite-and-dont-realize-it"  rel="noreferrer" target="_blank" class="link">[2]</a>)
+
+			. We don’t think about it constantly, with most of the parasites we don’t even know we are “hosted”, that’s why it’s very important to be reminded about it sometimes... By someone like me :)</p>
+
+			<p class="article__text">Do you want to be free from parasites?</p>
+		`
+	},{
 		title: `Unlock paid content (Anti-paid)`,
 		slug: `prev-cont-2`,
 		posted: `Nov 25, 2020`,
