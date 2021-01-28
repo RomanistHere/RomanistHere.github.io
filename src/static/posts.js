@@ -32,7 +32,7 @@ const posts = [
 	{
 		title: `Digital wellbeing and parasitism. What you should keep in mind.`,
 		slug: `digital-parasitism`,
-		posted: `Jan 27, 2020`,
+		posted: `Jan 28, 2020`,
 		tags: ['psychology'],
 		desc: `An aggressive article about the digital wellness trend. Or why FAANG interested in keeping you fresh.`,
 		image: `digital_parasitism.jpg`,
