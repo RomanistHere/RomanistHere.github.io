@@ -139,7 +139,7 @@ const content = {
 
 		<h3 class="article__subtitle">What am I seeking for</h3>
 
-		<p class="article__text">I would like to apply and improve my knowledge in <strong class="offer__word">functional programming</strong>, so I'd join the place where it matters. I also <strong class="offer__word">plan to relocate</strong> to an English speaking country in near future. So I am actively considering <strong class="offer__word">onsite or remote positions</strong> with such an opportunity.</p>
+		<p class="article__text">Soulmates. Exploring the world. Something valuable. Becoming better self.</p>
 
 		<h3 class="article__subtitle">How to reach me</h3>
 
