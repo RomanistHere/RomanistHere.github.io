@@ -18,7 +18,8 @@ const content = {
 			'card__content': 'JavaScript developer'
 		}
 	],
-	card__typing: `There is not a single tracker here. Enjoy yourself :)`,
+	// card__typing: `There is not a single tracker here. Enjoy yourself :)`,
+	card__typing: `Glad to see you here. Enjoy yourself :)`,
 	card__typings: [
 		`Aren't you going to press some links on card and go?`,
 		`You do really like it here, don't you?`,

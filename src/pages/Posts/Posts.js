@@ -4,14 +4,14 @@ import { Link } from 'preact-router/match'
 import LinkBack from '../../components/LinkBack/LinkBack'
 import Arrow from '../../components/Arrow/Arrow'
 
-import posts from '../../static/posts'
+import allPosts from '../../static/posts'
 import content from '../../static/content'
 import { importAll } from '../../static/functions'
 
 import './Posts.css'
 
+const posts = allPosts.filter(obj => !obj.hide)
 const images = importAll(require.context('../../assets/posts/', false, /\.(png|jpe?g|svg)$/))
-
 const tags = [...new Set(posts.flatMap(item => item.tags))].sort((a, b) => a.localeCompare(b))
 
 const createItem = ({
@@ -38,7 +38,7 @@ const allItems = posts.map(createItem)
 
 const Posts = () => {
     const scrollBox = useRef(null)
-    const [curTag, setTag] = useState(tags[0])
+    const [curTag, setTag] = useState(tags[1])
     const [shouldShow, setShow] = useState('')
 
     let items = postsByTags(curTag).map(createItem)
