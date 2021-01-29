@@ -33,7 +33,7 @@ const posts = [
 		title: `Digital wellbeing and parasitism. What you should keep in mind.`,
 		slug: `digital-parasitism`,
 		posted: `Jan 28, 2020`,
-		tags: ['psychology'],
+		tags: ['psychology', 'philosophy'],
 		desc: `An aggressive article about the digital wellness trend. Or why FAANG interested in keeping you fresh.`,
 		image: `digital_parasitism.jpg`,
 		content: `
@@ -109,7 +109,7 @@ const posts = [
 		title: `Unlock paid content (Anti-paid)`,
 		slug: `prev-cont-2`,
 		posted: `Nov 25, 2020`,
-		tags: ['products', 'PopUpOFF'],
+		tags: ['apps'],
 		desc: `How to make sure you are using it right.`,
 		image: `prevent2.jpg`,
 		imageLink: `https://www.economist.com/leaders/2020/09/03/americas-ugly-election`,
@@ -148,7 +148,7 @@ const posts = [
 		title: `PopUpOFF 2.0 tutorial`,
 		slug: `popupoff-tutorial-2`,
 		posted: `Nov 25, 2020`,
-		tags: ['products', 'PopUpOFF', 'best'],
+		tags: ['apps', 'best'],
 		desc: `There is a room for personalization and optimization in PopUpOFF - make sure you understand it correctly and get advantage of it.`,
 		image: `your_life_be_like.jpg`,
 		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
@@ -308,7 +308,7 @@ const posts = [
 		title: `Why is «blacklist» bad?`,
 		slug: `blacklist`,
 		posted: `Sep 24, 2020`,
-		tags: ['other'],
+		tags: ['other', 'philosophy'],
 		desc: `Google, Microsoft and Twitter don't want to use this word anymore. What's the problem with it?`,
 		image: `black.jpg`,
 		content: `
@@ -486,7 +486,7 @@ const posts = [
 		title: `Two tools to save your time`,
 		slug: `two-tools`,
 		posted: `Sep 11, 2020`,
-		tags: ['products', 'best'],
+		tags: ['apps', 'best'],
 		desc: `Do you use the internet? Unexpected! Let these two apps make some optimizations with your time and productivity. Behave as usual, no changes required!`,
 		image: `two_tools.jpg`,
 		content: `
@@ -536,9 +536,10 @@ const posts = [
 		`
 	},{
 		title: `PopUpOFF tutorial (deprecated 1.1.9 version)`,
+		hide: true,
 		slug: `popupoff-tutorial`,
 		posted: `Sep 10, 2020`,
-		tags: ['products', 'PopUpOFF'],
+		tags: ['apps', 'PopUpOFF'],
 		desc: `How to effectively block everything you need and prevent content from being hidden. Spend 3 minutes reading this article and win it back in a few hours of surfing. Make your time valuable.`,
 		image: `your_life_be_like.jpg`,
 		imageLink: `https://romanisthere.github.io/assets/posts/your_life_be_like.jpg`,
@@ -615,9 +616,10 @@ const posts = [
 		`
 	},{
 		title: `Prevent paid content from hiding. Tutorial (deprecated 1.1.9 version)`,
+		hide: true,
 		slug: `prev-cont`,
 		posted: `Sep 8, 2020`,
-		tags: ['products', 'PopUpOFF'],
+		tags: ['apps', 'PopUpOFF'],
 		desc: `How to make sure you are using it right.`,
 		image: `prevent.jpg`,
 		imageLink: `https://www.economist.com/leaders/2020/09/03/americas-ugly-election`,
@@ -667,7 +669,7 @@ const posts = [
 		title: `My mission as an independent developer`,
 		slug: `my-mission`,
 		posted: `Jul 21, 2020`,
-		tags: ['other', 'products', 'best'],
+		tags: ['other', 'apps', 'best'],
 		desc: `My thoughts on how to choose software, make impact on the world and what am I doing here.`,
 		image: `presentation.png`,
 		content: `
@@ -874,7 +876,7 @@ const posts = [
 		title: `How I tested popular popup blockers`,
 		slug: `test-blockers`,
 		posted: `Jun 3, 2019`,
-		tags: ['products'],
+		tags: ['apps'],
 		desc: `This is the story about how I tested all popular Chrome popup blockers during recording a video showcase for the extension I created myself. And what are the results.`,
 		image: `blockers.jpg`,
 		content: `
