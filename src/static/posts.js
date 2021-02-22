@@ -30,6 +30,31 @@
 //  </div>
 const posts = [
 	{
+		title: `PopUpOFF troubleshooting`,
+		slug: `popupoff-troubleshooting`,
+		posted: `Feb 22, 2021`,
+		tags: ['apps', 'PopUpOFF'],
+		desc: `Most popular problems with developer's comments.`,
+		image: `popupoff.png`,
+		imageLink: `https://romanisthere.github.io/PopUpOFF-Website/index.html`,
+		content: `
+			<p class="article__text">I wish there were none, but there are still some issues remaining. Don't worry, I'm working on it :)</p>
+
+			<h3 class="article__subtitle part1 firefox">Firefox is slowing down.</h3>
+
+			<p class="article__text">It's the most annoying thing I have faced while developing. Version for Mozilla is in sort of the beta-stage right now. <strong class="article__col-4">Firefox itself has a bug related to how PopUpOFF works, so sometimes it could freeze the loading of the page for a few seconds</strong>. So I'd suggest using PopUpOFF in this browser only for very nasty websites, where you have really no other choice. I'm going to find a way to fix it in the next update, so don't worry, everything should be good soon! Personally I'd recommend to switch to <a href="../two-tools" class="link">another browser</a>.</p>
+
+			<h3 class="article__subtitle part2 whitelist">How to whitelist a website?</h3>
+
+			<p class="article__text"><strong class="article__col-4">Dormant mode</strong>. Most recommended option (and the way I use it) is <strong class="article__col-4">to set Dormant mode as your Automode</strong> in the <a class="link optPage" href="#">options page</a>. This way when you enter a new website it will look as usual. And if you wanted to remove all the popups from the screen, you could activate the needed mode. PopUpOFF will remember the website and the next time you visit it, popups are going to be blocked automatically.</p>
+
+			<h3 class="article__subtitle part3 changes">Changes don't apply.</h3>
+
+			<p class="article__text">Software can't be bugless, at least in the current state. Sometimes one can't be even sure that it's the one's bug. So what to do if you're facing it? The simplest solution would be <a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  target="_blank" class="link">to reinstall</a> the extension. I also added the buttons to reset settings in the <a class="link optPage" href="#">options page</a> - it could help. However, if you wanted PopUpOFF to be better, the best solution would be <strong class="article__col-4">to try to understand what is not working, how it's happening and drop me a message</strong>: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'd be more than happy to assist you.</p>
+
+			<p class="article__text">If you are facing the issue not listed there, please, let me know. By doing so you will participate in fixing the app, a lot of people use. We will all thank you for this. Write to me anywhere you'll find or open the issue on <a href="https://github.com/RomanistHere/PopUpOFF/issues/new/choose"  rel="noreferrer" target="_blank" class="link">GitHub</a></p>
+		`
+	},{
 		title: `Digital wellbeing and parasitism. What you should keep in mind.`,
 		slug: `digital-parasitism`,
 		posted: `Jan 28, 2020`,
