@@ -127,7 +127,7 @@ const updates = {
                 <a class="link" target="_blank" rel="noreferrer" href="https://t.me/BetterWebNews">Telegram (better than twitter)</a>
             </li>
             <li class="article__list_item">
-                <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>
+                <a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a>
             </li>
         </ul>
 

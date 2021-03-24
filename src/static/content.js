@@ -312,7 +312,7 @@ const content = {
 
 		<h3 class="article__subtitle part7">6. Access/Accuracy.</h3>
 
-		<p class="article__text">To the extent that you do provide me with Personal Information, I wish to maintain accurate Personal Information.  If you would like to delete or correct any of your Personal Information that I may be storing, you may submit an access request by sending an email to <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>.  Your email should include adequate details of your request.</p>
+		<p class="article__text">To the extent that you do provide me with Personal Information, I wish to maintain accurate Personal Information.  If you would like to delete or correct any of your Personal Information that I may be storing, you may submit an access request by sending an email to <a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a>.  Your email should include adequate details of your request.</p>
 
 		<h3 class="article__subtitle part8">7. Links to and Interaction with Third Party Products.</h3>
 
@@ -320,12 +320,12 @@ const content = {
 
 		<h3 class="article__subtitle part9">8. Children's Privacy.</h3>
 
-		<p class="article__text">The App is not structured to attract children under the age of 13 years.  Accordingly, I do not intend to collect Personal Information from anyone I know to be under 13 years.  If I learn that I have collected Personal Information from a child under 13 years, I will delete that information as quickly as possible. If you believe that I might have any such information, please contact me at <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a></p>
+		<p class="article__text">The App is not structured to attract children under the age of 13 years.  Accordingly, I do not intend to collect Personal Information from anyone I know to be under 13 years.  If I learn that I have collected Personal Information from a child under 13 years, I will delete that information as quickly as possible. If you believe that I might have any such information, please contact me at <a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a></p>
 
 
 		<h3 class="article__subtitle part10">9. Commitment.</h3>
 
-		<p class="article__text">I am committed to protecting your privacy.  Protecting your privacy online is an evolving area, and I am constantly evolving my App to meet these demands.  If you have any comments or questions regarding Privacy Policy, or your Personal Information that I may be storing and using, please contact me at <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a></p>
+		<p class="article__text">I am committed to protecting your privacy.  Protecting your privacy online is an evolving area, and I am constantly evolving my App to meet these demands.  If you have any comments or questions regarding Privacy Policy, or your Personal Information that I may be storing and using, please contact me at <a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a></p>
 		`,
 	policy__posted: `June 2020`,
 }

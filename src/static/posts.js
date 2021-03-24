@@ -50,7 +50,7 @@ const posts = [
 
 			<h3 class="article__subtitle part3 changes">Changes don't apply.</h3>
 
-			<p class="article__text">Software can't be bugless, at least in the current state. Sometimes one can't be even sure that it's the one's bug. So what to do if you're facing it? The simplest solution would be <a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  target="_blank" class="link">to reinstall</a> the extension. I also added the buttons to reset settings in the <a class="link optPage" href="#">options page</a> - it could help. However, if you wanted PopUpOFF to be better, the best solution would be <strong class="article__col-4">to try to understand what is not working, how it's happening and drop me a message</strong>: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'd be more than happy to assist you.</p>
+			<p class="article__text">Software can't be bugless, at least in the current state. Sometimes one can't be even sure that it's the one's bug. So what to do if you're facing it? The simplest solution would be <a href="https://romanisthere.github.io/PopUpOFF-Website/index.html"  target="_blank" class="link">to reinstall</a> the extension. I also added the buttons to reset settings in the <a class="link optPage" href="#">options page</a> - it could help. However, if you wanted PopUpOFF to be better, the best solution would be <strong class="article__col-4">to try to understand what is not working, how it's happening and drop me a message</strong>: <a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a> - I'd be more than happy to assist you.</p>
 
 			<p class="article__text">If you are facing the issue not listed there, please, let me know. By doing so you will participate in fixing the app, a lot of people use. We will all thank you for this. Write to me anywhere you'll find or open the issue on <a href="https://github.com/RomanistHere/PopUpOFF/issues/new/choose"  rel="noreferrer" target="_blank" class="link">GitHub</a></p>
 		`
@@ -159,7 +159,7 @@ const posts = [
 				</li>
 			</ul>
 
-			<p class="article__text">In this case, please, <a href="mailto:romanisthere@gmail.com" class="link">send me</a> the link - I will fix it.</p>
+			<p class="article__text">In this case, please, <a href="mailto:romanisthere@pm.me" class="link">send me</a> the link - I will fix it.</p>
 
 			<h3 class="article__subtitle part3">Sometimes it's just impossible :(</h3>
 
@@ -198,7 +198,7 @@ const posts = [
 					<strong class="article__col-4">Aggressive removes every stuck to our screen element</strong>. Not any overlay, popup or whatever it's called is going to distract us from reading. It's the reason this extension exists! Enjoy a clean screen:)
 				</li>
 				<li class="article__list_item">
-					However, mostly <strong class="article__col-4">we need sticky headers and navigation bars</strong> to be displayed (some other popups too). That's where <strong class="article__col-4">Moderate</strong> comes. I worked very hard on this, so be gentle if something isn't working as you expect to. <a href="mailto:romanisthere@gmail.com" class="link">Let me know</a> - I'll fix it:)
+					However, mostly <strong class="article__col-4">we need sticky headers and navigation bars</strong> to be displayed (some other popups too). That's where <strong class="article__col-4">Moderate</strong> comes. I worked very hard on this, so be gentle if something isn't working as you expect to. <a href="mailto:romanisthere@pm.me" class="link">Let me know</a> - I'll fix it:)
 				</li>
 				<li class="article__list_item">
 					<strong class="article__col-4">Dormant</strong> does nothing. By clicking it, we are going to <a href="/posts/blacklist/" class="link">whitelist</a> the website. Default option for services like YouTube, Twitter, <a href="https://github.com/RomanistHere/PopUpOFF/blob/develop/constants/data.js#L15"  rel="noreferrer" target="_blank" class="link">etc</a>.
@@ -633,7 +633,7 @@ const posts = [
 
 			<h3 class="article__subtitle part3">Important update!</h3>
 
-			<p class="article__text"><strong class="article__col-4">Automatic mode is coming. If you want to try/test it before the release, let me know:</strong> <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a>, <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">Twitter</a> - I shall explain what to do.</p>
+			<p class="article__text"><strong class="article__col-4">Automatic mode is coming. If you want to try/test it before the release, let me know:</strong> <a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a>, <a href="https://twitter.com/RomanistHere"  rel="noreferrer" target="_blank" class="link">Twitter</a> - I shall explain what to do.</p>
 
 			<p class="article__text"><strong class="article__col-4">For experienced users:</strong> I will tweet once the alpha version is in the git. Clone (download) <a href="https://github.com/RomanistHere/PopUpOFF"  rel="noreferrer" target="_blank" class="link">the repository</a>, enable developer mode in your browser and load the unpacked extension.</p>
 
@@ -681,7 +681,7 @@ const posts = [
 				</li>
 			</ul>
 
-			<p class="article__text">In this case, please, <a href="mailto:romanisthere@gmail.com" class="link">send me</a> the link - I will fix it.</p>
+			<p class="article__text">In this case, please, <a href="mailto:romanisthere@pm.me" class="link">send me</a> the link - I will fix it.</p>
 
 			<h3 class="article__subtitle part3">Sometimes it's just impossible :(</h3>
 
@@ -856,7 +856,7 @@ const posts = [
 
 			<p class="article__text">When we talk about the internet, I’m much more powerful than the average user due to my profession. So I’m trying to apply my knowledge to make someone’s life better by <a href="/apps" class="link">my products</a>, and to make someone notice, by this article. Remember, it always matters.</p>
 
-			<p class="article__text">If I can help you with your ideas, do not hesitate to reach me: <a href="mailto:romanisthere@gmail.com" class="link">RomanistHere@gmail.com</a> - I'm here, <s>captain</s>Romanist Here.</p>
+			<p class="article__text">If I can help you with your ideas, do not hesitate to reach me: <a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a> - I'm here, <s>captain</s>Romanist Here.</p>
 
 			<p class="article__text">As an independent developer, I promise to deliver best-I-can-do experience to you and never give up on this idea. Thank you for your time. Have a better life now, see ya:)</p>`
 	},
