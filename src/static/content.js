@@ -180,11 +180,25 @@ const content = {
 		  		Details: `- Open source; <br/>
 		  					- Non-commercial. No pay content; <br/>
 		  					- MutationObserver API;`,
-		  		Platforms: `Chrome, Firefox, Edge`,
+		  		Platforms: `Chrome, Firefox, Edge, Opera`,
 		  		'My thanks to': `Igor Denisevich, Polina Kasterava, Whatatay T, Oleg Matveenko, Elizabeth Portman`
 			}
 		},
 		2: {
+			name: 'MarkALink',
+			tilt_desc: `Highlight or hide search results`,
+			apps__desc: {
+				Description: `Browser extension that allows you to remove irrelevant search results or highlight (hide) valuable links.`,
+				Status: `- Comfortable and ready for everyday use; <br/>
+							- MVP (Minimum viable product); <br/>
+		  					- Some of the features are still in development;`,
+		  		Details: `- Open source; <br/>
+		  					- Non-commercial. No pay content; <br/>
+		  					- Cyberpunk!;`,
+		  		Platforms: `Chrome, Firefox, Edge, Opera`
+			}
+		},
+		3: {
 			name: 'Stylify',
 			tilt_desc: `Make it readable`,
 			apps__desc: {
@@ -197,12 +211,13 @@ const content = {
 		  		Platforms: `Chrome. Soon Firefox and Edge`
 			}
 		},
-		3: {
+		4: {
 			name: 'PLAS',
 			tilt_desc: `Native YouTube search`,
 			apps__desc: {
 				Description: `Browser extension that adds search field to YouTube. Search within the playlist.`,
-				Status: `- Works fine but not comfortable for everyday use; <br/>
+				Status: `- Recent YouTube changes could affect work of this add-on; <br/>
+							- Not comfortable for everyday use; <br/>
 							- Needs redesign; <br/>
 		  					- In development;`,
 		  		Details: `- Open source; <br/>
@@ -220,10 +235,17 @@ const content = {
 			4: 'https://addons.opera.com/en/extensions/details/popupoff-popup-and-overlay-blocker/',
 		},
 		2: {
+			0: 'https://github.com/RomanistHere/MarkALink',
+			1: 'https://chrome.google.com/webstore/detail/markalink/jgfjphpcldeifiifdmjpjoidkdhbcboe',
+			2: 'https://addons.mozilla.org/en-US/firefox/addon/markalink/',
+			3: 'https://microsoftedge.microsoft.com/addons/detail/markalink/lkhhgeefhaeemmkliceeoeejahniniem',
+			4: 'https://addons.opera.com/en/extensions/details/markalink/',
+		},
+		3: {
 			0: 'https://github.com/RomanistHere/StyLIFy',
 			1: 'https://chrome.google.com/webstore/detail/stylify-unuglify/knnnacgjjmlljheglipemamhdlckpfjc',
 		},
-		3: {
+		4: {
 			0: 'https://github.com/RomanistHere/YouTube-PLAS-Website',
 			1: 'https://chrome.google.com/webstore/detail/plas-playlist-search/khnbkjjlffefikjilbngeoffaiojpboc',
 		}

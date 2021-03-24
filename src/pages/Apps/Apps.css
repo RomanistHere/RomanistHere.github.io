@@ -11,6 +11,10 @@
     --ppf-color1: #222831;
     --ppf-color2: #f9ffee;
     --ppf-color3: #efbb35;
+    /*markalink*/
+    --mrk-color1: #131313;
+    --mrk-color2: #ffffff;
+    --mrk-color3: #fed128;
     /*stylify*/
     --stlf-color1: #A8D0E6;
     --stlf-color2: #24305E;
@@ -59,6 +63,13 @@
     --txt-color: var(--ppf-color2);
     --txt-color2: var(--ppf-color3);
     --bd-color: var(--ppf-color2);
+}
+
+.MarkALink {
+    --bg-color: var(--mrk-color1);
+    --txt-color: var(--mrk-color2);
+    --txt-color2: var(--mrk-color3);
+    --bd-color: var(--mrk-color2);
 }
 
 .Stylify {
@@ -233,6 +244,11 @@
 .PopUpOFF_item {
     background-color: var(--ppf-color3);
     color: var(--ppf-color1);
+}
+
+.MarkALink_item {
+    background-color: var(--mrk-color1);
+    color: var(--mrk-color3);
 }
 
 .Stylify_item {
