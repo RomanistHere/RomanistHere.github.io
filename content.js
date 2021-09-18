@@ -125,14 +125,14 @@ const content = {
 	offer__content: `
 		<h3 class="article__subtitle">Who am I</h3>
 
-		<p class="article__text">I'm <strong class="offer__word">a front-end developer</strong> with <strong class="offer__word">5 years of experience and bachelor's in math</strong>. In case this text is not up-to-date there is a link for my CV below.</p>
+		<p class="article__text">I'm <strong class="offer__word">a front-end developer</strong> with <strong class="offer__word">about 6 years of experience and bachelor's in math</strong>. In case this text is not up-to-date there is a link for my CV below.</p>
 
 		<h3 class="article__subtitle">What am I good at</h3>
 
 		<p class="article__text">I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts.
 			<br>
 			</br>
-			From the technical side, I do really like <strong class="offer__word">JavaScript</strong>. There are a lot of good frameworks I am good with, like <strong class="offer__word">Angular or React</strong>, but I like plain JS most. I had a lot of projects with <strong class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</strong>. My <strong class="offer__word">CSS3 and HTML5</strong> are strong. I still care about <strong class="offer__word">semantics, cross-browser compatibility and accessibility</strong> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <strong class="offer__word">Web Components and functional programming</strong> - I learn it in my spare time. Most complete stack of technologies I know how to use is in the CV.</p>
+			From the technical side, I do really like <strong class="offer__word">JavaScript</strong>. There are a lot of good frameworks I am good with, like <strong class="offer__word">Svelte, Angular or React</strong>, but I like plain JS and Svelte most. I had a lot of projects with <strong class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</strong>. My <strong class="offer__word">CSS3 and HTML5</strong> are strong. I still care about <strong class="offer__word">semantics, cross-browser compatibility and accessibility</strong> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <strong class="offer__word">Web Components and functional programming</strong> - I learn it in my spare time. Most complete stack of technologies I know how to use is in the CV.</p>
 
 		<h3 class="article__subtitle">What do I do now</h3>
 
