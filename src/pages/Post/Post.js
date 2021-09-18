@@ -1,4 +1,6 @@
 import { useEffect } from "preact/hooks"
+import '../../static/prism.js'
+import '../../static/prism.css'
 
 import TextPage from '../../components/TextPage/TextPage'
 

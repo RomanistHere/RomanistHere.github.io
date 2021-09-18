@@ -30,6 +30,220 @@
 //  </div>
 const posts = [
 	{
+		title: `State management in Svelte. Overlays and store.`,
+		slug: `svelte-state`,
+		posted: `Sep 18, 2021`,
+		tags: ['dev'],
+		desc: `Showcase of implemented in Measureland declarative state management structure.`,
+		image: `svelte_state_measureland.jpg`,
+		imageLink: `https://github.com/RomanistHere/Measureland/tree/chore/migrate-to-svelte`,
+		content: `
+			<p class="article__text">Hi! I recently learnt Svelte and fell in love with it. So much, that I decided to move my service, Measureland, to SvelteKit. Today I want to share how I solved one of the challenges that I faced: managing overlays in the app.</p>
+
+			<h3 class="article__subtitle part1">How it was before.</h3>
+
+			<p class="article__text">There are about ten different modals or popups and a few states of sidebar plus ways to combine them. App was originally written in plain HTML, CSS and JavaScript, so it was as simple as calling <strong class="article__col-3">openPopup(popupClassName)</strong> on click. <strong class="article__col-3">openPopup</strong> function searched for the given class in DOM and added <strong class="article__col-3">"active"</strong> class to it. Simple imperative implementation. I had almost 2k strings in my <a href="https://github.com/RomanistHere/Measureland/blob/legacy/index.html"  rel="noreferrer" target="_blank" class="link">index.html file</a> with all these popups there.</p>
+
+			<h3 class="article__subtitle part2">What we need now (challenge).</h3>
+
+			<p class="article__text">Svelte is declarative and component based. It means we can have a single popup component for all popups. It helps us to not repeat ourselves, but searching the DOM is not an option anymore. As well as adding a class to make modals visible. We need to do it in a declarative way. Means we need our app to know about every popup there is, so we can tell it: "hey, open this popup" - and it will. The biggest problem is that we can't call the popup1-component method from popup2-component directly. And especially if we need to call it from another component tree. (We technically can, but it's very complex to do and support).</p>
+
+			<h3 class="article__subtitle part3 changes">How we do it.</h3>
+
+			<p class="article__text">Let's start by telling our app all about the popups. I created a file: <strong class="article__col-3">overlayStateDefault.js</strong> - under constants in the lib folder (<a href="https://github.com/RomanistHere/Measureland/blob/chore/migrate-to-svelte/src/lib/constants/overlayStateDefault.js"  rel="noreferrer" target="_blank" class="link">full version</a>):</p>
+
+			<pre class="language-js"><code class="language-js">
+export const overlayStateDefault = {
+	loginPopup: {
+		isOpen: false,
+		type: 'popup',
+		data: {},
+	},
+	registerPopup: {
+		isOpen: false,
+		type: 'popup',
+		data: {},
+	},
+	...
+};
+			</code></pre>
+
+			<ul class="article__list article__text">
+				<li class="article__list_item">
+					<strong class="article__col-3">isOpen</strong>: tells our app when we it open
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-3">type</strong>: tells our app what type of overlay we want to open (and close other overlays with this type)
+				</li>
+				<li class="article__list_item">
+					<strong class="article__col-3">data</strong>: we will most definitely want to pass data to some of the popups (instead of using global state)
+				</li>
+			</ul>
+
+			<p class="article__text">Let's create superb Svelte store to make use of it (<a href="https://github.com/RomanistHere/Measureland/blob/chore/migrate-to-svelte/src/stores/state.js#L44"  rel="noreferrer" target="_blank" class="link">full version</a>):</p>
+
+			<pre class="language-js"><code class="language-js">
+export const overlayStateStore = writable(overlayStateDefault);
+			</code></pre>
+
+
+			<p class="article__text">Good. Next step is to write a few functions to work with it in a declarative way. I have <strong class="article__col-3">helpers.js</strong> file in <strong class="article__col-3">lib/utilities</strong>, let see our functions (<a href="https://github.com/RomanistHere/Measureland/blob/chore/migrate-to-svelte/src/lib/utilities/helpers.js#L93"  rel="noreferrer" target="_blank" class="link">full version</a>):</p>
+
+			<pre class="language-js"><code class="language-js">
+const closeOverlaysWithSameType = (overlayType, state) => {
+    let isModalOpen = false;
+
+    const keysArray = Object.keys(state);
+    const length = keysArray.length;
+
+    for (let i = 0; i < length; i++) {
+        const { type, isOpen } = state[keysArray[i]];
+        if (overlayType === type && isOpen) {
+            // mutation here should be faster and has no consequences
+            state[keysArray[i]].isOpen = false;
+        } else {
+            // check if any of other modals are open
+            if (isOpen)
+                isModalOpen = true;
+        }
+    }
+
+    return {
+        newState: state,
+        isModalOpen,
+    };
+}
+
+const openAnotherOverlay = (overlayName = null, data = {}) => {
+    try {
+		overlayStateStore.update(state => {
+	        const overlayType = state[overlayName]['type'];
+	        const { newState } = closeOverlaysWithSameType(overlayType, state);
+	        return ({ ...newState, [overlayName]: { ...newState[overlayName], isOpen: true, data } });
+	    });
+	} catch (e) {
+		console.warn('Define popup in constatns/overlayStateDefault.js');
+	}
+}
+
+const closeOverlay = (overlayType = null) => {
+    if (overlayType) {
+        overlayStateStore.update(state => {
+            const { newState, isModalOpen } = closeOverlaysWithSameType(overlayType, state);
+
+            if (!isModalOpen)
+                appStateStore.update(state => ({ ...state, openModal: false }));
+
+            return ({ ...newState });
+        });
+    } else {
+        overlayStateStore.update(state => overlayStateDefault);
+        appStateStore.update(state => ({ ...state, openModal: false }));
+    }
+}
+
+const closeOverlays = () => closeOverlay();
+			</code></pre>
+
+			<p class="article__text">A lot of code, but nothing scary. <strong class="article__col-3">closeOverlaysWithSameType</strong> is a helper-helper function. We call it to close currently opened popup-type modals before we open a new one.</p>
+
+			<p class="article__text"><strong class="article__col-3">openAnotherOverlay</strong> changes <strong class="article__col-3">isOpen</strong> property of the needed modal. <strong class="article__col-3">closeOverlay</strong> changes all the <strong class="article__col-3">isOpen</strong> properties for the needed type to <strong class="article__col-3">false</strong>. <strong class="article__col-3">closeOverlays</strong> reuses our <strong class="article__col-3">overlayStateDefault</strong> object to return overlays to the default state (close all modals) saving some time and calculations.</p>
+
+			<p class="article__text">We have everything ready, now, how to use it in the app? Reasonable question, let's go!</p>
+
+			<p class="article__text">I have an <strong class="article__col-3">Overlay.svelte</strong> component used in <strong class="article__col-3">routes/index.svelte</strong> (<a href="https://github.com/RomanistHere/Measureland/blob/chore/migrate-to-svelte/src/lib/components/Overlay/Overlay.svelte"  rel="noreferrer" target="_blank" class="link">full version</a>). This component has a few key points:</p>
+
+			<pre class="language-js"><code class="language-js">
+const checkIsOpen = state => {
+	let openOverlays = [];
+	for (let [key, value] of Object.entries(state)) {
+		const { isOpen, data, type } = value;
+		if (isOpen)
+			openOverlays.push({ key, data, type });
+	}
+
+	if (openOverlays.length >= 2 && openOverlays[0].type === openOverlays[1].type) {
+		throw new Error("Can't open two or more modals at once");
+	}
+
+	if (openOverlays.length === 1 && openOverlays[0].key === 'commentsSidebar') {
+		// close sidebar if only comments is opened (expected behaviour: user closes rating)
+		openOverlays = [];
+		closeOverlays();
+	}
+
+	return openOverlays;
+}
+
+const manageOverlay = ({ key, data, type }) => {
+	if (type === 'sidebar') {
+		sidebarName = key;
+		sidebarData = data;
+		sidebarActive = true;
+		if (browser)
+			document.body.classList.add('sidebar-open');
+	} else if (type === 'popup') {
+		popupName = key;
+		popupData = data;
+		popupActive = true;
+	}
+}
+
+const manageOverlays = openOverlays => {
+	// TODO: change document.body.classList when resolved:
+	// https://github.com/sveltejs/svelte/issues/3105#issuecomment-622437031
+	if (browser)
+		document.body.classList.remove('sidebar-open');
+
+	sidebarActive = false;
+	popupActive = false;
+
+	if (openOverlays.length === 0)
+		return;
+
+	for (let i = 0; i < openOverlays.length; i++)
+		manageOverlay(openOverlays[i]);
+}
+
+$: dataOpen = checkIsOpen($overlayStateStore);
+$: manageOverlays(dataOpen);
+			</code></pre>
+
+			<p class="article__text">The last two strings are responsible for tracking all the changes in <strong class="article__col-3">overlayStateStore</strong> (thanks to reactivity) and passing the data to needed components. For example, if some of popup-type instances is opened, <strong class="article__col-3">manageOverlays</strong> function will get its name (key) and data and pass it to <strong class="article__col-3">PopupLayer</strong> component (<a href="https://github.com/RomanistHere/Measureland/blob/chore/migrate-to-svelte/src/lib/components/Overlay/components/popups/PopupLayer.svelte"  rel="noreferrer" target="_blank" class="link">full version</a>):</p>
+
+
+			<pre class="language-js"><code class="language-js">
+{#if popupActive}
+    &lt;PopupLayer { popupName } { popupData } /&gt;
+{/if}
+			</code></pre>
+
+			<p class="article__text"><strong class="article__col-3">PopupLayer</strong>, on the other hand, has a dictionary with pairs: <strong class="article__col-3">popupName - component</strong> and <strong class="article__col-3">svelte:component</strong> construction, to load modals dynamically based on <strong class="article__col-3">popupName</strong> passed from parent component:</p>
+
+			<pre class="language-html"><code class="language-html">
+&lt;script&gt
+	...
+	const popupList = {
+		loginPopup: LoginPopup,
+		registerPopup: RegisterPopup,
+		...
+	};
+	...
+	$: Popup = popupList[popupName]['component'];
+	...
+&lt;/script&gt
+&lt;div class="rating" on:click|preventDefault={closePopups}&gt
+    &lt;svelte:component this={Popup} { popupData }/&gt
+&lt;/div&gt
+			</code></pre>
+
+			<p class="article__text">That's it. The post is already too long, so let's summarize:</p>
+
+			<p class="article__text">Now we can open our login popup from any part of an app by calling <strong class="article__col-3">openAnotherOverlay('loginPopup')</strong> - everything else is on the side of reactivity, our helper functions and a few components. You can find the full code in <a href="https://github.com/RomanistHere/Measureland/tree/chore/migrate-to-svelte"  rel="noreferrer" target="_blank" class="link">my repo</a> (migration is not finished yet).</p>
+
+			<p class="article__text">Feel free to contact me (<a href="mailto:romanisthere@pm.me" class="link">RomanistHere@pm.me</a>) about any questions, suggestions or improvements. We can also move all the structure to a separate module and publish it. I stream migration <a href="https://www.twitch.tv/romanisthere"  rel="noreferrer" target="_blank" class="link">on Twitch</a> - come learn together!</p>
+		`
+	},{
 		title: `PopUpOFF troubleshooting`,
 		slug: `popupoff-troubleshooting`,
 		posted: `Feb 22, 2021`,
