@@ -77,7 +77,7 @@ const posts = [
 
 			<p class="article__text">Different practices (in- and out-religious) like fasting, meditations,  sexual abstinence, mantras and koans have the same simple thing in common: taking control over the voice in your head. The voice constanly wants something: to eat, drink, imagine things, have sex. <strong class="article__col-4">Saying "no" to it will gain you control over time</strong>. The more "no"s you say, the better it behaves.</p>
 
-			<p class="article__text">Generally if you will <strong class="article__col-4">be able to just sit and not to think for 40 minutes in a row, you won't need any religions or other practices to make it to the top</strong>. Why don't you try? :)</p>
+			<p class="article__text">Generally if you are able to <strong class="article__col-4">just sit and not think for 40 minutes in a row, you won't need any religion or other practices to make it to the top</strong>. Why don't you try? :)</p>
 
 			<p class="article__text">Hard, is it? That's why people go to religions. It's a trick. Hard to not think when there is no reason to. Easier if <strong class="article__col-4">your brain is scared of or inspired by God</strong> or other members of the community.</p>
 
@@ -86,6 +86,8 @@ const posts = [
 			<p class="article__text">Might be, might be not. The thing is, it doesn't really matter. Religion is about you and not Him.</p>
 
 			<p class="article__text">The answer to this question is just as trivial as the ending of Anna Karenina or Martin Eden. There is nothing we can do about it. But there are questions indeed we're able to do something about. Care to ask them?</p>
+
+			<p class="article__text">Inspired by video (ru): <a href="https://www.youtube.com/watch?v=4dcx49PJhi0"  rel="noreferrer" target="_blank" class="link">https://www.youtube.com/watch?v=4dcx49PJhi0</a>.</p>
 		`
 	}, {
 		title: `State management in Svelte. Overlays and store.`,
