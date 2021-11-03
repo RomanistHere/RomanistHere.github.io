@@ -30,6 +30,64 @@
 //  </div>
 const posts = [
 	{
+		title: `Does God exist? The thing is, it doesn't really matter.`,
+		slug: `does-god-exist`,
+		posted: `Nov 3, 2021`,
+		tags: ['apps'],
+		desc: `Reflections on religions and spiritual development. Why the question of God's existence isn't interesting for me.`,
+		image: `buddha.jpg`,
+		content: `
+			<p class="article__text">I won't be trying to answer "the question" through this writing but rather will be trying to explain why it's not as interesting as it seems to be. You may accidentally find the answer though. <s>42.</s></p>
+
+			<p class="article__text"><strong class="article__col-4">Disclaimer: You can either agree with my opinion or not. But you can hardly tell me that it does not make sense.</strong></p>
+
+			<h3 class="article__subtitle part1">Religion was never about Him but about you.</h3>
+
+			<p class="article__text">Let's start with another question: what are the points of different religions anyway? If we were to compare religions like Buddhism,  Christianity, Islam, Hinduism - we would find that they "offer" similiar things. <strong class="article__col-4">Some sort of <a href="https://en.wikipedia.org/wiki/Enlightenment_(spiritual)"  rel="noreferrer" target="_blank" class="link">"Enlightenment"</a> and some kind of a path you need to pass to make it there. Usually, it's not only the pass, but someone who made it to the top back there.</strong></p>
+
+			<p class="article__text">So we have guidelines backed by "the real" experience. But are these paths that different? To answer this question we need to understand what spiritual development means.</p>
+
+			<h3 class="article__subtitle part2">What spiritual development is not.</h3>
+
+			<p class="article__text">And I'll make my definition based on what it isn't. There are different sorts of developments for self. There are skills one can learn: how to make more money, sleep better, run faster and so on. The reason for them to be in the same group is that they are material-mental-sphere - <strong class="article__col-4">they depend on time.</strong></p>
+
+			<p class="article__text">Spirit does not.</p>
+
+			<p class="article__text">In simple words, the goal of spiritual growth is <strong class="article__col-4">to achieve eternity. Prepare our souls to live forever</strong>. And this sounds exactly like something religions exist for. They differ in how to define "forever", or what one can eat and what can't, or how to name the major events. But they fail to be very different when it comes to the end of the path of one's spiritual growth.</p>
+
+			<h3 class="article__subtitle part3">So what spiritual development is.</h3>
+
+			<p class="article__text"><strong class="article__col-4">Asceticism, mainly</strong>. Our brain is different from our mind, our consciousness. And evolution made it possible for our brain to ignore our mind.</p>
+
+			<p class="article__text">Need an example? Imagine when you're getting ready to study some things you need to become more successful. They are not the most interesting things. Your consciousness understands that it's something important if you want to be successful. Your lazy brain, on the other hand, tries to make you postpone this process, ideally to "never". It tries to distract you with images of your success after you have learnt whatever it is you're doing.</p>
+
+			<p class="article__text"><strong class="article__col-4">Thing is, not a lot of us are in control of our brain</strong>. While we're not, we're apes, spiritually. <s>un</s>Lucky, our brain hides the thoughts about us not being able to control our life behind the illusion that we can.</p>
+
+			<p class="article__text"><strong class="article__col-4">Destroying this illusion and gaining more control over our own thoughts and emotions</strong> in the pursuit of becoming a better person is what spiritual development is.</p>
+
+			<h3 class="article__subtitle part4">Is it possible?</h3>
+
+			<p class="article__text">There are countless practices on taking ownership over our brain. Religions are among them. But there is a huge difference between religion and practices like yoga or meditation. Well, it won't come as "huge" on the paper (screen), but in reality it takes into account our human nature and the generations of people’s experience.</p>
+
+			<p class="article__text">We're totally able to grow our spirit without the help of any religion. But it takes a great deal of work. <strong class="article__col-4">Fighting your own brain is one of the hardest things to do</strong>. And communities and traditions are strong allies in it.</p>
+
+			<p class="article__text">It's important to notice that <strong class="article__col-4">the reason is what makes this growth spiritual</strong>. If one wants power over his brain to become wealthy, this growth becomes material oriented. It becomes what we call self development. The reasons matter.</p>
+
+			<h3 class="article__subtitle part5">How does it work?</h3>
+
+			<p class="article__text">Different practices (in- and out-religious) like fasting, meditations,  sexual abstinence, mantras and koans have the same simple thing in common: taking control over the voice in your head. The voice constanly wants something: to eat, drink, imagine things, have sex. <strong class="article__col-4">Saying "no" to it will gain you control over time</strong>. The more "no"s you say, the better it behaves.</p>
+
+			<p class="article__text">Generally if you will <strong class="article__col-4">be able to just sit and not to think for 40 minutes in a row, you won't need any religions or other practices to make it to the top</strong>. Why don't you try? :)</p>
+
+			<p class="article__text">Hard, is it? That's why people go to religions. It's a trick. Hard to not think when there is no reason to. Easier if <strong class="article__col-4">your brain is scared of or inspired by God</strong> or other members of the community.</p>
+
+			<h3 class="article__subtitle part6">Does God exist?</h3>
+
+			<p class="article__text">Might be, might be not. The thing is, it doesn't really matter. Religion is about you and not Him.</p>
+
+			<p class="article__text">The answer to this question is just as trivial as the ending of Anna Karenina or Martin Eden. There is nothing we can do about it. But there are questions indeed we're able to do something about. Care to ask them?</p>
+		`
+	}, {
 		title: `State management in Svelte. Overlays and store.`,
 		slug: `svelte-state`,
 		posted: `Sep 18, 2021`,
@@ -96,8 +154,8 @@ const closeOverlaysWithSameType = (overlayType, state) => {
     const keysArray = Object.keys(state);
     const length = keysArray.length;
 
-    for (let i = 0; i < length; i++) {
-        const { type, isOpen } = state[keysArray[i]];
+	keysArray.forEach((item, i) => {
+		const { type, isOpen } = state[keysArray[i]];
         if (overlayType === type && isOpen) {
             // mutation here should be faster and has no consequences
             state[keysArray[i]].isOpen = false;
@@ -106,7 +164,7 @@ const closeOverlaysWithSameType = (overlayType, state) => {
             if (isOpen)
                 isModalOpen = true;
         }
-    }
+	});
 
     return {
         newState: state,
@@ -201,8 +259,7 @@ const manageOverlays = openOverlays => {
 	if (openOverlays.length === 0)
 		return;
 
-	for (let i = 0; i < openOverlays.length; i++)
-		manageOverlay(openOverlays[i]);
+	openOverlays.forEach(manageOverlay);
 }
 
 $: dataOpen = checkIsOpen($overlayStateStore);
