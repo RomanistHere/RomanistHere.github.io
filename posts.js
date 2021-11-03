@@ -33,7 +33,7 @@ const posts = [
 		title: `Does God exist? The thing is, it doesn't really matter.`,
 		slug: `does-god-exist`,
 		posted: `Nov 3, 2021`,
-		tags: ['apps'],
+		tags: ['psychology', 'philosophy'],
 		desc: `Reflections on religions and spiritual development. Why the question of God's existence isn't interesting for me.`,
 		image: `buddha.jpg`,
 		content: `
