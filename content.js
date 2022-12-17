@@ -11,7 +11,7 @@ const content = {
 		},
 		{
 			'card__label': 'location: ',
-			'card__content': 'Minsk, Belarus'
+			'card__content': 'Dubai, UAE'
 		},
 		{
 			'card__label': 'profession: ',
