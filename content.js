@@ -125,14 +125,14 @@ const content = {
 	offer__content: `
 		<h3 class="article__subtitle">Who am I</h3>
 
-		<p class="article__text">I'm <strong class="offer__word">a front-end developer</strong> with <strong class="offer__word">about 6 years of experience and bachelor's in math</strong>. In case this text is not up-to-date there is a link for my CV below.</p>
+		<p class="article__text">I'm <strong class="offer__word">a front-end developer</strong> with <strong class="offer__word">about 7 years of experience and bachelor's in math</strong>. In case this text is not up-to-date there is a link for my CV below.</p>
 
 		<h3 class="article__subtitle">What am I good at</h3>
 
 		<p class="article__text">I like things to be beautiful. And I think I have a feeling of it. This site and all of my projects were designed by me both for how-it-looks and how-it-works parts.
 			<br>
 			</br>
-			From the technical side, I do really like <strong class="offer__word">JavaScript</strong>. There are a lot of good frameworks I am good with, like <strong class="offer__word">Svelte, Angular or React</strong>, but I like plain JS and Svelte most. I had a lot of projects with <strong class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</strong>. My <strong class="offer__word">CSS3 and HTML5</strong> are strong. I still care about <strong class="offer__word">semantics, cross-browser compatibility and accessibility</strong> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I've got a feeling about <strong class="offer__word">Web Components and functional programming</strong> - I learn it in my spare time. Most complete stack of technologies I know how to use is in the CV.</p>
+			From the technical side, I do really like <strong class="offer__word">JavaScript</strong>. There are a lot of good frameworks I am good with, like <strong class="offer__word">Svelte, Angular, Vue or React</strong>, but I like plain JS/Svelte most. My favourite stack is SvelteKit + Tailwind nowadays. I have had a lot of projects with <strong class="offer__word">WebGL and Three.js - browser, mobile and desktop apps, games</strong>. My <strong class="offer__word">CSS3 and HTML5</strong> are strong. I still care about <strong class="offer__word">semantics, cross-browser compatibility and accessibility</strong> - you can always check it in <a href="https://github.com/Romanisthere" rel="noreferrer" target="_blank" class="link">my Git</a>. I'm learning <strong class="offer__word">functional programming (Elm)</strong> since it's the most convenient way to build awesome bugless apps. Most complete stack of technologies I used you can find in the CV.</p>
 
 		<h3 class="article__subtitle">What do I do now</h3>
 
@@ -144,7 +144,7 @@ const content = {
 
 		<h3 class="article__subtitle">How to reach me</h3>
 
-		<p class="article__text">If you want to show me some good-looking positions, the best way would be to fill <strong class="offer__word">the special form</strong> just below. Otherwise try this: <a href="https://www.linkedin.com/in/romanist/"  rel="noreferrer" target="_blank" class="link">LinkedIn</a>, <a href="mailto:smilemoon@yandex.ru"  rel="noreferrer" target="_blank" class="link">Email</a>, <a href="https://join.skype.com/invite/o2l5a5Qb2YWn"  rel="noreferrer" target="_blank" class="link">Skype</a>.</p>
+		<p class="article__text">If you wanted to show me some good-looking positions, the best way to contact me about work would be <a href="https://www.linkedin.com/in/romanist/"  rel="noreferrer" target="_blank" class="link">LinkedIn</a> or <a href="mailto:romanist@pm.me"  rel="noreferrer" target="_blank" class="link">Email</a>. One important thing, <strong class="offer__word">I'm a fully remote worker</strong> for years now, so mind you - it's gonna cost you to bring me back to the office.</p>
 	`,
 	offer__nav: [
 		{
@@ -156,11 +156,6 @@ const content = {
 			'text': 'Open CV',
 			'link': '',
 			'comp': 'CV'
-		},
-		{
-			'text': 'Try the form',
-			'link': '/form/',
-			'comp': 'Form'
 		},
 		{
 			'text': 'See the projects',
@@ -203,7 +198,8 @@ const content = {
 			tilt_desc: `Make it readable`,
 			apps__desc: {
 				Description: `Browser extension that fixes ugly-looking websites. Makes content readable.`,
-				Status: `- Works fine but not comfortable for everyday use; <br/>
+				Status: `- Deprecated; <br/>
+							- Works fine but not comfortable for everyday use; <br/>
 							- Needs redesign; <br/>
 		  					- In development;`,
 		  		Details: `- Open source; <br/>
@@ -216,7 +212,8 @@ const content = {
 			tilt_desc: `Native YouTube search`,
 			apps__desc: {
 				Description: `Browser extension that adds search field to YouTube. Search within the playlist.`,
-				Status: `- Recent YouTube changes could affect work of this add-on; <br/>
+				Status: `- Deprecated; <br/>
+							- Recent YouTube changes could affect work of this add-on; <br/>
 							- Not comfortable for everyday use; <br/>
 							- Needs redesign; <br/>
 		  					- In development;`,
